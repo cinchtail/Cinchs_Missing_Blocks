@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cinchsmissingblocks:cracked_end_stone_bricks"
+        }
+      ]
+    }
+  ]
+}

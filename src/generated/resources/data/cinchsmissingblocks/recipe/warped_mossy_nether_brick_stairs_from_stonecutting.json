@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinchsmissingblocks:warped_mossy_nether_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:warped_mossy_nether_brick_stairs"
+  }
+}

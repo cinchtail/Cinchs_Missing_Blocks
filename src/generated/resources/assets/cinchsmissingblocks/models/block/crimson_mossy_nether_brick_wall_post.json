@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "cinchsmissingblocks:block/crimson_mossy_nether_bricks"
+  }
+}

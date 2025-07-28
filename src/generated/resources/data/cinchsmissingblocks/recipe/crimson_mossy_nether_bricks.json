@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_bricks"
+    },
+    {
+      "item": "minecraft:nether_wart_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:crimson_mossy_nether_bricks"
+  }
+}

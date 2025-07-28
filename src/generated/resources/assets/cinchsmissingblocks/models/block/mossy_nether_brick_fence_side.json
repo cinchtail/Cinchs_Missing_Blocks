@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "cinchsmissingblocks:block/mossy_nether_bricks"
+  }
+}

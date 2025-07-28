@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/calcite_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/calcite_slab"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/calcite_slab_top"
+    }
+  }
+}

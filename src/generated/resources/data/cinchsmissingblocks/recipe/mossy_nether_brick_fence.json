@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "cinchsmissingblocks:mossy_nether_bricks"
+    },
+    "T": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "pattern": [
+    "ATA",
+    "ATA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cinchsmissingblocks:mossy_nether_brick_fence"
+  }
+}

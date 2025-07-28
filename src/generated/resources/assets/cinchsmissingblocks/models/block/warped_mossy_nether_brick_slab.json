@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/warped_mossy_nether_bricks",
+    "side": "cinchsmissingblocks:block/warped_mossy_nether_bricks",
+    "top": "cinchsmissingblocks:block/warped_mossy_nether_bricks"
+  }
+}

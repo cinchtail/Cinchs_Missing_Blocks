@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/dripstone_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/dripstone_slab"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/dripstone_slab_top"
+    }
+  }
+}

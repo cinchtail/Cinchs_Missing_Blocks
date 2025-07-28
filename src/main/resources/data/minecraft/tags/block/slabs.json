@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "cinchsmissingblocks:calcite_slab",
+    "cinchsmissingblocks:dripstone_slab",
+    "cinchsmissingblocks:quartz_brick_slab",
+    "cinchsmissingblocks:end_stone_slab",
+    "cinchsmissingblocks:mossy_mud_brick_slab",
+    "cinchsmissingblocks:polished_calcite_slab",
+    "cinchsmissingblocks:polished_dripstone_slab",
+    "cinchsmissingblocks:cracked_stone_brick_slab",
+    "cinchsmissingblocks:cracked_deepslate_brick_slab",
+    "cinchsmissingblocks:cracked_deepslate_tile_slab",
+    "cinchsmissingblocks:cracked_polished_blackstone_brick_slab",
+    "cinchsmissingblocks:cracked_nether_brick_slab",
+    "cinchsmissingblocks:cracked_red_nether_brick_slab",
+    "cinchsmissingblocks:cracked_mud_brick_slab",
+    "cinchsmissingblocks:cracked_quartz_brick_slab",
+    "cinchsmissingblocks:smooth_basalt_slab",
+    "cinchsmissingblocks:mossy_nether_brick_slab",
+    "cinchsmissingblocks:crimson_mossy_nether_brick_slab",
+    "cinchsmissingblocks:warped_mossy_nether_brick_slab",
+    "cinchsmissingblocks:cracked_brick_slab",
+    "cinchsmissingblocks:cracked_prismarine_brick_slab",
+    "cinchsmissingblocks:cracked_end_stone_brick_slab",
+    "cinchsmissingblocks:mossy_brick_slab",
+    "cinchsmissingblocks:mossy_quartz_brick_slab",
+    "cinchsmissingblocks:cracked_tuff_brick_slab"
+  ]
+}

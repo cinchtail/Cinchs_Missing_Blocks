@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "cinchsmissingblocks:red_nether_brick_fence",
+    "cinchsmissingblocks:mossy_nether_brick_fence",
+    "cinchsmissingblocks:crimson_mossy_nether_brick_fence",
+    "cinchsmissingblocks:warped_mossy_nether_brick_fence",
+    "cinchsmissingblocks:cracked_red_nether_brick_fence",
+    "cinchsmissingblocks:cracked_nether_brick_fence"
+  ]
+}

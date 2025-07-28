@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/cracked_deepslate_tile_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/cracked_deepslate_tile_slab"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/cracked_deepslate_tile_slab_top"
+    }
+  }
+}
