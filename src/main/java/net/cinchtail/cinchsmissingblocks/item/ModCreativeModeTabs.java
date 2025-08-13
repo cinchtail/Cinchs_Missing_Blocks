@@ -134,8 +134,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.QUARTZ_WALL.get());
                         output.accept(ModBlocks.SMOOTH_QUARTZ_WALL.get());
                         output.accept(ModBlocks.PURPUR_WALL.get());
-                        output.accept(ModBlocks.IRON_BUTTON.get());
-                        output.accept(ModBlocks.GOLD_BUTTON.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -526,20 +526,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_end_stone", has(Blocks.END_STONE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_wall_from_stonecutting"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_BUTTON.get())
-                .pattern("AA")
-                .pattern("AA")
-                .define('A', Items.IRON_NUGGET)
-                .unlockedBy("has_iron_nugget", has(Items.IRON_NUGGET))
-                .save(consumer);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_BUTTON.get())
-                .pattern("AA")
-                .pattern("AA")
-                .define('A', Items.GOLD_NUGGET)
-                .unlockedBy("has_gold_nugget", has(Items.GOLD_NUGGET))
-                .save(consumer);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")

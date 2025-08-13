@@ -2,15 +2,12 @@ package net.cinchtail.cinchsmissingblocks.block;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.item.ModItems;
-import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -186,8 +183,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMOOTH_BASALT_WALL = registerBlock("smooth_basalt_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_BASALT)
                     .requiresCorrectToolForDrops().strength(1.25F, 4.2F).sound(SoundType.BASALT)));
-    public static final RegistryObject<Block> IRON_BUTTON = registerBlock("iron_button", ModBlocks::modIronButton);
-    public static final RegistryObject<Block> GOLD_BUTTON = registerBlock("gold_button", ModBlocks::modGoldButton);
 
 
     //New Block Sets
@@ -406,12 +401,6 @@ public class ModBlocks {
     }
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-    }
-    private static Block modIronButton() {
-        return new ButtonBlock(BlockSetType.IRON, 10, BlockBehaviour.Properties.of().noCollission().strength(0.8F).pushReaction(PushReaction.DESTROY));
-    }
-    private static Block modGoldButton() {
-        return new ButtonBlock(BlockSetType.GOLD, 10, BlockBehaviour.Properties.of().noCollission().strength(0.8F).pushReaction(PushReaction.DESTROY));
     }
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

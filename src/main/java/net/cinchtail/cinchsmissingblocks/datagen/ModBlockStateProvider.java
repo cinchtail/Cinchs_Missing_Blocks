@@ -141,10 +141,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modFenceBlock(WARPED_MOSSY_NETHER_BRICK_FENCE, WARPED_MOSSY_NETHER_BRICKS);
         modFenceBlock(CRACKED_RED_NETHER_BRICK_FENCE, CRACKED_RED_NETHER_BRICKS);
 
-
-        vanillaButtonBlock(IRON_BUTTON, Blocks.IRON_BLOCK);
-        vanillaButtonBlock(GOLD_BUTTON, Blocks.GOLD_BLOCK);
-
     }
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("cinchcraft:block/"
