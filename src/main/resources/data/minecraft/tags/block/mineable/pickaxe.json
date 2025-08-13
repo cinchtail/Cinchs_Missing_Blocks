@@ -116,6 +116,10 @@
     "cinchsmissingblocks:cracked_tuff_brick_wall",
     "cinchsmissingblocks:cracked_tuff_brick_slab",
     "cinchsmissingblocks:cracked_tuff_brick_stairs",
-    "cinchsmissingblocks:cracked_tuff_bricks"
+    "cinchsmissingblocks:cracked_tuff_bricks",
+    "cinchsmissingblocks:mossy_tuff_bricks",
+    "cinchsmissingblocks:mossy_tuff_brick_stairs",
+    "cinchsmissingblocks:mossy_tuff_brick_slab",
+    "cinchsmissingblocks:mossy_tuff_brick_wall"
   ]
 }

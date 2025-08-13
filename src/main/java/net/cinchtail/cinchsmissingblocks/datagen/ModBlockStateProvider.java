@@ -41,6 +41,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(MOSSY_BRICKS);
         blockWithItem(MOSSY_QUARTZ_BRICKS);
         blockWithItem(CRACKED_TUFF_BRICKS);
+        blockWithItem(MOSSY_TUFF_BRICKS);
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);
@@ -67,6 +68,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(MOSSY_BRICK_SLAB, MOSSY_BRICKS);
         modSlabBlock(MOSSY_QUARTZ_BRICK_SLAB, MOSSY_QUARTZ_BRICKS);
         modSlabBlock(CRACKED_TUFF_BRICK_SLAB, CRACKED_TUFF_BRICKS);
+        modSlabBlock(MOSSY_TUFF_BRICK_SLAB, MOSSY_TUFF_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -95,6 +97,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(MOSSY_BRICK_STAIRS, MOSSY_BRICKS);
         modStairsBlock(MOSSY_QUARTZ_BRICK_STAIRS, MOSSY_QUARTZ_BRICKS);
         modStairsBlock(CRACKED_TUFF_BRICK_STAIRS, CRACKED_TUFF_BRICKS);
+        modStairsBlock(MOSSY_TUFF_BRICK_STAIRS, MOSSY_TUFF_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -132,6 +135,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(MOSSY_BRICK_WALL, MOSSY_BRICKS);
         modWallBlock(MOSSY_QUARTZ_BRICK_WALL, MOSSY_QUARTZ_BRICKS);
         modWallBlock(CRACKED_TUFF_BRICK_WALL, CRACKED_TUFF_BRICKS);
+        modWallBlock(MOSSY_TUFF_BRICK_WALL, MOSSY_TUFF_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
@@ -180,28 +184,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
     public void modFenceBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
         simpleBlockItem(block.get(), models().fenceInventory(key(block).toString(), blockTexture(texture)));
         fenceBlock((FenceBlock) block.get(), blockTexture(texture));
-    }
-    private void trapDoorBlockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
-        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("cinchcraft:block/"
-                + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath() + appendix));
-    }
-    public void doorBlock(RegistryObject<Block> block, boolean cutout) {
-        simpleBlockItem(block.get(), models().singleTexture((block.get()).asItem().toString(),
-                ResourceLocation.withDefaultNamespace("item/generated"), "layer0",
-                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "item/" + block.getId().getPath())));
-        if (cutout) {
-            doorBlockWithRenderType((DoorBlock) block.get(), blockTexture(block, "_bottom"), blockTexture(block, "_top"), "cutout");
-        } else {
-            doorBlock((DoorBlock) block.get(), blockTexture(block, "_bottom"), blockTexture(block, "_top"));
-        }
-    }
-    public void trapdoorBlock(RegistryObject<Block> block, boolean cutout) {
-        if (cutout) {
-            trapdoorBlockWithRenderType((TrapDoorBlock) block.get(), blockTexture(block), true, "cutout");
-        } else {
-            trapdoorBlock((TrapDoorBlock) block.get(), blockTexture(block), true);
-        }
-        simpleBlockItem(block.get(), models().withExistingParent((block.get()).asItem().toString(), blockTexture(block, "_bottom")));
     }
     public void modButtonBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
         simpleBlockItem(block.get(), models().buttonInventory((block.getId().getPath()+"_inventory"), blockTexture(texture)));

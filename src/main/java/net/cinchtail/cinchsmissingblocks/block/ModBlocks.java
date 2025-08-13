@@ -393,6 +393,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_TUFF_BRICK_WALL = registerBlock("cracked_tuff_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF_BRICKS).requiresCorrectToolForDrops()
                     .strength(1.5F, 6.0F).sound(SoundType.TUFF_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_TUFF_BRICKS = registerBlock("mossy_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
+                    .sound(SoundType.TUFF_BRICKS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_TUFF_BRICK_STAIRS = registerBlock("mossy_tuff_brick_stairs",
+            () -> new StairBlock(TUFF_BRICKS.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
+                            .requiresCorrectToolForDrops().sound(SoundType.TUFF_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_TUFF_BRICK_SLAB = registerBlock("mossy_tuff_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.TUFF_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_TUFF_BRICK_WALL = registerBlock("mossy_tuff_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.TUFF_BRICKS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

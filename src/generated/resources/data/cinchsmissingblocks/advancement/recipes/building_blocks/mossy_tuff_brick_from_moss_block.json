@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mossy_mud_bricks": {
+    "has_moss_block": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:mossy_mud_bricks"
+            "items": "minecraft:moss_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:mossy_mud_brick_stairs"
+        "recipe": "cinchsmissingblocks:mossy_tuff_brick_from_moss_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mossy_mud_bricks"
+      "has_moss_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:mossy_mud_brick_stairs"
+      "cinchsmissingblocks:mossy_tuff_brick_from_moss_block"
     ]
   }
 }
