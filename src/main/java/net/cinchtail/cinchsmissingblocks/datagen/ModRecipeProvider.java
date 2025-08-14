@@ -90,6 +90,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_red_nether_bricks", has(Blocks.RED_NETHER_BRICKS))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_red_nether_bricks_from_stonecutting"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE.get(),4)
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', Blocks.CALCITE)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_from_stonecutting"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_STAIRS.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_stairs_from_stonecutting_from_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_SLAB.get(),2)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_slab_from_stonecutting_from_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_WALL.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_wall_from_stonecutting_from_calcite"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")
@@ -621,32 +647,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_wall_from_stonecutting"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE.get(),4)
-                .pattern("AA")
-                .pattern("AA")
-                .define('A', Blocks.CALCITE)
-                .unlockedBy("has_calcite", has(Blocks.CALCITE))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE.get())
-                .unlockedBy("has_calcite", has(Blocks.CALCITE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_from_stonecutting"));
-
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_STAIRS.get())
-                .unlockedBy("has_calcite", has(Blocks.CALCITE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_stairs_from_stonecutting_from_calcite"));
-
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_SLAB.get(),2)
-                .unlockedBy("has_calcite", has(Blocks.CALCITE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_slab_from_stonecutting_from_calcite"));
-
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_WALL.get())
-                .unlockedBy("has_calcite", has(Blocks.CALCITE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_wall_from_stonecutting_from_calcite"));
-
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL.get(),6)
                 .pattern("AAA")
                 .pattern("AAA")
@@ -925,155 +925,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_stone", has(Blocks.STONE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "stone_wall_from_stonecutting"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICKS.get())
-                .group("mossy_nether_bricks")
-                .requires(Blocks.NETHER_BRICKS)
-                .requires(Blocks.MOSS_BLOCK)
-                .unlockedBy("has_moss_block_and_mossy_nether_bricks", has(Blocks.NETHER_BRICKS))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_nether_bricks_from_moss_block"));
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICKS.get())
-                .group("mossy_nether_bricks")
-                .requires(Blocks.NETHER_BRICKS)
-                .requires(Blocks.VINE)
-                .unlockedBy("has_vine_and_mossy_nether_bricks", has(Blocks.NETHER_BRICKS))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_nether_bricks_from_vine"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_STAIRS.get(),4)
-                .pattern("A  ")
-                .pattern("AA ")
-                .pattern("AAA")
-                .define('A', ModBlocks.MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_STAIRS.get())
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_nether_brick_stairs_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_SLAB.get(),6)
-                .pattern("AAA")
-                .define('A', ModBlocks.MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_SLAB.get(),2)
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_nether_brick_slab_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_WALL.get(),6)
-                .pattern("AAA")
-                .pattern("AAA")
-                .define('A', ModBlocks.MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_WALL.get())
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_nether_brick_wall_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_NETHER_BRICK_FENCE.get(),3)
-                .pattern("ATA")
-                .pattern("ATA")
-                .define('A', ModBlocks.MOSSY_NETHER_BRICKS.get())
-                .define('T', Items.NETHER_BRICK)
-                .unlockedBy("has_mossy_nether_bricks", has(ModBlocks.MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get())
-                .requires(Blocks.NETHER_BRICKS)
-                .requires(Blocks.NETHER_WART_BLOCK)
-                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
-                .save(consumer);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_STAIRS.get(),4)
-                .pattern("A  ")
-                .pattern("AA ")
-                .pattern("AAA")
-                .define('A', ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_STAIRS.get())
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "crimson_mossy_nether_brick_stairs_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_SLAB.get(),6)
-                .pattern("AAA")
-                .define('A', ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_SLAB.get(),2)
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "crimson_mossy_nether_brick_slab_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_WALL.get(),6)
-                .pattern("AAA")
-                .pattern("AAA")
-                .define('A', ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_WALL.get())
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "crimson_mossy_nether_brick_wall_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_MOSSY_NETHER_BRICK_FENCE.get(),3)
-                .pattern("ATA")
-                .pattern("ATA")
-                .define('A', ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get())
-                .define('T', Items.NETHER_BRICK)
-                .unlockedBy("has_crimson_mossy_nether_bricks", has(ModBlocks.CRIMSON_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get())
-                .requires(Blocks.NETHER_BRICKS)
-                .requires(Blocks.WARPED_WART_BLOCK)
-                .unlockedBy("has_warped_wart_block", has(Blocks.WARPED_WART_BLOCK))
-                .save(consumer);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_STAIRS.get(),4)
-                .pattern("A  ")
-                .pattern("AA ")
-                .pattern("AAA")
-                .define('A', ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_STAIRS.get())
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "warped_mossy_nether_brick_stairs_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_SLAB.get(),6)
-                .pattern("AAA")
-                .define('A', ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_SLAB.get(),2)
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "warped_mossy_nether_brick_slab_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_WALL.get(),6)
-                .pattern("AAA")
-                .pattern("AAA")
-                .define('A', ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get())
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_WALL.get())
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "warped_mossy_nether_brick_wall_from_stonecutting"));
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_MOSSY_NETHER_BRICK_FENCE.get(),3)
-                .pattern("ATA")
-                .pattern("ATA")
-                .define('A', ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get())
-                .define('T', Items.NETHER_BRICK)
-                .unlockedBy("has_warped_mossy_nether_bricks", has(ModBlocks.WARPED_MOSSY_NETHER_BRICKS.get()))
-                .save(consumer);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")
@@ -1346,5 +1197,89 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_tuff_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICKS.get(),4)
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModBlocks.POLISHED_CALCITE.get())
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICKS.get())
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_bricks_from_stonecutting_polished_calcite"));
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.POLISHED_CALCITE_BRICKS.get())
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get())
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.POLISHED_CALCITE_BRICKS.get())
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.POLISHED_CALCITE_BRICKS.get())
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_WALL.get())
+                .unlockedBy("has_polished_calcite_bricks", has(ModBlocks.POLISHED_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_wall_from_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICKS.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_bricks_from_stonecutting_from_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_stairs_from_stonecutting_from_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_slab_from_stonecutting_from_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_WALL.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_wall_from_stonecutting_from_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICKS.get())
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_bricks_from_stonecutting_from_polished_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get())
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_stairs_from_stonecutting_from_polished_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_slab_from_stonecutting_from_polished_calcite"));
+
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_BRICK_WALL.get())
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_calcite_brick_wall_from_stonecutting_from_polished_calcite"));
     }
 }

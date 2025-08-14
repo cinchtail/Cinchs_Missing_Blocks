@@ -5,13 +5,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Objects;
 import java.util.function.Supplier;
 
 import static net.cinchtail.cinchsmissingblocks.block.ModBlocks.*;
@@ -32,9 +30,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(POLISHED_CALCITE);
         blockWithItem(POLISHED_DRIPSTONE_BLOCK);
         blockWithItem(CRACKED_QUARTZ_BRICKS);
-        blockWithItem(MOSSY_NETHER_BRICKS);
-        blockWithItem(CRIMSON_MOSSY_NETHER_BRICKS);
-        blockWithItem(WARPED_MOSSY_NETHER_BRICKS);
         blockWithItem(CRACKED_BRICKS);
         blockWithItem(CRACKED_PRISMARINE_BRICKS);
         blockWithItem(CRACKED_END_STONE_BRICKS);
@@ -42,6 +37,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(MOSSY_QUARTZ_BRICKS);
         blockWithItem(CRACKED_TUFF_BRICKS);
         blockWithItem(MOSSY_TUFF_BRICKS);
+        blockWithItem(POLISHED_CALCITE_BRICKS);
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);
@@ -59,9 +55,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(CRACKED_MUD_BRICK_SLAB, CRACKED_MUD_BRICKS);
         modSlabBlock(CRACKED_QUARTZ_BRICK_SLAB, CRACKED_QUARTZ_BRICKS);
         vanillaSlabBlock(SMOOTH_BASALT_SLAB, Blocks.SMOOTH_BASALT);
-        modSlabBlock(MOSSY_NETHER_BRICK_SLAB, MOSSY_NETHER_BRICKS);
-        modSlabBlock(CRIMSON_MOSSY_NETHER_BRICK_SLAB, CRIMSON_MOSSY_NETHER_BRICKS);
-        modSlabBlock(WARPED_MOSSY_NETHER_BRICK_SLAB, WARPED_MOSSY_NETHER_BRICKS);
         modSlabBlock(CRACKED_BRICK_SLAB, CRACKED_BRICKS);
         modSlabBlock(CRACKED_PRISMARINE_BRICK_SLAB, CRACKED_PRISMARINE_BRICKS);
         modSlabBlock(CRACKED_END_STONE_BRICK_SLAB, CRACKED_END_STONE_BRICKS);
@@ -69,6 +62,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(MOSSY_QUARTZ_BRICK_SLAB, MOSSY_QUARTZ_BRICKS);
         modSlabBlock(CRACKED_TUFF_BRICK_SLAB, CRACKED_TUFF_BRICKS);
         modSlabBlock(MOSSY_TUFF_BRICK_SLAB, MOSSY_TUFF_BRICKS);
+        modSlabBlock(POLISHED_CALCITE_BRICK_SLAB, POLISHED_CALCITE_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -88,9 +82,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(CRACKED_MUD_BRICK_STAIRS, CRACKED_MUD_BRICKS);
         modStairsBlock(CRACKED_QUARTZ_BRICK_STAIRS, CRACKED_QUARTZ_BRICKS);
         vanillaStairsBlock(SMOOTH_BASALT_STAIRS, Blocks.SMOOTH_BASALT);
-        modStairsBlock(MOSSY_NETHER_BRICK_STAIRS, MOSSY_NETHER_BRICKS);
-        modStairsBlock(CRIMSON_MOSSY_NETHER_BRICK_STAIRS, CRIMSON_MOSSY_NETHER_BRICKS);
-        modStairsBlock(WARPED_MOSSY_NETHER_BRICK_STAIRS, WARPED_MOSSY_NETHER_BRICKS);
         modStairsBlock(CRACKED_BRICK_STAIRS, CRACKED_BRICKS);
         modStairsBlock(CRACKED_PRISMARINE_BRICK_STAIRS, CRACKED_PRISMARINE_BRICKS);
         modStairsBlock(CRACKED_END_STONE_BRICK_STAIRS, CRACKED_END_STONE_BRICKS);
@@ -98,6 +89,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(MOSSY_QUARTZ_BRICK_STAIRS, MOSSY_QUARTZ_BRICKS);
         modStairsBlock(CRACKED_TUFF_BRICK_STAIRS, CRACKED_TUFF_BRICKS);
         modStairsBlock(MOSSY_TUFF_BRICK_STAIRS, MOSSY_TUFF_BRICKS);
+        modStairsBlock(POLISHED_CALCITE_BRICK_STAIRS, POLISHED_CALCITE_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -126,9 +118,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(CRACKED_RED_NETHER_BRICK_WALL, CRACKED_RED_NETHER_BRICKS);
         modWallBlock(CRACKED_MUD_BRICK_WALL, CRACKED_MUD_BRICKS);
         modWallBlock(CRACKED_QUARTZ_BRICK_WALL, CRACKED_QUARTZ_BRICKS);
-        modWallBlock(MOSSY_NETHER_BRICK_WALL, MOSSY_NETHER_BRICKS);
-        modWallBlock(CRIMSON_MOSSY_NETHER_BRICK_WALL, CRIMSON_MOSSY_NETHER_BRICKS);
-        modWallBlock(WARPED_MOSSY_NETHER_BRICK_WALL, WARPED_MOSSY_NETHER_BRICKS);
         modWallBlock(CRACKED_BRICK_WALL, CRACKED_BRICKS);
         modWallBlock(CRACKED_PRISMARINE_BRICK_WALL, CRACKED_PRISMARINE_BRICKS);
         modWallBlock(CRACKED_END_STONE_BRICK_WALL, CRACKED_END_STONE_BRICKS);
@@ -136,19 +125,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(MOSSY_QUARTZ_BRICK_WALL, MOSSY_QUARTZ_BRICKS);
         modWallBlock(CRACKED_TUFF_BRICK_WALL, CRACKED_TUFF_BRICKS);
         modWallBlock(MOSSY_TUFF_BRICK_WALL, MOSSY_TUFF_BRICKS);
+        modWallBlock(POLISHED_CALCITE_BRICK_WALL, POLISHED_CALCITE_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
         vanillaFenceBlock(CRACKED_NETHER_BRICK_FENCE, Blocks.CRACKED_NETHER_BRICKS);
-        modFenceBlock(MOSSY_NETHER_BRICK_FENCE, MOSSY_NETHER_BRICKS);
-        modFenceBlock(CRIMSON_MOSSY_NETHER_BRICK_FENCE, CRIMSON_MOSSY_NETHER_BRICKS);
-        modFenceBlock(WARPED_MOSSY_NETHER_BRICK_FENCE, WARPED_MOSSY_NETHER_BRICKS);
         modFenceBlock(CRACKED_RED_NETHER_BRICK_FENCE, CRACKED_RED_NETHER_BRICKS);
 
-    }
-    private void blockItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("cinchcraft:block/"
-                + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath()));
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -171,7 +154,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
     public void vanillaWallBlock(RegistryObject<Block> block, Block texture) {
         simpleBlockItem(block.get(), models().wallInventory(key(block).toString(), blockTexture(texture)));
-        wallBlock((WallBlock) block.get(), blockTexture(texture));
+        wallBlock((WallBlock)block.get(), blockTexture(texture));
     }
     public void modWallBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
         simpleBlockItem(block.get(), models().wallInventory(key(block).toString(), blockTexture(texture)));
@@ -184,14 +167,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
     public void modFenceBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
         simpleBlockItem(block.get(), models().fenceInventory(key(block).toString(), blockTexture(texture)));
         fenceBlock((FenceBlock) block.get(), blockTexture(texture));
-    }
-    public void modButtonBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
-        simpleBlockItem(block.get(), models().buttonInventory((block.getId().getPath()+"_inventory"), blockTexture(texture)));
-        buttonBlock((ButtonBlock) block.get(), blockTexture(texture));
-    }
-    public void vanillaButtonBlock(RegistryObject<Block> block, Block texture) {
-        simpleBlockItem(block.get(), models().buttonInventory((block.getId().getPath()+"_inventory"), blockTexture(texture)));
-        buttonBlock((ButtonBlock) block.get(), blockTexture(texture));
     }
     public String getName(Supplier<? extends Block> block) {
         return block.get().builtInRegistryHolder().key().location().getPath();

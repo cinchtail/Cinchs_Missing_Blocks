@@ -79,20 +79,6 @@
     "cinchsmissingblocks:iron_button",
     "cinchsmissingblocks:gold_button",
     "cinchsmissingblocks:mossy_nether_bricks",
-    "cinchsmissingblocks:mossy_nether_brick_stairs",
-    "cinchsmissingblocks:mossy_nether_brick_slab",
-    "cinchsmissingblocks:mossy_nether_brick_wall",
-    "cinchsmissingblocks:mossy_nether_brick_fence",
-    "cinchsmissingblocks:warped_mossy_nether_brick_wall",
-    "cinchsmissingblocks:warped_mossy_nether_brick_slab",
-    "cinchsmissingblocks:warped_mossy_nether_brick_stairs",
-    "cinchsmissingblocks:warped_mossy_nether_brick_fence",
-    "cinchsmissingblocks:warped_mossy_nether_bricks",
-    "cinchsmissingblocks:crimson_mossy_nether_bricks",
-    "cinchsmissingblocks:crimson_mossy_nether_brick_wall",
-    "cinchsmissingblocks:crimson_mossy_nether_brick_slab",
-    "cinchsmissingblocks:crimson_mossy_nether_brick_stairs",
-    "cinchsmissingblocks:crimson_mossy_nether_brick_fence",
     "cinchsmissingblocks:cracked_brick_wall",
     "cinchsmissingblocks:cracked_brick_slab",
     "cinchsmissingblocks:cracked_brick_stairs",
@@ -120,6 +106,9 @@
     "cinchsmissingblocks:mossy_tuff_bricks",
     "cinchsmissingblocks:mossy_tuff_brick_stairs",
     "cinchsmissingblocks:mossy_tuff_brick_slab",
-    "cinchsmissingblocks:mossy_tuff_brick_wall"
+    "cinchsmissingblocks:mossy_tuff_brick_wall",
+    "cinchsmissingblocks:polished_calcite_brick_stairs",
+    "cinchsmissingblocks:polished_calcite_brick_slab",
+    "cinchsmissingblocks:polished_calcite_brick_wall"
   ]
 }

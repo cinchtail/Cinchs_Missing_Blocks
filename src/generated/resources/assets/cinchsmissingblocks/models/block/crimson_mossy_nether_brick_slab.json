@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/crimson_mossy_nether_bricks",
-    "side": "cinchsmissingblocks:block/crimson_mossy_nether_bricks",
-    "top": "cinchsmissingblocks:block/crimson_mossy_nether_bricks"
-  }
-}

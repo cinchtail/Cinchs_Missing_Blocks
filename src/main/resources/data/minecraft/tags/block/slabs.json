@@ -17,15 +17,13 @@
     "cinchsmissingblocks:cracked_mud_brick_slab",
     "cinchsmissingblocks:cracked_quartz_brick_slab",
     "cinchsmissingblocks:smooth_basalt_slab",
-    "cinchsmissingblocks:mossy_nether_brick_slab",
-    "cinchsmissingblocks:crimson_mossy_nether_brick_slab",
-    "cinchsmissingblocks:warped_mossy_nether_brick_slab",
     "cinchsmissingblocks:cracked_brick_slab",
     "cinchsmissingblocks:cracked_prismarine_brick_slab",
     "cinchsmissingblocks:cracked_end_stone_brick_slab",
     "cinchsmissingblocks:mossy_brick_slab",
     "cinchsmissingblocks:mossy_quartz_brick_slab",
     "cinchsmissingblocks:cracked_tuff_brick_slab",
-    "cinchsmissingblocks:mossy_tuff_brick_slab"
+    "cinchsmissingblocks:mossy_tuff_brick_slab",
+    "cinchsmissingblocks:polished_calcite_brick_slab"
   ]
 }
