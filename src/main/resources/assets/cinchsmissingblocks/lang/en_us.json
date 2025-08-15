@@ -104,8 +104,12 @@
   "block.cinchsmissingblocks.mossy_tuff_brick_wall": "Mossy Tuff Brick Wall",
   "block.cinchsmissingblocks.mossy_tuff_brick_slab": "Mossy Tuff Brick Slab",
   "block.cinchsmissingblocks.mossy_tuff_brick_stairs": "Mossy Tuff Brick Stairs",
-  "block.cinchsmissingblocks.polished_calcite_bricks": "Polished Calcite Bricks",
-  "block.cinchsmissingblocks.polished_calcite_brick_wall": "Polished Calcite Wall Brick",
-  "block.cinchsmissingblocks.polished_calcite_brick_slab": "Polished Calcite Slab Brick",
-  "block.cinchsmissingblocks.polished_calcite_brick_stairs": "Polished Calcite Stairs Brick"
+  "block.cinchsmissingblocks.calcite_bricks": "Calcite Bricks",
+  "block.cinchsmissingblocks.calcite_brick_wall": "Calcite Brick Wall",
+  "block.cinchsmissingblocks.calcite_brick_slab": "Calcite Brick Slab",
+  "block.cinchsmissingblocks.calcite_brick_stairs": "Calcite Brick Stairs",
+  "block.cinchsmissingblocks.cracked_calcite_bricks": "Cracked Calcite Bricks",
+  "block.cinchsmissingblocks.cracked_calcite_brick_wall": "Cracked Calcite Brick Wall",
+  "block.cinchsmissingblocks.cracked_calcite_brick_slab": "Cracked Calcite Brick Slab",
+  "block.cinchsmissingblocks.cracked_calcite_brick_stairs": "Cracked Calcite Brick Stairs"
 }

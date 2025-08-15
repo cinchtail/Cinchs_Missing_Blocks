@@ -37,7 +37,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(MOSSY_QUARTZ_BRICKS);
         blockWithItem(CRACKED_TUFF_BRICKS);
         blockWithItem(MOSSY_TUFF_BRICKS);
-        blockWithItem(POLISHED_CALCITE_BRICKS);
+        blockWithItem(CALCITE_BRICKS);
+        blockWithItem(CRACKED_CALCITE_BRICKS);
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);
@@ -62,7 +63,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(MOSSY_QUARTZ_BRICK_SLAB, MOSSY_QUARTZ_BRICKS);
         modSlabBlock(CRACKED_TUFF_BRICK_SLAB, CRACKED_TUFF_BRICKS);
         modSlabBlock(MOSSY_TUFF_BRICK_SLAB, MOSSY_TUFF_BRICKS);
-        modSlabBlock(POLISHED_CALCITE_BRICK_SLAB, POLISHED_CALCITE_BRICKS);
+        modSlabBlock(CALCITE_BRICK_SLAB, CALCITE_BRICKS);
+        modSlabBlock(CRACKED_CALCITE_BRICK_SLAB, CRACKED_CALCITE_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -89,7 +91,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(MOSSY_QUARTZ_BRICK_STAIRS, MOSSY_QUARTZ_BRICKS);
         modStairsBlock(CRACKED_TUFF_BRICK_STAIRS, CRACKED_TUFF_BRICKS);
         modStairsBlock(MOSSY_TUFF_BRICK_STAIRS, MOSSY_TUFF_BRICKS);
-        modStairsBlock(POLISHED_CALCITE_BRICK_STAIRS, POLISHED_CALCITE_BRICKS);
+        modStairsBlock(CALCITE_BRICK_STAIRS, CALCITE_BRICKS);
+        modStairsBlock(CRACKED_CALCITE_BRICK_STAIRS, CRACKED_CALCITE_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -125,7 +128,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(MOSSY_QUARTZ_BRICK_WALL, MOSSY_QUARTZ_BRICKS);
         modWallBlock(CRACKED_TUFF_BRICK_WALL, CRACKED_TUFF_BRICKS);
         modWallBlock(MOSSY_TUFF_BRICK_WALL, MOSSY_TUFF_BRICKS);
-        modWallBlock(POLISHED_CALCITE_BRICK_WALL, POLISHED_CALCITE_BRICKS);
+        modWallBlock(CALCITE_BRICK_WALL, CALCITE_BRICKS);
+        modWallBlock(CRACKED_CALCITE_BRICK_WALL, CRACKED_CALCITE_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);

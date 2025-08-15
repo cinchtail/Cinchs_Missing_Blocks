@@ -107,8 +107,13 @@
     "cinchsmissingblocks:mossy_tuff_brick_stairs",
     "cinchsmissingblocks:mossy_tuff_brick_slab",
     "cinchsmissingblocks:mossy_tuff_brick_wall",
-    "cinchsmissingblocks:polished_calcite_brick_stairs",
-    "cinchsmissingblocks:polished_calcite_brick_slab",
-    "cinchsmissingblocks:polished_calcite_brick_wall"
+    "cinchsmissingblocks:calcite_bricks",
+    "cinchsmissingblocks:calcite_brick_stairs",
+    "cinchsmissingblocks:calcite_brick_slab",
+    "cinchsmissingblocks:calcite_brick_wall",
+    "cinchsmissingblocks:cracked_calcite_bricks",
+    "cinchsmissingblocks:cracked_calcite_brick_stairs",
+    "cinchsmissingblocks:cracked_calcite_brick_slab",
+    "cinchsmissingblocks:cracked_calcite_brick_wall"
   ]
 }

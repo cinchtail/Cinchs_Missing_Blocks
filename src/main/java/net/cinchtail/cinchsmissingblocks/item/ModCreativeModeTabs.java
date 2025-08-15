@@ -15,9 +15,10 @@ public class ModCreativeModeTabs {
             CinchsMissingBlocks.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> CINCHS_MISSING_BLOCKS = CREATIVE_MODE_TABS.register("cinchs_missing_blocks",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.POLISHED_CALCITE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS.get()))
                     .title(Component.literal("Cinch's Missing Blocks"))
                     .displayItems((displayParameters, output) -> {
+
                         output.accept(ModBlocks.CALCITE_STAIRS.get());
                         output.accept(ModBlocks.CALCITE_SLAB.get());
                         output.accept(ModBlocks.CALCITE_WALL.get());
@@ -25,10 +26,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POLISHED_CALCITE_STAIRS.get());
                         output.accept(ModBlocks.POLISHED_CALCITE_SLAB.get());
                         output.accept(ModBlocks.POLISHED_CALCITE_WALL.get());
-                        output.accept(ModBlocks.POLISHED_CALCITE_BRICKS.get());
-                        output.accept(ModBlocks.POLISHED_CALCITE_BRICK_STAIRS.get());
-                        output.accept(ModBlocks.POLISHED_CALCITE_BRICK_SLAB.get());
-                        output.accept(ModBlocks.POLISHED_CALCITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CALCITE_BRICKS.get());
+                        output.accept(ModBlocks.CALCITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.CALCITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.CALCITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CRACKED_CALCITE_BRICKS.get());
+                        output.accept(ModBlocks.CRACKED_CALCITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.CRACKED_CALCITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.CRACKED_CALCITE_BRICK_WALL.get());
                         output.accept(ModBlocks.DRIPSTONE_STAIRS.get());
                         output.accept(ModBlocks.DRIPSTONE_SLAB.get());
                         output.accept(ModBlocks.DRIPSTONE_WALL.get());
