@@ -4,7 +4,7 @@
       "model": "cinchsmissingblocks:block/calcite_slab"
     },
     "type=double": {
-      "model": "cinchsmissingblocks:block/calcite_slab"
+      "model": "minecraft:block/calcite"
     },
     "type=top": {
       "model": "cinchsmissingblocks:block/calcite_slab_top"

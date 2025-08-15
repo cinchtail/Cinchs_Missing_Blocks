@@ -4,7 +4,7 @@
       "model": "cinchsmissingblocks:block/cracked_deepslate_tile_slab"
     },
     "type=double": {
-      "model": "cinchsmissingblocks:block/cracked_deepslate_tile_slab"
+      "model": "minecraft:block/cracked_deepslate_tiles"
     },
     "type=top": {
       "model": "cinchsmissingblocks:block/cracked_deepslate_tile_slab_top"
