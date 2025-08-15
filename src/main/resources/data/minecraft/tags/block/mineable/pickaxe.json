@@ -114,6 +114,10 @@
     "cinchsmissingblocks:cracked_calcite_bricks",
     "cinchsmissingblocks:cracked_calcite_brick_stairs",
     "cinchsmissingblocks:cracked_calcite_brick_slab",
-    "cinchsmissingblocks:cracked_calcite_brick_wall"
+    "cinchsmissingblocks:cracked_calcite_brick_wall",
+    "cinchsmissingblocks:mossy_calcite_bricks",
+    "cinchsmissingblocks:mossy_calcite_brick_stairs",
+    "cinchsmissingblocks:mossy_calcite_brick_slab",
+    "cinchsmissingblocks:mossy_calcite_brick_wall"
   ]
 }

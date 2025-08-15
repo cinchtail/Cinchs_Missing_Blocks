@@ -1311,5 +1311,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_CALCITE_BRICK_WALL.get())
                 .unlockedBy("has_cracked_calcite_bricks", has(ModBlocks.CRACKED_CALCITE_BRICKS.get()))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_calcite_brick_wall_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .unlockedBy("has_mossy_calcite_bricks", has(ModBlocks.MOSSY_CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_STAIRS.get())
+                .unlockedBy("has_mossy_calcite_bricks", has(ModBlocks.MOSSY_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .unlockedBy("has_mossy_calcite_bricks", has(ModBlocks.MOSSY_CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_mossy_calcite_bricks", has(ModBlocks.MOSSY_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .unlockedBy("has_mossy_calcite_bricks", has(ModBlocks.MOSSY_CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_WALL.get())
+                .unlockedBy("has_mossy_calcite_bricks", has(ModBlocks.MOSSY_CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_wall_from_stonecutting"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .group("mossy_calcite_bricks")
+                .requires(ModBlocks.CALCITE_BRICKS.get())
+                .requires(Blocks.MOSS_BLOCK)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_moss_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .group("mossy_calcite_bricks")
+                .requires(ModBlocks.CALCITE_BRICKS.get())
+                .requires(Blocks.VINE)
+                .unlockedBy("has_vine", has(Blocks.VINE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_vine"));
     }
 }
