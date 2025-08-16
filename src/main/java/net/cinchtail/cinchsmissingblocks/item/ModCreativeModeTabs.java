@@ -45,6 +45,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POLISHED_DRIPSTONE_STAIRS.get());
                         output.accept(ModBlocks.POLISHED_DRIPSTONE_SLAB.get());
                         output.accept(ModBlocks.POLISHED_DRIPSTONE_WALL.get());
+                        output.accept(ModBlocks.DRIPSTONE_BRICKS.get());
+                        output.accept(ModBlocks.DRIPSTONE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.DRIPSTONE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.DRIPSTONE_BRICK_WALL.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICK_SLAB.get());

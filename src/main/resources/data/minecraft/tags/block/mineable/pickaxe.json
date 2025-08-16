@@ -117,6 +117,10 @@
     "cinchsmissingblocks:mossy_calcite_bricks",
     "cinchsmissingblocks:mossy_calcite_brick_stairs",
     "cinchsmissingblocks:mossy_calcite_brick_slab",
-    "cinchsmissingblocks:mossy_calcite_brick_wall"
+    "cinchsmissingblocks:mossy_calcite_brick_wall",
+    "cinchsmissingblocks:dripstone_bricks",
+    "cinchsmissingblocks:dripstone_brick_stairs",
+    "cinchsmissingblocks:dripstone_brick_slab",
+    "cinchsmissingblocks:dripstone_brick_wall"
   ]
 }
