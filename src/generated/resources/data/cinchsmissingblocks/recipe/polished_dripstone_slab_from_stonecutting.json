@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "cinchsmissingblocks:polished_dripstone_block"
+    "item": "cinchsmissingblocks:polished_dripstone"
   },
   "result": {
     "count": 2,

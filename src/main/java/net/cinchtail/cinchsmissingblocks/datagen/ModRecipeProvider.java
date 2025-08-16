@@ -666,48 +666,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_diorite", has(Blocks.DIORITE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_diorite_wall_from_stonecutting_from_andesite"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_BLOCK.get(),4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE.get(),4)
                 .pattern("AA")
                 .pattern("AA")
                 .define('A', Blocks.DRIPSTONE_BLOCK)
-                .unlockedBy("has_dripstone_block", has(Blocks.DRIPSTONE_BLOCK))
+                .unlockedBy("has_dripstone", has(Blocks.DRIPSTONE_BLOCK))
                 .save(consumer);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DRIPSTONE_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_BLOCK.get())
-                .unlockedBy("has_dripstone_block", has(Blocks.DRIPSTONE_BLOCK))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_dripstone_block_from_stonecutting"));
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DRIPSTONE_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE.get())
+                .unlockedBy("has_dripstone", has(Blocks.DRIPSTONE_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_dripstone_from_stonecutting"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")
                 .pattern("AAA")
-                .define('A', ModBlocks.POLISHED_DRIPSTONE_BLOCK.get())
-                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()))
+                .define('A', ModBlocks.POLISHED_DRIPSTONE.get())
+                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
                 .save(consumer);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_STAIRS.get())
-                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_STAIRS.get())
+                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_dripstone_stairs_from_stonecutting"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_SLAB.get(),6)
                 .pattern("AAA")
-                .define('A', ModBlocks.POLISHED_DRIPSTONE_BLOCK.get())
-                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()))
+                .define('A', ModBlocks.POLISHED_DRIPSTONE.get())
+                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
                 .save(consumer);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_SLAB.get(),2)
-                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_SLAB.get(),2)
+                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_dripstone_slab_from_stonecutting"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_WALL.get(),6)
                 .pattern("AAA")
                 .pattern("AAA")
-                .define('A', ModBlocks.POLISHED_DRIPSTONE_BLOCK.get())
-                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()))
+                .define('A', ModBlocks.POLISHED_DRIPSTONE.get())
+                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE.get()))
                 .save(consumer);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_WALL.get())
-                .unlockedBy("has_polished_dripstone_block", has(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE_WALL.get())
+                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_dripstone_wall_from_stonecutting"));
 
 

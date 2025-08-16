@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "cinchsmissingblocks:block/polished_dripstone_block"
+    "wall": "cinchsmissingblocks:block/polished_dripstone"
   }
 }

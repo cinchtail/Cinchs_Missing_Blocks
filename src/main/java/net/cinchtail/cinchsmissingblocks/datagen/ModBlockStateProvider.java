@@ -29,7 +29,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(CHISELED_MUD_BRICKS);
         blockWithItem(CRACKED_MUD_BRICKS);
         blockWithItem(POLISHED_CALCITE);
-        blockWithItem(POLISHED_DRIPSTONE_BLOCK);
+        blockWithItem(POLISHED_DRIPSTONE);
         blockWithItem(CRACKED_QUARTZ_BRICKS);
         blockWithItem(CRACKED_BRICKS);
         blockWithItem(CRACKED_PRISMARINE_BRICKS);
@@ -48,7 +48,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaSlabBlock(END_STONE_SLAB, Blocks.END_STONE);
         modSlabBlock(MOSSY_MUD_BRICK_SLAB, MOSSY_MUD_BRICKS);
         modSlabBlock(POLISHED_CALCITE_SLAB, POLISHED_CALCITE);
-        modSlabBlock(POLISHED_DRIPSTONE_SLAB, POLISHED_DRIPSTONE_BLOCK);
+        modSlabBlock(POLISHED_DRIPSTONE_SLAB, POLISHED_DRIPSTONE);
         vanillaSlabBlock(CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS);
         vanillaSlabBlock(CRACKED_DEEPSLATE_BRICK_SLAB, Blocks.CRACKED_DEEPSLATE_BRICKS);
         vanillaSlabBlock(CRACKED_DEEPSLATE_TILE_SLAB, Blocks.CRACKED_DEEPSLATE_TILES);
@@ -77,7 +77,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaStairsBlock(END_STONE_STAIRS, Blocks.END_STONE);
         modStairsBlock(MOSSY_MUD_BRICK_STAIRS, MOSSY_MUD_BRICKS);
         modStairsBlock(POLISHED_CALCITE_STAIRS, POLISHED_CALCITE);
-        modStairsBlock(POLISHED_DRIPSTONE_STAIRS, POLISHED_DRIPSTONE_BLOCK);
+        modStairsBlock(POLISHED_DRIPSTONE_STAIRS, POLISHED_DRIPSTONE);
         vanillaStairsBlock(CRACKED_STONE_BRICK_STAIRS, Blocks.CRACKED_STONE_BRICKS);
         vanillaStairsBlock(CRACKED_DEEPSLATE_BRICK_STAIRS, Blocks.CRACKED_DEEPSLATE_BRICKS);
         vanillaStairsBlock( CRACKED_DEEPSLATE_TILE_STAIRS, Blocks.CRACKED_DEEPSLATE_TILES);
@@ -121,7 +121,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaWallBlock(SMOOTH_BASALT_WALL, Blocks.SMOOTH_BASALT);
         modWallBlock(MOSSY_MUD_BRICK_WALL, MOSSY_MUD_BRICKS);
         modWallBlock(POLISHED_CALCITE_WALL, POLISHED_CALCITE);
-        modWallBlock(POLISHED_DRIPSTONE_WALL, POLISHED_DRIPSTONE_BLOCK);
+        modWallBlock(POLISHED_DRIPSTONE_WALL, POLISHED_DRIPSTONE);
         modWallBlock(CRACKED_RED_NETHER_BRICK_WALL, CRACKED_RED_NETHER_BRICKS);
         modWallBlock(CRACKED_MUD_BRICK_WALL, CRACKED_MUD_BRICKS);
         modWallBlock(CRACKED_QUARTZ_BRICK_WALL, CRACKED_QUARTZ_BRICKS);

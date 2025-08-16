@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_dripstone_block": {
+    "has_polished_dripstone": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:polished_dripstone_block"
+            "items": "cinchsmissingblocks:polished_dripstone"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_dripstone_block"
+      "has_polished_dripstone"
     ]
   ],
   "rewards": {

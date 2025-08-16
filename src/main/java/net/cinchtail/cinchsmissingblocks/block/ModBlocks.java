@@ -249,11 +249,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSSY_CALCITE_BRICK_WALL = registerBlock("mossy_calcite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
                     .strength(1f).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
-    public static final RegistryObject<Block> POLISHED_DRIPSTONE_BLOCK = registerBlock("polished_dripstone_block",
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE = registerBlock("polished_dripstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(2f)
                     .sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> POLISHED_DRIPSTONE_STAIRS = registerBlock("polished_dripstone_stairs",
-            () -> new StairBlock(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get().defaultBlockState(),
+            () -> new StairBlock(ModBlocks.POLISHED_DRIPSTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(2f)
                             .requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> POLISHED_DRIPSTONE_SLAB = registerBlock("polished_dripstone_slab",

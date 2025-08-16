@@ -4,7 +4,7 @@
       "model": "cinchsmissingblocks:block/polished_dripstone_slab"
     },
     "type=double": {
-      "model": "cinchsmissingblocks:block/polished_dripstone_block"
+      "model": "cinchsmissingblocks:block/polished_dripstone"
     },
     "type=top": {
       "model": "cinchsmissingblocks:block/polished_dripstone_slab_top"

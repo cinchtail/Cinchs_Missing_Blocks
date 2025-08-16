@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dripstone_block": {
+    "has_dripstone": {
       "conditions": {
         "items": [
           {
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:polished_dripstone_block_from_stonecutting"
+        "recipe": "cinchsmissingblocks:polished_dripstone_from_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dripstone_block"
+      "has_dripstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:polished_dripstone_block_from_stonecutting"
+      "cinchsmissingblocks:polished_dripstone_from_stonecutting"
     ]
   }
 }

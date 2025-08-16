@@ -41,7 +41,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DRIPSTONE_STAIRS.get());
                         output.accept(ModBlocks.DRIPSTONE_SLAB.get());
                         output.accept(ModBlocks.DRIPSTONE_WALL.get());
-                        output.accept(ModBlocks.POLISHED_DRIPSTONE_BLOCK.get());
+                        output.accept(ModBlocks.POLISHED_DRIPSTONE.get());
                         output.accept(ModBlocks.POLISHED_DRIPSTONE_STAIRS.get());
                         output.accept(ModBlocks.POLISHED_DRIPSTONE_SLAB.get());
                         output.accept(ModBlocks.POLISHED_DRIPSTONE_WALL.get());
