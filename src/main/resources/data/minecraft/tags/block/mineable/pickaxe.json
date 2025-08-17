@@ -125,6 +125,10 @@
     "cinchsmissingblocks:cracked_dripstone_bricks",
     "cinchsmissingblocks:cracked_dripstone_brick_stairs",
     "cinchsmissingblocks:cracked_dripstone_brick_slab",
-    "cinchsmissingblocks:cracked_dripstone_brick_wall"
+    "cinchsmissingblocks:cracked_dripstone_brick_wall",
+    "cinchsmissingblocks:mossy_dripstone_bricks",
+    "cinchsmissingblocks:mossy_dripstone_brick_stairs",
+    "cinchsmissingblocks:mossy_dripstone_brick_slab",
+    "cinchsmissingblocks:mossy_dripstone_brick_wall"
   ]
 }
