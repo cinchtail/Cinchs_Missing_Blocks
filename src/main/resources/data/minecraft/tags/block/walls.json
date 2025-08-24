@@ -44,6 +44,8 @@
     "cinchsmissingblocks:dripstone_brick_wall",
     "cinchsmissingblocks:cracked_dripstone_brick_wall",
     "cinchsmissingblocks:mossy_dripstone_brick_wall",
-    "cinchsmissingblocks:andesite_brick_wall"
+    "cinchsmissingblocks:andesite_brick_wall",
+    "cinchsmissingblocks:cracked_andesite_brick_wall",
+    "cinchsmissingblocks:mossy_andesite_brick_wall"
   ]
 }

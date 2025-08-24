@@ -2,13 +2,20 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "cinchsmissingblocks:smooth_basalt_stairs"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "cinchsmissingblocks:blocks/smooth_basalt_stairs"
 }

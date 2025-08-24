@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diorite": {
+    "has_mossy_andesite_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diorite"
+            "items": "cinchsmissingblocks:mossy_andesite_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:polished_diorite_wall_from_stonecutting_from_andesite"
+        "recipe": "cinchsmissingblocks:mossy_andesite_brick_stairs_from_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diorite"
+      "has_mossy_andesite_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:polished_diorite_wall_from_stonecutting_from_andesite"
+      "cinchsmissingblocks:mossy_andesite_brick_stairs_from_stonecutting"
     ]
   }
 }

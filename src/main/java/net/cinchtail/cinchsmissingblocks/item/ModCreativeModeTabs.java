@@ -70,6 +70,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ANDESITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.ANDESITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.ANDESITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CRACKED_ANDESITE_BRICKS.get());
+                        output.accept(ModBlocks.CRACKED_ANDESITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.CRACKED_ANDESITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.CRACKED_ANDESITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.MOSSY_ANDESITE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_WALL.get());
                         output.accept(ModBlocks.POLISHED_GRANITE_WALL.get());
                         output.accept(ModBlocks.POLISHED_DIORITE_WALL.get());
                         output.accept(ModBlocks.QUARTZ_WALL.get());

@@ -133,6 +133,14 @@
     "cinchsmissingblocks:andesite_bricks",
     "cinchsmissingblocks:andesite_brick_stairs",
     "cinchsmissingblocks:andesite_brick_slab",
-    "cinchsmissingblocks:andesite_brick_wall"
+    "cinchsmissingblocks:andesite_brick_wall",
+    "cinchsmissingblocks:cracked_andesite_bricks",
+    "cinchsmissingblocks:cracked_andesite_brick_stairs",
+    "cinchsmissingblocks:cracked_andesite_brick_slab",
+    "cinchsmissingblocks:cracked_andesite_brick_wall",
+    "cinchsmissingblocks:mossy_andesite_bricks",
+    "cinchsmissingblocks:mossy_andesite_brick_stairs",
+    "cinchsmissingblocks:mossy_andesite_brick_slab",
+    "cinchsmissingblocks:mossy_andesite_brick_wall"
   ]
 }

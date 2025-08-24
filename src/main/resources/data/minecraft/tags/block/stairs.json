@@ -33,6 +33,8 @@
     "cinchsmissingblocks:dripstone_brick_stairs",
     "cinchsmissingblocks:cracked_dripstone_brick_stairs",
     "cinchsmissingblocks:mossy_dripstone_brick_stairs",
-    "cinchsmissingblocks:andesite_brick_stairs"
+    "cinchsmissingblocks:andesite_brick_stairs",
+    "cinchsmissingblocks:cracked_andesite_brick_stairs",
+    "cinchsmissingblocks:mossy_andesite_brick_stairs"
   ]
 }

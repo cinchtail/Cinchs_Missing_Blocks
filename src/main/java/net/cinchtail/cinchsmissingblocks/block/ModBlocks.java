@@ -447,6 +447,32 @@ public class ModBlocks {
     public static final RegistryObject<Block> ANDESITE_BRICK_WALL = registerBlock("andesite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANDESITE_BRICKS = registerBlock("cracked_andesite_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
+                    .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_ANDESITE_BRICK_STAIRS = registerBlock("cracked_andesite_brick_stairs",
+            () -> new StairBlock(Blocks.POLISHED_ANDESITE.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE).requiresCorrectToolForDrops()
+                            .strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANDESITE_BRICK_SLAB = registerBlock("cracked_andesite_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)
+                    .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANDESITE_BRICK_WALL = registerBlock("cracked_andesite_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)
+                    .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANDESITE_BRICKS = registerBlock("mossy_andesite_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
+                    .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_ANDESITE_BRICK_STAIRS = registerBlock("mossy_andesite_brick_stairs",
+            () -> new StairBlock(Blocks.POLISHED_ANDESITE.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE).requiresCorrectToolForDrops()
+                            .strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANDESITE_BRICK_SLAB = registerBlock("mossy_andesite_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)
+                    .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANDESITE_BRICK_WALL = registerBlock("mossy_andesite_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)
+                    .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
