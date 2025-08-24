@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "cinchsmissingblocks:calcite_bricks"
+    "item": "cinchsmissingblocks:polished_calcite"
   },
   "result": {
     "count": 1,

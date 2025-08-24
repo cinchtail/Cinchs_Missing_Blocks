@@ -129,6 +129,10 @@
     "cinchsmissingblocks:mossy_dripstone_bricks",
     "cinchsmissingblocks:mossy_dripstone_brick_stairs",
     "cinchsmissingblocks:mossy_dripstone_brick_slab",
-    "cinchsmissingblocks:mossy_dripstone_brick_wall"
+    "cinchsmissingblocks:mossy_dripstone_brick_wall",
+    "cinchsmissingblocks:andesite_bricks",
+    "cinchsmissingblocks:andesite_brick_stairs",
+    "cinchsmissingblocks:andesite_brick_slab",
+    "cinchsmissingblocks:andesite_brick_wall"
   ]
 }
