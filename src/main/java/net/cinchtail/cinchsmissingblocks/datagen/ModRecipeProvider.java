@@ -451,7 +451,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CUT_RED_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_STAIRS.get())
                 .unlockedBy("has_cut_red_sandstone", has(Blocks.CUT_RED_SANDSTONE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_red_sandstone_stairs_from_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_red_sandstone_stairs_from_stonecutting_from_cut_red_sandstone"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.RED_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_STAIRS.get())
+                .unlockedBy("has_red_sandstone", has(Blocks.RED_SANDSTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_red_sandstone_stairs_from_stonecutting_from_red_sandstone"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_WALL.get(),6)
                 .pattern("AAA")
@@ -462,7 +466,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CUT_RED_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_WALL.get())
                 .unlockedBy("has_cut_red_sandstone", has(Blocks.CUT_RED_SANDSTONE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_red_sandstone_wall_from_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_red_sandstone_wall_from_stonecutting_from_cut_red_sandstone"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.RED_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_WALL.get())
+                .unlockedBy("has_red_sandstone", has(Blocks.RED_SANDSTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_red_sandstone_wall_from_stonecutting_from_red_sandstone"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_STAIRS.get(),4)
                 .pattern("A  ")
@@ -474,7 +482,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CUT_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_STAIRS.get())
                 .unlockedBy("has_cut_sandstone", has(Blocks.CUT_SANDSTONE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_sandstone_stairs_from_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_sandstone_stairs_from_stonecutting_from_cut_sandstone"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_STAIRS.get())
+                .unlockedBy("has_sandstone", has(Blocks.SANDSTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_sandstone_stairs_from_stonecutting_from_sandstone"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_WALL.get(),6)
                 .pattern("AAA")
@@ -485,7 +497,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CUT_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_WALL.get())
                 .unlockedBy("has_cut_sandstone", has(Blocks.CUT_SANDSTONE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_sandstone_wall_from_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_sandstone_wall_from_stonecutting_from_cut_sandstone"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SANDSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_WALL.get())
+                .unlockedBy("has_sandstone", has(Blocks.SANDSTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cut_sandstone_wall_from_stonecutting_frpm_sandstone"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_PRISMARINE_WALL.get(),6)
                 .pattern("AAA")
@@ -669,7 +685,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.ANDESITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_WALL.get())
                 .unlockedBy("has_andesite_bricks", has(ModBlocks.ANDESITE_BRICKS.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_wall_from_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_wall_from_stonecutting_from_andesite_bricks"));
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.ANDESITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICKS.get())
                 .unlockedBy("has_andesite", has(Blocks.ANDESITE))
@@ -686,10 +702,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.ANDESITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_WALL.get())
                 .unlockedBy("has_andesite", has(Blocks.ANDESITE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_wall_from_stonecutting_from_andesite"));
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_ANDESITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICKS.get())
-                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_bricks_from_stonecutting_from_polished_andesite"));
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_ANDESITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_STAIRS.get())
                 .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
@@ -950,10 +962,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DRIPSTONE_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICK_WALL.get())
                 .unlockedBy("has_dripstone_block", has(Blocks.DRIPSTONE_BLOCK))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "dripstone_brick_wall_from_stonecutting_from_dripstone_block"));
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICKS.get())
-                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "dripstone_bricks_from_stonecutting_from_polished_dripstone"));
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICK_STAIRS.get())
                 .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
@@ -1584,10 +1592,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_WALL.get())
                 .unlockedBy("has_calcite", has(Blocks.CALCITE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "calcite_brick_wall_from_stonecutting_from_calcite"));
-
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICKS.get())
-                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "calcite_bricks_from_stonecutting_from_polished_calcite"));
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_STAIRS.get())
                 .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))

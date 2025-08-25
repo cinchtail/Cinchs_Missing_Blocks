@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cut_sandstone": {
+    "has_cut_red_sandstone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:cut_sandstone"
+            "items": "minecraft:cut_red_sandstone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:cut_sandstone_wall_from_stonecutting"
+        "recipe": "cinchsmissingblocks:cut_red_sandstone_stairs_from_stonecutting_from_cut_red_sandstone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cut_sandstone"
+      "has_cut_red_sandstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:cut_sandstone_wall_from_stonecutting"
+      "cinchsmissingblocks:cut_red_sandstone_stairs_from_stonecutting_from_cut_red_sandstone"
     ]
   }
 }
