@@ -141,6 +141,10 @@
     "cinchsmissingblocks:mossy_andesite_bricks",
     "cinchsmissingblocks:mossy_andesite_brick_stairs",
     "cinchsmissingblocks:mossy_andesite_brick_slab",
-    "cinchsmissingblocks:mossy_andesite_brick_wall"
+    "cinchsmissingblocks:mossy_andesite_brick_wall",
+    "cinchsmissingblocks:granite_bricks",
+    "cinchsmissingblocks:granite_brick_stairs",
+    "cinchsmissingblocks:granite_brick_slab",
+    "cinchsmissingblocks:granite_brick_wall"
   ]
 }

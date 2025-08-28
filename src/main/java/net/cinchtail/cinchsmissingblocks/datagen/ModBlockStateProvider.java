@@ -1,7 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
-import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
@@ -47,6 +46,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ANDESITE_BRICKS);
         blockWithItem(CRACKED_ANDESITE_BRICKS);
         blockWithItem(MOSSY_ANDESITE_BRICKS);
+        blockWithItem(GRANITE_BRICKS);
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);
@@ -80,6 +80,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(ANDESITE_BRICK_SLAB, ANDESITE_BRICKS);
         modSlabBlock(CRACKED_ANDESITE_BRICK_SLAB, CRACKED_ANDESITE_BRICKS);
         modSlabBlock(MOSSY_ANDESITE_BRICK_SLAB, MOSSY_ANDESITE_BRICKS);
+        modSlabBlock(GRANITE_BRICK_SLAB, GRANITE_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -115,6 +116,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(ANDESITE_BRICK_STAIRS, ANDESITE_BRICKS);
         modStairsBlock(CRACKED_ANDESITE_BRICK_STAIRS, CRACKED_ANDESITE_BRICKS);
         modStairsBlock(MOSSY_ANDESITE_BRICK_STAIRS, MOSSY_ANDESITE_BRICKS);
+        modStairsBlock(GRANITE_BRICK_STAIRS, GRANITE_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -159,6 +161,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(ANDESITE_BRICK_WALL, ANDESITE_BRICKS);
         modWallBlock(CRACKED_ANDESITE_BRICK_WALL, CRACKED_ANDESITE_BRICKS);
         modWallBlock(MOSSY_ANDESITE_BRICK_WALL, MOSSY_ANDESITE_BRICKS);
+        modWallBlock(GRANITE_BRICK_WALL, GRANITE_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
