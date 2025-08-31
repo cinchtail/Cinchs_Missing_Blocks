@@ -36,6 +36,8 @@
     "cinchsmissingblocks:andesite_brick_stairs",
     "cinchsmissingblocks:cracked_andesite_brick_stairs",
     "cinchsmissingblocks:mossy_andesite_brick_stairs",
-    "cinchsmissingblocks:granite_brick_stairs"
+    "cinchsmissingblocks:granite_brick_stairs",
+    "cinchsmissingblocks:cracked_granite_brick_stairs",
+    "cinchsmissingblocks:mossy_granite_brick_stairs"
   ]
 }

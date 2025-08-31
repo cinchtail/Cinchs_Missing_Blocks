@@ -33,6 +33,8 @@
     "cinchsmissingblocks:andesite_brick_slab",
     "cinchsmissingblocks:cracked_andesite_brick_slab",
     "cinchsmissingblocks:mossy_andesite_brick_slab",
-    "cinchsmissingblocks:granite_brick_slab"
+    "cinchsmissingblocks:granite_brick_slab",
+    "cinchsmissingblocks:cracked_granite_brick_slab",
+    "cinchsmissingblocks:mossy_granite_brick_slab"
   ]
 }

@@ -47,6 +47,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(CRACKED_ANDESITE_BRICKS);
         blockWithItem(MOSSY_ANDESITE_BRICKS);
         blockWithItem(GRANITE_BRICKS);
+        blockWithItem(CRACKED_GRANITE_BRICKS);
+        blockWithItem(MOSSY_GRANITE_BRICKS);
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);
@@ -81,6 +83,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(CRACKED_ANDESITE_BRICK_SLAB, CRACKED_ANDESITE_BRICKS);
         modSlabBlock(MOSSY_ANDESITE_BRICK_SLAB, MOSSY_ANDESITE_BRICKS);
         modSlabBlock(GRANITE_BRICK_SLAB, GRANITE_BRICKS);
+        modSlabBlock(CRACKED_GRANITE_BRICK_SLAB, CRACKED_GRANITE_BRICKS);
+        modSlabBlock(MOSSY_GRANITE_BRICK_SLAB, MOSSY_GRANITE_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -117,6 +121,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(CRACKED_ANDESITE_BRICK_STAIRS, CRACKED_ANDESITE_BRICKS);
         modStairsBlock(MOSSY_ANDESITE_BRICK_STAIRS, MOSSY_ANDESITE_BRICKS);
         modStairsBlock(GRANITE_BRICK_STAIRS, GRANITE_BRICKS);
+        modStairsBlock(CRACKED_GRANITE_BRICK_STAIRS, CRACKED_GRANITE_BRICKS);
+        modStairsBlock(MOSSY_GRANITE_BRICK_STAIRS, MOSSY_GRANITE_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -162,6 +168,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(CRACKED_ANDESITE_BRICK_WALL, CRACKED_ANDESITE_BRICKS);
         modWallBlock(MOSSY_ANDESITE_BRICK_WALL, MOSSY_ANDESITE_BRICKS);
         modWallBlock(GRANITE_BRICK_WALL, GRANITE_BRICKS);
+        modWallBlock(CRACKED_GRANITE_BRICK_WALL, CRACKED_GRANITE_BRICKS);
+        modWallBlock(MOSSY_GRANITE_BRICK_WALL, MOSSY_GRANITE_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
