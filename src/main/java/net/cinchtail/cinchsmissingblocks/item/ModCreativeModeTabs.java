@@ -92,6 +92,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_WALL.get());
                         output.accept(ModBlocks.POLISHED_DIORITE_WALL.get());
+                        output.accept(ModBlocks.DIORITE_BRICKS.get());
+                        output.accept(ModBlocks.DIORITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.DIORITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.DIORITE_BRICK_WALL.get());
                         output.accept(ModBlocks.QUARTZ_WALL.get());
                         output.accept(ModBlocks.SMOOTH_QUARTZ_WALL.get());
                         output.accept(ModBlocks.QUARTZ_BRICK_STAIRS.get());

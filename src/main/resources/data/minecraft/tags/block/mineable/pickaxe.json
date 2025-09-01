@@ -154,6 +154,10 @@
     "cinchsmissingblocks:mossy_granite_brick_stairs",
     "cinchsmissingblocks:mossy_granite_brick_slab",
     "cinchsmissingblocks:mossy_granite_brick_wall",
-    "cinchsmissingblocks:chiseled_bricks"
+    "cinchsmissingblocks:chiseled_bricks",
+    "cinchsmissingblocks:diorite_bricks",
+    "cinchsmissingblocks:diorite_brick_stairs",
+    "cinchsmissingblocks:diorite_brick_slab",
+    "cinchsmissingblocks:diorite_brick_wall"
   ]
 }

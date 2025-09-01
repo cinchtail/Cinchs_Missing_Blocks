@@ -847,6 +847,79 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_diorite", has(Blocks.DIORITE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_diorite_wall_from_stonecutting_from_diorite"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS.get(),4)
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', Blocks.POLISHED_DIORITE)
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_bricks_from_stonecutting_polished_diorite"));
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.DIORITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_STAIRS.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.DIORITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.DIORITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_WALL.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_wall_from_stonecutting_from_diorite_bricks"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_bricks_from_stonecutting_from_diorite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_STAIRS.get())
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_stairs_from_stonecutting_from_diorite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_slab_from_stonecutting_from_diorite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_WALL.get())
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_wall_from_stonecutting_from_diorite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_STAIRS.get())
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_stairs_from_stonecutting_from_polished_diorite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_slab_from_stonecutting_from_polished_diorite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_WALL.get())
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_wall_from_stonecutting_from_polished_diorite"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE.get(),4)
                 .pattern("AA")
                 .pattern("AA")
