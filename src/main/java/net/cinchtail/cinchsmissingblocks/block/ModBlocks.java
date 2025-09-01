@@ -338,10 +338,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSSY_BRICK_WALL = registerBlock("mossy_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
                     .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CHISELED_BRICKS = registerBlock("chiseled_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(2.0F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Mud Brick Blocks
-    public static final RegistryObject<Block> CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_MUD_BRICKS = registerBlock("cracked_mud_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
                     .sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
@@ -368,6 +368,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSSY_MUD_BRICK_WALL = registerBlock("mossy_mud_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
                     .strength(1.5F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.MUD_BRICKS)));
+    public static final RegistryObject<Block> CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
 
     //Endstone Blocks
     public static final RegistryObject<Block> END_STONE_STAIRS = registerBlock("end_stone_stairs",
