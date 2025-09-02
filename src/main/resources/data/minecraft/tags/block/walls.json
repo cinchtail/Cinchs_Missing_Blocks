@@ -50,6 +50,8 @@
     "cinchsmissingblocks:granite_brick_wall",
     "cinchsmissingblocks:cracked_granite_brick_wall",
     "cinchsmissingblocks:mossy_granite_brick_wall",
-    "cinchsmissingblocks:diorite_brick_wall"
+    "cinchsmissingblocks:diorite_brick_wall",
+    "cinchsmissingblocks:cracked_diorite_brick_wall",
+    "cinchsmissingblocks:mossy_diorite_brick_wall"
   ]
 }

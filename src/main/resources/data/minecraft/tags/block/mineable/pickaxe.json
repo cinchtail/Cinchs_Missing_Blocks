@@ -158,6 +158,14 @@
     "cinchsmissingblocks:diorite_bricks",
     "cinchsmissingblocks:diorite_brick_stairs",
     "cinchsmissingblocks:diorite_brick_slab",
-    "cinchsmissingblocks:diorite_brick_wall"
+    "cinchsmissingblocks:diorite_brick_wall",
+    "cinchsmissingblocks:cracked_diorite_bricks",
+    "cinchsmissingblocks:cracked_diorite_brick_stairs",
+    "cinchsmissingblocks:cracked_diorite_brick_slab",
+    "cinchsmissingblocks:cracked_diorite_brick_wall",
+    "cinchsmissingblocks:mossy_diorite_bricks",
+    "cinchsmissingblocks:mossy_diorite_brick_stairs",
+    "cinchsmissingblocks:mossy_diorite_brick_slab",
+    "cinchsmissingblocks:mossy_diorite_brick_wall"
   ]
 }
