@@ -435,6 +435,8 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(END_STONE).strength(3.0F, 9.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> END_STONE_PILLAR = registerBlock("end_stone_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(END_STONE_BRICKS)));
 
     //Stone Blocks
     public static final RegistryObject<Block> STONE_WALL = registerBlock("stone_wall",

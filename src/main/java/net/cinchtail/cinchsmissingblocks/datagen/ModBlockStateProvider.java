@@ -146,8 +146,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaWallBlock(CALCITE_WALL, Blocks.CALCITE);
         vanillaWallBlock(DRIPSTONE_WALL, Blocks.DRIPSTONE_BLOCK);
         vanillaWallBlock(QUARTZ_BRICK_WALL, Blocks.QUARTZ_BRICKS);
-        vanillaWallBlock(CUT_SANDSTONE_WALL, Blocks.CUT_SANDSTONE);
-        vanillaWallBlock(CUT_RED_SANDSTONE_WALL, Blocks.CUT_RED_SANDSTONE);
         vanillaWallBlock(END_STONE_WALL, Blocks.END_STONE);
         vanillaWallBlock(CRACKED_STONE_BRICK_WALL, Blocks.CRACKED_STONE_BRICKS);
         vanillaWallBlock(CRACKED_DEEPSLATE_BRICK_WALL, Blocks.CRACKED_DEEPSLATE_BRICKS);
@@ -188,6 +186,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
         vanillaFenceBlock(CRACKED_NETHER_BRICK_FENCE, Blocks.CRACKED_NETHER_BRICKS);
         modFenceBlock(CRACKED_RED_NETHER_BRICK_FENCE, CRACKED_RED_NETHER_BRICKS);
+
+        axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
 
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -143,6 +143,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_END_STONE_BRICKS.get());
+                        output.accept(ModBlocks.END_STONE_PILLAR.get());
                         output.accept(ModBlocks.STONE_WALL.get());
                         output.accept(ModBlocks.SMOOTH_STONE_STAIRS.get());
                         output.accept(ModBlocks.SMOOTH_STONE_WALL.get());
