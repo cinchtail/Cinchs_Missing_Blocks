@@ -1420,6 +1420,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_purpur_block", has(Blocks.PURPUR_BLOCK))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "purpur_wall_from_stonecutting"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PURPUR.get())
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.PURPUR_SLAB)
+                .unlockedBy("has_purpur_slab", has(Items.PURPUR_SLAB))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PURPUR_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PURPUR.get())
+                .unlockedBy("has_end_stone", has(Blocks.PURPUR_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_purpur_from_purpur"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")

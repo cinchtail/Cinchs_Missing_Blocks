@@ -591,6 +591,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> PURPUR_WALL = registerBlock("purpur_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(PURPUR_BLOCK)
                     .strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHISELED_PURPUR = registerBlock("chiseled_purpur",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPUR_BLOCK).strength(1.5F, 6.0F)
+                    .sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

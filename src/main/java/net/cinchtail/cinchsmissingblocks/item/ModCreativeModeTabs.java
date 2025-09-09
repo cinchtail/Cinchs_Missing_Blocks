@@ -185,6 +185,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.get());
                         output.accept(ModBlocks.CUT_RED_SANDSTONE_STAIRS.get());
                         output.accept(ModBlocks.CUT_RED_SANDSTONE_WALL.get());
+                        output.accept(ModBlocks.CHISELED_PURPUR.get());
                         output.accept(ModBlocks.PURPUR_WALL.get());
                     }).build());
 
