@@ -212,11 +212,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock((SlabBlock)block.get(), texture.getId(), blockTexture(texture));
     }
     public void vanillaWallBlock(RegistryObject<Block> block, Block texture) {
-        simpleBlockItem(block.get(), models().wallInventory(key(block).toString(), blockTexture(texture)));
+        simpleBlockItem(block.get(), models().wallInventory(key(block).getPath() + "_inventory", blockTexture(texture)));
         wallBlock((WallBlock)block.get(), blockTexture(texture));
     }
     public void modWallBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
-        simpleBlockItem(block.get(), models().wallInventory(key(block).toString(), blockTexture(texture)));
+        simpleBlockItem(block.get(), models().wallInventory(key(block).getPath() + "_inventory", blockTexture(texture)));
         wallBlock((WallBlock) block.get(), blockTexture(texture));
     }
     public void vanillaFenceBlock(RegistryObject<Block> block, Block texture) {
