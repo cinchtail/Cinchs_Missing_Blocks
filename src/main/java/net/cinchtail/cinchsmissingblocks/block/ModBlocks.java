@@ -398,7 +398,7 @@ public class ModBlocks {
                     .sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_MUD_BRICK_STAIRS = registerBlock("mossy_mud_brick_stairs",
             () -> new StairBlock(ModBlocks.MOSSY_MUD_BRICKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(11.5F, 3.0F)
+                    BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(1.5F, 3.0F)
                             .requiresCorrectToolForDrops().sound(SoundType.MUD_BRICKS)));
     public static final RegistryObject<Block> MOSSY_MUD_BRICK_SLAB = registerBlock("mossy_mud_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
