@@ -6,7 +6,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -85,7 +84,7 @@ public class ModBlocks {
 
     //Dripstone Blocks
     public static final RegistryObject<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
-            () -> new StairBlock(STONE_STAIRS.defaultBlockState(),
+            () -> new StairBlock(DRIPSTONE_BLOCK.defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK).strength(1.5F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> DRIPSTONE_SLAB = registerBlock("dripstone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK)
