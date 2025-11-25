@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/mossy_quartz_brick_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/mossy_quartz_bricks"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/mossy_quartz_brick_slab_top"
+    }
+  }
+}

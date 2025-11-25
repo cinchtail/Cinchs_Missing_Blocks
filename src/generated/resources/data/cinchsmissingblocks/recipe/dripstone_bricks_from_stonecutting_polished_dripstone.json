@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinchsmissingblocks:polished_dripstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:dripstone_bricks"
+  }
+}
