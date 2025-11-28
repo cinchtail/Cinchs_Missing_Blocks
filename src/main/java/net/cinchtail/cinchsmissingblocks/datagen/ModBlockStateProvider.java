@@ -93,6 +93,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(DIORITE_BRICK_SLAB, DIORITE_BRICKS);
         modSlabBlock(CRACKED_DIORITE_BRICK_SLAB, CRACKED_DIORITE_BRICKS);
         modSlabBlock(MOSSY_DIORITE_BRICK_SLAB, MOSSY_DIORITE_BRICKS);
+        vanillaSlabBlock(NETHERRACK_SLAB, Blocks.NETHERRACK);
+        vanillaSlabBlock(PACKED_MUD_SLAB, Blocks.PACKED_MUD);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -134,6 +136,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(DIORITE_BRICK_STAIRS, DIORITE_BRICKS);
         modStairsBlock(CRACKED_DIORITE_BRICK_STAIRS, CRACKED_DIORITE_BRICKS);
         modStairsBlock(MOSSY_DIORITE_BRICK_STAIRS, MOSSY_DIORITE_BRICKS);
+        vanillaStairsBlock(NETHERRACK_STAIRS, Blocks.NETHERRACK);
+        vanillaStairsBlock(PACKED_MUD_STAIRS, Blocks.PACKED_MUD);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -182,6 +186,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(DIORITE_BRICK_WALL, DIORITE_BRICKS);
         modWallBlock(CRACKED_DIORITE_BRICK_WALL, CRACKED_DIORITE_BRICKS);
         modWallBlock(MOSSY_DIORITE_BRICK_WALL, MOSSY_DIORITE_BRICKS);
+        vanillaWallBlock(NETHERRACK_WALL, Blocks.NETHERRACK);
+        vanillaWallBlock(PACKED_MUD_WALL, Blocks.PACKED_MUD);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
@@ -190,7 +196,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
-
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

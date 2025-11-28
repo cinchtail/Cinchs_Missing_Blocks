@@ -52,6 +52,8 @@
     "cinchsmissingblocks:mossy_granite_brick_wall",
     "cinchsmissingblocks:diorite_brick_wall",
     "cinchsmissingblocks:cracked_diorite_brick_wall",
-    "cinchsmissingblocks:mossy_diorite_brick_wall"
+    "cinchsmissingblocks:mossy_diorite_brick_wall",
+    "cinchsmissingblocks:netherrack_wall",
+    "cinchsmissingblocks:packed_mud_wall"
   ]
 }

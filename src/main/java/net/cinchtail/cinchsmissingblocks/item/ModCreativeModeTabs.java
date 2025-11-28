@@ -57,6 +57,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_DRIPSTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_DRIPSTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_DRIPSTONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_DRIPSTONE_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICK_SLAB.get());
@@ -126,6 +127,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_BRICKS.get());
+                        output.accept(ModBlocks.PACKED_MUD_STAIRS.get());
+                        output.accept(ModBlocks.PACKED_MUD_SLAB.get());
+                        output.accept(ModBlocks.PACKED_MUD_WALL.get());
                         output.accept(ModBlocks.CRACKED_MUD_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_MUD_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_MUD_BRICK_SLAB.get());
@@ -159,6 +163,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.NETHERRACK_STAIRS.get());
+                        output.accept(ModBlocks.NETHERRACK_SLAB.get());
+                        output.accept(ModBlocks.NETHERRACK_WALL.get());
                         output.accept(ModBlocks.CRACKED_NETHER_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_NETHER_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_NETHER_BRICK_WALL.get());

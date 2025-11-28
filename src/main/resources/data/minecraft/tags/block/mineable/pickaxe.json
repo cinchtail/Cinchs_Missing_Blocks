@@ -168,6 +168,13 @@
     "cinchsmissingblocks:mossy_diorite_brick_slab",
     "cinchsmissingblocks:mossy_diorite_brick_wall",
     "cinchsmissingblocks:end_stone_pillar",
-    "cinchsmissingblocks:chiseled_purpur"
+    "cinchsmissingblocks:chiseled_purpur",
+    "cinchsmissingblocks:netherrack_stairs",
+    "cinchsmissingblocks:netherrack_slab",
+    "cinchsmissingblocks:netherrack_wall",
+    "cinchsmissingblocks:chiseled_dripstone_bricks",
+    "cinchsmissingblocks:packed_mud_stairs",
+    "cinchsmissingblocks:packed_mud_slab",
+    "cinchsmissingblocks:packed_mud_wall"
   ]
 }
