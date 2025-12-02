@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_CALCITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_CALCITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_CALCITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_CALCITE_BRICKS.get());
                         output.accept(ModBlocks.DRIPSTONE_STAIRS.get());
                         output.accept(ModBlocks.DRIPSTONE_SLAB.get());
                         output.accept(ModBlocks.DRIPSTONE_WALL.get());

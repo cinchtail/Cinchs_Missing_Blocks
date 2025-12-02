@@ -2087,6 +2087,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CALCITE_BRICKS.get())
+                .pattern("A")
+                .pattern("A")
+                .define('A', ModBlocks.CALCITE_BRICK_SLAB.get())
+                .unlockedBy("has_calcite_brick_slab", has(ModBlocks.CALCITE_BRICK_SLAB.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CALCITE_BRICKS.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_calcite_bricks_from_stonecutting_calcite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CALCITE_BRICKS.get())
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_calcite_bricks_from_stonecutting_polished_calcite"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CALCITE_BRICKS.get())
+                .unlockedBy("has_calcite_bricks", has(ModBlocks.CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_calcite_bricks_from_stonecutting"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")

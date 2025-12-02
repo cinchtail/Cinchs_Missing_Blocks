@@ -175,6 +175,7 @@
     "cinchsmissingblocks:chiseled_dripstone_bricks",
     "cinchsmissingblocks:packed_mud_stairs",
     "cinchsmissingblocks:packed_mud_slab",
-    "cinchsmissingblocks:packed_mud_wall"
+    "cinchsmissingblocks:packed_mud_wall",
+    "cinchsmissingblocks:chiseled_calcite_bricks"
   ]
 }

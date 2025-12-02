@@ -30,62 +30,66 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
                     .strength(0.75F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> POLISHED_CALCITE = registerBlock("polished_calcite",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> POLISHED_CALCITE_STAIRS = registerBlock("polished_calcite_stairs",
             () -> new StairBlock(ModBlocks.POLISHED_CALCITE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                             .requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> POLISHED_CALCITE_SLAB = registerBlock("polished_calcite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> POLISHED_CALCITE_WALL = registerBlock("polished_calcite_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CALCITE_BRICKS = registerBlock("calcite_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CALCITE_BRICK_STAIRS = registerBlock("calcite_brick_stairs",
             () -> new StairBlock(ModBlocks.POLISHED_CALCITE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                             .requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CALCITE_BRICK_SLAB = registerBlock("calcite_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CALCITE_BRICK_WALL = registerBlock("calcite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CRACKED_CALCITE_BRICKS = registerBlock("cracked_calcite_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_CALCITE_BRICK_STAIRS = registerBlock("cracked_calcite_brick_stairs",
             () -> new StairBlock(ModBlocks.POLISHED_CALCITE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                             .requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CRACKED_CALCITE_BRICK_SLAB = registerBlock("cracked_calcite_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CRACKED_CALCITE_BRICK_WALL = registerBlock("cracked_calcite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> MOSSY_CALCITE_BRICKS = registerBlock("mossy_calcite_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_CALCITE_BRICK_STAIRS = registerBlock("mossy_calcite_brick_stairs",
             () -> new StairBlock(ModBlocks.POLISHED_CALCITE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 4.0F)
+                    BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                             .requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> MOSSY_CALCITE_BRICK_SLAB = registerBlock("mossy_calcite_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> MOSSY_CALCITE_BRICK_WALL = registerBlock("mossy_calcite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
-                    .strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+                    .strength(1F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+    public static final RegistryObject<Block> CHISELED_CALCITE_BRICKS = registerBlock("chiseled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
+                    .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
 
     //Dripstone Blocks
     public static final RegistryObject<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
             () -> new StairBlock(DRIPSTONE_BLOCK.defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK).strength(1.5F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
+                    BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK)
+                            .strength(1.5F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> DRIPSTONE_SLAB = registerBlock("dripstone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK)
                     .strength(1.5F, 1.0F).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
