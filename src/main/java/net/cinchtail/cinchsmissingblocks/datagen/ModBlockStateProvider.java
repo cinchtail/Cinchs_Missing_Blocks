@@ -54,6 +54,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(CRACKED_DIORITE_BRICKS);
         blockWithItem(MOSSY_DIORITE_BRICKS);
         blockWithItem(CHISELED_PURPUR);
+        blockWithItem(CHISELED_ANDESITE_BRICKS);
+        blockWithItem(CHISELED_GRANITE_BRICKS);
+        blockWithItem(CHISELED_DIORITE_BRICKS);
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);

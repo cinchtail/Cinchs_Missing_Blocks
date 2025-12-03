@@ -80,6 +80,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_ANDESITE_BRICKS.get());
                         output.accept(ModBlocks.POLISHED_GRANITE_WALL.get());
                         output.accept(ModBlocks.GRANITE_BRICKS.get());
                         output.accept(ModBlocks.GRANITE_BRICK_STAIRS.get());
@@ -93,6 +94,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_GRANITE_BRICKS.get());
                         output.accept(ModBlocks.POLISHED_DIORITE_WALL.get());
                         output.accept(ModBlocks.DIORITE_BRICKS.get());
                         output.accept(ModBlocks.DIORITE_BRICK_STAIRS.get());
@@ -106,6 +108,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_DIORITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_DIORITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_DIORITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_DIORITE_BRICKS.get());
                         output.accept(ModBlocks.QUARTZ_WALL.get());
                         output.accept(ModBlocks.SMOOTH_QUARTZ_WALL.get());
                         output.accept(ModBlocks.QUARTZ_BRICK_STAIRS.get());
