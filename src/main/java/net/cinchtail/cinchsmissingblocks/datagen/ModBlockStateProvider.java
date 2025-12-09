@@ -57,6 +57,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(CHISELED_ANDESITE_BRICKS);
         blockWithItem(CHISELED_GRANITE_BRICKS);
         blockWithItem(CHISELED_DIORITE_BRICKS);
+        blockWithItem(MOSSY_PRISMARINE_BRICKS);
+
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
         vanillaSlabBlock(DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK);
@@ -98,6 +100,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modSlabBlock(MOSSY_DIORITE_BRICK_SLAB, MOSSY_DIORITE_BRICKS);
         vanillaSlabBlock(NETHERRACK_SLAB, Blocks.NETHERRACK);
         vanillaSlabBlock(PACKED_MUD_SLAB, Blocks.PACKED_MUD);
+        modSlabBlock(MOSSY_PRISMARINE_BRICK_SLAB, MOSSY_PRISMARINE_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -141,6 +144,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(MOSSY_DIORITE_BRICK_STAIRS, MOSSY_DIORITE_BRICKS);
         vanillaStairsBlock(NETHERRACK_STAIRS, Blocks.NETHERRACK);
         vanillaStairsBlock(PACKED_MUD_STAIRS, Blocks.PACKED_MUD);
+        modStairsBlock(MOSSY_PRISMARINE_BRICK_STAIRS, MOSSY_PRISMARINE_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -191,6 +195,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(MOSSY_DIORITE_BRICK_WALL, MOSSY_DIORITE_BRICKS);
         vanillaWallBlock(NETHERRACK_WALL, Blocks.NETHERRACK);
         vanillaWallBlock(PACKED_MUD_WALL, Blocks.PACKED_MUD);
+        modWallBlock(MOSSY_PRISMARINE_BRICK_WALL, MOSSY_PRISMARINE_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);

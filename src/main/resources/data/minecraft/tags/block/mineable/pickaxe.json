@@ -179,6 +179,10 @@
     "cinchsmissingblocks:chiseled_calcite_bricks",
     "cinchsmissingblocks:chiseled_diorite_bricks",
     "cinchsmissingblocks:chiseled_andesite_bricks",
-    "cinchsmissingblocks:chiseled_granite_bricks"
+    "cinchsmissingblocks:chiseled_granite_bricks",
+    "cinchsmissingblocks:mossy_prismarine_bricks",
+    "cinchsmissingblocks:mossy_prismarine_brick_stairs",
+    "cinchsmissingblocks:mossy_prismarine_brick_slab",
+    "cinchsmissingblocks:mossy_prismarine_brick_wall"
   ]
 }

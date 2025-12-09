@@ -177,5 +177,9 @@
   "block.cinchsmissingblocks.netherrack_stairs": "Netherrack Stairs",
   "block.cinchsmissingblocks.packed_mud_wall": "Packed Mud Wall",
   "block.cinchsmissingblocks.packed_mud_slab": "Packed Mud Slab",
-  "block.cinchsmissingblocks.packed_mud_stairs": "Packed Mud Stairs"
+  "block.cinchsmissingblocks.packed_mud_stairs": "Packed Mud Stairs",
+  "block.cinchsmissingblocks.mossy_prismarine_bricks": "Mossy Prismarine Bricks",
+  "block.cinchsmissingblocks.mossy_prismarine_brick_wall": "Mossy Prismarine Brick Wall",
+  "block.cinchsmissingblocks.mossy_prismarine_brick_slab": "Mossy Prismarine Brick Slab",
+  "block.cinchsmissingblocks.mossy_prismarine_brick_stairs": "Mossy Prismarine Brick Stairs"
 }

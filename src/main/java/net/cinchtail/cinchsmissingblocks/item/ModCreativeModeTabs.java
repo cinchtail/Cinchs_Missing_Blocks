@@ -187,6 +187,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CRACKED_PRISMARINE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_PRISMARINE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_PRISMARINE_BRICK_WALL.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_WALL.get());
                         output.accept(ModBlocks.SMOOTH_BASALT_STAIRS.get());
                         output.accept(ModBlocks.SMOOTH_BASALT_SLAB.get());
                         output.accept(ModBlocks.SMOOTH_BASALT_WALL.get());
