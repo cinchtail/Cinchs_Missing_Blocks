@@ -1819,14 +1819,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
                 .group("mossy_prismarine_bricks")
-                .requires(Blocks.MUD_BRICKS)
+                .requires(Blocks.PRISMARINE_BRICKS)
                 .requires(Blocks.MOSS_BLOCK)
                 .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_moss_block"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
                 .group("mossy_prismarine_bricks")
-                .requires(Blocks.MUD_BRICKS)
+                .requires(Blocks.PRISMARINE_BRICKS)
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_vine"));
