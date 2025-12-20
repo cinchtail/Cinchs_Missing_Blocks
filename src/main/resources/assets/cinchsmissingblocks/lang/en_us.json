@@ -85,6 +85,7 @@
   "block.cinchsmissingblocks.mossy_dripstone_brick_wall": "Mossy Dripstone Brick Wall",
   "block.cinchsmissingblocks.mossy_dripstone_brick_slab": "Mossy Dripstone Brick Slab",
   "block.cinchsmissingblocks.mossy_dripstone_brick_stairs": "Mossy Dripstone Brick Stairs",
+  "block.cinchsmissingblocks.chiseled_dripstone_bricks": "Chiseled Dripstone Bricks",
   "block.cinchsmissingblocks.chiseled_mud_bricks": "Chiseled Mud Bricks",
   "block.cinchsmissingblocks.cracked_mud_bricks": "Cracked Mud Bricks",
   "block.cinchsmissingblocks.mossy_mud_bricks": "Mossy Mud Bricks",
@@ -167,6 +168,18 @@
   "block.cinchsmissingblocks.mossy_calcite_brick_wall": "Mossy Calcite Brick Wall",
   "block.cinchsmissingblocks.mossy_calcite_brick_slab": "Mossy Calcite Brick Slab",
   "block.cinchsmissingblocks.mossy_calcite_brick_stairs": "Mossy Calcite Brick Stairs",
-
-  "itemgroup.cinchsmissingblocks": "Cinch's Better Deepslate Tab"
+  "block.cinchsmissingblocks.chiseled_calcite_bricks": "Chiseled Calcite Bricks",
+  "block.cinchsmissingblocks.chiseled_diorite_bricks": "Chiseled Diorite Bricks",
+  "block.cinchsmissingblocks.chiseled_andesite_bricks": "Chiseled Andesite Bricks",
+  "block.cinchsmissingblocks.chiseled_granite_bricks": "Chiseled Granite Bricks",
+  "block.cinchsmissingblocks.netherrack_wall": "Netherrack Wall",
+  "block.cinchsmissingblocks.netherrack_slab": "Netherrack Slab",
+  "block.cinchsmissingblocks.netherrack_stairs": "Netherrack Stairs",
+  "block.cinchsmissingblocks.packed_mud_wall": "Packed Mud Wall",
+  "block.cinchsmissingblocks.packed_mud_slab": "Packed Mud Slab",
+  "block.cinchsmissingblocks.packed_mud_stairs": "Packed Mud Stairs",
+  "block.cinchsmissingblocks.mossy_prismarine_bricks": "Mossy Prismarine Bricks",
+  "block.cinchsmissingblocks.mossy_prismarine_brick_wall": "Mossy Prismarine Brick Wall",
+  "block.cinchsmissingblocks.mossy_prismarine_brick_slab": "Mossy Prismarine Brick Slab",
+  "block.cinchsmissingblocks.mossy_prismarine_brick_stairs": "Mossy Prismarine Brick Stairs"
 }

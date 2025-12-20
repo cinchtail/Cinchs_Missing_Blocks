@@ -22,53 +22,57 @@ public class ModBlocks {
             new WallBlock(Block.Settings.copy(Blocks.CALCITE)
                     .strength(0.75F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block POLISHED_CALCITE = registerBlock("polished_calcite",
-            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 4.0F)
+            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sounds(BlockSoundGroup.CALCITE)));
     public static final Block POLISHED_CALCITE_STAIRS = registerBlock("polished_calcite_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(), Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block POLISHED_CALCITE_SLAB = registerBlock("polished_calcite_slab",
             new SlabBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block POLISHED_CALCITE_WALL = registerBlock("polished_calcite_wall",
             new WallBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
-            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 4.0F)
+            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sounds(BlockSoundGroup.CALCITE)));
     public static final Block CALCITE_BRICK_STAIRS = registerBlock("calcite_brick_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(), Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block CALCITE_BRICK_SLAB = registerBlock("calcite_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block CALCITE_BRICK_WALL = registerBlock("calcite_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block CRACKED_CALCITE_BRICKS = registerBlock("cracked_calcite_bricks",
-            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 4.0F)
+            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sounds(BlockSoundGroup.CALCITE)));
     public static final Block CRACKED_CALCITE_BRICK_STAIRS = registerBlock("cracked_calcite_brick_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(), Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block CRACKED_CALCITE_BRICK_SLAB = registerBlock("cracked_calcite_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block CRACKED_CALCITE_BRICK_WALL = registerBlock("cracked_calcite_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block MOSSY_CALCITE_BRICKS = registerBlock("mossy_calcite_bricks",
-            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 4.0F)
+            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sounds(BlockSoundGroup.CALCITE)));
     public static final Block MOSSY_CALCITE_BRICK_STAIRS = registerBlock("mossy_calcite_brick_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(), Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block MOSSY_CALCITE_BRICK_SLAB = registerBlock("mossy_calcite_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
     public static final Block MOSSY_CALCITE_BRICK_WALL = registerBlock("mossy_calcite_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.CALCITE)
-                    .strength(1F, 4.0F).sounds(BlockSoundGroup.CALCITE)));
+                    .strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)));
+    public static final Block CHISELED_CALCITE_BRICKS = registerBlock("chiseled_calcite_bricks",
+            new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
+                    .sounds(BlockSoundGroup.CALCITE)));
+
 
     //Dripstone Blocks
     public static final Block DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
@@ -128,6 +132,9 @@ public class ModBlocks {
     public static final Block MOSSY_DRIPSTONE_BRICK_WALL = registerBlock("mossy_dripstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
+    public static final Block CHISELED_DRIPSTONE_BRICKS = registerBlock("chiseled_dripstone_bricks",
+            new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
+                    .sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
 
     //Tuff Blocks
     public static final Block CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
@@ -195,6 +202,9 @@ public class ModBlocks {
     public static final Block MOSSY_ANDESITE_BRICK_WALL = registerBlock("mossy_andesite_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CHISELED_ANDESITE_BRICKS = registerBlock("chiseled_andesite_bricks",
+            new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
 
     //Granite Blocks
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -236,6 +246,9 @@ public class ModBlocks {
     public static final Block MOSSY_GRANITE_BRICK_WALL = registerBlock("mossy_granite_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.POLISHED_GRANITE)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CHISELED_GRANITE_BRICKS = registerBlock("chiseled_granite_bricks",
+            new Block(Block.Settings.copy(Blocks.POLISHED_GRANITE).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
 
 
     //Diorite Blocks
@@ -277,6 +290,9 @@ public class ModBlocks {
     public static final Block MOSSY_DIORITE_BRICK_WALL = registerBlock("mossy_diorite_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.POLISHED_DIORITE)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CHISELED_DIORITE_BRICKS = registerBlock("chiseled_diorite_bricks",
+            new Block(Block.Settings.copy(Blocks.POLISHED_DIORITE).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
 
     //Quartz Blocks
     public static final Block QUARTZ_WALL = registerBlock("quartz_wall",
@@ -347,6 +363,15 @@ public class ModBlocks {
             new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
     //Mud Brick Blocks
+    public static final Block PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
+            new StairsBlock(Blocks.MUD_BRICKS.getDefaultState(),
+                    Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.0F, 3.0F).sounds(BlockSoundGroup.PACKED_MUD)));
+    public static final Block PACKED_MUD_SLAB = registerBlock("packed_mud_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.MUD_BRICKS)
+                    .strength(1.0F, 3.0F).sounds(BlockSoundGroup.PACKED_MUD)));
+    public static final Block PACKED_MUD_WALL = registerBlock("packed_mud_wall",
+            new WallBlock(Block.Settings.copy(Blocks.MUD_BRICKS)
+                    .strength(1.0F, 3.0F).sounds(BlockSoundGroup.PACKED_MUD)));
     public static final Block CRACKED_MUD_BRICKS = registerBlock("cracked_mud_bricks",
             new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
                     .sounds(BlockSoundGroup.MUD_BRICKS)));
@@ -454,6 +479,18 @@ public class ModBlocks {
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)));
 
+    //Netherrack
+    public static final Block NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
+            new StairsBlock(Blocks.NETHERRACK.getDefaultState(),
+                    Block.Settings.copy(Blocks.NETHERRACK).strength(0.4F)
+                            .sounds(BlockSoundGroup.NETHERRACK)));
+    public static final Block NETHERRACK_SLAB = registerBlock("netherrack_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.NETHERRACK)
+                    .strength(0.4F).sounds(BlockSoundGroup.NETHERRACK)));
+    public static final Block NETHERRACK_WALL = registerBlock("netherrack_wall",
+            new WallBlock(Block.Settings.copy(Blocks.NETHERRACK)
+                    .strength(0.4F).sounds(BlockSoundGroup.NETHERRACK)));
+
     //Nether Bricks
     public static final Block CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             new StairsBlock(Blocks.NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.NETHER_BRICKS)
@@ -508,6 +545,18 @@ public class ModBlocks {
             new SlabBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_PRISMARINE_BRICK_WALL = registerBlock("cracked_prismarine_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_PRISMARINE_BRICKS = registerBlock("mossy_prismarine_bricks",
+            new Block(Block.Settings.copy(Blocks.PRISMARINE_BRICKS).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_PRISMARINE_BRICK_STAIRS = registerBlock("mossy_prismarine_brick_stairs",
+            new StairsBlock(Blocks.PRISMARINE_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_PRISMARINE_BRICK_SLAB = registerBlock("mossy_prismarine_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_PRISMARINE_BRICK_WALL = registerBlock("mossy_prismarine_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
 

@@ -168,6 +168,21 @@
     "cinchsmissingblocks:mossy_diorite_brick_slab",
     "cinchsmissingblocks:mossy_diorite_brick_wall",
     "cinchsmissingblocks:end_stone_pillar",
-    "cinchsmissingblocks:chiseled_purpur"
+    "cinchsmissingblocks:chiseled_purpur",
+    "cinchsmissingblocks:netherrack_stairs",
+    "cinchsmissingblocks:netherrack_slab",
+    "cinchsmissingblocks:netherrack_wall",
+    "cinchsmissingblocks:chiseled_dripstone_bricks",
+    "cinchsmissingblocks:packed_mud_stairs",
+    "cinchsmissingblocks:packed_mud_slab",
+    "cinchsmissingblocks:packed_mud_wall",
+    "cinchsmissingblocks:chiseled_calcite_bricks",
+    "cinchsmissingblocks:chiseled_diorite_bricks",
+    "cinchsmissingblocks:chiseled_andesite_bricks",
+    "cinchsmissingblocks:chiseled_granite_bricks",
+    "cinchsmissingblocks:mossy_prismarine_bricks",
+    "cinchsmissingblocks:mossy_prismarine_brick_stairs",
+    "cinchsmissingblocks:mossy_prismarine_brick_slab",
+    "cinchsmissingblocks:mossy_prismarine_brick_wall"
   ]
 }

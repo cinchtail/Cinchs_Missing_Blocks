@@ -41,6 +41,9 @@
     "cinchsmissingblocks:mossy_granite_brick_stairs",
     "cinchsmissingblocks:diorite_brick_stairs",
     "cinchsmissingblocks:cracked_diorite_brick_stairs",
-    "cinchsmissingblocks:mossy_diorite_brick_stairs"
+    "cinchsmissingblocks:mossy_diorite_brick_stairs",
+    "cinchsmissingblocks:netherrack_stairs",
+    "cinchsmissingblocks:packed_mud_stairs",
+    "cinchsmissingblocks:mossy_prismarine_brick_stairs"
   ]
 }

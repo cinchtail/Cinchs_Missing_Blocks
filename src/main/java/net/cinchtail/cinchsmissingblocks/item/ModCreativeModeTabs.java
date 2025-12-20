@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_CALCITE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_CALCITE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_CALCITE_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_CALCITE_BRICKS);
                         entries.add(ModBlocks.DRIPSTONE_STAIRS);
                         entries.add(ModBlocks.DRIPSTONE_SLAB);
                         entries.add(ModBlocks.DRIPSTONE_WALL);
@@ -53,6 +54,7 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_DRIPSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_DRIPSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_DRIPSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_DRIPSTONE_BRICKS);
                         entries.add(ModBlocks.CRACKED_TUFF_BRICKS);
                         entries.add(ModBlocks.CRACKED_TUFF_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_TUFF_BRICK_SLAB);
@@ -74,6 +76,7 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_ANDESITE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_ANDESITE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_ANDESITE_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_ANDESITE_BRICKS);
                         entries.add(ModBlocks.POLISHED_GRANITE_WALL);
                         entries.add(ModBlocks.GRANITE_BRICKS);
                         entries.add(ModBlocks.GRANITE_BRICK_STAIRS);
@@ -87,6 +90,7 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_GRANITE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_GRANITE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_GRANITE_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_GRANITE_BRICKS);
                         entries.add(ModBlocks.POLISHED_DIORITE_WALL);
                         entries.add(ModBlocks.DIORITE_BRICKS);
                         entries.add(ModBlocks.DIORITE_BRICK_STAIRS);
@@ -100,6 +104,7 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_DIORITE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_DIORITE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_DIORITE_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_DIORITE_BRICKS);
                         entries.add(ModBlocks.QUARTZ_WALL);
                         entries.add(ModBlocks.SMOOTH_QUARTZ_WALL);
                         entries.add(ModBlocks.QUARTZ_BRICK_STAIRS);
@@ -122,6 +127,9 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_BRICKS);
+                        entries.add(ModBlocks.PACKED_MUD_STAIRS);
+                        entries.add(ModBlocks.PACKED_MUD_SLAB);
+                        entries.add(ModBlocks.PACKED_MUD_WALL);
                         entries.add(ModBlocks.CRACKED_MUD_BRICKS);
                         entries.add(ModBlocks.CRACKED_MUD_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_MUD_BRICK_SLAB);
@@ -155,6 +163,9 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.NETHERRACK_STAIRS);
+                        entries.add(ModBlocks.NETHERRACK_SLAB);
+                        entries.add(ModBlocks.NETHERRACK_WALL);
                         entries.add(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_NETHER_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_NETHER_BRICK_WALL);
@@ -172,6 +183,10 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.CRACKED_PRISMARINE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_PRISMARINE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_PRISMARINE_BRICK_WALL);
+                        entries.add(ModBlocks.MOSSY_PRISMARINE_BRICKS);
+                        entries.add(ModBlocks.MOSSY_PRISMARINE_BRICK_STAIRS);
+                        entries.add(ModBlocks.MOSSY_PRISMARINE_BRICK_SLAB);
+                        entries.add(ModBlocks.MOSSY_PRISMARINE_BRICK_WALL);
                         entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
                         entries.add(ModBlocks.SMOOTH_BASALT_WALL);

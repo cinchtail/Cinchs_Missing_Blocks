@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "parent": "cinchsmissingblocks:block/two_texture_template_wall_side",
   "textures": {
     "top": "minecraft:block/sandstone_top",
