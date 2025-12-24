@@ -38,6 +38,9 @@
     "cinchsmissingblocks:mossy_granite_brick_slab",
     "cinchsmissingblocks:diorite_brick_slab",
     "cinchsmissingblocks:cracked_diorite_brick_slab",
-    "cinchsmissingblocks:mossy_diorite_brick_slab"
+    "cinchsmissingblocks:mossy_diorite_brick_slab",
+    "cinchsmissingblocks:netherrack_slabs",
+    "cinchsmissingblocks:packed_mud_slab",
+    "cinchsmissingblocks:mossy_prismarine_brick_slab"
   ]
 }

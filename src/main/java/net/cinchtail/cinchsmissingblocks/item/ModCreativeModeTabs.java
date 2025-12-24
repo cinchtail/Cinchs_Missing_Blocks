@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_CALCITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_CALCITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_CALCITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_CALCITE_BRICKS.get());
                         output.accept(ModBlocks.DRIPSTONE_STAIRS.get());
                         output.accept(ModBlocks.DRIPSTONE_SLAB.get());
                         output.accept(ModBlocks.DRIPSTONE_WALL.get());
@@ -57,6 +58,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_DRIPSTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_DRIPSTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_DRIPSTONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_DRIPSTONE_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_TUFF_BRICK_SLAB.get());
@@ -78,6 +80,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_ANDESITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_ANDESITE_BRICKS.get());
                         output.accept(ModBlocks.POLISHED_GRANITE_WALL.get());
                         output.accept(ModBlocks.GRANITE_BRICKS.get());
                         output.accept(ModBlocks.GRANITE_BRICK_STAIRS.get());
@@ -91,6 +94,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_GRANITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_GRANITE_BRICKS.get());
                         output.accept(ModBlocks.POLISHED_DIORITE_WALL.get());
                         output.accept(ModBlocks.DIORITE_BRICKS.get());
                         output.accept(ModBlocks.DIORITE_BRICK_STAIRS.get());
@@ -104,6 +108,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_DIORITE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_DIORITE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_DIORITE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHISELED_DIORITE_BRICKS.get());
                         output.accept(ModBlocks.QUARTZ_WALL.get());
                         output.accept(ModBlocks.SMOOTH_QUARTZ_WALL.get());
                         output.accept(ModBlocks.QUARTZ_BRICK_STAIRS.get());
@@ -126,6 +131,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_BRICKS.get());
+                        output.accept(ModBlocks.PACKED_MUD_STAIRS.get());
+                        output.accept(ModBlocks.PACKED_MUD_SLAB.get());
+                        output.accept(ModBlocks.PACKED_MUD_WALL.get());
                         output.accept(ModBlocks.CRACKED_MUD_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_MUD_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_MUD_BRICK_SLAB.get());
@@ -159,6 +167,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.NETHERRACK_STAIRS.get());
+                        output.accept(ModBlocks.NETHERRACK_SLAB.get());
+                        output.accept(ModBlocks.NETHERRACK_WALL.get());
                         output.accept(ModBlocks.CRACKED_NETHER_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_NETHER_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_NETHER_BRICK_WALL.get());
@@ -176,6 +187,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CRACKED_PRISMARINE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_PRISMARINE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_PRISMARINE_BRICK_WALL.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_WALL.get());
                         output.accept(ModBlocks.SMOOTH_BASALT_STAIRS.get());
                         output.accept(ModBlocks.SMOOTH_BASALT_SLAB.get());
                         output.accept(ModBlocks.SMOOTH_BASALT_WALL.get());

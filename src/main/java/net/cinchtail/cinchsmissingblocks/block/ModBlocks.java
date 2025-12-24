@@ -15,7 +15,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 import static net.minecraft.world.level.block.Blocks.*;
 
@@ -66,6 +65,9 @@ public class ModBlocks {
             (properties) -> new SlabBlock(properties.strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> MOSSY_CALCITE_BRICK_WALL = registerBlock("mossy_calcite_brick_wall",
             (properties) -> new WallBlock(properties.strength(1F, 4.0F).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+    public static final RegistryObject<Block> CHISELED_CALCITE_BRICKS = registerBlock("chiseled_calcite_bricks",
+            (properties) -> new Block(properties.strength(1F, 1.0F)
+                    .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
 
     //Dripstone Blocks
     public static final RegistryObject<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
@@ -111,6 +113,9 @@ public class ModBlocks {
             (properties) -> new SlabBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> MOSSY_DRIPSTONE_BRICK_WALL = registerBlock("mossy_dripstone_brick_wall",
             (properties) -> new WallBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
+    public static final RegistryObject<Block> CHISELED_DRIPSTONE_BRICKS = registerBlock("chiseled_dripstone_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 1.0F).sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops()));
+
 
     //Tuff Blocks
     public static final RegistryObject<Block> CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
@@ -161,8 +166,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSSY_ANDESITE_BRICK_SLAB = registerBlock("mossy_andesite_brick_slab",
             (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MOSSY_ANDESITE_BRICK_WALL = registerBlock("mossy_andesite_brick_wall",
-            (properties) -> new WallBlock(properties
-                    .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+            (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CHISELED_ANDESITE_BRICKS = registerBlock("chiseled_andesite_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Granite Blocks
     public static final RegistryObject<Block> POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -194,7 +200,8 @@ public class ModBlocks {
             (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MOSSY_GRANITE_BRICK_WALL = registerBlock("mossy_granite_brick_wall",
             (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
-
+    public static final RegistryObject<Block> CHISELED_GRANITE_BRICKS = registerBlock("chiseled_granite_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Diorite Blocks
     public static final RegistryObject<Block> POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
@@ -226,6 +233,8 @@ public class ModBlocks {
             (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MOSSY_DIORITE_BRICK_WALL = registerBlock("mossy_diorite_brick_wall",
             (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CHISELED_DIORITE_BRICKS = registerBlock("chiseled_diorite_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Quartz Blocks
     public static final RegistryObject<Block> QUARTZ_WALL = registerBlock("quartz_wall",
@@ -281,6 +290,13 @@ public class ModBlocks {
             (properties) -> new Block(properties.strength(2.0F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Mud Brick Blocks
+    public static final RegistryObject<Block> PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
+            (properties) -> new StairBlock(Blocks.PACKED_MUD.defaultBlockState(),
+                    properties.requiresCorrectToolForDrops().strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
+    public static final RegistryObject<Block> PACKED_MUD_SLAB = registerBlock("packed_mud_slab",
+            (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
+    public static final RegistryObject<Block> PACKED_MUD_WALL = registerBlock("packed_mud_wall",
+            (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
     public static final RegistryObject<Block> CRACKED_MUD_BRICKS = registerBlock("cracked_mud_bricks",
             (properties) -> new Block(properties.strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_MUD_BRICK_STAIRS = registerBlock("cracked_mud_brick_stairs",
@@ -365,6 +381,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
 
+    //Netherrack
+    public static final RegistryObject<Block> NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
+            (properties) -> new StairBlock(Blocks.NETHERRACK.defaultBlockState(),
+                    properties.requiresCorrectToolForDrops().strength(0.4F).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> NETHERRACK_SLAB = registerBlock("netherrack_slab",
+            (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(0.4F).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> NETHERRACK_WALL = registerBlock("netherrack_wall",
+            (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(0.4F).sound(SoundType.NETHERRACK)));
+
     //Nether Bricks
     public static final RegistryObject<Block> CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             (properties) -> new StairBlock(Blocks.NETHER_BRICKS.defaultBlockState(),
@@ -406,6 +431,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_PRISMARINE_BRICK_SLAB = registerBlock("cracked_prismarine_brick_slab",
             (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CRACKED_PRISMARINE_BRICK_WALL = registerBlock("cracked_prismarine_brick_wall",
+            (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_PRISMARINE_BRICKS = registerBlock("mossy_prismarine_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_PRISMARINE_BRICK_STAIRS = registerBlock("mossy_prismarine_brick_stairs",
+            (properties) -> new StairBlock(PRISMARINE_BRICKS.defaultBlockState(), properties.requiresCorrectToolForDrops()
+                            .strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_PRISMARINE_BRICK_SLAB = registerBlock("mossy_prismarine_brick_slab",
+            (properties) -> new SlabBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_PRISMARINE_BRICK_WALL = registerBlock("mossy_prismarine_brick_wall",
             (properties) -> new WallBlock(properties.requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Smooth Basalt
