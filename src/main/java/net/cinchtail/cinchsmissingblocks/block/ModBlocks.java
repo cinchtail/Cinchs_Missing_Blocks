@@ -648,4 +648,4 @@ public class ModBlocks {
         ModItems.ITEMS.register(name, () -> new BlockItem(blockReg.get(), new Item.Properties()));
         return blockReg;
     }
-} //test
+}
