@@ -221,46 +221,60 @@ public class ModBlocks {
     //Andesite Blocks
     public static final Block POLISHED_ANDESITE_WALL = registerBlock("polished_andesite_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F)));
+                    .strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "polished_andesite_wall")))));
     public static final Block ANDESITE_BRICKS = registerBlock("andesite_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "andesite_bricks")))));
     public static final Block ANDESITE_BRICK_STAIRS = registerBlock("andesite_brick_stairs",
             properties -> new StairsBlock(Blocks.POLISHED_ANDESITE.getDefaultState(), Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                            .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                            .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "andesite_brick_stairs")))));
     public static final Block ANDESITE_BRICK_SLAB = registerBlock("andesite_brick_slab",
             properties -> new SlabBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "andesite_brick_slab")))));
     public static final Block ANDESITE_BRICK_WALL = registerBlock("andesite_brick_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "andesite_brick_wall")))));
     public static final Block CRACKED_ANDESITE_BRICKS = registerBlock("cracked_andesite_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_andesite_bricks")))));
     public static final Block CRACKED_ANDESITE_BRICK_STAIRS = registerBlock("cracked_andesite_brick_stairs",
             properties -> new StairsBlock(Blocks.POLISHED_ANDESITE.getDefaultState(), Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                            .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                            .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_andesite_brick_stairs")))));
     public static final Block CRACKED_ANDESITE_BRICK_SLAB = registerBlock("cracked_andesite_brick_slab",
             properties -> new SlabBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_andesite_brick_slab")))));
     public static final Block CRACKED_ANDESITE_BRICK_WALL = registerBlock("cracked_andesite_brick_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_andesite_brick_wall")))));
     public static final Block MOSSY_ANDESITE_BRICKS = registerBlock("mossy_andesite_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_andesite_bricks")))));
     public static final Block MOSSY_ANDESITE_BRICK_STAIRS = registerBlock("mossy_andesite_brick_stairs",
             properties -> new StairsBlock(Blocks.POLISHED_ANDESITE.getDefaultState(), Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                            .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                            .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_stairs")))));
     public static final Block MOSSY_ANDESITE_BRICK_SLAB = registerBlock("mossy_andesite_brick_slab",
             properties -> new SlabBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_slab")))));
     public static final Block MOSSY_ANDESITE_BRICK_WALL = registerBlock("mossy_andesite_brick_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE)
-                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_wall")))));
     public static final Block CHISELED_ANDESITE_BRICKS = registerBlock("chiseled_andesite_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
-                    .sounds(BlockSoundGroup.STONE)));
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_andesite_bricks")))));
 
     //Granite Blocks
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
