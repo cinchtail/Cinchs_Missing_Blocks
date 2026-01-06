@@ -274,7 +274,6 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
-
     //Diorite Blocks
     public static final RegistryObject<Block> POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(POLISHED_DIORITE)
@@ -392,7 +391,8 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
                     .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CHISELED_BRICKS = registerBlock("chiseled_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(2.0F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Mud Brick Blocks
     public static final RegistryObject<Block> PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
