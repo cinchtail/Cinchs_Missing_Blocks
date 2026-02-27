@@ -3,9 +3,7 @@
   "category": "building",
   "key": {
     "#": [
-      {
-        "item": "minecraft:sandstone"
-      }
+      "minecraft:red_sandstone"
     ]
   },
   "pattern": [
@@ -15,6 +13,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:sandstone_stairs"
+    "id": "minecraft:red_sandstone_stairs"
   }
 }
