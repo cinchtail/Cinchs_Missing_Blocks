@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> MISSING_BLOCKS_TAB = CREATIVE_MODE_TABS.register("missing_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS.get()))
-                    .title(Component.translatable("creativetab.cinchsmissingblocks.cinchs_missing_blocks"))
+                    .title(Component.translatable("creativetab.cinchsmissingblocks"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.CALCITE_STAIRS.get());
