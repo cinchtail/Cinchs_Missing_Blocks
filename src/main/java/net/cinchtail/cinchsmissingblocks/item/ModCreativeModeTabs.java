@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
             CinchsMissingBlocks.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> MISSING_BLOCKS_TAB = CREATIVE_MODE_TABS.register("missing_blocks_blocks",
+    public static final RegistryObject<CreativeModeTab> MISSING_BLOCKS_TAB = CREATIVE_MODE_TABS.register("missing_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS.get()))
                     .title(Component.translatable("creativetab.cinchsmissingblocks.cinchs_missing_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
