@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": "cinchsmissingblocks:mossy_tuff_bricks"
+  },
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cinchsmissingblocks:mossy_tuff_brick_stairs"
+  }
+}
