@@ -433,7 +433,8 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "smooth_quartz_wall")))));
     public static final DeferredBlock<Block> QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
             () -> new StairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).strength(0.8F).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).strength(0.8F)
+                            .requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "quartz_brick_stairs")))));
     public static final DeferredBlock<Block> QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK)

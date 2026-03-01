@@ -22,7 +22,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id + "-[NeoForge-1.21.4-1.21.5]"
+    archivesName = mod_id + "-[NeoForge-1.21.4-1.21.10]"
 }
 
 // Mojang ships Java 21 to end users in 1.21.4, so mods should target Java 21.

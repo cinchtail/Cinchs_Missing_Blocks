@@ -16,7 +16,7 @@ import java.util.Set;
 public class ModCreativeModeTabs {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CinchsMissingBlocks.MOD_ID);
 
-    public static String CINCHSMISSINGBLOCKS_TAB_TITLE = "cinchsmissingblocks.tab";
+    public static String CINCHSMISSINGBLOCKS_TAB_TITLE = "itemgroup.cinchsmissingblocks";
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CINCHSMISSINGBLOCKS_TAB = CREATIVE_MODE_TABS.register("cinchsmissingblocks_tab", () -> {
         CreativeModeTab.Builder builder = CreativeModeTab.builder();
@@ -29,12 +29,9 @@ public class ModCreativeModeTabs {
                     .map((block) -> block.get().asItem())
                     .filter(addedItems::add)
                     .forEach(output::accept);
-
         });
-
         builder.icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS.get()));
         builder.title(Component.translatable(CINCHSMISSINGBLOCKS_TAB_TITLE));
-
         return builder.build();
     });
 }
