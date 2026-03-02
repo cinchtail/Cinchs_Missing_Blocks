@@ -11,7 +11,7 @@
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-missing-blocks",
 		"sources": "https://github.com/cinchtail/Cinchs_Missing_Blocks/tree/Fabric-1.21.1"
 	},
-	"license": "MIT",
+	"license": "All Rights Reserved",
 	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -24,8 +24,5 @@
 		"minecraft": ["1.21","1.21.1"],
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
