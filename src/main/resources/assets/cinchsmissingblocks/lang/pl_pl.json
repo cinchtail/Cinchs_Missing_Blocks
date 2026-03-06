@@ -182,6 +182,11 @@
   "block.cinchsmissingblocks.mossy_prismarine_brick_wall": "Zamszony pryzmarynowy ceglany murek",
   "block.cinchsmissingblocks.mossy_prismarine_brick_slab": "Zamszona pryzmarynowa ceglana płyta",
   "block.cinchsmissingblocks.mossy_prismarine_brick_stairs": "Zamszone pryzmarynowe ceglane schody",
+  "block.cinchsmissingblocks.chiseled_prismarine_bricks": "Chiseled Prismarine Bricks",
+  "block.cinchsmissingblocks.snow_bricks": "Snow Bricks",
+  "block.cinchsmissingblocks.snow_brick_wall": "Snow Brick Wall",
+  "block.cinchsmissingblocks.snow_brick_slab": "Snow Brick Slab",
+  "block.cinchsmissingblocks.snow_brick_stairs": "Snow Brick Stairs",
 
   "itemgroup.cinchsmissingblocks": "Cinch's Missing Blocks"
 }

@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -58,6 +59,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(CHISELED_GRANITE_BRICKS);
         blockWithItem(CHISELED_DIORITE_BRICKS);
         blockWithItem(MOSSY_PRISMARINE_BRICKS);
+        blockWithItem(SNOW_BRICKS);
+        blockWithItem(CHISELED_PRISMARINE_BRICKS);
 
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
@@ -65,8 +68,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaSlabBlock(QUARTZ_BRICK_SLAB, Blocks.QUARTZ_BRICKS);
         vanillaSlabBlock(END_STONE_SLAB, Blocks.END_STONE);
         modSlabBlock(MOSSY_MUD_BRICK_SLAB, MOSSY_MUD_BRICKS);
-        modSlabBlock(POLISHED_CALCITE_SLAB, POLISHED_CALCITE);
-        modSlabBlock(POLISHED_DRIPSTONE_SLAB, POLISHED_DRIPSTONE);
         vanillaSlabBlock(CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS);
         vanillaSlabBlock(CRACKED_DEEPSLATE_BRICK_SLAB, Blocks.CRACKED_DEEPSLATE_BRICKS);
         vanillaSlabBlock(CRACKED_DEEPSLATE_TILE_SLAB, Blocks.CRACKED_DEEPSLATE_TILES);
@@ -101,6 +102,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaSlabBlock(NETHERRACK_SLAB, Blocks.NETHERRACK);
         vanillaSlabBlock(PACKED_MUD_SLAB, Blocks.PACKED_MUD);
         modSlabBlock(MOSSY_PRISMARINE_BRICK_SLAB, MOSSY_PRISMARINE_BRICKS);
+        modSlabBlock(SNOW_BRICK_SLAB, SNOW_BRICKS);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -145,6 +147,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaStairsBlock(NETHERRACK_STAIRS, Blocks.NETHERRACK);
         vanillaStairsBlock(PACKED_MUD_STAIRS, Blocks.PACKED_MUD);
         modStairsBlock(MOSSY_PRISMARINE_BRICK_STAIRS, MOSSY_PRISMARINE_BRICKS);
+        modStairsBlock(SNOW_BRICK_STAIRS, SNOW_BRICKS);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -196,11 +199,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaWallBlock(NETHERRACK_WALL, Blocks.NETHERRACK);
         vanillaWallBlock(PACKED_MUD_WALL, Blocks.PACKED_MUD);
         modWallBlock(MOSSY_PRISMARINE_BRICK_WALL, MOSSY_PRISMARINE_BRICKS);
+        modWallBlock(SNOW_BRICK_WALL, SNOW_BRICKS);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
         vanillaFenceBlock(CRACKED_NETHER_BRICK_FENCE, Blocks.CRACKED_NETHER_BRICKS);
         modFenceBlock(CRACKED_RED_NETHER_BRICK_FENCE, CRACKED_RED_NETHER_BRICKS);
+
+        /*vanillaFenceGateBlock((FenceGateBlock) NETHER_BRICK_FENCE_GATE.get(), "nether_brick",
+                ResourceLocation.withDefaultNamespace("block/nether_bricks")
+        );*/
 
         axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
@@ -240,6 +248,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(block.get(), models().fenceInventory(key(block).toString(), blockTexture(texture)));
         fenceBlock((FenceBlock) block.get(), blockTexture(texture));
     }
+    /*public void vanillaFenceGateBlock(FenceGateBlock block, String name, ResourceLocation texture) {
+        fenceGateBlockInternal(block, name + "_fence_gate", texture);
+    }
+    private void fenceGateBlockInternal(FenceGateBlock block, String baseName, ResourceLocation texture) {
+        ModelFile gate = models().fenceGate(baseName, texture);
+        ModelFile gateOpen = models().fenceGateOpen(baseName + "_open", texture);
+        ModelFile gateWall = models().fenceGateWall(baseName + "_wall", texture);
+        ModelFile gateWallOpen = models().fenceGateWallOpen(baseName + "_wall_open", texture);
+        fenceGateBlock(block, gate, gateOpen, gateWall, gateWallOpen);
+    }*/
     public String getName(Supplier<? extends Block> block) {
         return block.get().builtInRegistryHolder().key().location().getPath();
     }

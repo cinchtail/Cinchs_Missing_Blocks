@@ -1831,6 +1831,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PRISMARINE_BRICKS.get())
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.PRISMARINE_BRICK_SLAB)
+                .unlockedBy("has_prismarine_brick_slab", has(Items.PRISMARINE_BRICK_SLAB))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PRISMARINE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PRISMARINE_BRICKS.get())
+                .unlockedBy("has_prismarine_bricks", has(Blocks.PRISMARINE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_prismarine_bricks_from_stonecutting"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")
@@ -2242,5 +2253,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.NETHERRACK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL.get())
                 .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "netherrack_wall_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS.get(),4)
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', Blocks.SNOW_BLOCK)
+                .unlockedBy("has_snow_bricks", has(Blocks.SNOW_BLOCK))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.SNOW_BRICKS.get())
+                .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.SNOW_BRICKS.get())
+                .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.SNOW_BRICKS.get())
+                .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
+                .save(consumer);
     }
 }

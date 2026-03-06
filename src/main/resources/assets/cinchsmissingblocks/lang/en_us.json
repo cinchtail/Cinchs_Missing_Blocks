@@ -181,5 +181,12 @@
   "block.cinchsmissingblocks.mossy_prismarine_bricks": "Mossy Prismarine Bricks",
   "block.cinchsmissingblocks.mossy_prismarine_brick_wall": "Mossy Prismarine Brick Wall",
   "block.cinchsmissingblocks.mossy_prismarine_brick_slab": "Mossy Prismarine Brick Slab",
-  "block.cinchsmissingblocks.mossy_prismarine_brick_stairs": "Mossy Prismarine Brick Stairs"
+  "block.cinchsmissingblocks.mossy_prismarine_brick_stairs": "Mossy Prismarine Brick Stairs",
+  "block.cinchsmissingblocks.chiseled_prismarine_bricks": "Chiseled Prismarine Bricks",
+  "block.cinchsmissingblocks.snow_bricks": "Snow Bricks",
+  "block.cinchsmissingblocks.snow_brick_wall": "Snow Brick Wall",
+  "block.cinchsmissingblocks.snow_brick_slab": "Snow Brick Slab",
+  "block.cinchsmissingblocks.snow_brick_stairs": "Snow Brick Stairs",
+
+  "itemgroup.cinchsmissingblocks": "Cinch's Missing Blocks"
 }
