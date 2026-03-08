@@ -682,6 +682,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.MUD_BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.MUD_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_moss_carpet"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL.get(),6)
                 .pattern("AAA")
                 .pattern("AAA")
@@ -849,6 +858,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', ModBlocks.ANDESITE_BRICKS.get())
+                .unlockedBy("has_moss_carpet", has(ModBlocks.ANDESITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_ANDESITE_BRICKS.get())
                 .pattern("A")
@@ -1069,6 +1087,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_diorite_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_moss_carpet", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_diorite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_DIORITE_BRICKS.get())
                 .pattern("A")
@@ -1301,6 +1328,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_dripstone_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', ModBlocks.DRIPSTONE_BRICKS.get())
+                .unlockedBy("has_moss_carpet", has(ModBlocks.DRIPSTONE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_dripstone_brick_from_moss_carpet"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_DRIPSTONE_BRICKS.get())
                 .pattern("A")
                 .pattern("A")
@@ -1487,6 +1523,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_granite_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', ModBlocks.GRANITE_BRICKS.get())
+                .unlockedBy("has_moss_carpet", has(ModBlocks.GRANITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_granite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_GRANITE_BRICKS.get())
                 .pattern("A")
@@ -1831,6 +1876,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.PRISMARINE_BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.PRISMARINE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_moss_carpet"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PRISMARINE_BRICKS.get())
                 .pattern("A")
                 .pattern("A")
@@ -1922,6 +1976,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Items.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_brick_from_moss_carpet"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
                 .pattern("AA ")
@@ -1968,6 +2031,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Items.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_quartz_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.QUARTZ_BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.QUARTZ_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_quartz_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
@@ -2048,6 +2120,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_tuff_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.TUFF_BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.TUFF_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_tuff_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICKS.get(),4)
                 .pattern("AA")
@@ -2202,6 +2283,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_vine"));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', ModBlocks.CALCITE_BRICKS.get())
+                .unlockedBy("has_moss_carpet", has(ModBlocks.CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_moss_carpet"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CALCITE_BRICKS.get())
                 .pattern("A")
                 .pattern("A")
@@ -2281,5 +2371,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModBlocks.SNOW_BRICKS.get())
                 .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE)
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.COBBLESTONE)
+                .unlockedBy("has_moss_carpet", has(Blocks.COBBLESTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobblestone_from_moss_carpet"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS)
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.STONE_BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.STONE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_stone_bricks_from_moss_carpet"));
     }
 }
