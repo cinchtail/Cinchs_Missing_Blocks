@@ -60,6 +60,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(MOSSY_PRISMARINE_BRICKS);
         blockWithItem(SNOW_BRICKS);
         blockWithItem(CHISELED_PRISMARINE_BRICKS);
+        blockWithItem(POLISHED_END_STONE);
 
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
@@ -147,6 +148,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaStairsBlock(PACKED_MUD_STAIRS, Blocks.PACKED_MUD);
         modStairsBlock(MOSSY_PRISMARINE_BRICK_STAIRS, MOSSY_PRISMARINE_BRICKS);
         modStairsBlock(SNOW_BRICK_STAIRS, SNOW_BRICKS);
+        modStairsBlock(POLISHED_END_STONE_STAIRS, POLISHED_END_STONE);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -199,6 +201,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaWallBlock(PACKED_MUD_WALL, Blocks.PACKED_MUD);
         modWallBlock(MOSSY_PRISMARINE_BRICK_WALL, MOSSY_PRISMARINE_BRICKS);
         modWallBlock(SNOW_BRICK_WALL, SNOW_BRICKS);
+        modWallBlock(POLISHED_END_STONE_WALL, POLISHED_END_STONE);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);

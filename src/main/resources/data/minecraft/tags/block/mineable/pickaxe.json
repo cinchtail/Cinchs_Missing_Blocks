@@ -184,6 +184,10 @@
     "cinchsmissingblocks:mossy_prismarine_brick_stairs",
     "cinchsmissingblocks:mossy_prismarine_brick_slab",
     "cinchsmissingblocks:mossy_prismarine_brick_wall",
-    "cinchsmissingblocks:chiseled_prismarine_bricks"
+    "cinchsmissingblocks:chiseled_prismarine_bricks",
+    "cinchsmissingblocks:polished_end_stone",
+    "cinchsmissingblocks:polished_end_stone_wall",
+    "cinchsmissingblocks:polished_end_stone_slab",
+    "cinchsmissingblocks:polished_end_stone_stairs"
   ]
 }

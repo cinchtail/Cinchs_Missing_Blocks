@@ -187,6 +187,10 @@
   "block.cinchsmissingblocks.snow_brick_wall": "Snow Brick Wall",
   "block.cinchsmissingblocks.snow_brick_slab": "Snow Brick Slab",
   "block.cinchsmissingblocks.snow_brick_stairs": "Snow Brick Stairs",
+  "block.cinchsmissingblocks.polished_end_stone": "Polished End Stone",
+  "block.cinchsmissingblocks.polished_end_stone_stairs": "Polished End Stone Stairs",
+  "block.cinchsmissingblocks.polished_end_stone_slab": "Polished End Stone Slab",
+  "block.cinchsmissingblocks.polished_end_stone_wall": "Polished End Stone Stairs",
 
   "itemgroup.cinchsmissingblocks": "Cinch's Missing Blocks"
 }

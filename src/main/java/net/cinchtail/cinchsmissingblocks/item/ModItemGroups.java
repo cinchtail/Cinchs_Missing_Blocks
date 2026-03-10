@@ -145,6 +145,10 @@ public class ModItemGroups {
                         output.accept(ModBlocks.END_STONE_STAIRS.get());
                         output.accept(ModBlocks.END_STONE_SLAB.get());
                         output.accept(ModBlocks.END_STONE_WALL.get());
+                        output.accept(ModBlocks.POLISHED_END_STONE.get());
+                        output.accept(ModBlocks.POLISHED_END_STONE_STAIRS.get());
+                        output.accept(ModBlocks.POLISHED_END_STONE_SLAB.get());
+                        output.accept(ModBlocks.POLISHED_END_STONE_WALL.get());
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICKS.get());
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICK_SLAB.get());
