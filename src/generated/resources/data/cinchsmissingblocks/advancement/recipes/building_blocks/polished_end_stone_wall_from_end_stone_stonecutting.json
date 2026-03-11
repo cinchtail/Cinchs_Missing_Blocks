@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:chiseled_end_stone_bricks_from_end_stone"
+        "recipe": "cinchsmissingblocks:polished_end_stone_wall_from_end_stone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:chiseled_end_stone_bricks_from_end_stone"
+      "cinchsmissingblocks:polished_end_stone_wall_from_end_stone_stonecutting"
     ]
   }
 }
