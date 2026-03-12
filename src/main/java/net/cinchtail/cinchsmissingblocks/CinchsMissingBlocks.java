@@ -36,7 +36,8 @@ public class CinchsMissingBlocks
         MinecraftForge.EVENT_BUS.addListener(this::onAddPackFinders);
     }
     private void onAddPackFinders(AddPackFindersEvent event) {
-        if (event.getPackType() != PackType.CLIENT_RESOURCES) return;
+        if (event.getPackType() != PackType.CLIENT_RESOURCES)
+            return;
 
         ModFile modFile = (ModFile) ModList.get().getModFileById(MOD_ID).getFile();
         Path packPath = modFile.findResource("resourcepacks/cinchs_double_slabs");
@@ -62,9 +63,9 @@ public class CinchsMissingBlocks
             };
 
             PackSelectionConfig selection = new PackSelectionConfig(
-                    true,                // enabled by default
-                    Pack.Position.TOP,   // highest priority
-                    false                // not hidden
+                    true,       // enabled by default
+                    Pack.Position.TOP,  // highest priority
+                    false               // not hidden
             );
 
             Pack pack = Pack.readMetaAndCreate(
