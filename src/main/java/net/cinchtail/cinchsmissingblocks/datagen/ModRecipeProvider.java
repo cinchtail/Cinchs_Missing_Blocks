@@ -87,7 +87,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_end_stone_bricks", has(Blocks.END_STONE_BRICKS))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_end_stone_bricks_from_end_stone_bricks_stonecutting"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_PILLAR.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_PILLAR.get(),2)
                 .pattern("A")
                 .pattern("A")
                 .define('A', Items.END_STONE_BRICKS)
@@ -2435,6 +2435,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.STONE_BRICKS)
                 .unlockedBy("has_moss_carpet", has(Blocks.STONE_BRICKS))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_stone_bricks_from_moss_carpet"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_stone_from_moss_carpet"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_TUFF), RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_TUFF)
+                .unlockedBy("has_polished_tuff", has(Blocks.POLISHED_TUFF))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_tuff_from_polished_tuff_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.TUFF_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_TUFF)
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_tuff_from_tuff_bricks_stonecutting"));
     }
 }
