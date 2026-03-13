@@ -57,6 +57,10 @@
     "cinchsmissingblocks:packed_mud_wall",
     "cinchsmissingblocks:mossy_prismarine_brick_wall",
     "cinchsmissingblocks:snow_brick_wall",
-    "cinchsmissingblocks:polished_end_stone_wall"
+    "cinchsmissingblocks:polished_end_stone_wall",
+    "cinchsmissingblocks:mossy_cobbled_deepslate_wall",
+    "cinchsmissingblocks:mossy_deepslate_brick_wall",
+    "cinchsmissingblocks:mossy_deepslate_tile_wall",
+    "cinchsmissingblocks:deepslate_wall"
   ]
 }

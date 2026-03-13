@@ -43,6 +43,10 @@
     "cinchsmissingblocks:packed_mud_slab",
     "cinchsmissingblocks:mossy_prismarine_brick_slab",
     "cinchsmissingblocks:snow_brick_slab",
-    "cinchsmissingblocks:polished_end_stone_slab"
+    "cinchsmissingblocks:polished_end_stone_slab",
+    "cinchsmissingblocks:mossy_cobbled_deepslate_slab",
+    "cinchsmissingblocks:mossy_deepslate_brick_slab",
+    "cinchsmissingblocks:mossy_deepslate_tile_slab",
+    "cinchsmissingblocks:deepslate_slab"
   ]
 }

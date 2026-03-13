@@ -46,6 +46,10 @@
     "cinchsmissingblocks:packed_mud_stairs",
     "cinchsmissingblocks:mossy_prismarine_brick_stairs",
     "cinchsmissingblocks:snow_brick_stairs",
-    "cinchsmissingblocks:polished_end_stone_stairs"
+    "cinchsmissingblocks:polished_end_stone_stairs",
+    "cinchsmissingblocks:mossy_cobbled_deepslate_stairs",
+    "cinchsmissingblocks:mossy_deepslate_brick_stairs",
+    "cinchsmissingblocks:mossy_deepslate_tile_stairs",
+    "cinchsmissingblocks:deepslate_stairs"
   ]
 }

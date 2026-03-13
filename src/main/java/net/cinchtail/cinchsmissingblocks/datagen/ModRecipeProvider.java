@@ -688,7 +688,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.MUD_BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.MUD_BRICKS))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL.get(),6)
@@ -865,7 +865,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', ModBlocks.ANDESITE_BRICKS.get())
-                .unlockedBy("has_moss_carpet", has(ModBlocks.ANDESITE_BRICKS.get()))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_ANDESITE_BRICKS.get())
@@ -1094,7 +1094,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', ModBlocks.DIORITE_BRICKS.get())
-                .unlockedBy("has_moss_carpet", has(ModBlocks.DIORITE_BRICKS.get()))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_diorite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_DIORITE_BRICKS.get())
@@ -1334,7 +1334,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', ModBlocks.DRIPSTONE_BRICKS.get())
-                .unlockedBy("has_moss_carpet", has(ModBlocks.DRIPSTONE_BRICKS.get()))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_dripstone_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_DRIPSTONE_BRICKS.get())
@@ -1530,7 +1530,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', ModBlocks.GRANITE_BRICKS.get())
-                .unlockedBy("has_moss_carpet", has(ModBlocks.GRANITE_BRICKS.get()))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_granite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_GRANITE_BRICKS.get())
@@ -1882,7 +1882,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.PRISMARINE_BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.PRISMARINE_BRICKS))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PRISMARINE_BRICKS.get())
@@ -2029,7 +2029,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.BRICKS))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICK_STAIRS.get(),4)
@@ -2085,7 +2085,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.QUARTZ_BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.QUARTZ_BRICKS))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_quartz_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get(),4)
@@ -2174,7 +2174,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.TUFF_BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.TUFF_BRICKS))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_tuff_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICKS.get(),4)
@@ -2336,7 +2336,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', ModBlocks.CALCITE_BRICKS.get())
-                .unlockedBy("has_moss_carpet", has(ModBlocks.CALCITE_BRICKS.get()))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_CALCITE_BRICKS.get())
@@ -2425,7 +2425,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.COBBLESTONE)
-                .unlockedBy("has_moss_carpet", has(Blocks.COBBLESTONE))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobblestone_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS)
@@ -2434,7 +2434,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.MOSS_CARPET)
                 .define('Z', Blocks.STONE_BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.STONE_BRICKS))
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_stone_from_moss_carpet"));
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_TUFF), RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_TUFF)
@@ -2444,5 +2444,234 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.TUFF_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_TUFF)
                 .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_tuff_from_tuff_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DEEPSLATE_BRICKS), RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_DEEPSLATE)
+                .unlockedBy("has_deepslate_bricks", has(Blocks.DEEPSLATE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_deepslate_from_deepslate_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DEEPSLATE), RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_DEEPSLATE)
+                .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_deepslate_from_polished_deepslate_stonecutting"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .group("mossy_cobbled_bricks")
+                .requires(Blocks.COBBLED_DEEPSLATE)
+                .requires(Blocks.MOSS_BLOCK)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_from_moss_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .group("mossy_cobbled_bricks")
+                .requires(Blocks.COBBLED_DEEPSLATE)
+                .requires(Blocks.VINE)
+                .unlockedBy("has_vine", has(Blocks.VINE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.COBBLED_DEEPSLATE)
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_from_moss_carpet"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .unlockedBy("has_mossy_cobbled_deepslate", has(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get())
+                .unlockedBy("has_mossy_cobbled_deepslate", has(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .unlockedBy("has_mossy_cobbled_deepslate", has(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB.get(),2)
+                .unlockedBy("has_mossy_cobbled_deepslate", has(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .unlockedBy("has_mossy_cobbled_deepslate", has(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL.get())
+                .unlockedBy("has_mossy_cobbled_deepslate", has(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_wall_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS.get())
+                .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB.get(),2)
+                .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL.get())
+                .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_wall_from_stonecutting"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .group("mossy_deeplate_bricks")
+                .requires(Blocks.DEEPSLATE_BRICKS)
+                .requires(Blocks.MOSS_BLOCK)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_from_moss_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .group("mossy_deeplate_bricks")
+                .requires(Blocks.DEEPSLATE_BRICKS)
+                .requires(Blocks.VINE)
+                .unlockedBy("has_vine", has(Blocks.VINE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.DEEPSLATE_BRICKS)
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_bricks_from_moss_carpet"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_TILES.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS.get())
+                .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_TILES.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB.get(),2)
+                .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_TILES.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_WALL.get())
+                .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_wall_from_stonecutting"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .group("mossy_deeplate_tiles")
+                .requires(Blocks.DEEPSLATE_TILES)
+                .requires(Blocks.MOSS_BLOCK)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_from_moss_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .group("mossy_deeplate_tiles")
+                .requires(Blocks.DEEPSLATE_TILES)
+                .requires(Blocks.VINE)
+                .unlockedBy("has_vine", has(Blocks.VINE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_from_vine"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .pattern("A")
+                .pattern("Z")
+                .pattern("A")
+                .define('A', Blocks.MOSS_CARPET)
+                .define('Z', Blocks.DEEPSLATE_TILES)
+                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tiles_from_moss_carpet"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get())
+                .pattern("AA")
+                .define('A', Blocks.POLISHED_DEEPSLATE)
+                .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POLISHED_DEEPSLATE_BUTTON.get())
+                .requires(Blocks.POLISHED_DEEPSLATE)
+                .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_STAIRS.get(),4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', Blocks.DEEPSLATE)
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DEEPSLATE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_STAIRS.get())
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_stairs_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_SLAB.get(),6)
+                .pattern("AAA")
+                .define('A', Blocks.DEEPSLATE)
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DEEPSLATE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_SLAB.get(),2)
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_slab_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_WALL.get(),6)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.DEEPSLATE)
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DEEPSLATE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_WALL.get())
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_wall_from_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SCULK_INLAID_DEEPSLATE.get())
+                .pattern("A")
+                .pattern("B")
+                .pattern("A")
+                .define('A', Blocks.DEEPSLATE_BRICK_SLAB)
+                .define('B', Blocks.SCULK)
+                .unlockedBy("has_sculk", has(Blocks.SCULK))
+                .save(consumer);
     }
 }

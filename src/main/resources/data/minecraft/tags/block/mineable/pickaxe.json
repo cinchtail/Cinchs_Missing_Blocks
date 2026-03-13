@@ -188,6 +188,24 @@
     "cinchsmissingblocks:polished_end_stone",
     "cinchsmissingblocks:polished_end_stone_wall",
     "cinchsmissingblocks:polished_end_stone_slab",
-    "cinchsmissingblocks:polished_end_stone_stairs"
+    "cinchsmissingblocks:polished_end_stone_stairs",
+    "cinchsmissingblocks:mossy_cobbled_deepslate",
+    "cinchsmissingblocks:mossy_cobbled_deepslate_wall",
+    "cinchsmissingblocks:mossy_cobbled_deepslate_slab",
+    "cinchsmissingblocks:mossy_cobbled_deepslate_stairs",
+    "cinchsmissingblocks:mossy_deepslate_bricks",
+    "cinchsmissingblocks:mossy_deepslate_brick_wall",
+    "cinchsmissingblocks:mossy_deepslate_brick_slab",
+    "cinchsmissingblocks:mossy_deepslate_brick_stairs",
+    "cinchsmissingblocks:mossy_deepslate_tiles",
+    "cinchsmissingblocks:mossy_deepslate_tile_wall",
+    "cinchsmissingblocks:mossy_deepslate_tile_slab",
+    "cinchsmissingblocks:mossy_deepslate_tile_stairs",
+    "cinchsmissingblocks:polished_deepslate_pressure_plate",
+    "cinchsmissingblocks:polished_deepslate_button",
+    "cinchsmissingblocks:deepslate_wall",
+    "cinchsmissingblocks:deepslate_slab",
+    "cinchsmissingblocks:deepslate_stairs",
+    "cinchsmissingblocks:sculk_inlaid_deepslate"
   ]
 }

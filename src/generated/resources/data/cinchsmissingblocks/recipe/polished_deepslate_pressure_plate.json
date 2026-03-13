@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "pattern": [
+    "AA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:polished_deepslate_pressure_plate"
+  }
+}

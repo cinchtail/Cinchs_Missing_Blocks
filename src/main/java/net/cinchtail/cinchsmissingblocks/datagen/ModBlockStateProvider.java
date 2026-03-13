@@ -61,6 +61,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(SNOW_BRICKS);
         blockWithItem(CHISELED_PRISMARINE_BRICKS);
         blockWithItem(POLISHED_END_STONE);
+        blockWithItem(MOSSY_COBBLED_DEEPSLATE);
+        blockWithItem(MOSSY_DEEPSLATE_BRICKS);
+        blockWithItem(MOSSY_DEEPSLATE_TILES);
 
 
         vanillaSlabBlock(CALCITE_SLAB, Blocks.CALCITE);
@@ -103,6 +106,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaSlabBlock(PACKED_MUD_SLAB, Blocks.PACKED_MUD);
         modSlabBlock(MOSSY_PRISMARINE_BRICK_SLAB, MOSSY_PRISMARINE_BRICKS);
         modSlabBlock(SNOW_BRICK_SLAB, SNOW_BRICKS);
+        modSlabBlock(MOSSY_COBBLED_DEEPSLATE_SLAB, MOSSY_COBBLED_DEEPSLATE);
+        modSlabBlock(MOSSY_DEEPSLATE_BRICK_SLAB, MOSSY_DEEPSLATE_BRICKS);
+        modSlabBlock(MOSSY_DEEPSLATE_TILE_SLAB, MOSSY_DEEPSLATE_TILES);
 
 
         vanillaStairsBlock(SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
@@ -149,6 +155,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modStairsBlock(MOSSY_PRISMARINE_BRICK_STAIRS, MOSSY_PRISMARINE_BRICKS);
         modStairsBlock(SNOW_BRICK_STAIRS, SNOW_BRICKS);
         modStairsBlock(POLISHED_END_STONE_STAIRS, POLISHED_END_STONE);
+        modStairsBlock(MOSSY_COBBLED_DEEPSLATE_STAIRS, MOSSY_COBBLED_DEEPSLATE);
+        modStairsBlock(MOSSY_DEEPSLATE_BRICK_STAIRS, MOSSY_DEEPSLATE_BRICKS);
+        modStairsBlock(MOSSY_DEEPSLATE_TILE_STAIRS, MOSSY_DEEPSLATE_TILES);
 
 
         vanillaWallBlock(SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
@@ -202,6 +211,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modWallBlock(MOSSY_PRISMARINE_BRICK_WALL, MOSSY_PRISMARINE_BRICKS);
         modWallBlock(SNOW_BRICK_WALL, SNOW_BRICKS);
         modWallBlock(POLISHED_END_STONE_WALL, POLISHED_END_STONE);
+        modWallBlock(MOSSY_COBBLED_DEEPSLATE_WALL, MOSSY_COBBLED_DEEPSLATE);
+        modWallBlock(MOSSY_DEEPSLATE_BRICK_WALL, MOSSY_DEEPSLATE_BRICKS);
+        modWallBlock(MOSSY_DEEPSLATE_TILE_WALL, MOSSY_DEEPSLATE_TILES);
 
 
         vanillaFenceBlock(RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS);
@@ -211,6 +223,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         /*vanillaFenceGateBlock((FenceGateBlock) NETHER_BRICK_FENCE_GATE.get(), "nether_brick",
                 ResourceLocation.withDefaultNamespace("block/nether_bricks")
         );*/
+
+        vanillaButtonBlock(POLISHED_DEEPSLATE_BUTTON, Blocks.POLISHED_DEEPSLATE);
+
+        pressurePlateBlock((PressurePlateBlock) POLISHED_DEEPSLATE_PRESSURE_PLATE.get(), blockTexture(Blocks.POLISHED_DEEPSLATE));
 
         axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
@@ -249,6 +265,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     public void modFenceBlock(RegistryObject<Block> block, RegistryObject<Block> texture) {
         simpleBlockItem(block.get(), models().fenceInventory(key(block).toString(), blockTexture(texture)));
         fenceBlock((FenceBlock) block.get(), blockTexture(texture));
+    }
+    public void vanillaButtonBlock(RegistryObject<Block> block, Block texture) {
+        simpleBlockItem(block.get(), models().buttonInventory((block.getId().getPath()+"_inventory"), blockTexture(texture)));
+        buttonBlock((ButtonBlock) block.get(), blockTexture(texture));
     }
     /*public void vanillaFenceGateBlock(FenceGateBlock block, String name, ResourceLocation texture) {
         fenceGateBlockInternal(block, name + "_fence_gate", texture);
