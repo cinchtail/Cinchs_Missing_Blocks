@@ -16,7 +16,7 @@ import java.util.Optional;
 import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class ResourcePackLoader {
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ForgeEvents {
 
         @SubscribeEvent
