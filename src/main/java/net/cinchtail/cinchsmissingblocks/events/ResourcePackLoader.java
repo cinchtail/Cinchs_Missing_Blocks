@@ -20,7 +20,7 @@ public class ResourcePackLoader {
     public static class ForgeEvents {
 
         @SubscribeEvent
-        public void onAddPackFinders(AddPackFindersEvent event) {
+        public static void onAddPackFinders(AddPackFindersEvent event) {
             if (event.getPackType() != PackType.CLIENT_RESOURCES)
                 return;
 
@@ -31,7 +31,7 @@ public class ResourcePackLoader {
                 PackLocationInfo info = new PackLocationInfo(
                         "cinchs_double_slabs",
                         Component.literal("Cinch's Double Slabs"),
-                        PackSource.DEFAULT,
+                        PackSource.BUILT_IN,
                         Optional.empty()
                 );
 
