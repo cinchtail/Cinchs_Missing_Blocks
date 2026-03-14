@@ -142,6 +142,7 @@ public class ModItemGroups {
                         output.accept(ModBlocks.MOSSY_MUD_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_MUD_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_MUD_BRICKS.get());
+                        output.accept(ModBlocks.MUD_PILLAR.get());
                         output.accept(ModBlocks.END_STONE_STAIRS.get());
                         output.accept(ModBlocks.END_STONE_SLAB.get());
                         output.accept(ModBlocks.END_STONE_WALL.get());

@@ -47,7 +47,7 @@ public class ResourcePackLoader {
                     }
                 };
                 PackSelectionConfig selection = new PackSelectionConfig(
-                        true,       // enabled by default
+                        false,       // enabled by default
                         Pack.Position.TOP,  // highest priority
                         false               // not hidden
                 );

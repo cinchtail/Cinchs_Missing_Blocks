@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -233,6 +234,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
+        axisBlock((RotatedPillarBlock) MUD_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_pillar_top"));
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

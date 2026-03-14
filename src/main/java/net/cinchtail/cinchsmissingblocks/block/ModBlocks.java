@@ -392,8 +392,8 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
                     .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CHISELED_BRICKS = registerBlock("chiseled_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(BRICKS).requiresCorrectToolForDrops()
+                    .strength(2.0F, 6.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Mud Brick Blocks
     public static final RegistryObject<Block> PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
@@ -433,7 +433,11 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
                     .strength(1.5F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.MUD_BRICKS)));
     public static final RegistryObject<Block> CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(1.5F, 3.0F)
+                    .sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MUD_PILLAR = registerBlock("mud_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
+                    .strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS)));
 
     //Endstone Blocks
     public static final RegistryObject<Block> END_STONE_STAIRS = registerBlock("end_stone_stairs",
@@ -475,7 +479,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(END_STONE).strength(3.0F, 9.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> END_STONE_PILLAR = registerBlock("end_stone_pillar",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(END_STONE_BRICKS).strength(3.0F, 9.0F).sound(SoundType.STONE)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(END_STONE_BRICKS)
+                    .strength(3.0F, 9.0F).sound(SoundType.STONE)));
 
     //Stone Blocks
     public static final RegistryObject<Block> STONE_WALL = registerBlock("stone_wall",
