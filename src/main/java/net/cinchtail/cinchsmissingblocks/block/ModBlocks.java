@@ -1,7 +1,9 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -360,7 +362,7 @@ public class ModBlocks {
             new WallBlock(Block.Settings.copy(Blocks.BRICKS)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CHISELED_BRICKS = registerBlock("chiseled_bricks",
-            new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+            new Block(Block.Settings.copy(Blocks.BRICKS).strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
     //Mud Brick Blocks
     public static final Block PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
@@ -398,7 +400,11 @@ public class ModBlocks {
             new WallBlock(Block.Settings.copy(Blocks.MUD_BRICKS)
                     .strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS)));
     public static final Block CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
-            new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS)));
+            new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
+                    .sounds(BlockSoundGroup.MUD_BRICKS)));
+    public static final Block MUD_PILLAR = registerBlock("mud_pillar",
+            new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
+                    .sounds(BlockSoundGroup.MUD_BRICKS)));
 
     //Endstone Blocks
     public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
@@ -411,11 +417,26 @@ public class ModBlocks {
     public static final Block END_STONE_WALL = registerBlock("end_stone_wall",
             new WallBlock(Block.Settings.copy(Blocks.END_STONE)
                     .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",
+            new Block(Block.Settings.copy(Blocks.END_STONE)
+                    .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_END_STONE_STAIRS = registerBlock("polished_end_stone_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
+                            .sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_END_STONE_SLAB = registerBlock("polished_end_stone_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_END_STONE_WALL = registerBlock("polished_end_stone_wall",
+            new WallBlock(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
+                    .sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks",
-            new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+            new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
+                    .sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_END_STONE_BRICK_STAIRS = registerBlock("cracked_end_stone_brick_stairs",
             new StairsBlock(Blocks.END_STONE.getDefaultState(),
-                    Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+                    Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
+                            .sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_END_STONE_BRICK_SLAB = registerBlock("cracked_end_stone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.END_STONE)
                     .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
@@ -423,7 +444,8 @@ public class ModBlocks {
             new WallBlock(Block.Settings.copy(Blocks.END_STONE)
                     .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
-            new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+            new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
+                    .sounds(BlockSoundGroup.STONE)));
     public static final Block END_STONE_PILLAR = registerBlock("end_stone_pillar",
             new PillarBlock(Block.Settings.copy(Blocks.END_STONE_BRICKS)));
 
@@ -469,6 +491,57 @@ public class ModBlocks {
     public static final Block CRACKED_DEEPSLATE_TILE_WALL = registerBlock("cracked_deepslate_tile_wall",
             new WallBlock(Block.Settings.copy(Blocks.CRACKED_DEEPSLATE_TILES)
                     .strength(3.5F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            new SculkInlaidDeepslateBlock(Block.Settings.copy(Blocks.CHISELED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
+            new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs",
+            new StairsBlock(ModBlocks.MOSSY_COBBLED_DEEPSLATE.getDefaultState(),Block.Settings.copy(Blocks.COBBLED_DEEPSLATE)
+                    .sounds(BlockSoundGroup.DEEPSLATE).strength(3.5f, 6.0F)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE_SLAB = registerBlock("mossy_cobbled_deepslate_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE_WALL = registerBlock("mossy_cobbled_deepslate_wall",
+            new WallBlock(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block MOSSY_DEEPSLATE_BRICKS = registerBlock("mossy_deepslate_bricks",
+            new Block(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS).strength(3.5f, 6.0F)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlock("mossy_deepslate_brick_stairs",
+            new StairsBlock(ModBlocks.MOSSY_DEEPSLATE_BRICKS.getDefaultState(),
+                    Block.Settings.copy(Blocks.DEEPSLATE_BRICKS).strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_TILES = registerBlock("mossy_deepslate_tiles",
+            new Block(Block.Settings.copy(Blocks.DEEPSLATE_TILES).strength(3.5f, 6.0F)
+                    .sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block MOSSY_DEEPSLATE_TILE_STAIRS = registerBlock("mossy_deepslate_tile_stairs",
+            new StairsBlock(ModBlocks.MOSSY_DEEPSLATE_TILES.getDefaultState(),
+                    Block.Settings.copy(Blocks.DEEPSLATE_TILES).strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block MOSSY_DEEPSLATE_TILE_SLAB = registerBlock("mossy_deepslate_tile_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE_TILES)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall",
+            new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE_TILES)
+                    .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+    public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
+            new StairsBlock(Blocks.DEEPSLATE.getDefaultState(),
+                    Block.Settings.copy(Blocks.STONE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE)
+                    .strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block DEEPSLATE_WALL = registerBlock("deepslate_wall",
+            new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE)
+                    .strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", CreatePolishedDeepslateButton());
+    public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
+            new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
+                    Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
 
     //Blackstone Bricks
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
@@ -559,6 +632,9 @@ public class ModBlocks {
     public static final Block MOSSY_PRISMARINE_BRICK_WALL = registerBlock("mossy_prismarine_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
+            new Block(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
     //Smooth Basalt
     public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
@@ -600,17 +676,29 @@ public class ModBlocks {
     public static final Block CHISELED_PURPUR = registerBlock("chiseled_purpur",
             new Block(Block.Settings.copy(Blocks.PURPUR_BLOCK).strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
+    //Snow Blocks
+    public static final Block SNOW_BRICKS = registerBlock("snow_bricks",
+            new Block(Block.Settings.copy(Blocks.SNOW_BLOCK).strength(0.2F).sounds(BlockSoundGroup.SNOW)));
+    public static final Block SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
+            new StairsBlock(Blocks.SNOW_BLOCK.getDefaultState(), Block.Settings.copy(Blocks.SNOW_BLOCK)
+                    .strength(0.2F).sounds(BlockSoundGroup.SNOW)));
+    public static final Block SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.SNOW_BLOCK).strength(0.2F).sounds(BlockSoundGroup.SNOW)));
+    public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.SNOW_BLOCK).strength(0.2F).sounds(BlockSoundGroup.SNOW)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, name), block);
     }
-
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, Identifier.of(CinchsMissingBlocks.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
-
+    public static Block CreatePolishedDeepslateButton() {
+        return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.create().noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY));
+    }
     public static void registerModBlocks() {
         CinchsMissingBlocks.LOGGER.info("Registering ModBlocks for " + CinchsMissingBlocks.MOD_ID);
     }

@@ -14,7 +14,6 @@ public class ModCreativeModeTabs {
             Identifier.of(CinchsMissingBlocks.MOD_ID, "cinchs_missing_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsmissingblocks"))
                     .icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS)).entries((displayContext, entries) -> {
-
                         entries.add(ModBlocks.CALCITE_STAIRS);
                         entries.add(ModBlocks.CALCITE_SLAB);
                         entries.add(ModBlocks.CALCITE_WALL);
@@ -139,9 +138,14 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_MUD_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_MUD_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_MUD_BRICKS);
+                        entries.add(ModBlocks.MUD_PILLAR);
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_SLAB);
                         entries.add(ModBlocks.END_STONE_WALL);
+                        entries.add(ModBlocks.POLISHED_END_STONE);
+                        entries.add(ModBlocks.POLISHED_END_STONE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_END_STONE_SLAB);
+                        entries.add(ModBlocks.POLISHED_END_STONE_WALL);
                         entries.add(ModBlocks.CRACKED_END_STONE_BRICKS);
                         entries.add(ModBlocks.CRACKED_END_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_END_STONE_BRICK_SLAB);
@@ -154,12 +158,30 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
+                        entries.add(ModBlocks.DEEPSLATE_STAIRS);
+                        entries.add(ModBlocks.DEEPSLATE_SLAB);
+                        entries.add(ModBlocks.DEEPSLATE_WALL);
+                        entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+                        entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
+                        entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
+                        entries.add(ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL);
                         entries.add(ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_DEEPSLATE_BRICK_WALL);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL);
                         entries.add(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
                         entries.add(ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB);
                         entries.add(ModBlocks.CRACKED_DEEPSLATE_TILE_WALL);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_TILES);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB);
+                        entries.add(ModBlocks.MOSSY_DEEPSLATE_TILE_WALL);
+                        entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
+                        entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
@@ -187,6 +209,11 @@ public class ModCreativeModeTabs {
                         entries.add(ModBlocks.MOSSY_PRISMARINE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_PRISMARINE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_PRISMARINE_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_PRISMARINE_BRICKS);
+                        entries.add(ModBlocks.SNOW_BRICKS);
+                        entries.add(ModBlocks.SNOW_BRICK_STAIRS);
+                        entries.add(ModBlocks.SNOW_BRICK_SLAB);
+                        entries.add(ModBlocks.SNOW_BRICK_WALL);
                         entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
                         entries.add(ModBlocks.SMOOTH_BASALT_WALL);

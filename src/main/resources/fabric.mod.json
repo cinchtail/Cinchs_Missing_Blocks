@@ -19,6 +19,9 @@
 			"net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks"
 		]
 	},
+	"mixins": [
+		"cinchsmissingblocks.mixins.json"
+	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
 		"minecraft": ["1.21","1.21.1"],
