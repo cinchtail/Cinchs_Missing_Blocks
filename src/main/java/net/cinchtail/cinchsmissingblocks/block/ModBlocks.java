@@ -504,9 +504,16 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     //Deepslate Blocks
-    public static final RegistryObject<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
-            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
-                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
+            () -> new StairBlock(Blocks.DEEPSLATE.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 6.0F)
+                            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> DEEPSLATE_SLAB = registerBlock("deepslate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)
+                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> DEEPSLATE_WALL = registerBlock("deepslate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)
+                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final RegistryObject<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE).strength(3.5f, 6.0F)
                     .sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
@@ -566,16 +573,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES)
                     .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
-    public static final RegistryObject<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
-            () -> new StairBlock(Blocks.DEEPSLATE.defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 6.0F)
-                            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
-    public static final RegistryObject<Block> DEEPSLATE_SLAB = registerBlock("deepslate_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)
-                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
-    public static final RegistryObject<Block> DEEPSLATE_WALL = registerBlock("deepslate_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)
-                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             () -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE)));
     public static final RegistryObject<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
