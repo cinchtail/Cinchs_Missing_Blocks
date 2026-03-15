@@ -2673,5 +2673,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Blocks.SCULK)
                 .unlockedBy("has_sculk", has(Blocks.SCULK))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUD_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.MUD_BRICKS)
+                .unlockedBy("has_mud_bricks", has(Items.MUD_BRICKS))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.MUD_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUD_PILLAR.get())
+                .unlockedBy("has_mud_bricks", has(Blocks.MUD_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mud_pillar_bricks_from_mud_bricks_stonecutting"));
     }
 }

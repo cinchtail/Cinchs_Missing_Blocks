@@ -206,6 +206,7 @@
     "cinchsmissingblocks:deepslate_wall",
     "cinchsmissingblocks:deepslate_slab",
     "cinchsmissingblocks:deepslate_stairs",
-    "cinchsmissingblocks:sculk_inlaid_deepslate"
+    "cinchsmissingblocks:sculk_inlaid_deepslate",
+    "cinchsmissingblocks:mud_pillar"
   ]
 }
