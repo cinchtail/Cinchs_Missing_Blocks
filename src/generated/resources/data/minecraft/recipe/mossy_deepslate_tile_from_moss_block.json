@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "mossy_deeplate_tiles",
+  "ingredients": [
+    "minecraft:deepslate_tiles",
+    "minecraft:moss_block"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_deepslate_tiles"
+  }
+}

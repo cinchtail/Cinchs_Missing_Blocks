@@ -21,7 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(CHISELED_END_STONE_BRICKS);
+        /*blockWithItem(CHISELED_END_STONE_BRICKS);
         blockWithItem(CHISELED_RED_NETHER_BRICKS);
         blockWithItem(CRACKED_RED_NETHER_BRICKS);
         blockWithItem(MOSSY_MUD_BRICKS);
@@ -203,7 +203,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         modFenceBlock(CRACKED_RED_NETHER_BRICK_FENCE, CRACKED_RED_NETHER_BRICKS);
 
         axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
-                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));*/
 
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
