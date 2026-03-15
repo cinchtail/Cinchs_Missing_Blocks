@@ -23,6 +23,7 @@ public class CinchsMissingBlocks {
 
     public CinchsMissingBlocks(@NotNull IEventBus bus) {
         ModBlocks.BLOCKS.register(bus);
+        ModBlocks.ModItems.ITEMS.register(bus);
         ModItemGroups.CREATIVE_MODE_TABS.register(bus);
         bus.addListener(this::addPackFinders);
     }
