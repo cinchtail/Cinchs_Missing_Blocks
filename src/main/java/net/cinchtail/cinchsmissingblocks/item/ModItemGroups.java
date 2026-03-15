@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ModCreativeModeTabs {
+public class ModItemGroups {
     public static DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CinchsMissingBlocks.MOD_ID);
 
     public static String CINCHSMISSINGBLOCKS_TAB_TITLE = "itemgroup.cinchsmissingblocks";
