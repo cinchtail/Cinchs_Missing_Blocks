@@ -403,7 +403,7 @@ public class ModBlocks {
             new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
                     .sounds(BlockSoundGroup.MUD_BRICKS)));
     public static final Block MUD_PILLAR = registerBlock("mud_pillar",
-            new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
+            new PillarBlock(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
                     .sounds(BlockSoundGroup.MUD_BRICKS)));
 
     //Endstone Blocks
