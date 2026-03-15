@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_deeplate_bricks",
+  "ingredients": [
+    "minecraft:deepslate_bricks",
+    "minecraft:vine"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_deepslate_bricks"
+  }
+}
