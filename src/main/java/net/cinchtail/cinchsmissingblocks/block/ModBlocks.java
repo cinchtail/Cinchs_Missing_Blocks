@@ -578,7 +578,9 @@ public class ModBlocks {
                     .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final RegistryObject<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             () -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE)));
-    public static final RegistryObject<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button", ModBlocks::modPolishedDeepslateButton);
+    public static final RegistryObject<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
+            () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, BlockBehaviour.Properties.of()
+                    .noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     //Blackstone Bricks
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
@@ -735,10 +737,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).strength(0.2F).sound(SoundType.SNOW)));
 
-    private static Block modPolishedDeepslateButton() {
-        return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, BlockBehaviour.Properties.of().noCollission()
-                .strength(0.5F).pushReaction(PushReaction.DESTROY));
-    }
     public static class ModItems {
         public static final DeferredRegister<Item> ITEMS =
                 DeferredRegister.create(ForgeRegistries.ITEMS, CinchsMissingBlocks.MOD_ID);
