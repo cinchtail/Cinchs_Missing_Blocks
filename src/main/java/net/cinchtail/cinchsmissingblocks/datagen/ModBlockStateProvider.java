@@ -236,6 +236,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
         axisBlock((RotatedPillarBlock) MUD_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_pillar_top"));
+
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

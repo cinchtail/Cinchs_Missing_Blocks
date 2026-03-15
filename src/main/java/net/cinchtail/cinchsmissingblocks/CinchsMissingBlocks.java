@@ -2,7 +2,7 @@ package net.cinchtail.cinchsmissingblocks;
 
 import com.mojang.logging.LogUtils;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
-import net.cinchtail.cinchsmissingblocks.events.ResourcePackLoader;
+import net.cinchtail.cinchsmissingblocks.events.ResourcePacksLoader;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +19,7 @@ public class CinchsMissingBlocks {
         IEventBus modEventBus = context.getModEventBus();
         ModBlocks.register(modEventBus);
         ModItemGroups.register(modEventBus);
-        MinecraftForge.EVENT_BUS.register(new ResourcePackLoader());
+        MinecraftForge.EVENT_BUS.register(new ResourcePacksLoader());
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
