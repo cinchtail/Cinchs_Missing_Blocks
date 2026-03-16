@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:smooth_red_sandstone",
-  "result": {
-    "count": 1,
-    "id": "cinchsmissingblocks:smooth_red_sandstone_wall"
-  }
-}

@@ -564,6 +564,33 @@ public class ModBlocks {
     public static final RegistryObject<Block> SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
             (properties) -> new WallBlock(properties.strength(0.2F).sound(SoundType.SNOW)));
 
+    //Resin Blocks
+    public static final RegistryObject<Block> CRACKED_RESIN_BRICKS = registerBlock("cracked_resin_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 6.0F)
+                    .sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_RESIN_BRICK_STAIRS = registerBlock("cracked_resin_brick_stairs",
+            (properties) -> new StairBlock(Blocks.RESIN_BRICKS.defaultBlockState(),
+                    properties.strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_RESIN_BRICK_SLAB = registerBlock("cracked_resin_brick_slab",
+            (properties) -> new SlabBlock(properties
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_RESIN_BRICK_WALL = registerBlock("cracked_resin_brick_wall",
+            (properties) -> new WallBlock(properties
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_RESIN_BRICKS = registerBlock("mossy_resin_bricks",
+            (properties) -> new Block(properties.strength(1.5F, 6.0F)
+                    .sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_RESIN_BRICK_STAIRS = registerBlock("mossy_resin_brick_stairs",
+            (properties) -> new StairBlock(Blocks.RESIN_BRICKS.defaultBlockState(),
+                    properties.strength(1.5F, 6.0F)
+                            .sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_RESIN_BRICK_SLAB = registerBlock("mossy_resin_brick_slab",
+            (properties) -> new SlabBlock(properties
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_RESIN_BRICK_WALL = registerBlock("mossy_resin_brick_wall",
+            (properties) -> new WallBlock(properties
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         RegistryObject<T> toReturn = BLOCKS.register(name,
