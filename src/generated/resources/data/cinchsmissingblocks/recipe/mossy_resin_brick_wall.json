@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": "cinchsmissingblocks:mossy_resin_bricks"
+  },
+  "pattern": [
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "cinchsmissingblocks:mossy_resin_brick_wall"
+  }
+}
