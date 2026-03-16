@@ -21,6 +21,6 @@ public abstract class ChiseledTuffBricksMixin {
     @Expression("register('chiseled_tuff_bricks', @(new Block(?)))")
     @WrapOperation(method = "<clinit>", at = @At("MIXINEXTRAS:EXPRESSION"))
     private static Block makeChiseledTuffBricksPillarBlock(AbstractBlock.Settings settings, Operation<Block> original) {
-        return PillarBlock::new, AbstractBlock.Settings.create();
+        return new PillarBlock(settings);
     }
 }
