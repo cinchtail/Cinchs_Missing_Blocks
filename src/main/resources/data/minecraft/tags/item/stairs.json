@@ -50,6 +50,8 @@
     "cinchsmissingblocks:mossy_cobbled_deepslate_stairs",
     "cinchsmissingblocks:mossy_deepslate_brick_stairs",
     "cinchsmissingblocks:mossy_deepslate_tile_stairs",
-    "cinchsmissingblocks:deepslate_stairs"
+    "cinchsmissingblocks:deepslate_stairs",
+    "cinchsmissingblocks:cracked_resin_brick_stairs",
+    "cinchsmissingblocks:mossy_resin_brick_stairs"
   ]
 }

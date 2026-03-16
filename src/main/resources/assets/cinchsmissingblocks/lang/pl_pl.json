@@ -210,6 +210,14 @@
   "block.cinchsmissingblocks.deepslate_stairs": "Łupkowe schody",
   "block.cinchsmissingblocks.sculk_inlaid_deepslate": "Łupek inkrustowany skalkiem",
   "block.cinchsmissingblocks.mud_pillar": "Mud Pillar",
+  "block.cinchsmissingblocks.mossy_resin_bricks": "Mossy Resin Bricks",
+  "block.cinchsmissingblocks.mossy_resin_brick_wall": "Mossy Resin Brick Wall",
+  "block.cinchsmissingblocks.mossy_resin_brick_slab": "Mossy Resin Brick Slab",
+  "block.cinchsmissingblocks.mossy_resin_brick_stairs": "Mossy Resin Brick Stairs",
+  "block.cinchsmissingblocks.cracked_resin_bricks": "Cracked Resin Bricks",
+  "block.cinchsmissingblocks.cracked_resin_brick_wall": "Cracked Resin Brick Wall",
+  "block.cinchsmissingblocks.cracked_resin_brick_slab": "Cracked Resin Brick Slab",
+  "block.cinchsmissingblocks.cracked_resin_brick_stairs": "Cracked Resin Brick Stairs",
 
   "itemgroup.cinchsmissingblocks": "Cinch's Missing Blocks"
 }

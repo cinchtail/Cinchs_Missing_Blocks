@@ -141,6 +141,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOSSY_MUD_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_MUD_BRICKS);
                         entries.add(ModBlocks.MUD_PILLAR);
+                        entries.add(ModBlocks.CRACKED_RESIN_BRICKS);
+                        entries.add(ModBlocks.CRACKED_RESIN_BRICK_STAIRS);
+                        entries.add(ModBlocks.CRACKED_RESIN_BRICK_SLAB);
+                        entries.add(ModBlocks.CRACKED_RESIN_BRICK_WALL);
+                        entries.add(ModBlocks.MOSSY_RESIN_BRICKS);
+                        entries.add(ModBlocks.MOSSY_RESIN_BRICK_STAIRS);
+                        entries.add(ModBlocks.MOSSY_RESIN_BRICK_SLAB);
+                        entries.add(ModBlocks.MOSSY_RESIN_BRICK_WALL);
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_SLAB);
                         entries.add(ModBlocks.END_STONE_WALL);

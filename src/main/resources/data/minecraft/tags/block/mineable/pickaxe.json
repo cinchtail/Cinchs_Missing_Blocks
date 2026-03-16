@@ -207,6 +207,14 @@
     "cinchsmissingblocks:deepslate_slab",
     "cinchsmissingblocks:deepslate_stairs",
     "cinchsmissingblocks:sculk_inlaid_deepslate",
-    "cinchsmissingblocks:mud_pillar"
+    "cinchsmissingblocks:mud_pillar",
+    "cinchsmissingblocks:cracked_resin_bricks",
+    "cinchsmissingblocks:cracked_resin_brick_wall",
+    "cinchsmissingblocks:cracked_resin_brick_slab",
+    "cinchsmissingblocks:cracked_resin_brick_stairs",
+    "cinchsmissingblocks:mossy_resin_bricks",
+    "cinchsmissingblocks:mossy_resin_brick_wall",
+    "cinchsmissingblocks:mossy_resin_brick_slab",
+    "cinchsmissingblocks:mossy_resin_brick_stairs"
   ]
 }
