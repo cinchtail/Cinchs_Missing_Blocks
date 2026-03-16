@@ -1,9 +1,9 @@
 {
   "pack": {
-    "pack_format": 61,
+    "pack_format": 46,
     "description": "Adds custom double slab textures",
     "supported_formats": {
-      "min_inclusive": 61,
+      "min_inclusive": 46,
       "max_inclusive": 99
     }
   }
