@@ -2781,7 +2781,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("A")
                 .define('A', Blocks.PALE_MOSS_CARPET)
                 .define('Z', Blocks.RESIN_BRICKS)
-                .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
+                .unlockedBy("has_pale_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(output, "mossy_resin_brick_from_pale_moss_carpet");
+
+        shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS.get())
+                .group("mossy_resin_bricks")
+                .requires(Blocks.RESIN_BRICKS)
+                .requires(Blocks.PALE_HANGING_MOSS)
+                .unlockedBy("has_pale_hanging_moss", has(Blocks.MOSS_CARPET))
+                .save(output, "mossy_resin_brick_from_pale_hanging_moss");
     }
 }
