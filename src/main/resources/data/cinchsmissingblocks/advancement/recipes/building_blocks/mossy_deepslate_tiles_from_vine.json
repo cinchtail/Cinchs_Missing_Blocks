@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:mossy_deepslate_tile_from_vine"
+        "recipe": "cinchsmissingblocks:mossy_deepslate_tiles_from_vine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:mossy_deepslate_tile_from_vine"
+      "cinchsmissingblocks:mossy_deepslate_tiles_from_vine"
     ]
   }
 }

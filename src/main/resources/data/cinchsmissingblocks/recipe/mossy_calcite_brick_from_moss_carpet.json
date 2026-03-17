@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "mossy_calcite_bricks",
   "key": {
     "A": {
       "item": "minecraft:moss_carpet"
