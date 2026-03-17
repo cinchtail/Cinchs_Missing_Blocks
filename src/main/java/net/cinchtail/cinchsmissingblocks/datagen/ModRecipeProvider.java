@@ -2636,13 +2636,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tiles_from_moss_carpet"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get())
                 .pattern("AA")
                 .define('A', Blocks.POLISHED_DEEPSLATE)
                 .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DEEPSLATE_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DEEPSLATE_BUTTON.get())
                 .requires(Blocks.POLISHED_DEEPSLATE)
                 .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
                 .save(consumer);
