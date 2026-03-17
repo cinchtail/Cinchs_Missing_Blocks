@@ -683,6 +683,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS.get())
+                .group("mossy_mud_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -860,6 +861,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_andesite_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS.get())
+                .group("mossy_andesite_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -1089,6 +1091,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_diorite_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS.get())
+                .group("mossy_diorite_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -1329,6 +1332,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_dripstone_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS.get())
+                .group("mossy_dripstone_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -1525,6 +1529,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_granite_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS.get())
+                .group("mossy_granite_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -1877,6 +1882,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
+                .group("mossy_prismarine_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2024,6 +2030,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS.get())
+                .group("mossy_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2080,6 +2087,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_quartz_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS.get())
+                .group("mossy_quartz_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2169,6 +2177,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_tuff_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS.get())
+                .group("mossy_tuff_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2331,6 +2340,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS.get())
+                .group("mossy_calcite_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2420,6 +2430,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE)
+                .group("mossy_cobblestone")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2429,6 +2440,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobblestone_from_moss_carpet"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS)
+                .group("mossy_stone_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2454,20 +2466,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_deepslate_from_polished_deepslate_stonecutting"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
-                .group("mossy_cobbled_bricks")
+                .group("mossy_cobbled_deepslate")
                 .requires(Blocks.COBBLED_DEEPSLATE)
                 .requires(Blocks.MOSS_BLOCK)
                 .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_from_moss_block"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
-                .group("mossy_cobbled_bricks")
+                .group("mossy_cobbled_deepslate")
                 .requires(Blocks.COBBLED_DEEPSLATE)
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
+                .group("mossy_cobbled_deepslate")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2557,6 +2570,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
+                .group("mossy_deeplate_bricks")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
@@ -2613,6 +2627,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+                .group("mossy_deeplate_tiles")
                 .pattern("A")
                 .pattern("Z")
                 .pattern("A")
