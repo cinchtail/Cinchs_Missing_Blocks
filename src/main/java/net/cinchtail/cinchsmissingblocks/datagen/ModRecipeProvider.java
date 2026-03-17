@@ -2612,19 +2612,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_wall_from_stonecutting"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
                 .group("mossy_deeplate_tiles")
                 .requires(Blocks.DEEPSLATE_TILES)
                 .requires(Blocks.MOSS_BLOCK)
                 .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_from_moss_block"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tiles_from_moss_block"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
                 .group("mossy_deeplate_tiles")
                 .requires(Blocks.DEEPSLATE_TILES)
                 .requires(Blocks.VINE)
                 .unlockedBy("has_vine", has(Blocks.VINE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_from_vine"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tiles_from_vine"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
                 .group("mossy_deeplate_tiles")
@@ -2642,7 +2642,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POLISHED_DEEPSLATE_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DEEPSLATE_BUTTON.get())
                 .requires(Blocks.POLISHED_DEEPSLATE)
                 .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
                 .save(consumer);
