@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModCreativeModeTabs {
+public class ModItemGroups {
     public static final ItemGroup CINCHS_MISSING_BLOCKS = Registry.register(net.minecraft.registry.Registries.ITEM_GROUP,
             Identifier.of(CinchsMissingBlocks.MOD_ID, "cinchs_missing_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsmissingblocks"))

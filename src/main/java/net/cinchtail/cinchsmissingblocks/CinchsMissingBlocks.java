@@ -1,7 +1,7 @@
 package net.cinchtail.cinchsmissingblocks;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
-import net.cinchtail.cinchsmissingblocks.item.ModCreativeModeTabs;
+import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
@@ -23,7 +23,7 @@ public class CinchsMissingBlocks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModCreativeModeTabs.registerItemGroups();
+		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 	}
 
