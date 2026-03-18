@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_andesite_brick_slab": {
+    "has_granite_brick_slab": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:andesite_brick_slab"
+            "items": "cinchsmissingblocks:granite_brick_slab"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_andesite_brick_slab"
+      "has_granite_brick_slab"
     ]
   ],
   "rewards": {

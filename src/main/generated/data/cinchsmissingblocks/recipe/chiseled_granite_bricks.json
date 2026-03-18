@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "cinchsmissingblocks:andesite_brick_slab"
+    "#": "cinchsmissingblocks:granite_brick_slab"
   },
   "pattern": [
     "#",
