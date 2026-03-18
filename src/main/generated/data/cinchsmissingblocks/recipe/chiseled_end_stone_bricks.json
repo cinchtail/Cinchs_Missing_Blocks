@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:end_stone"
+    "#": "minecraft:end_stone_brick_slab"
   },
   "pattern": [
     "#",

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_stone_brick_slab": {
+    "has_packed_mud": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:end_stone_brick_slab"
+            "items": "minecraft:packed_mud"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:chiseled_end_stone_bricks"
+        "recipe": "cinchsmissingblocks:packed_mud_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_end_stone_brick_slab"
+      "has_packed_mud"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:chiseled_end_stone_bricks"
+      "cinchsmissingblocks:packed_mud_slab"
     ]
   }
 }

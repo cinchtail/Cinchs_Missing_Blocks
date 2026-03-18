@@ -10,6 +10,7 @@ import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryKey;
@@ -210,7 +211,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Chiseled Blocks
-                offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_END_STONE_BRICKS, Blocks.END_STONE);
+                offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_END_STONE_BRICKS, Blocks.END_STONE_BRICK_SLAB);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_END_STONE_BRICKS, Blocks.END_STONE);
 
@@ -745,6 +746,283 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICK_WALL, ModBlocks.MOSSY_QUARTZ_BRICKS);
 
 
+                //Miscellaneous Brick Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_STAIRS, ModBlocks.CRACKED_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_STAIRS, ModBlocks.CRACKED_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_SLAB, ModBlocks.CRACKED_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_SLAB, ModBlocks.CRACKED_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_WALL, ModBlocks.CRACKED_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_WALL, ModBlocks.CRACKED_BRICKS);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_STAIRS, ModBlocks.MOSSY_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_STAIRS, ModBlocks.MOSSY_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_SLAB, ModBlocks.MOSSY_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_SLAB, ModBlocks.MOSSY_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_WALL, ModBlocks.MOSSY_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_WALL, ModBlocks.MOSSY_BRICKS);
+
+
+                //Miscellaneous Mud Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_STAIRS, Blocks.PACKED_MUD);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_STAIRS, Blocks.PACKED_MUD);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_SLAB, Blocks.PACKED_MUD);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_SLAB, Blocks.PACKED_MUD);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_WALL, Blocks.PACKED_MUD);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_WALL, Blocks.PACKED_MUD);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_STAIRS, ModBlocks.CRACKED_MUD_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_STAIRS, ModBlocks.CRACKED_MUD_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_SLAB, ModBlocks.CRACKED_MUD_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_SLAB, ModBlocks.CRACKED_MUD_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_WALL, ModBlocks.CRACKED_MUD_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_WALL, ModBlocks.CRACKED_MUD_BRICKS);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_STAIRS, ModBlocks.MOSSY_MUD_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_STAIRS, ModBlocks.MOSSY_MUD_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_SLAB, ModBlocks.MOSSY_MUD_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_SLAB, ModBlocks.MOSSY_MUD_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_WALL, ModBlocks.MOSSY_MUD_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_WALL, ModBlocks.MOSSY_MUD_BRICKS);
+
+
+                //Miscellaneous Resin Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_STAIRS, ModBlocks.CRACKED_RESIN_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_STAIRS, ModBlocks.CRACKED_RESIN_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_SLAB, ModBlocks.CRACKED_RESIN_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_SLAB, ModBlocks.CRACKED_RESIN_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_WALL, ModBlocks.CRACKED_RESIN_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_WALL, ModBlocks.CRACKED_RESIN_BRICKS);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_STAIRS, ModBlocks.MOSSY_RESIN_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_STAIRS, ModBlocks.MOSSY_RESIN_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_SLAB, ModBlocks.MOSSY_RESIN_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_SLAB, ModBlocks.MOSSY_RESIN_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_WALL, ModBlocks.MOSSY_RESIN_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_WALL, ModBlocks.MOSSY_RESIN_BRICKS);
+
+
+                //Miscellaneous End Stone Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_STAIRS, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_STAIRS, Blocks.END_STONE);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_SLAB, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_SLAB, Blocks.END_STONE);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_WALL, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_WALL, Blocks.END_STONE);
+
+                offerPolishedStoneRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE, Blocks.END_STONE);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_STAIRS, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_STAIRS, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_STAIRS, ModBlocks.POLISHED_END_STONE);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_SLAB, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_SLAB, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_SLAB, ModBlocks.POLISHED_END_STONE);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_WALL, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_WALL, Blocks.END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_WALL, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICKS, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_STAIRS, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_SLAB, ModBlocks.POLISHED_END_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_WALL, ModBlocks.POLISHED_END_STONE);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_STAIRS, ModBlocks.CRACKED_END_STONE_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_STAIRS, ModBlocks.CRACKED_END_STONE_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_SLAB, ModBlocks.CRACKED_END_STONE_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_SLAB, ModBlocks.CRACKED_END_STONE_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_WALL, ModBlocks.CRACKED_END_STONE_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_WALL, ModBlocks.CRACKED_END_STONE_BRICKS);
+
+
+                //Miscellaneous Stone Blocks
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL, Blocks.STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL, Blocks.STONE);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS, Blocks.CRACKED_STONE_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS, Blocks.CRACKED_STONE_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_WALL, Blocks.CRACKED_STONE_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_WALL, Blocks.CRACKED_STONE_BRICKS);
+
+
+                //Miscellaneous Deepslate Blocks
+
+                //Miscellaneous Blackstone Blocks
+
+                //Miscellaneous Netherrack Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_STAIRS, Blocks.NETHERRACK);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_STAIRS, Blocks.NETHERRACK);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL, Blocks.NETHERRACK);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL, Blocks.NETHERRACK);
+
+
+                //Miscellaneous Nether Brick Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_SLAB, Blocks.CRACKED_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_SLAB, Blocks.CRACKED_NETHER_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_WALL, Blocks.CRACKED_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_WALL, Blocks.CRACKED_NETHER_BRICKS);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_FENCE)
+                        .pattern("ATA")
+                        .pattern("ATA")
+                        .input('A', Blocks.CRACKED_NETHER_BRICKS)
+                        .input('T', Items.NETHER_BRICK)
+                        .criterion(hasItem(Blocks.CRACKED_NETHER_BRICKS), conditionsFromItem(Blocks.CRACKED_NETHER_BRICKS))
+                        .offerTo(exporter);
+
+
+                //Miscellaneous Red Nether Brick Blocks
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_FENCE)
+                        .pattern("ATA")
+                        .pattern("ATA")
+                        .input('A', Blocks.RED_NETHER_BRICKS)
+                        .input('T', Items.NETHER_BRICK)
+                        .criterion(hasItem(Blocks.RED_NETHER_BRICKS), conditionsFromItem(Blocks.RED_NETHER_BRICKS))
+                        .offerTo(exporter);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_WALL, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_WALL, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE)
+                        .pattern("ATA")
+                        .pattern("ATA")
+                        .input('A', ModBlocks.CRACKED_RED_NETHER_BRICKS)
+                        .input('T', Items.NETHER_BRICK)
+                        .criterion(hasItem(ModBlocks.CRACKED_RED_NETHER_BRICKS), conditionsFromItem(ModBlocks.CRACKED_RED_NETHER_BRICKS))
+                        .offerTo(exporter);
+
+
+                //Miscellaneous Prismarine Blocks
+
+                //Miscellaneous Snow Blocks
+                offerBricksRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS, Blocks.SNOW_BLOCK);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_STAIRS, Blocks.SNOW_BLOCK);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_SLAB, Blocks.SNOW_BLOCK);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_WALL, Blocks.SNOW_BLOCK);
+
+
+                //Miscellaneous Basalt Blocks
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_STAIRS, Blocks.SMOOTH_BASALT);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_STAIRS, Blocks.SMOOTH_BASALT);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_SLAB, Blocks.SMOOTH_BASALT);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_SLAB, Blocks.SMOOTH_BASALT);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_WALL, Blocks.SMOOTH_BASALT);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_WALL, Blocks.SMOOTH_BASALT);
+
+
+                //Miscellaneous Sandstone Blocks
+
+                //Miscellaneous Red Sandstone Blocks
+
+                //Miscellaneous Purpur Blocks
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPUR_WALL, Blocks.PURPUR_BLOCK);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPUR_WALL, Blocks.PURPUR_BLOCK);
+
 
 
 
@@ -821,80 +1099,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_cracked_deepslate_tiles", has(Blocks.CRACKED_DEEPSLATE_TILES))
                         .save(output, "cracked_deepslate_tile_wall_from_stonecutting");
 
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_MUD_BRICKS.get())
-                        .unlockedBy("has_cracked_mud_bricks", has(ModBlocks.CRACKED_MUD_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_MUD_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_mud_bricks", has(ModBlocks.CRACKED_MUD_BRICKS.get()))
-                        .save(output, "cracked_mud_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_MUD_BRICKS.get())
-                        .unlockedBy("has_cracked_mud_bricks", has(ModBlocks.CRACKED_MUD_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_MUD_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_mud_bricks", has(ModBlocks.CRACKED_MUD_BRICKS.get()))
-                        .save(output, "cracked_mud_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_MUD_BRICKS.get())
-                        .unlockedBy("has_cracked_mud_bricks", has(ModBlocks.CRACKED_MUD_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_MUD_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_MUD_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_mud_bricks", has(ModBlocks.CRACKED_MUD_BRICKS.get()))
-                        .save(output, "cracked_mud_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', Items.CRACKED_NETHER_BRICKS)
-                        .unlockedBy("has_cracked_nether_bricks", has(Items.CRACKED_NETHER_BRICKS))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_nether_bricks", has(Blocks.CRACKED_NETHER_BRICKS))
-                        .save(output, "cracked_nether_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', Items.CRACKED_NETHER_BRICKS)
-                        .unlockedBy("has_cracked_nether_bricks", has(Items.CRACKED_NETHER_BRICKS))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_nether_bricks", has(Blocks.CRACKED_NETHER_BRICKS))
-                        .save(output, "cracked_nether_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Items.CRACKED_NETHER_BRICKS)
-                        .unlockedBy("has_cracked_nether_bricks", has(Items.CRACKED_NETHER_BRICKS))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_nether_bricks", has(Blocks.CRACKED_NETHER_BRICKS))
-                        .save(output, "cracked_nether_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_FENCE.get(),3)
-                        .pattern("ATA")
-                        .pattern("ATA")
-                        .define('A', Blocks.CRACKED_NETHER_BRICKS)
-                        .define('T', Items.NETHER_BRICK)
-                        .unlockedBy("has_cracked_nether_bricks", has(Blocks.CRACKED_NETHER_BRICKS))
-                        .save(output);
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS.get(),4)
                         .pattern("A  ")
                         .pattern("AA ")
@@ -927,80 +1131,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL.get())
                         .unlockedBy("has_cracked_polished_blackstone_bricks", has(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
                         .save(output, "cracked_polished_blackstone_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_RED_NETHER_BRICKS.get())
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output, "cracked_red_nether_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_RED_NETHER_BRICKS.get())
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output, "cracked_red_nether_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_RED_NETHER_BRICKS.get())
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output, "cracked_red_nether_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE.get(),3)
-                        .pattern("ATA")
-                        .pattern("ATA")
-                        .define('A', ModBlocks.CRACKED_RED_NETHER_BRICKS.get())
-                        .define('T', Items.NETHER_BRICK)
-                        .unlockedBy("has_cracked_red_nether_bricks", has(ModBlocks.CRACKED_RED_NETHER_BRICKS.get()))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', Items.CRACKED_STONE_BRICKS)
-                        .unlockedBy("has_cracked_stone_bricks", has(Items.CRACKED_STONE_BRICKS))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_stone_bricks", has(Blocks.CRACKED_STONE_BRICKS))
-                        .save(output, "cracked_stone_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', Items.CRACKED_STONE_BRICKS)
-                        .unlockedBy("has_cracked_stone_bricks", has(Items.CRACKED_STONE_BRICKS))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_stone_bricks", has(Blocks.CRACKED_STONE_BRICKS))
-                        .save(output, "cracked_stone_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Items.CRACKED_STONE_BRICKS)
-                        .unlockedBy("has_cracked_stone_bricks", has(Items.CRACKED_STONE_BRICKS))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CRACKED_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_WALL.get())
-                        .unlockedBy("has_cut_red_sandstone_bricks", has(Blocks.CRACKED_STONE_BRICKS))
-                        .save(output, "cracked_cut_red_sandstone_wall_from_stonecutting");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_STAIRS.get(),4)
                         .pattern("A  ")
@@ -1075,105 +1205,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_dark_prismarine", has(Blocks.DARK_PRISMARINE))
                         .save(output, "dark_prismarine_wall_from_stonecutting");
 
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', Items.END_STONE)
-                        .unlockedBy("has_end_stone", has(Items.END_STONE))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_STAIRS.get())
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "end_stone_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', Items.END_STONE)
-                        .unlockedBy("has_end_stone", has(Items.END_STONE))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_SLAB.get(),2)
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "end_stone_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Items.END_STONE)
-                        .unlockedBy("has_end_stone", has(Items.END_STONE))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_WALL.get())
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "end_stone_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', Blocks.PACKED_MUD)
-                        .unlockedBy("has_packed_mud", has(Blocks.PACKED_MUD))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PACKED_MUD), RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_STAIRS.get())
-                        .unlockedBy("has_packed_mud", has(Blocks.PACKED_MUD))
-                        .save(output, "packed_mud_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', Blocks.PACKED_MUD)
-                        .unlockedBy("has_packed_mud", has(Blocks.PACKED_MUD))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PACKED_MUD), RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_SLAB.get(),2)
-                        .unlockedBy("has_packed_mud", has(Blocks.PACKED_MUD))
-                        .save(output, "packed_mud_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Blocks.PACKED_MUD)
-                        .unlockedBy("has_packed_mud", has(Blocks.PACKED_MUD))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PACKED_MUD), RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_WALL.get())
-                        .unlockedBy("has_packed_mud", has(Blocks.PACKED_MUD))
-                        .save(output, "packed_mud_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_MUD_BRICKS.get())
-                        .unlockedBy("has_mossy_mud_bricks", has(ModBlocks.MOSSY_MUD_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_MUD_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_STAIRS.get())
-                        .unlockedBy("has_mossy_mud_bricks", has(ModBlocks.MOSSY_MUD_BRICKS.get()))
-                        .save(output, "mossy_mud_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_MUD_BRICKS.get())
-                        .unlockedBy("has_mossy_mud_bricks", has(ModBlocks.MOSSY_MUD_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_MUD_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_mossy_mud_bricks", has(ModBlocks.MOSSY_MUD_BRICKS.get()))
-                        .save(output, "mossy_mud_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_MUD_BRICKS.get())
-                        .unlockedBy("has_mossy_mud_bricks", has(ModBlocks.MOSSY_MUD_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_MUD_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICK_WALL.get())
-                        .unlockedBy("has_mossy_mud_bricks", has(ModBlocks.MOSSY_MUD_BRICKS.get()))
-                        .save(output, "mossy_mud_brick_wall_from_stonecutting");
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_BRICK_WALL.get(),6)
                         .pattern("AAA")
                         .pattern("AAA")
@@ -1184,58 +1215,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PRISMARINE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_BRICK_WALL.get())
                         .unlockedBy("has_prismarine_bricks", has(Blocks.PRISMARINE_BRICKS))
                         .save(output, "prismarine_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPUR_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Blocks.PURPUR_BLOCK)
-                        .unlockedBy("has_purpur_block", has(Blocks.PURPUR_BLOCK))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PURPUR_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPUR_WALL.get())
-                        .unlockedBy("has_purpur_block", has(Blocks.PURPUR_BLOCK))
-                        .save(output, "purpur_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_FENCE.get(),3)
-                        .pattern("ATA")
-                        .pattern("ATA")
-                        .define('A', Blocks.RED_NETHER_BRICKS)
-                        .define('T', Items.NETHER_BRICK)
-                        .unlockedBy("has_red_nether_bricks", has(Blocks.RED_NETHER_BRICKS))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', Blocks.SMOOTH_BASALT)
-                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SMOOTH_BASALT), RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_STAIRS.get())
-                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
-                        .save(output, "smooth_basalt_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', Blocks.SMOOTH_BASALT)
-                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SMOOTH_BASALT), RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_SLAB.get(),2)
-                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
-                        .save(output, "smooth_basalt_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Blocks.SMOOTH_BASALT)
-                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SMOOTH_BASALT), RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_WALL.get())
-                        .unlockedBy("has_smooth_basalt", has(Blocks.SMOOTH_BASALT))
-                        .save(output, "smooth_basalt_wall_from_stonecutting");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_RED_SANDSTONE_WALL.get(),6)
                         .pattern("AAA")
@@ -1270,61 +1249,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SMOOTH_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_STAIRS.get())
                         .unlockedBy("has_smooth_stone", has(Blocks.SMOOTH_STONE))
                         .save(output, "smooth_stone_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Blocks.SMOOTH_STONE)
-                        .unlockedBy("has_smooth_stone", has(Blocks.SMOOTH_STONE))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.SMOOTH_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_WALL.get())
-                        .unlockedBy("has_smooth_stone", has(Blocks.SMOOTH_STONE))
-                        .save(output, "smooth_stone_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Blocks.STONE)
-                        .unlockedBy("has_stone", has(Blocks.STONE))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL.get())
-                        .unlockedBy("has_stone", has(Blocks.STONE))
-                        .save(output, "stone_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_BRICKS.get())
-                        .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS.get()))
-                        .save(output, "cracked_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_BRICKS.get())
-                        .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS.get()))
-                        .save(output, "cracked_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_BRICKS.get())
-                        .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS.get()))
-                        .save(output, "cracked_brick_wall_from_stonecutting");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_PRISMARINE_BRICK_STAIRS.get(),4)
                         .pattern("A  ")
@@ -1391,239 +1315,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_PRISMARINE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICK_WALL.get())
                         .unlockedBy("has_mossy_prismarine_bricks", has(ModBlocks.MOSSY_PRISMARINE_BRICKS.get()))
                         .save(output, "mossy_prismarine_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_END_STONE_BRICKS.get())
-                        .unlockedBy("has_cracked_end_stone_bricks", has(ModBlocks.CRACKED_END_STONE_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_end_stone_bricks", has(ModBlocks.CRACKED_END_STONE_BRICKS.get()))
-                        .save(output, "cracked_end_stone_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_END_STONE_BRICKS.get())
-                        .unlockedBy("has_cracked_end_stone_bricks", has(ModBlocks.CRACKED_END_STONE_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_end_stone_bricks", has(ModBlocks.CRACKED_END_STONE_BRICKS.get()))
-                        .save(output, "cracked_end_stone_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_END_STONE_BRICKS.get())
-                        .unlockedBy("has_cracked_end_stone_bricks", has(ModBlocks.CRACKED_END_STONE_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_end_stone_bricks", has(ModBlocks.CRACKED_END_STONE_BRICKS.get()))
-                        .save(output, "cracked_end_stone_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE.get(),4)
-                        .pattern("AA")
-                        .pattern("AA")
-                        .define('A', Blocks.END_STONE)
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE.get())
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "polished_end_stone_from_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_STAIRS.get())
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "polished_end_stone_stairs_from_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_SLAB.get())
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "polished_end_stone_slab_from_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_WALL.get())
-                        .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                        .save(output, "polished_end_stone_wall_from_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_END_STONE.get()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICKS)
-                        .unlockedBy("has_polished_end_stone", has(ModBlocks.POLISHED_END_STONE.get()))
-                        .save(output, "end_stone_bricks_from_polished_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_END_STONE.get()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_STAIRS)
-                        .unlockedBy("has_polished_end_stone", has(ModBlocks.POLISHED_END_STONE.get()))
-                        .save(output, "end_stone_brick_stairs_from_polished_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_END_STONE.get()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_SLAB)
-                        .unlockedBy("has_polished_end_stone", has(ModBlocks.POLISHED_END_STONE.get()))
-                        .save(output, "end_stone_brick_slab_from_polished_end_stone_stonecutting");
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_END_STONE.get()), RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_WALL)
-                        .unlockedBy("has_polished_end_stone", has(ModBlocks.POLISHED_END_STONE.get()))
-                        .save(output, "end_stone_brick_wall_from_polished_end_stone_stonecutting");
-
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_BRICKS.get())
-                        .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_STAIRS.get())
-                        .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
-                        .save(output, "mossy_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_BRICKS.get())
-                        .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
-                        .save(output, "mossy_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_BRICKS.get())
-                        .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_WALL.get())
-                        .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
-                        .save(output, "mossy_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_TUFF_BRICKS.get())
-                        .unlockedBy("has_cracked_tuff_bricks", has(ModBlocks.CRACKED_TUFF_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_TUFF_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_tuff_bricks", has(ModBlocks.CRACKED_TUFF_BRICKS.get()))
-                        .save(output, "cracked_tuff_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_TUFF_BRICKS.get())
-                        .unlockedBy("has_cracked_tuff_bricks", has(ModBlocks.CRACKED_TUFF_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_TUFF_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_tuff_bricks", has(ModBlocks.CRACKED_TUFF_BRICKS.get()))
-                        .save(output, "cracked_tuff_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_TUFF_BRICKS.get())
-                        .unlockedBy("has_cracked_tuff_bricks", has(ModBlocks.CRACKED_TUFF_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_TUFF_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_tuff_bricks", has(ModBlocks.CRACKED_TUFF_BRICKS.get()))
-                        .save(output, "cracked_tuff_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_TUFF_BRICKS.get())
-                        .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_TUFF_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICK_STAIRS.get())
-                        .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
-                        .save(output, "mossy_tuff_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_TUFF_BRICKS.get())
-                        .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_TUFF_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
-                        .save(output, "mossy_tuff_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_TUFF_BRICKS.get())
-                        .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_TUFF_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICK_WALL.get())
-                        .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
-                        .save(output, "mossy_tuff_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', Blocks.NETHERRACK)
-                        .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.NETHERRACK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_STAIRS.get())
-                        .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
-                        .save(output, "netherrack_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', Blocks.NETHERRACK)
-                        .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.NETHERRACK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_SLAB.get(),2)
-                        .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
-                        .save(output, "netherrack_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', Blocks.NETHERRACK)
-                        .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.NETHERRACK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL.get())
-                        .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
-                        .save(output, "netherrack_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS.get(),4)
-                        .pattern("AA")
-                        .pattern("AA")
-                        .define('A', Blocks.SNOW_BLOCK)
-                        .unlockedBy("has_snow_bricks", has(Blocks.SNOW_BLOCK))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.SNOW_BRICKS.get())
-                        .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.SNOW_BRICKS.get())
-                        .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.SNOW_BRICKS.get())
-                        .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
-                        .save(output);
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get(),4)
                         .pattern("A  ")
@@ -1775,74 +1466,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('A', Blocks.DEEPSLATE_BRICK_SLAB)
                         .define('B', Blocks.SCULK)
                         .unlockedBy("has_sculk", has(Blocks.SCULK))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_RESIN_BRICKS.get())
-                        .unlockedBy("has_cracked_resin_bricks", has(ModBlocks.CRACKED_RESIN_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_STAIRS.get())
-                        .unlockedBy("has_cracked_resin_bricks", has(ModBlocks.CRACKED_RESIN_BRICKS.get()))
-                        .save(output, "cracked_resin_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_RESIN_BRICKS.get())
-                        .unlockedBy("has_cracked_resin_bricks", has(ModBlocks.CRACKED_RESIN_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_cracked_resin_bricks", has(ModBlocks.CRACKED_RESIN_BRICKS.get()))
-                        .save(output, "cracked_resin_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.CRACKED_RESIN_BRICKS.get())
-                        .unlockedBy("has_cracked_resin_bricks", has(ModBlocks.CRACKED_RESIN_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CRACKED_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RESIN_BRICK_WALL.get())
-                        .unlockedBy("has_cracked_resin_bricks", has(ModBlocks.CRACKED_RESIN_BRICKS.get()))
-                        .save(output, "cracked_resin_brick_wall_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_STAIRS.get(),4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_RESIN_BRICKS.get())
-                        .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_STAIRS.get())
-                        .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output, "mossy_resin_brick_stairs_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_SLAB.get(),6)
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_RESIN_BRICKS.get())
-                        .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_SLAB.get(),2)
-                        .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output, "mossy_resin_brick_slab_from_stonecutting");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_WALL.get(),6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .define('A', ModBlocks.MOSSY_RESIN_BRICKS.get())
-                        .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output);
-
-                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_WALL.get())
-                        .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output, "mossy_resin_brick_wall_from_stonecutting");*/
-
+                        .save(output);*/
 
             }
             public CraftingRecipeJsonBuilder modCreateStairsRecipe(RecipeCategory category, ItemConvertible output, Ingredient input) {

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_stone_brick_slab": {
+    "has_mossy_mud_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:end_stone_brick_slab"
+            "items": "cinchsmissingblocks:mossy_mud_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:chiseled_end_stone_bricks"
+        "recipe": "cinchsmissingblocks:mossy_mud_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_end_stone_brick_slab"
+      "has_mossy_mud_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:chiseled_end_stone_bricks"
+      "cinchsmissingblocks:mossy_mud_brick_stairs"
     ]
   }
 }
