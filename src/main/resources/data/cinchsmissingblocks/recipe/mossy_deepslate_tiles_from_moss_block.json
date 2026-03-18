@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "group": "mossy_cobbled_deepslate",
+  "group": "mossy_deeplate_tiles",
   "ingredients": [
-    "minecraft:cobbled_deepslate",
+    "minecraft:deepslate_tiles",
     "minecraft:moss_block"
   ],
   "result": {
     "count": 1,
-    "id": "cinchsmissingblocks:mossy_cobbled_deepslate"
+    "id": "cinchsmissingblocks:mossy_deepslate_tiles"
   }
 }

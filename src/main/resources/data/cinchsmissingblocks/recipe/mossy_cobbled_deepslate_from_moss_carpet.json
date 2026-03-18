@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "mossy_cobbled_deepslate",
   "key": {
     "A": "minecraft:moss_carpet",
     "Z": "minecraft:cobbled_deepslate"

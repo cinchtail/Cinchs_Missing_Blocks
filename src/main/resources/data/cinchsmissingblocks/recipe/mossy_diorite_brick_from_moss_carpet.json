@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "mossy_diorite_bricks",
   "key": {
     "A": "minecraft:moss_carpet",
     "Z": "cinchsmissingblocks:diorite_bricks"

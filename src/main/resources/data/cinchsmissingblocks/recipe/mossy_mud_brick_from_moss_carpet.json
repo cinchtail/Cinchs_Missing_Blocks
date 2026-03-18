@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "mossy_mud_bricks",
   "key": {
     "A": "minecraft:moss_carpet",
     "Z": "minecraft:mud_bricks"
