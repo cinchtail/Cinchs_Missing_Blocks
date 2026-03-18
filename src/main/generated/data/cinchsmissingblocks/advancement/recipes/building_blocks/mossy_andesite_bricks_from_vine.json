@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:mossy_mud_brick_from_vine"
+        "recipe": "cinchsmissingblocks:mossy_andesite_bricks_from_vine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:mossy_mud_brick_from_vine"
+      "cinchsmissingblocks:mossy_andesite_bricks_from_vine"
     ]
   }
 }

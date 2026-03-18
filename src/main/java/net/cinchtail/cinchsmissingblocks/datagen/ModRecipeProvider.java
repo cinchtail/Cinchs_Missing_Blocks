@@ -62,67 +62,151 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 //Mossy Blocks
                 offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_andesite_bricks",
-                        ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS, "mossy_andesite_brick_from_moss_block");
+                        ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS, "mossy_andesite_bricks_from_moss_block");
 
                 offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_andesite_bricks",
-                        ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS, "mossy_andesite_brick_from_vine");
+                        ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS, "mossy_andesite_bricks_from_vine");
 
                 offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_andesite_bricks",
-                        ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS, "mossy_andesite_brick_from_moss_carpet");
+                        ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS, "mossy_andesite_bricks_from_moss_carpet");
 
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_granite_bricks",
+                        ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS, "mossy_granite_bricks_from_moss_block");
 
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_granite_bricks",
+                        ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS, "mossy_granite_bricks_from_vine");
 
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_granite_bricks",
+                        ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS, "mossy_granite_bricks_from_moss_carpet");
 
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_diorite_bricks",
+                        ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS, "mossy_diorite_bricks_from_moss_block");
 
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_diorite_bricks",
+                        ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS, "mossy_diorite_bricks_from_vine");
 
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_diorite_bricks",
+                        ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS, "mossy_diorite_bricks_from_moss_carpet");
 
-                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS)
-                        .group("mossy_calcite_bricks")
-                        .input(ModBlocks.CALCITE_BRICKS)
-                        .input(Blocks.MOSS_BLOCK)
-                        .criterion(hasItem(Blocks.MOSS_BLOCK), conditionsFromItem(Blocks.MOSS_BLOCK))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_moss_block")));
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_tuff_bricks",
+                        ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS, "mossy_tuff_bricks_from_moss_block");
 
-                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS)
-                        .group("mossy_calcite_bricks")
-                        .input(ModBlocks.CALCITE_BRICKS)
-                        .input(Blocks.VINE)
-                        .criterion(hasItem(Blocks.VINE), conditionsFromItem(Blocks.VINE))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_vine")));
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_tuff_bricks",
+                        ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS, "mossy_tuff_bricks_from_vine");
 
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS)
-                        .group("mossy_calcite_bricks")
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_tuff_bricks",
+                        ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS, "mossy_tuff_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_calcite_bricks",
+                        ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS, "mossy_calcite_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_calcite_bricks",
+                        ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS, "mossy_calcite_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_calcite_bricks",
+                        ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS, "mossy_calcite_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_dripstone_bricks",
+                        ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS, "mossy_dripstone_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_dripstone_bricks",
+                        ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS, "mossy_dripstone_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_dripstone_bricks",
+                        ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS, "mossy_dripstone_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_mud_bricks",
+                        ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS, "mossy_mud_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_mud_bricks",
+                        ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS, "mossy_mud_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_mud_bricks",
+                        ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS, "mossy_mud_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_prismarine_bricks",
+                        ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS, "mossy_prismarine_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_prismarine_bricks",
+                        ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS, "mossy_prismarine_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_prismarine_bricks",
+                        ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS, "mossy_prismarine_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_bricks",
+                        ModBlocks.MOSSY_BRICKS, Blocks.BRICKS, "mossy_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_bricks",
+                        ModBlocks.MOSSY_BRICKS, Blocks.BRICKS, "mossy_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_bricks",
+                        ModBlocks.MOSSY_BRICKS, Blocks.BRICKS, "mossy_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_quartz_bricks",
+                        ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS, "mossy_quartz_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_quartz_bricks",
+                        ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS, "mossy_quartz_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_quartz_bricks",
+                        ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS, "mossy_quartz_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_cobbled_deepslate",
+                        ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE, "mossy_cobbled_deepslate_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_cobbled_deepslate",
+                        ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE, "mossy_cobbled_deepslate_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_cobbled_deepslate",
+                        ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE, "mossy_cobbled_deepslate_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_deepslate_bricks",
+                        ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, "mossy_deepslate_bricks_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_deepslate_bricks",
+                        ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, "mossy_deepslate_bricks_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_deepslate_bricks",
+                        ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, "mossy_deepslate_bricks_from_moss_carpet");
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_deepslate_tiles",
+                        ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES, "mossy_deepslate_tiles_from_moss_block");
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_deepslate_tiles",
+                        ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES, "mossy_deepslate_tiles_from_vine");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_deepslate_tiles",
+                        ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES, "mossy_deepslate_tiles_from_moss_carpet");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_cobblestone",
+                        Blocks.MOSSY_COBBLESTONE, Blocks.COBBLESTONE, "mossy_cobblestone_from_moss_carpet");
+
+                offerMossyFromMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, "mossy_stone_bricks",
+                        Blocks.MOSSY_STONE_BRICKS, Blocks.STONE_BRICKS, "mossy_stone_bricks_from_moss_carpet");
+
+                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS)
+                        .group("mossy_resin_bricks")
+                        .input(Blocks.RESIN_BRICKS)
+                        .input(Blocks.PALE_MOSS_BLOCK)
+                        .criterion(hasItem(Blocks.PALE_MOSS_BLOCK), conditionsFromItem(Blocks.PALE_MOSS_BLOCK))
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_resin_brick_from_pale_moss_block")));
+
+                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS)
+                        .group("mossy_resin_bricks")
+                        .input(Blocks.RESIN_BRICKS)
+                        .input(Blocks.PALE_HANGING_MOSS)
+                        .criterion(hasItem(Blocks.PALE_HANGING_MOSS), conditionsFromItem(Blocks.PALE_HANGING_MOSS))
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_resin_brick_from_pale_hanging_moss")));
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS)
+                        .group("mossy_resin_bricks")
                         .pattern("B")
                         .pattern("A")
                         .pattern("B")
-                        .input('A', ModBlocks.CALCITE_BRICKS)
-                        .input('B', Blocks.MOSS_CARPET)
-                        .criterion(hasItem(Blocks.MOSS_CARPET), conditionsFromItem(Blocks.MOSS_CARPET))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_calcite_brick_from_moss_carpet")));
-
-                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS)
-                        .group("mossy_mud_bricks")
-                        .input(Blocks.MUD_BRICKS)
-                        .input(Blocks.MOSS_BLOCK)
-                        .criterion(hasItem(Blocks.MOSS_BLOCK), conditionsFromItem(Blocks.MOSS_BLOCK))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_moss_block")));
-
-                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS)
-                        .group("mossy_mud_bricks")
-                        .input(Blocks.MUD_BRICKS)
-                        .input(Blocks.VINE)
-                        .criterion(hasItem(Blocks.VINE), conditionsFromItem(Blocks.VINE))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_vine")));
-
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS)
-                        .group("mossy_mud_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .input('A', Blocks.MOSS_CARPET)
-                        .input('Z', Blocks.MUD_BRICKS)
-                        .criterion(hasItem(Blocks.MOSS_CARPET), conditionsFromItem(Blocks.MOSS_CARPET))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_mud_brick_from_moss_carpet")));
+                        .input('A', Blocks.RESIN_BRICKS)
+                        .input('B', Blocks.PALE_MOSS_CARPET)
+                        .criterion(hasItem(Blocks.PALE_MOSS_CARPET), conditionsFromItem(Blocks.PALE_MOSS_CARPET))
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_resin_brick_from_pale_moss_carpet")));
 
 
                 //Chiseled Blocks
@@ -305,15 +389,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_WALL, ModBlocks.MOSSY_CALCITE_BRICKS);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICK_WALL, ModBlocks.MOSSY_CALCITE_BRICKS);
-
-
-
-
-
-
-
-
-
 
 
 
@@ -975,29 +1050,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_mossy_andesite_bricks", has(ModBlocks.MOSSY_ANDESITE_BRICKS.get()))
                         .save(output, "mossy_andesite_brick_wall_from_stonecutting");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS.get())
-                        .group("mossy_andesite_bricks")
-                        .requires(ModBlocks.ANDESITE_BRICKS.get())
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_andesite_brick_from_moss_block");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS.get())
-                        .group("mossy_andesite_bricks")
-                        .requires(ModBlocks.ANDESITE_BRICKS.get())
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_andesite_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS.get())
-                        .group("mossy_andesite_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', ModBlocks.ANDESITE_BRICKS.get())
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_andesite_brick_from_moss_carpet");
 
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL.get(),6)
@@ -1153,30 +1206,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DIORITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICK_WALL.get())
                         .unlockedBy("has_mossy_diorite_bricks", has(ModBlocks.MOSSY_DIORITE_BRICKS.get()))
                         .save(output, "mossy_diorite_brick_wall_from_stonecutting");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS.get())
-                        .group("mossy_diorite_bricks")
-                        .requires(ModBlocks.DIORITE_BRICKS.get())
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_diorite_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS.get())
-                        .group("mossy_diorite_bricks")
-                        .requires(ModBlocks.DIORITE_BRICKS.get())
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_diorite_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS.get())
-                        .group("mossy_diorite_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', ModBlocks.DIORITE_BRICKS.get())
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_diorite_brick_from_moss_carpet");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DRIPSTONE.get(),4)
                         .pattern("AA")
@@ -1376,30 +1405,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_mossy_dripstone_bricks", has(ModBlocks.MOSSY_DRIPSTONE_BRICKS.get()))
                         .save(output, "mossy_dripstone_brick_wall_from_stonecutting");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS.get())
-                        .group("mossy_dripstone_bricks")
-                        .requires(ModBlocks.DRIPSTONE_BRICKS.get())
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_dripstone_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS.get())
-                        .group("mossy_dripstone_bricks")
-                        .requires(ModBlocks.DRIPSTONE_BRICKS.get())
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_dripstone_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS.get())
-                        .group("mossy_dripstone_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', ModBlocks.DRIPSTONE_BRICKS.get())
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_dripstone_brick_from_moss_carpet");
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_WALL.get(),6)
                         .pattern("AAA")
                         .pattern("AAA")
@@ -1553,30 +1558,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_GRANITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICK_WALL.get())
                         .unlockedBy("has_mossy_granite_bricks", has(ModBlocks.MOSSY_GRANITE_BRICKS.get()))
                         .save(output, "mossy_granite_brick_wall_from_stonecutting");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS.get())
-                        .group("mossy_granite_bricks")
-                        .requires(ModBlocks.GRANITE_BRICKS.get())
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_granite_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS.get())
-                        .group("mossy_granite_bricks")
-                        .requires(ModBlocks.GRANITE_BRICKS.get())
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_granite_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS.get())
-                        .group("mossy_granite_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', ModBlocks.GRANITE_BRICKS.get())
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_granite_brick_from_moss_carpet");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_BRICK_WALL.get(),6)
                         .pattern("AAA")
@@ -1866,30 +1847,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_mossy_prismarine_bricks", has(ModBlocks.MOSSY_PRISMARINE_BRICKS.get()))
                         .save(output, "mossy_prismarine_brick_wall_from_stonecutting");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
-                        .group("mossy_prismarine_bricks")
-                        .requires(Blocks.PRISMARINE_BRICKS)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_prismarine_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
-                        .group("mossy_prismarine_bricks")
-                        .requires(Blocks.PRISMARINE_BRICKS)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_prismarine_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS.get())
-                        .group("mossy_prismarine_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.PRISMARINE_BRICKS)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_prismarine_brick_from_moss_carpet");
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_END_STONE_BRICK_STAIRS.get(),4)
                         .pattern("A  ")
                         .pattern("AA ")
@@ -1996,30 +1953,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_mossy_bricks", has(ModBlocks.MOSSY_BRICKS.get()))
                         .save(output, "mossy_brick_wall_from_stonecutting");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS.get())
-                        .group("mossy_bricks")
-                        .requires(Blocks.BRICKS)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS.get())
-                        .group("mossy_bricks")
-                        .requires(Blocks.BRICKS)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Items.VINE))
-                        .save(output, "mossy_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS.get())
-                        .group("mossy_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.BRICKS)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_brick_from_moss_carpet");
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICK_STAIRS.get(),4)
                         .pattern("A  ")
                         .pattern("AA ")
@@ -2052,30 +1985,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_QUARTZ_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICK_WALL.get())
                         .unlockedBy("has_mossy_quartz_bricks", has(ModBlocks.MOSSY_QUARTZ_BRICKS.get()))
                         .save(output, "mossy_quartz_brick_wall_from_stonecutting");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS.get())
-                        .group("mossy_quartz_bricks")
-                        .requires(Blocks.QUARTZ_BRICKS)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_quartz_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS.get())
-                        .group("mossy_quartz_bricks")
-                        .requires(Blocks.QUARTZ_BRICKS)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Items.VINE))
-                        .save(output, "mossy_quartz_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS.get())
-                        .group("mossy_quartz_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.QUARTZ_BRICKS)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_quartz_brick_from_moss_carpet");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_TUFF_BRICK_STAIRS.get(),4)
                         .pattern("A  ")
@@ -2143,30 +2052,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_mossy_tuff_bricks", has(ModBlocks.MOSSY_TUFF_BRICKS.get()))
                         .save(output, "mossy_tuff_brick_wall_from_stonecutting");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS.get())
-                        .group("mossy_tuff_bricks")
-                        .requires(Blocks.TUFF_BRICKS)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_tuff_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS.get())
-                        .group("mossy_tuff_bricks")
-                        .requires(Blocks.TUFF_BRICKS)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_tuff_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS.get())
-                        .group("mossy_tuff_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.TUFF_BRICKS)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_tuff_brick_from_moss_carpet");
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_STAIRS.get(),4)
                         .pattern("A  ")
                         .pattern("AA ")
@@ -2227,50 +2112,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('A', ModBlocks.SNOW_BRICKS.get())
                         .unlockedBy("has_netherrack", has(ModBlocks.SNOW_BRICKS.get()))
                         .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE)
-                        .group("mossy_cobblestone")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.COBBLESTONE)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_cobblestone_from_moss_carpet");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS)
-                        .group("mossy_stone_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.STONE_BRICKS)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_stone_from_moss_carpet");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
-                        .group("mossy_cobbled_deepslate")
-                        .requires(Blocks.COBBLED_DEEPSLATE)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_cobbled_deepslate_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
-                        .group("mossy_cobbled_deepslate")
-                        .requires(Blocks.COBBLED_DEEPSLATE)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_cobbled_deepslate_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE.get())
-                        .group("mossy_cobbled_deepslate")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.COBBLED_DEEPSLATE)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_cobbled_deepslate_from_moss_carpet");
 
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS.get(),4)
                         .pattern("A  ")
@@ -2338,30 +2179,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_mossy_deepslate_bricks", has(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get()))
                         .save(output, "mossy_deepslate_brick_wall_from_stonecutting");
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
-                        .group("mossy_deeplate_bricks")
-                        .requires(Blocks.DEEPSLATE_BRICKS)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_deepslate_brick_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
-                        .group("mossy_deeplate_bricks")
-                        .requires(Blocks.DEEPSLATE_BRICKS)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_deepslate_brick_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS.get())
-                        .group("mossy_deeplate_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.DEEPSLATE_BRICKS)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_deepslate_bricks_from_moss_carpet");
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS.get(),4)
                         .pattern("A  ")
                         .pattern("AA ")
@@ -2394,30 +2211,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_DEEPSLATE_TILES.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILE_WALL.get())
                         .unlockedBy("has_mossy_deepslate_tile_bricks", has(ModBlocks.MOSSY_DEEPSLATE_TILES.get()))
                         .save(output, "mossy_deepslate_tile_wall_from_stonecutting");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
-                        .group("mossy_deeplate_tiles")
-                        .requires(Blocks.DEEPSLATE_TILES)
-                        .requires(Blocks.MOSS_BLOCK)
-                        .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_deepslate_tiles_from_moss_block");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
-                        .group("mossy_deeplate_tiles")
-                        .requires(Blocks.DEEPSLATE_TILES)
-                        .requires(Blocks.VINE)
-                        .unlockedBy("has_vine", has(Blocks.VINE))
-                        .save(output, "mossy_deepslate_tiles_from_vine");
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES.get())
-                        .group("mossy_deeplate_tiles")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.MOSS_CARPET)
-                        .define('Z', Blocks.DEEPSLATE_TILES)
-                        .unlockedBy("has_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_deepslate_tiles_from_moss_carpet");
 
                 shaped(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get())
                         .pattern("AA")
@@ -2536,31 +2329,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_RESIN_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICK_WALL.get())
                         .unlockedBy("has_mossy_resin_bricks", has(ModBlocks.MOSSY_RESIN_BRICKS.get()))
-                        .save(output, "mossy_resin_brick_wall_from_stonecutting");
+                        .save(output, "mossy_resin_brick_wall_from_stonecutting");*/
 
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS.get())
-                        .group("mossy_resin_bricks")
-                        .requires(Blocks.RESIN_BRICKS)
-                        .requires(Blocks.PALE_MOSS_BLOCK)
-                        .unlockedBy("has_pale_moss_block", has(Blocks.MOSS_BLOCK))
-                        .save(output, "mossy_resin_brick_from_pale_moss_block");
 
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS.get())
-                        .group("mossy_resin_bricks")
-                        .pattern("A")
-                        .pattern("Z")
-                        .pattern("A")
-                        .define('A', Blocks.PALE_MOSS_CARPET)
-                        .define('Z', Blocks.RESIN_BRICKS)
-                        .unlockedBy("has_pale_moss_carpet", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_resin_brick_from_pale_moss_carpet");
-
-                shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS.get())
-                        .group("mossy_resin_bricks")
-                        .requires(Blocks.RESIN_BRICKS)
-                        .requires(Blocks.PALE_HANGING_MOSS)
-                        .unlockedBy("has_pale_hanging_moss", has(Blocks.MOSS_CARPET))
-                        .save(output, "mossy_resin_brick_from_pale_hanging_moss");*/
             }
             public CraftingRecipeJsonBuilder modCreateStairsRecipe(RecipeCategory category, ItemConvertible output, Ingredient input) {
                 return this.createShaped(category, output, 4).input('#', input).pattern("#  ").pattern("## ").pattern("###");

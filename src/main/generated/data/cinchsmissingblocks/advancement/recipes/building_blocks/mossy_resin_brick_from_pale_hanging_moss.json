@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_moss_carpet": {
+    "has_pale_hanging_moss": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:moss_carpet"
+            "items": "minecraft:pale_hanging_moss"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:mossy_calcite_brick_from_moss_carpet"
+        "recipe": "cinchsmissingblocks:mossy_resin_brick_from_pale_hanging_moss"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_moss_carpet"
+      "has_pale_hanging_moss"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:mossy_calcite_brick_from_moss_carpet"
+      "cinchsmissingblocks:mossy_resin_brick_from_pale_hanging_moss"
     ]
   }
 }
