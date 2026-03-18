@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks"
+		],
+		"fabric-datagen": [
+			"net.cinchtail.cinchsmissingblocks.datagen.DataGenerators"
 		]
 	},
 	"mixins": [
