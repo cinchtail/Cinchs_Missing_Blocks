@@ -96,11 +96,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_BRICK_PILLAR.get())
                 .unlockedBy("has_end_stone", has(Blocks.END_STONE))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_pillar_from_end_stone_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_brick_pillar_from_end_stone_stonecutting"));
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.END_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_BRICK_PILLAR.get())
                 .unlockedBy("has_end_stone_bricks", has(Blocks.END_STONE_BRICKS))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_pillar_from_end_stone_bricks_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_brick_pillar_from_end_stone_bricks_stonecutting"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_MUD_BRICKS.get())
                 .pattern("A")
@@ -1980,7 +1980,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_END_STONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_BRICK_PILLAR.get())
                 .unlockedBy("has_polished_end_stone", has(ModBlocks.POLISHED_END_STONE.get()))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_pillar_from_polished_end_stone_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_brick_pillar_from_polished_end_stone_stonecutting"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICK_STAIRS.get(),4)
                 .pattern("A  ")
@@ -2698,6 +2698,70 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.MUD_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUD_BRICK_PILLAR.get())
                 .unlockedBy("has_mud_bricks", has(Blocks.MUD_BRICKS))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mud_pillar_from_mud_bricks_stonecutting"));
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mud_pillar_brick_from_mud_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.PRISMARINE_BRICKS)
+                .unlockedBy("has_prismarine_bricks", has(Items.PRISMARINE_BRICKS))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.PRISMARINE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_BRICK_PILLAR.get())
+                .unlockedBy("has_prismarine_bricks", has(Blocks.PRISMARINE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "prismarine_brick_pillar_from_mud_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.STONE_BRICKS)
+                .unlockedBy("has_stone_bricks", has(Items.STONE_BRICKS))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_BRICK_PILLAR.get())
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "stone_brick_pillar_from_stone_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_BRICK_PILLAR.get())
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "stone_brick_pillar_from_stone_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.DEEPSLATE_BRICKS)
+                .unlockedBy("has_deepslate_bricks", has(Items.DEEPSLATE_BRICKS))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DEEPSLATE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_BRICK_PILLAR.get())
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_brick_pillar_from_deepslate_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DEEPSLATE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_brick_pillar_from_polished_deepslate_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DEEPSLATE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_BRICK_PILLAR.get())
+                .unlockedBy("has_deepslate_bricks", has(Blocks.DEEPSLATE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_brick_pillar_from_deepslate_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACKSTONE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', Items.POLISHED_BLACKSTONE_BRICKS)
+                .unlockedBy("has_polished_blackstone_bricks", has(Items.POLISHED_BLACKSTONE_BRICKS))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACKSTONE_BRICK_PILLAR.get())
+                .unlockedBy("has_blackstone", has(Blocks.BLACKSTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar_from_blackstone_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACKSTONE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_blackstone", has(Blocks.POLISHED_BLACKSTONE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar_from_polished_blackstone_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_BLACKSTONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACKSTONE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_blackstone_bricks", has(Blocks.POLISHED_BLACKSTONE_BRICKS))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar_from_blackstone_bricks_stonecutting"));
     }
 }

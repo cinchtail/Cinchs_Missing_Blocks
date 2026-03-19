@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_stone_bricks": {
+    "has_deepslate_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:end_stone_bricks"
+            "items": "minecraft:deepslate_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:end_stone_pillar_from_end_stone_bricks_stonecutting"
+        "recipe": "cinchsmissingblocks:deepslate_brick_pillar_from_deepslate_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_end_stone_bricks"
+      "has_deepslate_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:end_stone_pillar_from_end_stone_bricks_stonecutting"
+      "cinchsmissingblocks:deepslate_brick_pillar_from_deepslate_bricks_stonecutting"
     ]
   }
 }

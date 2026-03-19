@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_end_stone": {
+    "has_polished_blackstone_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:polished_end_stone"
+            "items": "minecraft:polished_blackstone_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:end_stone_pillar_from_polished_end_stone_stonecutting"
+        "recipe": "cinchsmissingblocks:blackstone_brick_pillar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_end_stone"
+      "has_polished_blackstone_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:end_stone_pillar_from_polished_end_stone_stonecutting"
+      "cinchsmissingblocks:blackstone_brick_pillar"
     ]
   }
 }
