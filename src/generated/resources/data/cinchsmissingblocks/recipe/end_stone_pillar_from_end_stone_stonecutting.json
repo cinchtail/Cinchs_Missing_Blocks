@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "cinchsmissingblocks:polished_end_stone"
+    "item": "minecraft:end_stone"
   },
   "result": {
     "count": 1,

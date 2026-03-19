@@ -167,7 +167,7 @@
     "cinchsmissingblocks:mossy_diorite_brick_stairs",
     "cinchsmissingblocks:mossy_diorite_brick_slab",
     "cinchsmissingblocks:mossy_diorite_brick_wall",
-    "cinchsmissingblocks:end_stone_pillar",
+    "cinchsmissingblocks:end_stone_brick_pillar",
     "cinchsmissingblocks:chiseled_purpur",
     "cinchsmissingblocks:netherrack_stairs",
     "cinchsmissingblocks:netherrack_slab",
@@ -207,6 +207,10 @@
     "cinchsmissingblocks:deepslate_slab",
     "cinchsmissingblocks:deepslate_stairs",
     "cinchsmissingblocks:sculk_inlaid_deepslate",
-    "cinchsmissingblocks:mud_pillar"
+    "cinchsmissingblocks:mud_brick_pillar",
+    "cinchsmissingblocks:prismarine_brick_pillar",
+    "cinchsmissingblocks:stone_brick_pillar",
+    "cinchsmissingblocks:deepslate_brick_pillar",
+    "cinchsmissingblocks:blackstone_brick_pillar"
   ]
 }

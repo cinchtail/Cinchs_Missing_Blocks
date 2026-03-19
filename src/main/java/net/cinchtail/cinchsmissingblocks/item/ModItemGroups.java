@@ -142,7 +142,7 @@ public class ModItemGroups {
                         output.accept(ModBlocks.MOSSY_MUD_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_MUD_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_MUD_BRICKS.get());
-                        output.accept(ModBlocks.MUD_PILLAR.get());
+                        output.accept(ModBlocks.MUD_BRICK_PILLAR.get());
                         output.accept(ModBlocks.END_STONE_STAIRS.get());
                         output.accept(ModBlocks.END_STONE_SLAB.get());
                         output.accept(ModBlocks.END_STONE_WALL.get());
@@ -155,13 +155,14 @@ public class ModItemGroups {
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_END_STONE_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_END_STONE_BRICKS.get());
-                        output.accept(ModBlocks.END_STONE_PILLAR.get());
+                        output.accept(ModBlocks.END_STONE_BRICK_PILLAR.get());
                         output.accept(ModBlocks.STONE_WALL.get());
                         output.accept(ModBlocks.SMOOTH_STONE_STAIRS.get());
                         output.accept(ModBlocks.SMOOTH_STONE_WALL.get());
                         output.accept(ModBlocks.CRACKED_STONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_STONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_STONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.STONE_BRICK_PILLAR.get());
                         output.accept(ModBlocks.DEEPSLATE_STAIRS.get());
                         output.accept(ModBlocks.DEEPSLATE_SLAB.get());
                         output.accept(ModBlocks.DEEPSLATE_WALL.get());
@@ -183,12 +184,14 @@ public class ModItemGroups {
                         output.accept(ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS.get());
                         output.accept(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB.get());
                         output.accept(ModBlocks.MOSSY_DEEPSLATE_TILE_WALL.get());
+                        output.accept(ModBlocks.DEEPSLATE_BRICK_PILLAR.get());
                         output.accept(ModBlocks.SCULK_INLAID_DEEPSLATE.get());
                         output.accept(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.POLISHED_DEEPSLATE_BUTTON.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.BLACKSTONE_BRICK_PILLAR.get());
                         output.accept(ModBlocks.NETHERRACK_STAIRS.get());
                         output.accept(ModBlocks.NETHERRACK_SLAB.get());
                         output.accept(ModBlocks.NETHERRACK_WALL.get());
@@ -214,6 +217,7 @@ public class ModItemGroups {
                         output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_SLAB.get());
                         output.accept(ModBlocks.MOSSY_PRISMARINE_BRICK_WALL.get());
                         output.accept(ModBlocks.CHISELED_PRISMARINE_BRICKS.get());
+                        output.accept(ModBlocks.PRISMARINE_BRICK_PILLAR.get());
                         output.accept(ModBlocks.SNOW_BRICKS.get());
                         output.accept(ModBlocks.SNOW_BRICK_STAIRS.get());
                         output.accept(ModBlocks.SNOW_BRICK_SLAB.get());

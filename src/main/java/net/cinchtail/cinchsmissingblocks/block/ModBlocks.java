@@ -435,7 +435,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS).strength(1.5F, 3.0F)
                     .sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> MUD_PILLAR = registerBlock("mud_pillar",
+    public static final RegistryObject<Block> MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(MUD_BRICKS)
                     .strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS)));
 
@@ -478,7 +478,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(END_STONE).strength(3.0F, 9.0F).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> END_STONE_PILLAR = registerBlock("end_stone_pillar",
+    public static final RegistryObject<Block> END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(END_STONE_BRICKS)
                     .strength(3.0F, 9.0F).sound(SoundType.STONE)));
 
@@ -502,6 +502,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_STONE_BRICK_WALL = registerBlock("cracked_stone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(STONE_BRICKS)
                     .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> STONE_BRICK_PILLAR = registerBlock("stone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Deepslate Blocks
     public static final RegistryObject<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
@@ -573,6 +576,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES)
                     .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
+    public static final RegistryObject<Block> DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sound(SoundType.DEEPSLATE_BRICKS)));
     public static final RegistryObject<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
             () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
@@ -593,6 +599,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final RegistryObject<Block> BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.DEEPSLATE_BRICKS)));
 
     //Netherrack
     public static final RegistryObject<Block> NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
@@ -681,6 +690,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(PRISMARINE_BRICKS).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PRISMARINE_BRICK_PILLAR = registerBlock("prismarine_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Smooth Basalt
     public static final RegistryObject<Block> SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",

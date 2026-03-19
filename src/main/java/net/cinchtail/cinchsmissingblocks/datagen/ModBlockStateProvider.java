@@ -232,10 +232,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         pressurePlateBlock((PressurePlateBlock) POLISHED_DEEPSLATE_PRESSURE_PLATE.get(), blockTexture(Blocks.POLISHED_DEEPSLATE));
 
-        axisBlock((RotatedPillarBlock) END_STONE_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_side"),
-                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_pillar_top"));
-        axisBlock((RotatedPillarBlock) MUD_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_pillar_side"),
-                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_pillar_top"));
+        axisBlock((RotatedPillarBlock) END_STONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/end_stone_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) MUD_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/mud_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) PRISMARINE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/prismarine_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/prismarine_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) STONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/stone_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/stone_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) DEEPSLATE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/deepslate_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/deepslate_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) BLACKSTONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/blackstone_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/blackstone_brick_pillar_top"));
 
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
