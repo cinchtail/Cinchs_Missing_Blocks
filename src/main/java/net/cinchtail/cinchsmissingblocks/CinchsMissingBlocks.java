@@ -2,11 +2,14 @@ package net.cinchtail.cinchsmissingblocks;
 
 import com.mojang.logging.LogUtils;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.config.TuffPillarConfig;
 import net.cinchtail.cinchsmissingblocks.events.ResourcePacksLoader;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -19,6 +22,7 @@ public class CinchsMissingBlocks {
         IEventBus modEventBus = context.getModEventBus();
         ModBlocks.register(modEventBus);
         ModItemGroups.register(modEventBus);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, TuffPillarConfig.SPEC);
         MinecraftForge.EVENT_BUS.register(new ResourcePacksLoader());
         MinecraftForge.EVENT_BUS.register(this);
     }

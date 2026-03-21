@@ -1,6 +1,7 @@
 {
   "required": true,
   "package": "net.cinchtail.cinchsmissingblocks.mixins",
+  "plugin": "net.cinchtail.cinchsmissingblocks.mixins.TuffPillarMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "refmap": "cinchcraft.refmap.json",
   "mixins": [
