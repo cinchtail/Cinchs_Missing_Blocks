@@ -11,7 +11,9 @@ import java.util.Set;
 public class TuffPillarMixinPlugin implements IMixinConfigPlugin {
 
     @Override
-    public void onLoad(String mixinPackage) {}
+    public void onLoad(String mixinPackage) {
+
+    }
 
     @Override
     public String getRefMapperConfig() {
@@ -24,12 +26,13 @@ public class TuffPillarMixinPlugin implements IMixinConfigPlugin {
         if (mixinClassName.equals("net.cinchtail.cinchsmissingblocks.mixins.TuffPillarMixinPlugin")) {
             return TuffPillarConfig.ENABLE_CHISELED_TUFF_BRICKS.get();
         }
-
         return true;
     }
 
     @Override
-    public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {}
+    public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {
+
+    }
 
     @Override
     public List<String> getMixins() {
@@ -37,10 +40,8 @@ public class TuffPillarMixinPlugin implements IMixinConfigPlugin {
     }
     public void preApply(String targetClassName, ClassNode targetClass,
                          String mixinClassName, IMixinInfo mixinInfo) {
-
     }
     public void postApply(String targetClassName, ClassNode targetClass,
                           String mixinClassName, IMixinInfo mixinInfo) {
-
     }
 }
