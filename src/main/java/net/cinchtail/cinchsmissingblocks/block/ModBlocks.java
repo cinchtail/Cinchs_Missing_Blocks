@@ -85,6 +85,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_CALCITE_BRICKS = registerBlock("chiseled_calcite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CALCITE_BRICK_PILLAR = registerBlock("calcite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
+                    .strength(1F, 1.0F).sound(SoundType.CALCITE)));
 
     //Dripstone Blocks
     public static final RegistryObject<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",

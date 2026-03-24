@@ -244,6 +244,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/deepslate_brick_pillar_top"));
         axisBlock((RotatedPillarBlock) BLACKSTONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/blackstone_brick_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/blackstone_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) CALCITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/calcite_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/calcite_brick_pillar_top"));
 
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
