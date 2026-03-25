@@ -10,7 +10,7 @@ public class DataGenerators implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
         pack.addProvider(ModRecipeProvider::new);
-
+        pack.addProvider(ModModelProvider::new);
     }
     @Override
     public void buildRegistry(RegistryBuilder registryBuilder) {
