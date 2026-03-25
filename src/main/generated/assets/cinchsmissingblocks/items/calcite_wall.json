@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsmissingblocks:block/calcite_wall"
+    "model": "cinchsmissingblocks:block/calcite_wall_inventory"
   }
 }

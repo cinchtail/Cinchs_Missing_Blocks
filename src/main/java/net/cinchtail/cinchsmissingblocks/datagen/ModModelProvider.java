@@ -13,14 +13,42 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) {
-        var PolishedDeepslate = TextureMap.getId(Blocks.POLISHED_DEEPSLATE);
+        var calcite = TextureMap.getId(Blocks.CALCITE);
+        BlockStateModelGenerator.BlockTexturePool polishedCalcitePool = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_CALCITE);
+        BlockStateModelGenerator.BlockTexturePool calciteBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CALCITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedCalciteBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_CALCITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyCalciteBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_CALCITE_BRICKS);
 
-        BlockModelHelpers.button(gen, ModBlocks.POLISHED_DEEPSLATE_BUTTON, PolishedDeepslate);
-        BlockModelHelpers.pressurePlate(gen, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, PolishedDeepslate);
+        BlockModelHelpers.stairs(gen, ModBlocks.CALCITE_STAIRS, calcite);
+        BlockModelHelpers.slab(gen, ModBlocks.CALCITE_SLAB, Blocks.CALCITE, calcite);
+        BlockModelHelpers.wall(gen, ModBlocks.CALCITE_WALL, calcite);
+
+        polishedCalcitePool.stairs(ModBlocks.POLISHED_CALCITE_STAIRS);
+        polishedCalcitePool.slab(ModBlocks.POLISHED_CALCITE_SLAB);
+        polishedCalcitePool.wall(ModBlocks.POLISHED_CALCITE_WALL);
+
+        calciteBricksPool.stairs(ModBlocks.CALCITE_BRICK_STAIRS);
+        calciteBricksPool.slab(ModBlocks.CALCITE_BRICK_SLAB);
+        calciteBricksPool.wall(ModBlocks.CALCITE_BRICK_WALL);
+
+        crackedCalciteBricksPool.stairs(ModBlocks.CRACKED_CALCITE_BRICK_STAIRS);
+        crackedCalciteBricksPool.slab(ModBlocks.CRACKED_CALCITE_BRICK_SLAB);
+        crackedCalciteBricksPool.wall(ModBlocks.CRACKED_CALCITE_BRICK_WALL);
+
+        mossyCalciteBricksPool.stairs(ModBlocks.MOSSY_CALCITE_BRICK_STAIRS);
+        mossyCalciteBricksPool.slab(ModBlocks.MOSSY_CALCITE_BRICK_SLAB);
+        mossyCalciteBricksPool.wall(ModBlocks.MOSSY_CALCITE_BRICK_WALL);
+
+
+
+
+
+        var polishedDeepslate = TextureMap.getId(Blocks.POLISHED_DEEPSLATE);
+
+        BlockModelHelpers.button(gen, ModBlocks.POLISHED_DEEPSLATE_BUTTON, polishedDeepslate);
+        BlockModelHelpers.pressurePlate(gen, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, polishedDeepslate);
 
         /*BlockStateModelGenerator.BlockTexturePool pinkGarnetPool = blockStateModelGenerator.registerStateWithModelReference(Blocks.POLISHED_DEEPSLATE);
-        pinkGarnetPool.button(ModBlocks.PINK_GARNET_BUTTON);
-        pinkGarnetPool.pressurePlate(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
