@@ -184,6 +184,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
                     .sounds(BlockSoundGroup.DRIPSTONE_BLOCK)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_dripstone_bricks")))));
+    public static final Block DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "dripstone_brick_pillar")))));
 
     //Tuff Blocks
     public static final Block CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
@@ -276,6 +279,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_andesite_bricks")))));
+    public static final Block ANDESITE_BRICK_PILLAR = registerBlock("andesite_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "andesite_brick_pillar")))));
 
     //Granite Blocks
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -334,6 +340,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_GRANITE).strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_granite_bricks")))));
+    public static final Block GRANITE_BRICK_PILLAR = registerBlock("granite_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.POLISHED_GRANITE).strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "granite_brick_pillar")))));
 
 
     //Diorite Blocks
@@ -392,6 +401,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.POLISHED_DIORITE).strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_diorite_bricks")))));
+    public static final Block DIORITE_BRICK_PILLAR = registerBlock("diorite_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.POLISHED_DIORITE).strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "diorite_brick_pillar")))));
 
     //Quartz Blocks
     public static final Block QUARTZ_WALL = registerBlock("quartz_wall",
@@ -534,7 +546,7 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_mud_bricks")))));
     public static final Block MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mud_pillar")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mud_brick_pillar")))));
 
     //Resin Blocks
     public static final Block CRACKED_RESIN_BRICKS = registerBlock("cracked_resin_bricks",
@@ -619,7 +631,7 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_end_stone_bricks")))));
     public static final Block END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(Blocks.END_STONE_BRICKS)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "end_stone_pillar")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "end_stone_brick_pillar")))));
 
     //Stone Blocks
     public static final Block STONE_WALL = registerBlock("stone_wall",
@@ -647,6 +659,9 @@ public class ModBlocks {
             properties -> new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_stone_brick_wall")))));
+    public static final Block STONE_BRICK_PILLAR = registerBlock("stone_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.STONE).strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "stone_brick_pillar")))));
 
     //Deepslate Blocks
     public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
@@ -734,6 +749,9 @@ public class ModBlocks {
             properties -> new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE_TILES)
                     .strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_TILES)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_wall")))));
+    public static final Block DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.DEEPSLATE).strength(3.5f, 6.0F).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "deepslate_brick_pillar")))));
     public static final Block SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
             properties -> new SculkInlaidDeepslateBlock(Block.Settings.copy(Blocks.CHISELED_DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
                     .strength(3.5f, 6.0F).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "sculk_inlaid_deepslate")))));
@@ -757,6 +775,9 @@ public class ModBlocks {
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_polished_blackstone_brick_wall")))));
+    public static final Block BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5f, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar")))));
 
     //Netherrack
     public static final Block NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
@@ -866,6 +887,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_prismarine_bricks")))));
+    public static final Block PRISMARINE_BRICK_PILLAR = registerBlock("prismarine_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS).strength(1.5f, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "prismarine_brick_pillar")))));
 
     //Smooth Basalt
     public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
