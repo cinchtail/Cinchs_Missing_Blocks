@@ -45,6 +45,48 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.pillar(gen,ModBlocks.CALCITE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/calcite_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/calcite_brick_pillar_side"));
 
+        BlockStateModelGenerator.BlockTexturePool polishedDripstonePool = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DRIPSTONE);
+        BlockStateModelGenerator.BlockTexturePool dripstoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.DRIPSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedDripstoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_DRIPSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyDripstoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_DRIPSTONE_BRICKS);
+
+        BlockModelHelpers.stairs(gen, ModBlocks.DRIPSTONE_STAIRS, TextureMap.getId(Blocks.DRIPSTONE_BLOCK));
+        BlockModelHelpers.slab(gen, ModBlocks.DRIPSTONE_SLAB, Blocks.DRIPSTONE_BLOCK, TextureMap.getId(Blocks.DRIPSTONE_BLOCK));
+        BlockModelHelpers.wall(gen, ModBlocks.DRIPSTONE_WALL, TextureMap.getId(Blocks.DRIPSTONE_BLOCK));
+
+        polishedDripstonePool.stairs(ModBlocks.POLISHED_DRIPSTONE_STAIRS);
+        polishedDripstonePool.slab(ModBlocks.POLISHED_DRIPSTONE_SLAB);
+        polishedDripstonePool.wall(ModBlocks.POLISHED_DRIPSTONE_WALL);
+
+        dripstoneBricksPool.stairs(ModBlocks.DRIPSTONE_BRICK_STAIRS);
+        dripstoneBricksPool.slab(ModBlocks.DRIPSTONE_BRICK_SLAB);
+        dripstoneBricksPool.wall(ModBlocks.DRIPSTONE_BRICK_WALL);
+
+        crackedDripstoneBricksPool.stairs(ModBlocks.CRACKED_DRIPSTONE_BRICK_STAIRS);
+        crackedDripstoneBricksPool.slab(ModBlocks.CRACKED_DRIPSTONE_BRICK_SLAB);
+        crackedDripstoneBricksPool.wall(ModBlocks.CRACKED_DRIPSTONE_BRICK_WALL);
+
+        mossyDripstoneBricksPool.stairs(ModBlocks.MOSSY_DRIPSTONE_BRICK_STAIRS);
+        mossyDripstoneBricksPool.slab(ModBlocks.MOSSY_DRIPSTONE_BRICK_SLAB);
+        mossyDripstoneBricksPool.wall(ModBlocks.MOSSY_DRIPSTONE_BRICK_WALL);
+
+        BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_DRIPSTONE_BRICKS, Identifier.of("cinchsmissingblocks:block/chiseled_dripstone_bricks_top"),
+                Identifier.of("cinchsmissingblocks:block/chiseled_dripstone_bricks_side"));
+
+        BlockModelHelpers.pillar(gen,ModBlocks.DRIPSTONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/dripstone_brick_pillar_top"),
+                Identifier.of("cinchsmissingblocks:block/dripstone_brick_pillar_side"));
+
+        BlockStateModelGenerator.BlockTexturePool crackedTuffeBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_TUFF_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyTuffBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_TUFF_BRICKS);
+
+        crackedTuffeBricksPool.stairs(ModBlocks.CRACKED_TUFF_BRICK_STAIRS);
+        crackedTuffeBricksPool.slab(ModBlocks.CRACKED_TUFF_BRICK_SLAB);
+        crackedTuffeBricksPool.wall(ModBlocks.CRACKED_TUFF_BRICK_WALL);
+
+        mossyTuffBricksPool.stairs(ModBlocks.MOSSY_TUFF_BRICK_STAIRS);
+        mossyTuffBricksPool.slab(ModBlocks.MOSSY_TUFF_BRICK_SLAB);
+        mossyTuffBricksPool.wall(ModBlocks.MOSSY_TUFF_BRICK_WALL);
+
 
 
 

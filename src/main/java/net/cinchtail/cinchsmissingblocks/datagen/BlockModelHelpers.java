@@ -100,15 +100,12 @@ public class BlockModelHelpers {
                 .put(TextureKey.END, end)
                 .put(TextureKey.SIDE, side);
 
-        // Upload the model
         Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
-        // Generate axis-rotated blockstate
         gen.blockStateCollector.accept(
                 BlockStateModelGenerator.createAxisRotatedBlockState(block, model)
         );
 
-        // Item model uses the same model
         gen.registerParentedItemModel(block, model);
     }
 }
