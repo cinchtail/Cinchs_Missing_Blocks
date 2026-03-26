@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": [
-      "cinchsmissingblocks:polished_end_stone"
-    ]
+    "#": "cinchsmissingblocks:polished_end_stone"
   },
   "pattern": [
     "##",

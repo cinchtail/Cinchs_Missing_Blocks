@@ -98,6 +98,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sounds(BlockSoundGroup.CALCITE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_calcite_bricks")))));
+    public static final Block CALCITE_BRICK_PILLAR = registerBlock("calcite_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(ModBlocks.CALCITE_BRICKS).strength(1F, 1.0F).sounds(BlockSoundGroup.CALCITE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "calcite_brick_pillar")))));
 
 
     //Dripstone Blocks
@@ -529,7 +532,7 @@ public class ModBlocks {
     public static final Block CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_mud_bricks")))));
-    public static final Block MUD_PILLAR = registerBlock("mud_pillar",
+    public static final Block MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "mud_pillar")))));
 
@@ -614,7 +617,7 @@ public class ModBlocks {
     public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_end_stone_bricks")))));
-    public static final Block END_STONE_PILLAR = registerBlock("end_stone_pillar",
+    public static final Block END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(Blocks.END_STONE_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "end_stone_pillar")))));
 

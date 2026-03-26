@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.data.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -13,15 +14,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) {
-        var calcite = TextureMap.getId(Blocks.CALCITE);
         BlockStateModelGenerator.BlockTexturePool polishedCalcitePool = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_CALCITE);
         BlockStateModelGenerator.BlockTexturePool calciteBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CALCITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool crackedCalciteBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_CALCITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool mossyCalciteBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_CALCITE_BRICKS);
 
-        BlockModelHelpers.stairs(gen, ModBlocks.CALCITE_STAIRS, calcite);
-        BlockModelHelpers.slab(gen, ModBlocks.CALCITE_SLAB, Blocks.CALCITE, calcite);
-        BlockModelHelpers.wall(gen, ModBlocks.CALCITE_WALL, calcite);
+        BlockModelHelpers.stairs(gen, ModBlocks.CALCITE_STAIRS, TextureMap.getId(Blocks.CALCITE));
+        BlockModelHelpers.slab(gen, ModBlocks.CALCITE_SLAB, Blocks.CALCITE, TextureMap.getId(Blocks.CALCITE));
+        BlockModelHelpers.wall(gen, ModBlocks.CALCITE_WALL, TextureMap.getId(Blocks.CALCITE));
 
         polishedCalcitePool.stairs(ModBlocks.POLISHED_CALCITE_STAIRS);
         polishedCalcitePool.slab(ModBlocks.POLISHED_CALCITE_SLAB);
@@ -39,14 +39,36 @@ public class ModModelProvider extends FabricModelProvider {
         mossyCalciteBricksPool.slab(ModBlocks.MOSSY_CALCITE_BRICK_SLAB);
         mossyCalciteBricksPool.wall(ModBlocks.MOSSY_CALCITE_BRICK_WALL);
 
+        BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_CALCITE_BRICKS, Identifier.of("cinchsmissingblocks:block/chiseled_calcite_bricks_top"),
+                Identifier.of("cinchsmissingblocks:block/chiseled_calcite_bricks_side"));
+
+        BlockModelHelpers.pillar(gen,ModBlocks.CALCITE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/calcite_brick_pillar_top"),
+                Identifier.of("cinchsmissingblocks:block/calcite_brick_pillar_side"));
 
 
 
 
-        var polishedDeepslate = TextureMap.getId(Blocks.POLISHED_DEEPSLATE);
 
-        BlockModelHelpers.button(gen, ModBlocks.POLISHED_DEEPSLATE_BUTTON, polishedDeepslate);
-        BlockModelHelpers.pressurePlate(gen, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, polishedDeepslate);
+
+
+        BlockModelHelpers.wall(gen, ModBlocks.QUARTZ_WALL, Identifier.of("minecraft:block/quartz_block_side"));
+        BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_QUARTZ_WALL, Identifier.of("minecraft:block/quartz_block_bottom"));
+        BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_SANDSTONE_WALL, Identifier.of("minecraft:block/sandstone_top"));
+        BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Identifier.of("minecraft:block/red_sandstone_top"));
+
+        BlockModelHelpers.button(gen, ModBlocks.POLISHED_DEEPSLATE_BUTTON, TextureMap.getId(Blocks.POLISHED_DEEPSLATE));
+        BlockModelHelpers.pressurePlate(gen, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, TextureMap.getId(Blocks.POLISHED_DEEPSLATE));
+
+        gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_sandstone_stairs"));
+        gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_sandstone_wall_inventory"));
+        gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_stairs"));
+        gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_wall_inventory"));
+
+        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_STAIRS, Identifier.of("cinchsmissingblocks:block/deepslate_stairs"));
+        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_SLAB, Identifier.of("cinchsmissingblocks:block/deepslate_slab"));
+        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_WALL, Identifier.of("cinchsmissingblocks:block/deepslate_wall_inventory"));
+
+        gen.registerParentedItemModel(ModBlocks.SCULK_INLAID_DEEPSLATE, Identifier.of("cinchsmissingblocks:block/sculk_inlaid_deepslate"));
 
         /*BlockStateModelGenerator.BlockTexturePool pinkGarnetPool = blockStateModelGenerator.registerStateWithModelReference(Blocks.POLISHED_DEEPSLATE);
 

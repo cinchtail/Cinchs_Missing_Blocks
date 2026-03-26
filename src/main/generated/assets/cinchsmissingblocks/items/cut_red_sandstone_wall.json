@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsmissingblocks:block/cut_red_sandstone_wall"
+    "model": "cinchsmissingblocks:block/cut_red_sandstone_wall_inventory"
   }
 }

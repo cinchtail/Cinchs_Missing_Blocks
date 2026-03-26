@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsmissingblocks:block/deepslate_wall"
+    "model": "cinchsmissingblocks:block/deepslate_wall_inventory"
   }
 }

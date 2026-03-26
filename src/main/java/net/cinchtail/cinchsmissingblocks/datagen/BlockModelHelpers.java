@@ -81,31 +81,34 @@ public class BlockModelHelpers {
         gen.registerParentedItemModel(wall, inventory);
     }
 
-    public static void fence(BlockStateModelGenerator gen, Block fence, Identifier texture) {
+    public static void cubeColumn(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
         TextureMap tex = new TextureMap()
-                .put(TextureKey.TEXTURE, texture);
+                .put(TextureKey.END, end)
+                .put(TextureKey.SIDE, side);
 
-        Identifier post = Models.FENCE_POST.upload(fence, tex, gen.modelCollector);
-        Identifier side = Models.FENCE_SIDE.upload(fence, tex, gen.modelCollector);
-        Identifier inventory = Models.FENCE_INVENTORY.upload(fence, tex, gen.modelCollector);
+        Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createFenceBlockState(fence, post, side)
+                BlockStateModelGenerator.createSingletonBlockState(block, model)
         );
-        gen.registerParentedItemModel(fence, inventory);
+
+        gen.registerParentedItemModel(block, model);
     }
-    public static void fenceGate(BlockStateModelGenerator gen, Block gate, Identifier texture) {
+
+    public static void pillar(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
         TextureMap tex = new TextureMap()
-                .put(TextureKey.TEXTURE, texture);
+                .put(TextureKey.END, end)
+                .put(TextureKey.SIDE, side);
 
-        Identifier closed = Models.TEMPLATE_FENCE_GATE.upload(gate, tex, gen.modelCollector);
-        Identifier open = Models.TEMPLATE_FENCE_GATE_OPEN.upload(gate, tex, gen.modelCollector);
-        Identifier wallClosed = Models.TEMPLATE_FENCE_GATE_WALL.upload(gate, tex, gen.modelCollector);
-        Identifier wallOpen = Models.TEMPLATE_FENCE_GATE_WALL_OPEN.upload(gate, tex, gen.modelCollector);
+        // Upload the model
+        Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
-        gen.blockStateCollector.accept(BlockStateModelGenerator.createFenceGateBlockState(
-                        gate, open, closed, wallOpen, wallClosed, true));
+        // Generate axis-rotated blockstate
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createAxisRotatedBlockState(block, model)
+        );
 
-        gen.registerParentedItemModel(gate, closed);
+        // Item model uses the same model
+        gen.registerParentedItemModel(block, model);
     }
 }
