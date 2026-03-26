@@ -7,7 +7,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -83,6 +82,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_CALCITE_BRICKS = registerBlock("chiseled_calcite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CALCITE_BRICK_PILLAR = registerBlock("calcite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
+                    .strength(1F, 1.0F).sound(SoundType.CALCITE)));
 
     //Dripstone Blocks
     public static final DeferredBlock<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
@@ -150,6 +152,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_DRIPSTONE_BRICKS = registerBlock("chiseled_dripstone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
                     .sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK)
+                    .strength(1.5F, 6.0F).sound(SoundType.DRIPSTONE_BLOCK)));
 
     //Tuff Blocks
     public static final DeferredBlock<Block> CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
@@ -225,6 +230,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_ANDESITE_BRICKS = registerBlock("chiseled_andesite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> ANDESITE_BRICK_PILLAR = registerBlock("andesite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Granite Blocks
     public static final DeferredBlock<Block> POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -272,6 +280,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_GRANITE_BRICKS = registerBlock("chiseled_granite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> GRANITE_BRICK_PILLAR = registerBlock("granite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Diorite Blocks
     public static final DeferredBlock<Block> POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
@@ -318,6 +329,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_DIORITE_BRICKS = registerBlock("chiseled_diorite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DIORITE_BRICK_PILLAR = registerBlock("diorite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Quartz Blocks
     public static final DeferredBlock<Block> QUARTZ_WALL = registerBlock("quartz_wall",
@@ -392,7 +406,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_BRICKS = registerBlock("chiseled_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).strength(2.0F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> MUD_PILLAR = registerBlock("mud_pillar",
+    public static final DeferredBlock<Block> MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS)
                     .strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS)));
 
@@ -475,7 +489,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE).strength(3.0F, 9.0F).sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> END_STONE_PILLAR = registerBlock("end_stone_pillar",
+    public static final DeferredBlock<Block> END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE_BRICKS)));
 
     //Stone Blocks
@@ -498,6 +512,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CRACKED_STONE_BRICK_WALL = registerBlock("cracked_stone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)
                     .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> STONE_BRICK_PILLAR = registerBlock("stone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Deepslate Blocks
     public static final DeferredBlock<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
@@ -569,6 +586,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES)
                     .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
+    public static final DeferredBlock<Block> DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
             () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
@@ -582,14 +602,17 @@ public class ModBlocks {
     //Blackstone Bricks
     public static final DeferredBlock<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
             () -> new StairBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
                             .requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final DeferredBlock<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock("cracked_polished_blackstone_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final DeferredBlock<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+    public static final DeferredBlock<Block> BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BRICKS)
+                    .strength(3.5f, 6.0F).sound(SoundType.STONE)));
 
     //Netherrack
     public static final DeferredBlock<Block> NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
@@ -678,6 +701,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(PRISMARINE_BRICKS).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> PRISMARINE_BRICK_PILLAR = registerBlock("prismarine_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Smooth Basalt
     public static final DeferredBlock<Block> SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
