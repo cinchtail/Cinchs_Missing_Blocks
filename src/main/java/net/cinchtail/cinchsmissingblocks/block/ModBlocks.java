@@ -155,6 +155,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_DRIPSTONE_BRICKS = registerBlock("chiseled_dripstone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
                     .sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK)
+                    .strength(1.5F, 6.0F).sound(SoundType.DRIPSTONE_BLOCK)));
 
     //Tuff Blocks
     public static final RegistryObject<Block> CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
@@ -230,6 +233,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_ANDESITE_BRICKS = registerBlock("chiseled_andesite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ANDESITE_BRICK_PILLAR = registerBlock("andesite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Granite Blocks
     public static final RegistryObject<Block> POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -277,6 +283,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_GRANITE_BRICKS = registerBlock("chiseled_granite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRANITE_BRICK_PILLAR = registerBlock("granite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Diorite Blocks
     public static final RegistryObject<Block> POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
@@ -323,6 +332,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHISELED_DIORITE_BRICKS = registerBlock("chiseled_diorite_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIORITE_BRICK_PILLAR = registerBlock("diorite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE)));
 
     //Quartz Blocks
     public static final RegistryObject<Block> QUARTZ_WALL = registerBlock("quartz_wall",

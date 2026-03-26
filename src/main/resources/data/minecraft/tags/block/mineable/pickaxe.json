@@ -211,6 +211,12 @@
     "cinchsmissingblocks:prismarine_brick_pillar",
     "cinchsmissingblocks:stone_brick_pillar",
     "cinchsmissingblocks:deepslate_brick_pillar",
-    "cinchsmissingblocks:blackstone_brick_pillar"
+    "cinchsmissingblocks:blackstone_brick_pillar",
+    "cinchsmissingblocks:prismarine_brick_pillar",
+    "cinchsmissingblocks:calcite_brick_pillar",
+    "cinchsmissingblocks:dripstone_brick_pillar",
+    "cinchsmissingblocks:andesite_brick_pillar",
+    "cinchsmissingblocks:granite_brick_pillar",
+    "cinchsmissingblocks:diorite_brick_pillar"
   ]
 }

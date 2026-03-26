@@ -214,6 +214,11 @@
   "block.cinchsmissingblocks.deepslate_brick_pillar": "Deepslate Brick Pillar",
   "block.cinchsmissingblocks.blackstone_brick_pillar": "Blackstone Brick Pillar",
   "block.cinchsmissingblocks.prismarine_brick_pillar": "Prismarine Brick Pillar",
+  "block.cinchsmissingblocks.calcite_brick_pillar": "Calcite Brick Pillar",
+  "block.cinchsmissingblocks.dripstone_brick_pillar": "Dripstone Brick Pillar",
+  "block.cinchsmissingblocks.andesite_brick_pillar": "Andesite Brick Pillar",
+  "block.cinchsmissingblocks.granite_brick_pillar": "Granite Brick Pillar",
+  "block.cinchsmissingblocks.diorite_brick_pillar": "Diorite Brick Pillar",
 
   "itemgroup.cinchsmissingblocks": "Cinch's Missing Blocks"
 }

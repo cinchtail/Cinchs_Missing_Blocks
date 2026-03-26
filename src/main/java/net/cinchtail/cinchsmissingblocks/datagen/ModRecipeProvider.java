@@ -2763,5 +2763,100 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_BLACKSTONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACKSTONE_BRICK_PILLAR.get())
                 .unlockedBy("has_polished_blackstone_bricks", has(Blocks.POLISHED_BLACKSTONE_BRICKS))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar_from_blackstone_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', ModBlocks.CALCITE_BRICKS.get())
+                .unlockedBy("has_calcite_bricks", has(ModBlocks.CALCITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.CALCITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_PILLAR.get())
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "calcite_brick_pillar_from_calcite_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_CALCITE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_calcite", has(ModBlocks.POLISHED_CALCITE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "calcite_brick_pillar_from_polished_calcite_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CALCITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_PILLAR.get())
+                .unlockedBy("has_calcite_bricks", has(ModBlocks.CALCITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "calcite_brick_pillar_from_calcite_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', ModBlocks.DRIPSTONE_BRICKS.get())
+                .unlockedBy("has_dripstone_bricks", has(ModBlocks.DRIPSTONE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DRIPSTONE_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICK_PILLAR.get())
+                .unlockedBy("has_dripstone", has(Blocks.DRIPSTONE_BLOCK))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "dripstone_brick_pillar_from_dripstone_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.POLISHED_DRIPSTONE.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_dripstone", has(ModBlocks.POLISHED_DRIPSTONE.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "dripstone_brick_pillar_from_polished_dripstone_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.DRIPSTONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIPSTONE_BRICK_PILLAR.get())
+                .unlockedBy("has_dripstone_bricks", has(ModBlocks.DRIPSTONE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "dripstone_brick_pillar_from_dripstone_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', ModBlocks.ANDESITE_BRICKS.get())
+                .unlockedBy("has_andesite_bricks", has(ModBlocks.ANDESITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.ANDESITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_PILLAR.get())
+                .unlockedBy("has_andesite", has(Blocks.ANDESITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_pillar_from_andesite_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_ANDESITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_pillar_from_polished_andesite_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.ANDESITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANDESITE_BRICK_PILLAR.get())
+                .unlockedBy("has_andesite_bricks", has(ModBlocks.ANDESITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_pillar_from_andesite_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRANITE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', ModBlocks.GRANITE_BRICKS.get())
+                .unlockedBy("has_granite_bricks", has(ModBlocks.ANDESITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.GRANITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRANITE_BRICK_PILLAR.get())
+                .unlockedBy("has_granite", has(Blocks.GRANITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "granite_brick_pillar_from_granite_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_GRANITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRANITE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_granite", has(Blocks.POLISHED_GRANITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "granite_brick_pillar_from_polished_granite_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.GRANITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRANITE_BRICK_PILLAR.get())
+                .unlockedBy("has_granite_bricks", has(ModBlocks.GRANITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "granite_brick_pillar_from_granite_bricks_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_PILLAR.get(),2)
+                .pattern("A")
+                .pattern("A")
+                .define('A', ModBlocks.DIORITE_BRICKS.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_PILLAR.get())
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_pillar_from_diorite_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DIORITE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_PILLAR.get())
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_pillar_from_polished_diorite_bricks_stonecutting"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.DIORITE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_PILLAR.get())
+                .unlockedBy("has_diorite_bricks", has(ModBlocks.DIORITE_BRICKS.get()))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_pillar_from_diorite_bricks_stonecutting"));
     }
 }

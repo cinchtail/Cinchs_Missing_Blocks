@@ -5,13 +5,9 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.function.Supplier;
 
 import static net.cinchtail.cinchsmissingblocks.block.ModBlocks.*;
 
@@ -224,10 +220,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         vanillaFenceBlock(CRACKED_NETHER_BRICK_FENCE, Blocks.CRACKED_NETHER_BRICKS);
         modFenceBlock(CRACKED_RED_NETHER_BRICK_FENCE, CRACKED_RED_NETHER_BRICKS);
 
-        /*vanillaFenceGateBlock((FenceGateBlock) NETHER_BRICK_FENCE_GATE.get(), "nether_brick",
-                ResourceLocation.withDefaultNamespace("block/nether_bricks")
-        );*/
-
         vanillaButtonBlock(POLISHED_DEEPSLATE_BUTTON, Blocks.POLISHED_DEEPSLATE);
 
         pressurePlateBlock((PressurePlateBlock) POLISHED_DEEPSLATE_PRESSURE_PLATE.get(), blockTexture(Blocks.POLISHED_DEEPSLATE));
@@ -246,6 +238,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/blackstone_brick_pillar_top"));
         axisBlock((RotatedPillarBlock) CALCITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/calcite_brick_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/calcite_brick_pillar_top"));
+        /*axisBlock((RotatedPillarBlock) DRIPSTONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/dripstone_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/dripstone_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) ANDESITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/andesite_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/andesite_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) GRANITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/granite_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/granite_brick_pillar_top"));
+        axisBlock((RotatedPillarBlock) DIORITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/diorite_brick_pillar_side"),
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/diorite_brick_pillar_top"));*/
 
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
@@ -287,34 +287,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(block.get(), models().buttonInventory((block.getId().getPath()+"_inventory"), blockTexture(texture)));
         buttonBlock((ButtonBlock) block.get(), blockTexture(texture));
     }
-    /*public void vanillaFenceGateBlock(FenceGateBlock block, String name, ResourceLocation texture) {
-        fenceGateBlockInternal(block, name + "_fence_gate", texture);
-    }
-    private void fenceGateBlockInternal(FenceGateBlock block, String baseName, ResourceLocation texture) {
-        ModelFile gate = models().fenceGate(baseName, texture);
-        ModelFile gateOpen = models().fenceGateOpen(baseName + "_open", texture);
-        ModelFile gateWall = models().fenceGateWall(baseName + "_wall", texture);
-        ModelFile gateWallOpen = models().fenceGateWallOpen(baseName + "_wall_open", texture);
-        fenceGateBlock(block, gate, gateOpen, gateWall, gateWallOpen);
-    }*/
-    public String getName(Supplier<? extends Block> block) {
-        return block.get().builtInRegistryHolder().key().location().getPath();
-    }
-    public ResourceLocation blockLoc(Supplier<? extends Block> block) {
-        return ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/" + getName(block));
-    }
     public ResourceLocation blockTexture(RegistryObject<Block> block) {
         ResourceLocation name = key(block);
         return ResourceLocation.fromNamespaceAndPath(name.getNamespace(), ModItemModelProvider.BLOCK_FOLDER + "/" + name.getPath());
     }
-    public ResourceLocation blockTexture(RegistryObject<Block> block, String string) {
-        ResourceLocation name = key(block);
-        return ResourceLocation.fromNamespaceAndPath(name.getNamespace(), ModelProvider.BLOCK_FOLDER + "/" + name.getPath() + string);
-    }
     private ResourceLocation key(RegistryObject<Block> block) {
         return ForgeRegistries.BLOCKS.getKey(block.get());
-    }
-    private String name(RegistryObject<Block> block) {
-        return key(block).getPath();
     }
 }
