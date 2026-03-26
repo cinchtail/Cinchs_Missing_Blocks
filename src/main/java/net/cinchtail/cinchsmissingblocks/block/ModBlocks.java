@@ -3,7 +3,6 @@ package net.cinchtail.cinchsmissingblocks.block;
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -75,6 +74,9 @@ public class ModBlocks {
     public static final Block CHISELED_CALCITE_BRICKS = registerBlock("chiseled_calcite_bricks",
             new Block(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sounds(BlockSoundGroup.CALCITE)));
+    public static final Block CALCITE_BRICK_PILLAR = registerBlock("calcite_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.CALCITE).strength(1F, 1.0F)
+                    .sounds(BlockSoundGroup.CALCITE)));
 
 
     //Dripstone Blocks
@@ -137,6 +139,9 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
     public static final Block CHISELED_DRIPSTONE_BRICKS = registerBlock("chiseled_dripstone_bricks",
             new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
+                    .sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
+    public static final Block DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
                     .sounds(BlockSoundGroup.DRIPSTONE_BLOCK)));
 
     //Tuff Blocks
@@ -208,6 +213,9 @@ public class ModBlocks {
     public static final Block CHISELED_ANDESITE_BRICKS = registerBlock("chiseled_andesite_bricks",
             new Block(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
+    public static final Block ANDESITE_BRICK_PILLAR = registerBlock("andesite_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.POLISHED_ANDESITE).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
 
     //Granite Blocks
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -252,6 +260,10 @@ public class ModBlocks {
     public static final Block CHISELED_GRANITE_BRICKS = registerBlock("chiseled_granite_bricks",
             new Block(Block.Settings.copy(Blocks.POLISHED_GRANITE).strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
+    public static final Block GRANITE_BRICK_PILLAR = registerBlock("granite_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.POLISHED_GRANITE).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+
 
 
     //Diorite Blocks
@@ -295,6 +307,9 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CHISELED_DIORITE_BRICKS = registerBlock("chiseled_diorite_bricks",
             new Block(Block.Settings.copy(Blocks.POLISHED_DIORITE).strength(1.5F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block DIORITE_BRICK_PILLAR = registerBlock("diorite_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.POLISHED_DIORITE).strength(1.5F, 6.0F)
                     .sounds(BlockSoundGroup.STONE)));
 
     //Quartz Blocks
@@ -403,9 +418,9 @@ public class ModBlocks {
     public static final Block CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
             new Block(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
                     .sounds(BlockSoundGroup.MUD_BRICKS)));
-    public static final Block MUD_PILLAR = registerBlock("mud_pillar",
-            new PillarBlock(Block.Settings.copy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
-                    .sounds(BlockSoundGroup.MUD_BRICKS)));
+    public static final Block MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.MUD_BRICKS)
+                    .strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS)));
 
     //Endstone Blocks
     public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
@@ -447,8 +462,9 @@ public class ModBlocks {
     public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
                     .sounds(BlockSoundGroup.STONE)));
-    public static final Block END_STONE_PILLAR = registerBlock("end_stone_pillar",
-            new PillarBlock(Block.Settings.copy(Blocks.END_STONE_BRICKS)));
+    public static final Block END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.END_STONE_BRICKS).strength(3.0F, 9.0F)
+                    .sounds(BlockSoundGroup.STONE)));
 
     //Stone Blocks
     public static final Block STONE_WALL = registerBlock("stone_wall",
@@ -470,6 +486,8 @@ public class ModBlocks {
     public static final Block CRACKED_STONE_BRICK_WALL = registerBlock("cracked_stone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block STONE_BRICK_PILLAR = registerBlock("stone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.STONE)));
 
     //Deepslate Blocks
     public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
@@ -545,6 +563,9 @@ public class ModBlocks {
     public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.create()
                     .noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F)));
 
     //Blackstone Bricks
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
@@ -554,6 +575,8 @@ public class ModBlocks {
             new SlabBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)));
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)));
+    public static final Block BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_BRICKS).strength(1.5F, 6.0F)));
 
     //Netherrack
     public static final Block NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
@@ -637,6 +660,9 @@ public class ModBlocks {
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
             new Block(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PRISMARINE_BRICK_PILLAR = registerBlock("prismarine_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
     //Smooth Basalt
