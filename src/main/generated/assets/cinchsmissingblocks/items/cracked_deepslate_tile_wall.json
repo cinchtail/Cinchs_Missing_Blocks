@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsmissingblocks:block/cracked_deepslate_tile_wall"
+    "model": "cinchsmissingblocks:block/cracked_deepslate_tile_wall_inventory"
   }
 }

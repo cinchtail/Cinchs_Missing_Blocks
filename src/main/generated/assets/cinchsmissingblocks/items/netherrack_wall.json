@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "cinchsmissingblocks:block/netherrack_wall"
+    "model": "cinchsmissingblocks:block/netherrack_wall_inventory"
   }
 }

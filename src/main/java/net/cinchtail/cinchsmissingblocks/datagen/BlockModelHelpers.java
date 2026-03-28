@@ -108,4 +108,19 @@ public class BlockModelHelpers {
 
         gen.registerParentedItemModel(block, model);
     }
+
+    public static void fence(BlockStateModelGenerator gen, Block fence, Identifier texture) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.TEXTURE, texture);
+
+        Identifier post = Models.FENCE_POST.upload(fence, tex, gen.modelCollector);
+        Identifier side = Models.FENCE_SIDE.upload(fence, tex, gen.modelCollector);
+        Identifier inventory = Models.FENCE_INVENTORY.upload(fence, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createFenceBlockState(fence, post, side)
+        );
+
+        gen.registerParentedItemModel(fence, inventory);
+    }
 }
