@@ -1002,7 +1002,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerPressurePlateRecipe(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Blocks.POLISHED_DEEPSLATE);
 
-                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DEEPSLATE_BUTTON)
+                createShapeless(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DEEPSLATE_BUTTON)
                         .input(Blocks.POLISHED_DEEPSLATE)
                         .criterion(hasItem(Blocks.POLISHED_DEEPSLATE), conditionsFromItem(Blocks.POLISHED_DEEPSLATE))
                         .offerTo(exporter);
