@@ -238,14 +238,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/blackstone_brick_pillar_top"));
         axisBlock((RotatedPillarBlock) CALCITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/calcite_brick_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/calcite_brick_pillar_top"));
-        /*axisBlock((RotatedPillarBlock) DRIPSTONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/dripstone_brick_pillar_side"),
+        axisBlock((RotatedPillarBlock) DRIPSTONE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/dripstone_brick_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/dripstone_brick_pillar_top"));
         axisBlock((RotatedPillarBlock) ANDESITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/andesite_brick_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/andesite_brick_pillar_top"));
         axisBlock((RotatedPillarBlock) GRANITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/granite_brick_pillar_side"),
                 ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/granite_brick_pillar_top"));
         axisBlock((RotatedPillarBlock) DIORITE_BRICK_PILLAR.get(), ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/diorite_brick_pillar_side"),
-                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/diorite_brick_pillar_top"));*/
+                ResourceLocation.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "block/diorite_brick_pillar_top"));
 
     }
     public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
