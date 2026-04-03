@@ -406,9 +406,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_BRICKS = registerBlock("chiseled_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).strength(2.0F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS)
-                    .strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS)));
 
     //Mud Brick Blocks
     public static final DeferredBlock<Block> PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
@@ -448,7 +445,11 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS)
                     .strength(1.5F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.MUD_BRICKS)));
     public static final DeferredBlock<Block> CHISELED_MUD_BRICKS = registerBlock("chiseled_mud_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
+                    .sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS)
+                    .strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS)));
 
     //Endstone Blocks
     public static final DeferredBlock<Block> END_STONE_STAIRS = registerBlock("end_stone_stairs",
