@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "cinchsmissingblocks:granite_bricks"
+    "#": "cinchsmissingblocks:granite_bricks"
   },
   "pattern": [
-    "AAA"
+    "###"
   ],
   "result": {
     "count": 6,

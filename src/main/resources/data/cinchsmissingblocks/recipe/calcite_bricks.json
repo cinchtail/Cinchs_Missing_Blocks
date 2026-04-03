@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "cinchsmissingblocks:polished_calcite"
+    "S": "cinchsmissingblocks:polished_calcite"
   },
   "pattern": [
-    "AA",
-    "AA"
+    "SS",
+    "SS"
   ],
   "result": {
     "count": 4,
