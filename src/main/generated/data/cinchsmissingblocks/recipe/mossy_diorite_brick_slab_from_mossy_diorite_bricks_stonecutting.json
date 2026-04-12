@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "ingredient": "cinchsmissingblocks:mossy_diorite_bricks",
   "result": {
-    "count": 1,
+    "count": 2,
     "id": "cinchsmissingblocks:mossy_diorite_brick_slab"
   }
 }

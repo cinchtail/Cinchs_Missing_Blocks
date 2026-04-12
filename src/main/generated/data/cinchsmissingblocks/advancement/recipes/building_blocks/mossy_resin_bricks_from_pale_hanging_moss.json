@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pale_moss_block": {
+    "has_pale_hanging_moss": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:pale_moss_block"
+            "items": "minecraft:pale_hanging_moss"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:mossy_resin_brick_from_pale_moss_block"
+        "recipe": "cinchsmissingblocks:mossy_resin_bricks_from_pale_hanging_moss"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pale_moss_block"
+      "has_pale_hanging_moss"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:mossy_resin_brick_from_pale_moss_block"
+      "cinchsmissingblocks:mossy_resin_bricks_from_pale_hanging_moss"
     ]
   }
 }
