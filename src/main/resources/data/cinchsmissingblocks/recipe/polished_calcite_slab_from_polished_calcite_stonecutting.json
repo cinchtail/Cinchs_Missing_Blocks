@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:polished_calcite",
-  "result": {
-    "count": 1,
-    "id": "cinchsmissingblocks:polished_calcite_slab"
-  }
-}

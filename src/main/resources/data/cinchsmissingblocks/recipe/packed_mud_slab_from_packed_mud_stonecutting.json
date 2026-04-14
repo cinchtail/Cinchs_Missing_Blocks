@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:packed_mud",
-  "result": {
-    "count": 1,
-    "id": "cinchsmissingblocks:packed_mud_slab"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:diorite_bricks",
-  "result": {
-    "count": 1,
-    "id": "cinchsmissingblocks:diorite_brick_slab"
-  }
-}
