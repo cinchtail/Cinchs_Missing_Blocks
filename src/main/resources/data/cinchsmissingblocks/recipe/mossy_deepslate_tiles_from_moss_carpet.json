@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_deepslate_tiles",
+  "key": {
+    "#": "minecraft:moss_carpet",
+    "B": "minecraft:deepslate_tiles"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_deepslate_tiles"
+  }
+}
