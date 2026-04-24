@@ -24,6 +24,15 @@ public class CinchsMissingBlocks implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+
+		FabricLoader.getInstance().getModContainer("cinchsmissingblocks").ifPresent(container -> {
+			ResourceManagerHelper.registerBuiltinResourcePack(
+					Identifier.of("cinchsmissingblocks", "z_override_cinchsvillagerstatues"),
+					container,
+					Text.literal("Override: Cinch's Villager Statues"),
+					ResourcePackActivationType.ALWAYS_ENABLED
+			);
+		});
 	}
 
 	public final class BuiltinPackLoader {
