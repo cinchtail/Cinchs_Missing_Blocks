@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "minecraft:end_stone"
+    "#": "minecraft:end_stone"
   },
   "pattern": [
-    "AAA"
+    "###"
   ],
   "result": {
     "count": 6,

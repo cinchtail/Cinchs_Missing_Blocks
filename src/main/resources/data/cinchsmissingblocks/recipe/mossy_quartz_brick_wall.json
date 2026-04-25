@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "cinchsmissingblocks:mossy_quartz_bricks"
+    "#": "cinchsmissingblocks:mossy_quartz_bricks"
   },
   "pattern": [
-    "AAA",
-    "AAA"
+    "###",
+    "###"
   ],
   "result": {
     "count": 6,

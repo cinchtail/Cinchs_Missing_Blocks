@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "cinchsmissingblocks:polished_dripstone"
+    "#": "cinchsmissingblocks:polished_dripstone"
   },
   "pattern": [
-    "AAA",
-    "AAA"
+    "###",
+    "###"
   ],
   "result": {
     "count": 6,

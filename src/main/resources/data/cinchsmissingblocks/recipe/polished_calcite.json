@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "minecraft:calcite"
+    "S": "minecraft:calcite"
   },
   "pattern": [
-    "AA",
-    "AA"
+    "SS",
+    "SS"
   ],
   "result": {
     "count": 4,

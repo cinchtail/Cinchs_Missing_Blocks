@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "minecraft:stone"
+    "#": "minecraft:stone"
   },
   "pattern": [
-    "AAA",
-    "AAA"
+    "###",
+    "###"
   ],
   "result": {
     "count": 6,

@@ -1,7 +1,7 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
-import net.cinchtail.cinchsmissingblocks.item.ModItems;
+import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -13,6 +13,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
+
+import static net.minecraft.world.level.block.Blocks.*;
 
 public class ModBlocks {
     public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CinchsMissingBlocks.MOD_ID);
@@ -103,6 +105,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE).strength(1F, 1.0F)
                     .sound(SoundType.CALCITE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_calcite_bricks")))));
+    public static final DeferredBlock<Block> CALCITE_BRICK_PILLAR = registerBlock("calcite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(CALCITE)
+                    .strength(1F, 1.0F).sound(SoundType.CALCITE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "calcite_brick_pillar")))));
 
     //Dripstone Blocks
     public static final DeferredBlock<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
@@ -200,6 +206,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DRIPSTONE_BLOCK).strength(1.5F, 1.0F)
                     .sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_dripstone_bricks")))));
+    public static final DeferredBlock<Block> DRIPSTONE_BRICK_PILLAR = registerBlock("dripstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DRIPSTONE_BLOCK)
+                    .strength(1.5F, 6.0F).sound(SoundType.DRIPSTONE_BLOCK).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "dripstone_brick_pillar")))));
 
     //Tuff Blocks
     public static final DeferredBlock<Block> CRACKED_TUFF_BRICKS = registerBlock("cracked_tuff_bricks",
@@ -300,6 +310,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_andesite_bricks")))));
+    public static final DeferredBlock<Block> ANDESITE_BRICK_PILLAR = registerBlock("andesite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "andesite_brick_pillar")))));
 
     //Granite Blocks
     public static final DeferredBlock<Block> POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
@@ -361,6 +375,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_granite_bricks")))));
+    public static final DeferredBlock<Block> GRANITE_BRICK_PILLAR = registerBlock("granite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "granite_brick_pillar")))));
 
     //Diorite Blocks
     public static final DeferredBlock<Block> POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
@@ -421,6 +439,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(1.5F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_diorite_bricks")))));
+    public static final DeferredBlock<Block> DIORITE_BRICK_PILLAR = registerBlock("diorite_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "diorite_brick_pillar")))));
 
     //Quartz Blocks
     public static final DeferredBlock<Block> QUARTZ_WALL = registerBlock("quartz_wall",
@@ -435,7 +457,7 @@ public class ModBlocks {
             () -> new StairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).strength(0.8F)
                             .requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
-                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "quartz_brick_stairs")))));
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "quartz_brick_stairs")))));
     public static final DeferredBlock<Block> QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK)
                     .strength(0.8F).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
@@ -515,7 +537,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_brick_wall")))));
     public static final DeferredBlock<Block> CHISELED_BRICKS = registerBlock("chiseled_bricks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS).strength(2.0F, 6.0F)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).strength(2.0F, 6.0F)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_bricks")))));
 
@@ -571,6 +593,53 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS).strength(1.5F, 3.0F)
                     .sound(SoundType.MUD_BRICKS).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_mud_bricks")))));
+    public static final DeferredBlock<Block> MUD_BRICK_PILLAR = registerBlock("mud_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS)
+                    .strength(1.5F, 3.0F).sound(SoundType.MUD_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mud_brick_pillar")))));
+
+    //Resin Blocks
+    public static final DeferredBlock<Block> CRACKED_RESIN_BRICKS = registerBlock("cracked_resin_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS).strength(1.5F, 6.0F)
+                    .sound(SoundType.RESIN_BRICKS)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_resin_bricks")))));
+    public static final DeferredBlock<Block> CRACKED_RESIN_BRICK_STAIRS = registerBlock("cracked_resin_brick_stairs",
+            () -> new StairBlock(Blocks.RESIN_BRICKS.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS).strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)
+                            .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_resin_brick_stairs")))));
+    public static final DeferredBlock<Block> CRACKED_RESIN_BRICK_SLAB = registerBlock("cracked_resin_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_resin_brick_slab")))));
+    public static final DeferredBlock<Block> CRACKED_RESIN_BRICK_WALL = registerBlock("cracked_resin_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_resin_brick_wall")))));
+    public static final DeferredBlock<Block> MOSSY_RESIN_BRICKS = registerBlock("mossy_resin_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS).strength(1.5F, 6.0F)
+                    .sound(SoundType.RESIN_BRICKS)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_resin_bricks")))));
+    public static final DeferredBlock<Block> MOSSY_RESIN_BRICK_STAIRS = registerBlock("mossy_resin_brick_stairs",
+            () -> new StairBlock(Blocks.RESIN_BRICKS.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS).strength(1.5F, 6.0F)
+                            .sound(SoundType.RESIN_BRICKS)
+                            .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_resin_brick_stairs")))));
+    public static final DeferredBlock<Block> MOSSY_RESIN_BRICK_SLAB = registerBlock("mossy_resin_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_resin_brick_slab")))));
+    public static final DeferredBlock<Block> MOSSY_RESIN_BRICK_WALL = registerBlock("mossy_resin_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RESIN_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.RESIN_BRICKS)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_resin_brick_wall")))));
 
     //Endstone Blocks
     public static final DeferredBlock<Block> END_STONE_STAIRS = registerBlock("end_stone_stairs",
@@ -586,6 +655,23 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
                     .strength(3.0F, 9.0F).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_wall")))));
+    public static final DeferredBlock<Block> POLISHED_END_STONE = registerBlock("polished_end_stone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+                    .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_end_stone")))));
+    public static final DeferredBlock<Block> POLISHED_END_STONE_STAIRS = registerBlock("polished_end_stone_stairs",
+            () -> new StairBlock(END_STONE.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE).requiresCorrectToolForDrops()
+                            .strength(3.0F, 9.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_end_stone_stairs")))));
+    public static final DeferredBlock<Block> POLISHED_END_STONE_SLAB = registerBlock("polished_end_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+                    .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_end_stone_slab")))));
+    public static final DeferredBlock<Block> POLISHED_END_STONE_WALL = registerBlock("polished_end_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+                    .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_end_stone_wall")))));
     public static final DeferredBlock<Block> CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
                     .requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
@@ -606,10 +692,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE).strength(3.0F, 9.0F)
                     .sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
-                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_end_stone_bricks")))));
-    public static final DeferredBlock<Block> END_STONE_PILLAR = registerBlock("end_stone_pillar",
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_end_stone_bricks")))));
+    public static final DeferredBlock<Block> END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
-                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_pillar")))));
+                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "end_stone_brick_pillar")))));
 
     //Stone Blocks
     public static final DeferredBlock<Block> STONE_WALL = registerBlock("stone_wall",
@@ -620,7 +706,7 @@ public class ModBlocks {
             () -> new StairBlock(Blocks.STONE_STAIRS.defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE).strength(2.0F, 6.0F)
                             .requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
-                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "smooth_stone_stairs")))));
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "smooth_stone_stairs")))));
     public static final DeferredBlock<Block> SMOOTH_STONE_WALL = registerBlock("smooth_stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE)
                     .strength(2.0F, 6.0F).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
@@ -638,8 +724,42 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)
                     .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_stone_brick_wall")))));
+    public static final DeferredBlock<Block> STONE_BRICK_PILLAR = registerBlock("stone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(STONE)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "stone_brick_pillar")))));
 
     //Deepslate Blocks
+    public static final DeferredBlock<Block> DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
+            () -> new StairBlock(DEEPSLATE.defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 6.0F)
+                            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_stairs")))));
+    public static final DeferredBlock<Block> DEEPSLATE_SLAB = registerBlock("deepslate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(DEEPSLATE)
+                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_slab")))));
+    public static final DeferredBlock<Block> DEEPSLATE_WALL = registerBlock("deepslate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(DEEPSLATE)
+                    .strength(3.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_wall")))));
+    public static final DeferredBlock<Block> MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE).strength(3.5f, 6.0F)
+                    .sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate")))));
+    public static final DeferredBlock<Block> MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs",
+            () -> new StairBlock(ModBlocks.MOSSY_COBBLED_DEEPSLATE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE).strength(3.5f, 6.0F)
+                            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_stairs")))));
+    public static final DeferredBlock<Block> MOSSY_COBBLED_DEEPSLATE_SLAB = registerBlock("mossy_cobbled_deepslate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE)
+                    .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_slab")))));
+    public static final DeferredBlock<Block> MOSSY_COBBLED_DEEPSLATE_WALL = registerBlock("mossy_cobbled_deepslate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE)
+                    .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_cobbled_deepslate_wall")))));
     public static final DeferredBlock<Block> CRACKED_DEEPSLATE_BRICK_STAIRS = registerBlock("cracked_deepslate_brick_stairs",
             () -> new StairBlock(Blocks.STONE_BRICK_STAIRS.defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_DEEPSLATE_BRICKS).strength(3.5F, 6.0F)
@@ -647,14 +767,29 @@ public class ModBlocks {
                                     Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_deepslate_brick_stairs")))));
     public static final DeferredBlock<Block> CRACKED_DEEPSLATE_BRICK_SLAB = registerBlock("cracked_deepslate_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_DEEPSLATE_BRICKS)
-                    .strength(3.5F, 6.0F).requiresCorrectToolForDrops()
-                    .sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                    .strength(3.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_deepslate_brick_slab")))));
     public static final DeferredBlock<Block> CRACKED_DEEPSLATE_BRICK_WALL = registerBlock("cracked_deepslate_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_DEEPSLATE_BRICKS)
-                    .strength(3.5F, 6.0F).requiresCorrectToolForDrops()
-                    .sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                    .strength(3.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_deepslate_brick_wall")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICKS = registerBlock("mossy_deepslate_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).strength(3.5f, 6.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_bricks")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlock("mossy_deepslate_brick_stairs",
+            () -> new StairBlock(ModBlocks.MOSSY_DEEPSLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).strength(3.5f, 6.0F)
+                            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_stairs")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_slab")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_brick_wall")))));
     public static final DeferredBlock<Block> CRACKED_DEEPSLATE_TILE_STAIRS = registerBlock("cracked_deepslate_tile_stairs",
             () -> new StairBlock(Blocks.CRACKED_DEEPSLATE_TILES.defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_DEEPSLATE_TILES).strength(3.5F, 6.0F)
@@ -667,24 +802,61 @@ public class ModBlocks {
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_deepslate_tile_slab")))));
     public static final DeferredBlock<Block> CRACKED_DEEPSLATE_TILE_WALL = registerBlock("cracked_deepslate_tile_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_DEEPSLATE_TILES)
-                    .strength(3.5F, 6.0F).requiresCorrectToolForDrops()
-                    .sound(SoundType.DEEPSLATE_TILES).setId(ResourceKey.create(Registries.BLOCK,
+                    .strength(3.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_deepslate_tile_wall")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_TILES = registerBlock("mossy_deepslate_tiles",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES).strength(3.5f, 6.0F)
+                    .sound(SoundType.DEEPSLATE_TILES).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tiles")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_TILE_STAIRS = registerBlock("mossy_deepslate_tile_stairs",
+            () -> new StairBlock(ModBlocks.MOSSY_DEEPSLATE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES).strength(3.5f, 6.0F)
+                            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES).setId(ResourceKey.create(Registries.BLOCK,
+                                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_stairs")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_TILE_SLAB = registerBlock("mossy_deepslate_tile_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES)
+                    .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_slab")))));
+    public static final DeferredBlock<Block> MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES)
+                    .strength(3.5f, 6.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_deepslate_tile_wall")))));
+    public static final DeferredBlock<Block> DEEPSLATE_BRICK_PILLAR = registerBlock("deepslate_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(DEEPSLATE_BRICKS)
+                    .strength(3.5f, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "deepslate_brick_pillar")))));
+    public static final DeferredBlock<Block> SCULK_INLAID_DEEPSLATE = registerBlock("sculk_inlaid_deepslate",
+            () -> new SculkInlaidDeepslateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE).strength(2.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE_BRICKS).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "sculk_inlaid_deepslate")))));
+    public static final DeferredBlock<Block> POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
+            () -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sound(SoundType.POLISHED_DEEPSLATE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_deepslate_pressure_plate")))));
+    public static final DeferredBlock<Block> POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
+            () -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20,
+                    BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BUTTON).strength(0.5F).noCollision().setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "polished_deepslate_button")))));
 
     //Blackstone Bricks
     public static final DeferredBlock<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
             () -> new StairBlock(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.defaultBlockState(),
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
                             .requiresCorrectToolForDrops().strength(1.5F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
                                     Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_polished_blackstone_brick_stairs")))));
     public static final DeferredBlock<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock("cracked_polished_blackstone_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_polished_blackstone_brick_slab")))));
     public static final DeferredBlock<Block> CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE)
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "cracked_polished_blackstone_brick_wall")))));
+    public static final DeferredBlock<Block> BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(POLISHED_BLACKSTONE_BRICKS)
+                    .strength(3.5f, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar")))));
+
     //Netherrack
     public static final DeferredBlock<Block> NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
             () -> new StairBlock(Blocks.NETHERRACK.defaultBlockState(),
@@ -800,6 +972,14 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PRISMARINE_BRICKS)
                     .requiresCorrectToolForDrops().strength(1.5F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "mossy_prismarine_brick_wall")))));
+    public static final DeferredBlock<Block> CHISELED_PRISMARINE_BRICKS = registerBlock("chiseled_prismarine_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(PRISMARINE_BRICKS).strength(1.5F, 6.0F)
+                    .sound(SoundType.STONE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_prismarine_bricks")))));
+    public static final DeferredBlock<Block> PRISMARINE_BRICK_PILLAR = registerBlock("prismarine_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(PRISMARINE_BRICKS)
+                    .strength(1.5F, 6.0F).sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "prismarine_brick_pillar")))));
 
     //Smooth Basalt
     public static final DeferredBlock<Block> SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
@@ -856,14 +1036,30 @@ public class ModBlocks {
                     .sound(SoundType.STONE).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "chiseled_purpur")))));
 
+    //Snow Blocks
+    public static final DeferredBlock<Block> SNOW_BRICKS = registerBlock("snow_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).strength(0.2F).sound(SoundType.SNOW).setId(ResourceKey.create(Registries.BLOCK,
+                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "snow_bricks")))));
+    public static final DeferredBlock<Block> SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
+            () -> new StairBlock(SNOW_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK)
+                    .strength(0.2F).sound(SoundType.SNOW).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "snow_brick_stairs")))));
+    public static final DeferredBlock<Block> SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).strength(0.2F).sound(SoundType.SNOW).setId(ResourceKey.create(Registries.BLOCK,
+                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "snow_brick_slab")))));
+    public static final DeferredBlock<Block> SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).strength(0.2F).sound(SoundType.SNOW).setId(ResourceKey.create(Registries.BLOCK,
+                    Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, "snow_brick_wall")))));
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
-        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
+
+    public static class ModItems {
+        public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(CinchsMissingBlocks.MOD_ID);
     }
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().useBlockDescriptionPrefix()
-                .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, name)))));
+    public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+        DeferredBlock<T> blockReg = BLOCKS.register(name, block);
+        ModItems.ITEMS.register(name, () -> new BlockItem(blockReg.get(),
+                new Item.Properties().useBlockDescriptionPrefix().setId(ResourceKey.create(Registries.ITEM,
+                        Identifier.fromNamespaceAndPath(CinchsMissingBlocks.MOD_ID, name)))));
+        return blockReg;
     }
 }

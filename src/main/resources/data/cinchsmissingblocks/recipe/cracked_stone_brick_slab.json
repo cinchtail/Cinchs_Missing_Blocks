@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": "minecraft:cracked_stone_bricks"
+    "#": "minecraft:cracked_stone_bricks"
   },
   "pattern": [
-    "AAA"
+    "###"
   ],
   "result": {
     "count": 6,

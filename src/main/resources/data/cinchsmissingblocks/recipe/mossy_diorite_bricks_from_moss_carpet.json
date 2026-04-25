@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_diorite_bricks",
+  "key": {
+    "#": "minecraft:moss_carpet",
+    "B": "cinchsmissingblocks:diorite_bricks"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_diorite_bricks"
+  }
+}

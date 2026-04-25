@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_cobblestone",
+  "key": {
+    "#": "minecraft:moss_carpet",
+    "B": "minecraft:cobblestone"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mossy_cobblestone"
+  }
+}

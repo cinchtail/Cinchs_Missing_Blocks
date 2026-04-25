@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": [
-      "minecraft:red_sandstone"
-    ]
+    "#": "minecraft:red_sandstone"
   },
   "pattern": [
     "#  ",
@@ -13,6 +11,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:red_sandstone_stairs"
+    "id": "minecraft:sandstone_stairs"
   }
 }
