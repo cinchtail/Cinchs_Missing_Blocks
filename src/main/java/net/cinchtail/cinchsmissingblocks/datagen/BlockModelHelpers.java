@@ -6,9 +6,6 @@ import net.minecraft.util.Identifier;
 
 public class BlockModelHelpers {
 
-    private BlockModelHelpers() {
-    }
-
     public static void button(BlockStateModelGenerator gen, Block button, Identifier texture) {
         Identifier regular = Models.BUTTON.upload(button, TextureMap.texture(texture), gen.modelCollector);
         Identifier pressed = Models.BUTTON_PRESSED.upload(button, TextureMap.texture(texture), gen.modelCollector);
