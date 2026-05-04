@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:andesite_bricks",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:andesite_brick_pillar"
+  }
+}
