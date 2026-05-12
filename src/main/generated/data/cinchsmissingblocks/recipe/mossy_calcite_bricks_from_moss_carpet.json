@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_calcite_bricks",
+  "key": {
+    "#": {
+      "item": "minecraft:moss_carpet"
+    },
+    "B": {
+      "item": "cinchsmissingblocks:calcite_bricks"
+    }
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_calcite_bricks"
+  }
+}

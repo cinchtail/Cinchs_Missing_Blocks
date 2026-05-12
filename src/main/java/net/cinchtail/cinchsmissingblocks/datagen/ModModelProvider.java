@@ -1,10 +1,12 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
-import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.data.*;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.TextureMap;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -207,17 +209,6 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.pillar(gen,ModBlocks.MUD_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/mud_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/mud_brick_pillar_side"));
 
-        BlockStateModelGenerator.BlockTexturePool crackedResinBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_RESIN_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool mossyResinBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_RESIN_BRICKS);
-
-        crackedResinBricksPool.stairs(ModBlocks.CRACKED_RESIN_BRICK_STAIRS);
-        crackedResinBricksPool.slab(ModBlocks.CRACKED_RESIN_BRICK_SLAB);
-        crackedResinBricksPool.wall(ModBlocks.CRACKED_RESIN_BRICK_WALL);
-
-        mossyResinBricksPool.stairs(ModBlocks.MOSSY_RESIN_BRICK_STAIRS);
-        mossyResinBricksPool.slab(ModBlocks.MOSSY_RESIN_BRICK_SLAB);
-        mossyResinBricksPool.wall(ModBlocks.MOSSY_RESIN_BRICK_WALL);
-
         BlockStateModelGenerator.BlockTexturePool polishedEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_END_STONE);
         BlockStateModelGenerator.BlockTexturePool crackedEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_END_STONE_BRICKS);
 
@@ -355,6 +346,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_PURPUR);
     }
+
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.RED_NETHER_BRICK, Models.GENERATED);

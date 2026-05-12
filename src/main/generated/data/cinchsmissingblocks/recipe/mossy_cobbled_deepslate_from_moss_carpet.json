@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_cobbled_deepslate",
+  "key": {
+    "#": {
+      "item": "minecraft:moss_carpet"
+    },
+    "B": {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_cobbled_deepslate"
+  }
+}

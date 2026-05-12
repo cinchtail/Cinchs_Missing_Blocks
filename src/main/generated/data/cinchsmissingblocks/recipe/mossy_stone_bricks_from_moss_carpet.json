@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_stone_bricks",
+  "key": {
+    "#": {
+      "item": "minecraft:moss_carpet"
+    },
+    "B": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mossy_stone_bricks"
+  }
+}

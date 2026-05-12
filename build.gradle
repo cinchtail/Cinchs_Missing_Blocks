@@ -1,14 +1,10 @@
 plugins {
-	id 'fabric-loom' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
-
-base {
-	archivesName = project.archives_base_name
-}
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
@@ -18,6 +14,12 @@ repositories {
 	// for more information about repositories.
 }
 
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -25,14 +27,16 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	
 }
 
 processResources {
-	inputs.property "version", project.version
+	def version = project.version
+	inputs.property "version", version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": inputs.properties.version
+		expand "version": version
 	}
 }
 
@@ -51,10 +55,11 @@ java {
 }
 
 jar {
-	inputs.property "archivesName", project.base.archivesName
+	def projectName = project.name
+	inputs.property "projectName", projectName
 
 	from("LICENSE") {
-		rename { "${it}_${inputs.properties.archivesName}"}
+		rename { "${it}_$projectName"}
 	}
 }
 
@@ -62,7 +67,6 @@ jar {
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
 			from components.java
 		}
 	}

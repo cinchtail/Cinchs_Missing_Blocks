@@ -1,9 +1,9 @@
 package net.cinchtail.cinchsmissingblocks;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.datagen.DataGenerators;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;

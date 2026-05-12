@@ -1,7 +1,7 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.data.*;
+import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
 public class BlockModelHelpers {
