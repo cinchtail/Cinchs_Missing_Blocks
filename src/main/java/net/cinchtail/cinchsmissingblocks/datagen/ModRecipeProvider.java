@@ -1289,11 +1289,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 this.createCondensingRecipe(category, output, Ingredient.ofItem(input)).criterion(hasItem(input), this.conditionsFromItem(input)).offerTo(this.exporter);
             }
             public void offerPillarBlockRecipe(RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-                this.createpillarBlockRecipe(category, output, Ingredient.ofItems(input), 2)
+                this.createPillarBlockRecipe(category, output, Ingredient.ofItems(input), 2)
                         .criterion(hasItem(input), this.conditionsFromItem(input)).offerTo(this.exporter);
             }
-            public ShapedRecipeJsonBuilder createpillarBlockRecipe(
-                    RecipeCategory category, ItemConvertible output, Ingredient input, int count) {
+            public ShapedRecipeJsonBuilder createPillarBlockRecipe(RecipeCategory category, ItemConvertible output, Ingredient input, int count) {
                 return ShapedRecipeJsonBuilder.create(ModRecipeProvider.this.items, category, output, count)
                         .input('#', input).pattern("#").pattern("#");
             }

@@ -1,6 +1,7 @@
 package net.cinchtail.cinchsmissingblocks;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
@@ -25,24 +26,43 @@ public class CinchsMissingBlocks implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 
-		FabricLoader.getInstance().getModContainer("cinchsmissingblocks").ifPresent(container -> {
-			ResourceManagerHelper.registerBuiltinResourcePack(
-					Identifier.of("cinchsmissingblocks", "z_override_cinchsvillagerstatues"),
-					container,
-					Text.literal("Override: Cinch's Villager Statues"),
-					ResourcePackActivationType.ALWAYS_ENABLED
-			);
-		});
+		FabricLoader loader = FabricLoader.getInstance();
+
+		if (loader.isModLoaded("cinchsvillagerstatues")) {
+			loader.getModContainer(MOD_ID).ifPresent(container -> {
+				ResourceManagerHelper.registerBuiltinResourcePack(
+						Identifier.of(MOD_ID, "z_override_cinchsvillagerstatues"),
+						container,
+						Text.literal("Override: Cinch's Villager Statues"),
+						ResourcePackActivationType.ALWAYS_ENABLED
+				);
+			});
+		} else {
+			LOGGER.info("cinchsvillagerstatues not present — override pack not loaded.");
+		}
+
+		if (ModConfigs.enableTuffBrickPillar) {
+			FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(container -> {
+				ResourceManagerHelper.registerBuiltinResourcePack(
+						Identifier.of(MOD_ID, "cinchs_tuff_pillars"),
+						container,
+						Text.literal("Cinch's Tuff Pillars"),
+						ResourcePackActivationType.ALWAYS_ENABLED
+				);
+			});
+		} else {
+			LOGGER.info("Cinch's Tuff Pillars pack disabled by config");
+		}
 	}
 
-	public final class BuiltinPackLoader {
+	public static final class BuiltinPackLoader {
 
 		public static void registerPacks(String modId) {
 			FabricLoader.getInstance().getModContainer(modId).ifPresent(container -> {
 				register(modId, container, "cinchs_double_slabs", "Cinch's Double Slabs", ResourcePackActivationType.DEFAULT_ENABLED);
-				register(modId, container, "cinchs_tuff_pillars", "Cinch's Tuff Pillars", ResourcePackActivationType.DEFAULT_ENABLED);
 			});
 		}
+
 		private static void register(String modId,
 									 ModContainer container,
 									 String folder,
