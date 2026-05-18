@@ -1,8 +1,8 @@
 {
 	"required": true,
-	"package": "net.cinchtail.cinchsmissingblocks.mixins",
+	"package": "net.cinchtail.cinchsmissingblocks.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"plugin": "net.cinchtail.cinchsmissingblocks.mixins.MixinPluginConfig",
+	"plugin": "net.cinchtail.cinchsmissingblocks.mixin.MixinPluginConfig",
 	"mixins": [
 		"ChiseledTuffBricksMixin"
 	],
