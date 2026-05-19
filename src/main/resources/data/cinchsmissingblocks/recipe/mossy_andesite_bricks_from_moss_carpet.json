@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_andesite_bricks",
+  "key": {
+    "#": {
+      "item": "minecraft:moss_carpet"
+    },
+    "B": {
+      "item": "cinchsmissingblocks:andesite_bricks"
+    }
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_andesite_bricks"
+  }
+}

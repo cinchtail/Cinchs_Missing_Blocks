@@ -3,17 +3,17 @@
   "category": "building",
   "group": "mossy_stone_bricks",
   "key": {
-    "A": {
+    "#": {
       "item": "minecraft:moss_carpet"
     },
-    "Z": {
+    "B": {
       "item": "minecraft:stone_bricks"
     }
   },
   "pattern": [
-    "A",
-    "Z",
-    "A"
+    "#",
+    "B",
+    "#"
   ],
   "result": {
     "count": 1,

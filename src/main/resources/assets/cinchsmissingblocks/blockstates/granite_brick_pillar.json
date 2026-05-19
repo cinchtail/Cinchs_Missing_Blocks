@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "cinchsmissingblocks:block/granite_brick_pillar_horizontal",
+      "model": "cinchsmissingblocks:block/granite_brick_pillar",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "cinchsmissingblocks:block/granite_brick_pillar"
     },
     "axis=z": {
-      "model": "cinchsmissingblocks:block/granite_brick_pillar_horizontal",
+      "model": "cinchsmissingblocks:block/granite_brick_pillar",
       "x": 90
     }
   }

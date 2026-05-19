@@ -3,17 +3,17 @@
   "category": "building",
   "group": "mossy_cobblestone",
   "key": {
-    "A": {
+    "#": {
       "item": "minecraft:moss_carpet"
     },
-    "Z": {
+    "B": {
       "item": "minecraft:cobblestone"
     }
   },
   "pattern": [
-    "A",
-    "Z",
-    "A"
+    "#",
+    "B",
+    "#"
   ],
   "result": {
     "count": 1,

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mossy_deepslate_tile_bricks": {
+    "has_mossy_deepslate_tiles": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mossy_deepslate_tile_bricks"
+      "has_mossy_deepslate_tiles"
     ]
   ],
   "rewards": {

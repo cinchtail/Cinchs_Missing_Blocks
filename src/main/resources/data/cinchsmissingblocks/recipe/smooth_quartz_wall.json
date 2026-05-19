@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": {
+    "#": {
       "item": "minecraft:smooth_quartz"
     }
   },
   "pattern": [
-    "AAA",
-    "AAA"
+    "###",
+    "###"
   ],
   "result": {
     "count": 6,

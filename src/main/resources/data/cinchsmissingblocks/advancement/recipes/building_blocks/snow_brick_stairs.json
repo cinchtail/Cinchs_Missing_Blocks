@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_snow_bricks": {
+    "has_snow_block": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:snow_bricks"
+            "items": "minecraft:snow_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_snow_bricks"
+      "has_snow_block"
     ]
   ],
   "rewards": {

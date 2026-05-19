@@ -3,17 +3,17 @@
   "category": "building",
   "group": "mossy_cobbled_deepslate",
   "key": {
-    "A": {
+    "#": {
       "item": "minecraft:moss_carpet"
     },
-    "Z": {
+    "B": {
       "item": "minecraft:cobbled_deepslate"
     }
   },
   "pattern": [
-    "A",
-    "Z",
-    "A"
+    "#",
+    "B",
+    "#"
   ],
   "result": {
     "count": 1,
