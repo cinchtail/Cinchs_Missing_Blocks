@@ -18,6 +18,7 @@ public class ModConfigs {
             FabricLoader.getInstance().getConfigDir().resolve("cinchsmissingblocks.json");
 
     public static boolean enableTuffBrickPillar = true;
+    public static boolean doubleSlabsPackDefaultEnabled = false;
 
     public static void load() {
         try {
@@ -31,6 +32,9 @@ public class ModConfigs {
 
                 enableTuffBrickPillar =
                         !json.has("enableTuffBrickPillar") || json.get("enableTuffBrickPillar").getAsBoolean();
+
+                doubleSlabsPackDefaultEnabled =
+                        !json.has("doubleSlabsPackDefaultEnabled") || json.get("doubleSlabsPackDefaultEnabled").getAsBoolean();
             }
 
         } catch (Exception e) {
@@ -43,6 +47,7 @@ public class ModConfigs {
         try {
             JsonObject json = new JsonObject();
             json.addProperty("enableTuffBrickPillar", true);
+            json.addProperty("doubleSlabsPackDefaultEnabled", false);
 
             Files.createDirectories(CONFIG_PATH.getParent());
 
