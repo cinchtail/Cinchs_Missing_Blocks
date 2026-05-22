@@ -16,41 +16,48 @@ public class ModBuiltinPacks {
 
     public static void register(AddPackFindersEvent event, String modId) {
 
-        boolean useBuiltInSource = ModConfigs.doubleSlabsPackDefaultEnabled;
+        if (event.getPackType() == PackType.CLIENT_RESOURCES) {
 
-        PackSource source = useBuiltInSource
-                ? PackSource.DEFAULT
-                : PackSource.BUILT_IN;
+            PackSource source = ModConfigs.doubleSlabsPackDefaultEnabled
+                    ? PackSource.DEFAULT
+                    : PackSource.BUILT_IN;
 
-        event.addPackFinders(
-                ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_double_slabs"),
-                PackType.CLIENT_RESOURCES,
-                Component.literal("Cinch's Double Slabs"),
-                source,
-                false,
-                Pack.Position.TOP
-        );
-
-        if (ModConfigs.enableTuffBrickPillar) {
             event.addPackFinders(
-                    ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_tuff_pillars"),
+                    ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_double_slabs"),
                     PackType.CLIENT_RESOURCES,
-                    Component.literal("Cinch's Tuff Pillars"),
-                    PackSource.BUILT_IN,
-                    true,
-                    Pack.Position.TOP
-            );
-
-            event.addPackFinders(
-                    ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_tuff_pillar_recipes"),
-                    PackType.SERVER_DATA,
-                    Component.literal("Cinch's Tuff Pillars Recipes"),
-                    PackSource.BUILT_IN,
+                    Component.literal("Cinch's Double Slabs"),
+                    source,
                     false,
                     Pack.Position.TOP
             );
-        } else {
-            LOGGER.info("Cinch's Tuff Pillars datapack disabled by config");
+
+            if (ModConfigs.enableTuffBrickPillar) {
+                event.addPackFinders(
+                        ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_tuff_pillars"),
+                        PackType.CLIENT_RESOURCES,
+                        Component.literal("Cinch's Tuff Pillars"),
+                        PackSource.BUILT_IN,
+                        true,
+                        Pack.Position.TOP
+                );
+            }
+        }
+
+        if (event.getPackType() == PackType.SERVER_DATA) {
+
+            if (ModConfigs.enableTuffBrickPillar) {
+
+                event.addPackFinders(
+                        ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_tuff_pillar_recipes"),
+                        PackType.SERVER_DATA,
+                        Component.literal("Cinch's Tuff Pillars Recipes"),
+                        PackSource.BUILT_IN,
+                        true,
+                        Pack.Position.TOP
+                );
+            } else {
+                LOGGER.info("Cinch's Tuff Pillars datapack disabled by config");
+            }
         }
     }
 }
