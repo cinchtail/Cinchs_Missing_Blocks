@@ -3,6 +3,7 @@
   "parent": "cinchsmissingblocks:block/two_texture_wall_inventory",
   "textures": {
     "top": "minecraft:block/red_sandstone_top",
-    "side": "minecraft:block/red_sandstone"
+    "side": "minecraft:block/red_sandstone",
+    "particle": "minecraft:block/red_sandstone"
   }
 }
