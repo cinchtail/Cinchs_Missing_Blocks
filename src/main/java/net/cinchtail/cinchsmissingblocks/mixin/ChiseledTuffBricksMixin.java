@@ -1,4 +1,4 @@
-package net.cinchtail.cinchsmissingblocks.mixins;
+package net.cinchtail.cinchsmissingblocks.mixin;
 
 import com.llamalad7.mixinextras.expression.Definition;
 import com.llamalad7.mixinextras.expression.Expression;
