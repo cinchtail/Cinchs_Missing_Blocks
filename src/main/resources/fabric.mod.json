@@ -18,6 +18,9 @@
 		"main": [
 			"net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks"
 		],
+		"client": [
+			"net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksClient"
+		],
 		"fabric-datagen": [
 			"net.cinchtail.cinchsmissingblocks.datagen.DataGenerators"
 		]
