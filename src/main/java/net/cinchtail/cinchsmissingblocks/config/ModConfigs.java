@@ -23,7 +23,7 @@ public class ModConfigs {
     public static void load() {
         try {
             if (!Files.exists(CONFIG_PATH)) {
-                generateDefault();
+                save();
                 return;
             }
 
@@ -39,22 +39,21 @@ public class ModConfigs {
 
         } catch (Exception e) {
             e.printStackTrace();
-            generateDefault();
+            save();
         }
     }
 
-    private static void generateDefault() {
+    public static void save() {
         try {
             JsonObject json = new JsonObject();
-            json.addProperty("enableTuffBrickPillar", true);
-            json.addProperty("doubleSlabsPackDefaultEnabled", false);
+            json.addProperty("enableTuffBrickPillar", enableTuffBrickPillar);
+            json.addProperty("doubleSlabsPackDefaultEnabled", doubleSlabsPackDefaultEnabled);
 
             Files.createDirectories(CONFIG_PATH.getParent());
 
             try (Writer writer = Files.newBufferedWriter(CONFIG_PATH)) {
                 GSON.toJson(json, writer);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }

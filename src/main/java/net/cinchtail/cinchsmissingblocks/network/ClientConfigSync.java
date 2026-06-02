@@ -1,63 +1,58 @@
 package net.cinchtail.cinchsmissingblocks.network;
 
-import net.cinchtail.cinchsmissingblocks.pack.ModBuiltinPacks;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
+import net.cinchtail.cinchsmissingblocks.pack.BuiltinResourcePacks;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.resource.ResourcePackProfile;
+import net.minecraft.util.Identifier;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClientConfigSync {
 
     public static void register() {
+
         ClientPlayNetworking.registerGlobalReceiver(
                 ConfigSyncPayload.ID,
-                (payload, context) -> context.client().execute(() -> {
+                (payload, context) -> {
 
                     MinecraftClient client = MinecraftClient.getInstance();
-                    var manager = client.getResourcePackManager();
+                    boolean serverWantsTuffPillars = payload.enableTuffBrickPillar();
 
-                    String tuffPillars = "cinchsmissingblocks:" + ModBuiltinPacks.TUFF_PILLARS;
-                    String tuffPillarRecipes = "cinchsmissingblocks:" + ModBuiltinPacks.TUFF_PILLAR_RECIPES;
-                    String doubleSlabs = "cinchsmissingblocks:" + ModBuiltinPacks.DOUBLE_SLABS;
+                    client.execute(() -> {
 
-                    boolean enableTuff = payload.enableTuffBrickPillar();
-                    boolean enableDouble = payload.enableDoubleSlabs();
+                        var manager = client.getResourcePackManager();
 
-                    boolean tuffEnabled = manager.getEnabledIds().contains(tuffPillars);
-                    boolean tuffRecipesEnabled = manager.getEnabledIds().contains(tuffPillarRecipes);
-                    boolean doubleEnabled = manager.getEnabledIds().contains(doubleSlabs);
+                        String tuffId = Identifier.of(
+                                CinchsMissingBlocks.MOD_ID,
+                                BuiltinResourcePacks.TUFF_PILLARS
+                        ).toString();
 
-                    boolean changed = false;
+                        List<ResourcePackProfile> enabledProfiles =
+                                new ArrayList<>(manager.getEnabledProfiles());
 
-                    if (enableTuff && !tuffEnabled) {
-                        manager.enable(tuffPillars);
-                        changed = true;
-                    }
-                    if (!enableTuff && tuffEnabled) {
-                        manager.disable(tuffPillars);
-                        changed = true;
-                    }
+                        List<String> enabledNames = new ArrayList<>();
+                        for (ResourcePackProfile profile : enabledProfiles) {
+                            enabledNames.add(profile.getId());
+                        }
 
-                    if (enableTuff && !tuffRecipesEnabled) {
-                        manager.enable(tuffPillarRecipes);
-                        changed = true;
-                    }
-                    if (!enableTuff && tuffRecipesEnabled) {
-                        manager.disable(tuffPillarRecipes);
-                        changed = true;
-                    }
+                        if (serverWantsTuffPillars) {
+                            if (!enabledNames.contains(tuffId)) enabledNames.add(tuffId);
+                        } else {
+                            enabledNames.remove(tuffId);
+                        }
 
-                    if (enableDouble && !doubleEnabled) {
-                        manager.enable(doubleSlabs);
-                        changed = true;
-                    }
-                    if (!enableDouble && doubleEnabled) {
-                        manager.disable(doubleSlabs);
-                        changed = true;
-                    }
-
-                    if (changed) {
+                        manager.setEnabledProfiles(enabledNames);
                         client.reloadResources();
-                    }
-                })
+
+                        ModConfigs.enableTuffBrickPillar = serverWantsTuffPillars;
+                        ModConfigs.doubleSlabsPackDefaultEnabled = payload.enableDoubleSlabs();
+                        ModConfigs.save();
+                    });
+                }
         );
     }
 }
