@@ -1,15 +1,9 @@
 package net.cinchtail.cinchsmissingblocks.network;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
-import net.cinchtail.cinchsmissingblocks.pack.BuiltinResourcePacks;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.resource.ResourcePackProfile;
-import net.minecraft.util.Identifier;
-
-import java.util.ArrayList;
-import java.util.List;
+import net.minecraft.text.Text;
 
 public class ClientConfigSync {
 
@@ -21,37 +15,23 @@ public class ClientConfigSync {
 
                     MinecraftClient client = MinecraftClient.getInstance();
                     boolean serverWantsTuffPillars = payload.enableTuffBrickPillar();
+                    boolean clientValue = ModConfigs.enableTuffBrickPillar;
 
-                    client.execute(() -> {
-
-                        var manager = client.getResourcePackManager();
-
-                        String tuffId = Identifier.of(
-                                CinchsMissingBlocks.MOD_ID,
-                                BuiltinResourcePacks.TUFF_PILLARS
-                        ).toString();
-
-                        List<ResourcePackProfile> enabledProfiles =
-                                new ArrayList<>(manager.getEnabledProfiles());
-
-                        List<String> enabledNames = new ArrayList<>();
-                        for (ResourcePackProfile profile : enabledProfiles) {
-                            enabledNames.add(profile.getId());
-                        }
-
-                        if (serverWantsTuffPillars) {
-                            if (!enabledNames.contains(tuffId)) enabledNames.add(tuffId);
-                        } else {
-                            enabledNames.remove(tuffId);
-                        }
-
-                        manager.setEnabledProfiles(enabledNames);
-                        client.reloadResources();
-
-                        ModConfigs.enableTuffBrickPillar = serverWantsTuffPillars;
-                        ModConfigs.doubleSlabsPackDefaultEnabled = payload.enableDoubleSlabs();
-                        ModConfigs.save();
-                    });
+                    if (serverWantsTuffPillars != clientValue) {
+                        client.execute(() -> {
+                            if (client.getNetworkHandler() != null) {
+                                client.getNetworkHandler().getConnection().disconnect(
+                                        Text.literal(
+                                                "Your Cinch's Missing Blocks config does not match the server.\n\n" +
+                                                        "Server requires: \"enableTuffBrickPillar\": " + serverWantsTuffPillars + "\n" +
+                                                        "Your config: \"enableTuffBrickPillar\": " + clientValue + "\n\n" +
+                                                        "Please update your config and reconnect.\n\n" +
+                                                        "Your config is located in .minecraft\\config\\cinchsmissingblocks.json."
+                                        )
+                                );
+                            }
+                        });
+                    }
                 }
         );
     }

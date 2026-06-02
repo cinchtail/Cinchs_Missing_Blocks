@@ -8,7 +8,7 @@ public class CinchsMissingBlocksClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        BuiltinResourcePacks.registerBuiltinPacks(CinchsMissingBlocks.MOD_ID);
         ClientConfigSync.register();
+        BuiltinResourcePacks.registerBuiltinPacks(CinchsMissingBlocks.MOD_ID);
     }
 }

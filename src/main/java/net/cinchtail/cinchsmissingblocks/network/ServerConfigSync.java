@@ -10,8 +10,7 @@ public class ServerConfigSync {
         ServerPlayNetworking.send(
                 player,
                 new ConfigSyncPayload(
-                        ModConfigs.enableTuffBrickPillar,
-                        ModConfigs.doubleSlabsPackDefaultEnabled
+                        ModConfigs.enableTuffBrickPillar
                 )
         );
     }
