@@ -3,8 +3,11 @@ package net.cinchtail.cinchsmissingblocks;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
+import net.cinchtail.cinchsmissingblocks.network.ClientConfigSender;
+import net.cinchtail.cinchsmissingblocks.network.NetworkInit;
 import net.cinchtail.cinchsmissingblocks.pack.ModBuiltinPacks;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -18,14 +21,13 @@ public class CinchsMissingBlocks {
     public static final String MOD_ID = "cinchsmissingblocks";
     public static final Logger LOGGER = LoggerFactory.getLogger(CinchsMissingBlocks.class);
 
-    static {
-        ModConfigs.load();
-    }
-
     public CinchsMissingBlocks(@NotNull IEventBus bus) {
+        ModConfigs.load();
         ModBlocks.BLOCKS.register(bus);
         ModBlocks.ModItems.ITEMS.register(bus);
         ModItemGroups.CREATIVE_MODE_TABS.register(bus);
+        bus.register(NetworkInit.class);
+        NeoForge.EVENT_BUS.register(ClientConfigSender.class);
         bus.addListener(this::addPackFinders);
     }
 
