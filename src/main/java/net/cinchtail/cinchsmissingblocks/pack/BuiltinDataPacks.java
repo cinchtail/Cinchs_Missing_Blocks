@@ -21,19 +21,23 @@ public class BuiltinDataPacks {
 
         FabricLoader.getInstance().getModContainer(modId).ifPresent(container -> {
 
-            ResourceManagerHelper.registerBuiltinResourcePack(
-                    Identifier.of("cinchsvillagerstatues", VILLAGER_STATUES),
-                    container,
-                    Text.literal("Compat: Cinch's Villager Statues"),
-                    ResourcePackActivationType.ALWAYS_ENABLED
-            );
+            if (FabricLoader.getInstance().isModLoaded("cinchsvillagerstatues")) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of("cinchsvillagerstatues", VILLAGER_STATUES),
+                        container,
+                        Text.literal("Compat: Cinch's Villager Statues"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            }
 
-            ResourceManagerHelper.registerBuiltinResourcePack(
-                    Identifier.of("cinchslostmobgrinders", LOST_MOB_GRINDERS),
-                    container,
-                    Text.literal("Compat: Cinch's Lost Mob Grinders"),
-                    ResourcePackActivationType.ALWAYS_ENABLED
-            );
+            if (FabricLoader.getInstance().isModLoaded("cinchslostmobgrinders")) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of("cinchsmissingblocks", LOST_MOB_GRINDERS),
+                        container,
+                        Text.literal("Compat: Cinch's Lost Mob Grinders"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            }
 
             if (ModConfigs.enableTuffBrickPillar) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
