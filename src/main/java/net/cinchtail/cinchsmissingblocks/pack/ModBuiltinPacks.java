@@ -18,15 +18,13 @@ public class ModBuiltinPacks {
 
         if (event.getPackType() == PackType.CLIENT_RESOURCES) {
 
-            PackSource source = ModConfigs.doubleSlabsPackDefaultEnabled
-                    ? PackSource.DEFAULT
-                    : PackSource.BUILT_IN;
-
             event.addPackFinders(
                     Identifier.fromNamespaceAndPath(modId, "resource_packs/cinchs_double_slabs"),
                     PackType.CLIENT_RESOURCES,
                     Component.literal("Cinch's Double Slabs"),
-                    source,
+                    ModConfigs.doubleSlabsPackDefaultEnabled
+                            ? PackSource.DEFAULT
+                            : PackSource.BUILT_IN,
                     false,
                     Pack.Position.TOP
             );
