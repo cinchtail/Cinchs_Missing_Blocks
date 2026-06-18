@@ -18,6 +18,7 @@ public class ModConfigs {
             FabricLoader.getInstance().getConfigDir().resolve("cinchsmissingblocks.json");
 
     public static boolean enableTuffBrickPillar = true;
+    public static boolean enableReworkedDeepslateRecipes = true;
     public static boolean doubleSlabsPackDefaultEnabled = false;
 
     public static void load() {
@@ -35,6 +36,9 @@ public class ModConfigs {
 
                 doubleSlabsPackDefaultEnabled =
                         !json.has("doubleSlabsPackDefaultEnabled") || json.get("doubleSlabsPackDefaultEnabled").getAsBoolean();
+
+                enableReworkedDeepslateRecipes =
+                        !json.has("enableReworkedDeepslateRecipes") || json.get("enableReworkedDeepslateRecipes").getAsBoolean();
             }
 
         } catch (Exception e) {
@@ -47,6 +51,7 @@ public class ModConfigs {
         try {
             JsonObject json = new JsonObject();
             json.addProperty("enableTuffBrickPillar", true);
+            json.addProperty("enableReworkedDeepslateRecipes", true);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
 
             Files.createDirectories(CONFIG_PATH.getParent());

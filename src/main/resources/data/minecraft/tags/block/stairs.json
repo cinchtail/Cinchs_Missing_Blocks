@@ -52,6 +52,13 @@
     "cinchsmissingblocks:mossy_deepslate_tile_stairs",
     "cinchsmissingblocks:deepslate_stairs",
     "cinchsmissingblocks:cracked_resin_brick_stairs",
-    "cinchsmissingblocks:mossy_resin_brick_stairs"
+    "cinchsmissingblocks:mossy_resin_brick_stairs",
+    "cinchsmissingblocks:mossy_end_stone_brick_stairs",
+    "cinchsmissingblocks:sandstone_brick_stairs",
+    "cinchsmissingblocks:cracked_sandstone_brick_stairs",
+    "cinchsmissingblocks:mossy_sandstone_brick_stairs",
+    "cinchsmissingblocks:red_sandstone_brick_stairs",
+    "cinchsmissingblocks:cracked_red_sandstone_brick_stairs",
+    "cinchsmissingblocks:mossy_red_sandstone_brick_stairs"
   ]
 }

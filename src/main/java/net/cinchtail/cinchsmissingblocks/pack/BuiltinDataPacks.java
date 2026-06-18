@@ -15,7 +15,8 @@ public class BuiltinDataPacks {
 
     public static final String VILLAGER_STATUES = "z_override_cinchsvillagerstatues";
     public static final String LOST_MOB_GRINDERS = "z_override_cinchslostmobgrinders";
-    public static final String TUFF_PILLAR_RECIPES = "cinchs_tuff_pillar_recipes";
+    public static final String TUFF_PILLAR_RECIPES = "tuff_pillar_recipes";
+    public static final String REWORKED_DEEPSLATE_RECIPES = "reworked_deepslate_recipes";
 
     public static void registerBuiltinPacks(String modId) {
 
@@ -43,11 +44,22 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.of(modId, TUFF_PILLAR_RECIPES),
                         container,
-                        Text.literal("Cinch's Tuff Pillars Recipes"),
+                        Text.literal("Tuff Pillars Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
                 LOGGER.info("Tuff Pillar recipes disabled by config");
+            }
+
+            if (ModConfigs.enableReworkedDeepslateRecipes) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of(modId, REWORKED_DEEPSLATE_RECIPES),
+                        container,
+                        Text.literal("Reworked Deepslate Recipes"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            } else {
+                LOGGER.info("Reworked deepslate recipes recipes disabled by config");
             }
         });
     }

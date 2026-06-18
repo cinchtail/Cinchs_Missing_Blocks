@@ -220,6 +220,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         BlockStateModelGenerator.BlockTexturePool polishedEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_END_STONE);
         BlockStateModelGenerator.BlockTexturePool crackedEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_END_STONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_END_STONE_BRICKS);
 
         BlockModelHelpers.stairs(gen, ModBlocks.END_STONE_STAIRS, TextureMap.getId(Blocks.END_STONE));
         BlockModelHelpers.slab(gen, ModBlocks.END_STONE_SLAB, Blocks.END_STONE, TextureMap.getId(Blocks.END_STONE));
@@ -232,6 +233,10 @@ public class ModModelProvider extends FabricModelProvider {
         crackedEndStoneBricksPool.stairs(ModBlocks.CRACKED_END_STONE_BRICK_STAIRS);
         crackedEndStoneBricksPool.slab(ModBlocks.CRACKED_END_STONE_BRICK_SLAB);
         crackedEndStoneBricksPool.wall(ModBlocks.CRACKED_END_STONE_BRICK_WALL);
+
+        mossyEndStoneBricksPool.stairs(ModBlocks.MOSSY_END_STONE_BRICK_STAIRS);
+        mossyEndStoneBricksPool.slab(ModBlocks.MOSSY_END_STONE_BRICK_SLAB);
+        mossyEndStoneBricksPool.wall(ModBlocks.MOSSY_END_STONE_BRICK_WALL);
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_END_STONE_BRICKS);
 
@@ -346,14 +351,48 @@ public class ModModelProvider extends FabricModelProvider {
         gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_sandstone_stairs"));
         gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_sandstone_wall_inventory"));
 
+        BlockStateModelGenerator.BlockTexturePool sandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossySandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_SANDSTONE_BRICKS);
+
+        sandStoneBricksPool.stairs(ModBlocks.SANDSTONE_BRICK_STAIRS);
+        sandStoneBricksPool.slab(ModBlocks.SANDSTONE_BRICK_SLAB);
+        sandStoneBricksPool.wall(ModBlocks.SANDSTONE_BRICK_WALL);
+
+        crackedSandStoneBricksPool.stairs(ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
+        crackedSandStoneBricksPool.slab(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB);
+        crackedSandStoneBricksPool.wall(ModBlocks.CRACKED_SANDSTONE_BRICK_WALL);
+
+        mossySandStoneBricksPool.stairs(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
+        mossySandStoneBricksPool.slab(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
+        mossySandStoneBricksPool.wall(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+
         BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Identifier.of("minecraft:block/red_sandstone_top"));
 
         gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_stairs"));
         gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_wall_inventory"));
 
+        BlockStateModelGenerator.BlockTexturePool redSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.RED_SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedRedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyRedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+
+        redSandStoneBricksPool.stairs(ModBlocks.RED_SANDSTONE_BRICK_STAIRS);
+        redSandStoneBricksPool.slab(ModBlocks.RED_SANDSTONE_BRICK_SLAB);
+        redSandStoneBricksPool.wall(ModBlocks.RED_SANDSTONE_BRICK_WALL);
+
+        crackedRedSandStoneBricksPool.stairs(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
+        crackedRedSandStoneBricksPool.slab(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB);
+        crackedRedSandStoneBricksPool.wall(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_WALL);
+
+        mossyRedSandStoneBricksPool.stairs(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
+        mossyRedSandStoneBricksPool.slab(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
+        mossyRedSandStoneBricksPool.wall(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+
         BlockModelHelpers.wall(gen, ModBlocks.PURPUR_WALL, TextureMap.getId(Blocks.PURPUR_BLOCK));
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_PURPUR);
+
+        gen.registerGlassAndPane(Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_PANE);
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

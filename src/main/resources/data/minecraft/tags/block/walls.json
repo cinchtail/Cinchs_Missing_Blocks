@@ -63,6 +63,13 @@
     "cinchsmissingblocks:mossy_deepslate_tile_wall",
     "cinchsmissingblocks:deepslate_wall",
     "cinchsmissingblocks:cracked_resin_brick_wall",
-    "cinchsmissingblocks:mossy_resin_brick_wall"
+    "cinchsmissingblocks:mossy_resin_brick_wall",
+    "cinchsmissingblocks:mossy_end_stone_brick_wall",
+    "cinchsmissingblocks:sandstone_brick_wall",
+    "cinchsmissingblocks:cracked_sandstone_brick_wall",
+    "cinchsmissingblocks:mossy_sandstone_brick_wall",
+    "cinchsmissingblocks:red_sandstone_brick_wall",
+    "cinchsmissingblocks:cracked_red_sandstone_brick_wall",
+    "cinchsmissingblocks:mossy_red_sandstone_brick_wall"
   ]
 }
