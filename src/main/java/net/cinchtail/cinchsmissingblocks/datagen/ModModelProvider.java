@@ -1,6 +1,7 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
@@ -317,6 +318,21 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_RED_NETHER_BRICKS);
 
+        BlockStateModelGenerator.BlockTexturePool blueNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.BLUE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedBlueNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+        blueNetherBricksPool.stairs(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
+        blueNetherBricksPool.slab(ModBlocks.BLUE_NETHER_BRICK_SLAB);
+        blueNetherBricksPool.wall(ModBlocks.BLUE_NETHER_BRICK_WALL);
+        blueNetherBricksPool.fence(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+
+        crackedBlueNetherBricksPool.stairs(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+        crackedBlueNetherBricksPool.slab(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
+        crackedBlueNetherBricksPool.wall(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+        crackedBlueNetherBricksPool.fence(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+
+        gen.registerSimpleCubeAll(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+
         BlockStateModelGenerator.BlockTexturePool crackedPrismarineBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_PRISMARINE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool mossyPrismarineBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_PRISMARINE_BRICKS);
 
@@ -396,6 +412,7 @@ public class ModModelProvider extends FabricModelProvider {
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        //itemModelGenerator.register(ModItems.RED_NETHER_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_NETHER_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_NETHER_BRICK, Models.GENERATED);
     }
 }

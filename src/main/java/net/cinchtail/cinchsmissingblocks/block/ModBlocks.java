@@ -858,6 +858,52 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_red_nether_bricks")))));
 
+    //Blue Nether Bricks
+    public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
+            properties -> new Block(Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blue_nether_bricks")))));
+    public static final Block BLUE_NETHER_BRICK_STAIRS = registerBlock("blue_nether_brick_stairs",
+            properties -> new StairsBlock(ModBlocks.BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blue_nether_brick_stairs")))));
+    public static final Block BLUE_NETHER_BRICK_SLAB = registerBlock("blue_nether_brick_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blue_nether_brick_slab")))));
+    public static final Block BLUE_NETHER_BRICK_WALL = registerBlock("blue_nether_brick_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blue_nether_brick_wall")))));
+    public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",
+            properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blue_nether_brick_fence")))));
+    public static final Block CRACKED_BLUE_NETHER_BRICKS = registerBlock("cracked_blue_nether_bricks",
+            properties -> new Block(Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blue_nether_bricks")))));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = registerBlock("cracked_blue_nether_brick_stairs",
+            properties -> new StairsBlock(ModBlocks.BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blue_nether_brick_stairs")))));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = registerBlock("cracked_blue_nether_brick_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blue_nether_brick_slab")))));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = registerBlock("cracked_blue_nether_brick_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blue_nether_brick_wall")))));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE = registerBlock("cracked_blue_nether_brick_fence",
+            properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blue_nether_brick_fence")))));
+    public static final Block CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
+            properties -> new Block(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "chiseled_blue_nether_bricks")))));
+
     //Prismarine Blocks
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.PRISMARINE_BRICKS)

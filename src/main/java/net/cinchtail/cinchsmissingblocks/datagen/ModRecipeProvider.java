@@ -2,6 +2,7 @@ package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
@@ -73,6 +74,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerCrackingRecipe(ModBlocks.CRACKED_SANDSTONE_BRICKS, Blocks.CUT_SANDSTONE);
 
                 offerCrackingRecipe(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS, Blocks.CUT_RED_SANDSTONE);
+
+                offerCrackingRecipe(ModBlocks.CRACKED_BLUE_NETHER_BRICKS, ModBlocks.BLUE_NETHER_BRICKS);
 
 
                 //Mossy Blocks
@@ -325,6 +328,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICK_SLAB);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
+
+                offerChiseledBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_BLUE_NETHER_BRICKS, ModBlocks.BLUE_NETHER_BRICK_SLAB);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_BLUE_NETHER_BRICKS, ModBlocks.BLUE_NETHER_BRICKS);
 
 
                 //Pillar Blocks
@@ -1169,6 +1176,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL, Blocks.NETHERRACK);
 
 
+                //Nether Brick Items
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModItems.RED_NETHER_BRICK, 4)
+                        .pattern("AT")
+                        .pattern("TA")
+                        .input('A', Items.NETHER_WART)
+                        .input('T', Items.NETHER_BRICK)
+                        .criterion(hasItem(Items.NETHER_WART), conditionsFromItem(Items.NETHER_WART))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModItems.BLUE_NETHER_BRICK, 4)
+                        .pattern("AT")
+                        .pattern("TA")
+                        .input('A', Items.NETHER_SPROUTS)
+                        .input('T', Items.NETHER_BRICK)
+                        .criterion(hasItem(Items.NETHER_SPROUTS), conditionsFromItem(Items.NETHER_SPROUTS))
+                        .offerTo(exporter);
+
+
                 //Miscellaneous Nether Brick Blocks
                 offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
 
@@ -1196,7 +1221,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("ATA")
                         .pattern("ATA")
                         .input('A', Blocks.RED_NETHER_BRICKS)
-                        .input('T', Items.NETHER_BRICK)
+                        .input('T', ModItems.RED_NETHER_BRICK)
                         .criterion(hasItem(Blocks.RED_NETHER_BRICKS), conditionsFromItem(Blocks.RED_NETHER_BRICKS))
                         .offerTo(exporter);
 
@@ -1216,8 +1241,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("ATA")
                         .pattern("ATA")
                         .input('A', ModBlocks.CRACKED_RED_NETHER_BRICKS)
-                        .input('T', Items.NETHER_BRICK)
+                        .input('T', ModItems.RED_NETHER_BRICK)
                         .criterion(hasItem(ModBlocks.CRACKED_RED_NETHER_BRICKS), conditionsFromItem(ModBlocks.CRACKED_RED_NETHER_BRICKS))
+                        .offerTo(exporter);
+
+
+                //Blue Nether Brick Blocks
+                offerBricksRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_STAIRS, ModBlocks.BLUE_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_STAIRS, ModBlocks.BLUE_NETHER_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_SLAB, ModBlocks.BLUE_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_SLAB, ModBlocks.BLUE_NETHER_BRICKS,2);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_WALL, ModBlocks.BLUE_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_WALL, ModBlocks.BLUE_NETHER_BRICKS);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_FENCE, 3)
+                        .pattern("ATA")
+                        .pattern("ATA")
+                        .input('A', ModBlocks.BLUE_NETHER_BRICKS)
+                        .input('T', ModItems.BLUE_NETHER_BRICK)
+                        .criterion(hasItem(ModBlocks.BLUE_NETHER_BRICKS), conditionsFromItem(ModBlocks.BLUE_NETHER_BRICKS))
+                        .offerTo(exporter);
+
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, ModBlocks.CRACKED_BLUE_NETHER_BRICKS,2);
+
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE, 3)
+                        .pattern("ATA")
+                        .pattern("ATA")
+                        .input('A', ModBlocks.CRACKED_BLUE_NETHER_BRICKS)
+                        .input('T', ModItems.BLUE_NETHER_BRICK)
+                        .criterion(hasItem(ModBlocks.CRACKED_BLUE_NETHER_BRICKS), conditionsFromItem(ModBlocks.CRACKED_BLUE_NETHER_BRICKS))
                         .offerTo(exporter);
 
 

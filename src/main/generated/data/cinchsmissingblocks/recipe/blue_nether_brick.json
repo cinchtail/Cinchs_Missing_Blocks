@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": "minecraft:nether_sprouts",
+    "T": "minecraft:nether_brick"
+  },
+  "pattern": [
+    "AT",
+    "TA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cinchsmissingblocks:blue_nether_brick"
+  }
+}

@@ -253,6 +253,17 @@
     "cinchsmissingblocks:mossy_red_sandstone_bricks",
     "cinchsmissingblocks:mossy_red_sandstone_brick_stairs",
     "cinchsmissingblocks:mossy_red_sandstone_brick_slab",
-    "cinchsmissingblocks:mossy_red_sandstone_brick_wall"
+    "cinchsmissingblocks:mossy_red_sandstone_brick_wall",
+    "cinchsmissingblocks:blue_nether_bricks",
+    "cinchsmissingblocks:blue_nether_brick_wall",
+    "cinchsmissingblocks:blue_nether_brick_slab",
+    "cinchsmissingblocks:blue_nether_brick_stairs",
+    "cinchsmissingblocks:blue_nether_brick_fence",
+    "cinchsmissingblocks:cracked_blue_nether_bricks",
+    "cinchsmissingblocks:cracked_blue_nether_brick_wall",
+    "cinchsmissingblocks:cracked_blue_nether_brick_slab",
+    "cinchsmissingblocks:cracked_blue_nether_brick_stairs",
+    "cinchsmissingblocks:cracked_blue_nether_brick_fence",
+    "cinchsmissingblocks:chiseled_blue_nether_bricks"
   ]
 }

@@ -257,6 +257,20 @@
   "block.cinchsmissingblocks.mossy_red_sandstone_brick_wall": "Mossy Red Sandstone Brick Wall",
   "block.cinchsmissingblocks.mossy_red_sandstone_brick_slab": "Mossy Red Sandstone Brick Slab",
   "block.cinchsmissingblocks.mossy_red_sandstone_brick_stairs": "Mossy Red Sandstone Brick Stairs",
+  "block.cinchsmissingblocks.blue_nether_bricks": "Blue Nether Bricks",
+  "block.cinchsmissingblocks.blue_nether_brick_wall": "Blue Nether Brick Wall",
+  "block.cinchsmissingblocks.blue_nether_brick_slab": "Blue Nether Brick Slab",
+  "block.cinchsmissingblocks.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
+  "block.cinchsmissingblocks.blue_nether_brick_fence": "Blue Nether Brick Fence",
+  "block.cinchsmissingblocks.cracked_blue_nether_bricks": "Cracked Blue Nether Bricks",
+  "block.cinchsmissingblocks.cracked_blue_nether_brick_wall": "Cracked Blue Nether Brick Wall",
+  "block.cinchsmissingblocks.cracked_blue_nether_brick_slab": "Cracked Blue Nether Brick Slab",
+  "block.cinchsmissingblocks.cracked_blue_nether_brick_stairs": "Cracked Blue Nether Brick Stairs",
+  "block.cinchsmissingblocks.cracked_blue_nether_brick_fence": "Cracked Blue Nether Brick Fence",
+  "block.cinchsmissingblocks.chiseled_blue_nether_bricks": "Chiseled Blue Nether Bricks",
+
+  "item.cinchsmissingblocks.red_nether_brick": "Red Nether Brick",
+  "item.cinchsmissingblocks.blue_nether_brick": "Blue Nether Brick",
 
   "itemgroup.cinchsmissingblocks": "Cinch's Missing Blocks"
 }

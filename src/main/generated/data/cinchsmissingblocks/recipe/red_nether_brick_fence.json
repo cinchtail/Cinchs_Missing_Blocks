@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "A": "minecraft:red_nether_bricks",
-    "T": "minecraft:nether_brick"
+    "T": "cinchsmissingblocks:red_nether_brick"
   },
   "pattern": [
     "ATA",

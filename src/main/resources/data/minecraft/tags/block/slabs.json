@@ -56,6 +56,8 @@
     "cinchsmissingblocks:mossy_sandstone_brick_slab",
     "cinchsmissingblocks:red_sandstone_brick_slab",
     "cinchsmissingblocks:cracked_red_sandstone_brick_slab",
-    "cinchsmissingblocks:mossy_red_sandstone_brick_slab"
+    "cinchsmissingblocks:mossy_red_sandstone_brick_slab",
+    "cinchsmissingblocks:blue_nether_brick_slab",
+    "cinchsmissingblocks:cracked_blue_nether_brick_slab"
   ]
 }

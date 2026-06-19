@@ -3,6 +3,7 @@ package net.cinchtail.cinchsmissingblocks;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
+import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.cinchtail.cinchsmissingblocks.network.ConfigSyncPayload;
 import net.cinchtail.cinchsmissingblocks.network.NetworkInit;
 import net.cinchtail.cinchsmissingblocks.pack.BuiltinDataPacks;
@@ -20,6 +21,7 @@ public class CinchsMissingBlocks implements ModInitializer {
 		ModConfigs.load();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 		NetworkInit.register();
 		BuiltinDataPacks.registerBuiltinPacks(CinchsMissingBlocks.MOD_ID);
 
