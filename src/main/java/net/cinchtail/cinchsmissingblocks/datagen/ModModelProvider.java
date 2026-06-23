@@ -252,6 +252,20 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.slab(gen, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS, TextureMap.getId(Blocks.CRACKED_STONE_BRICKS));
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_STONE_BRICK_WALL, TextureMap.getId(Blocks.CRACKED_STONE_BRICKS));
 
+        BlockStateModelGenerator.BlockTexturePool stoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackedStoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool mossyStoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_STONE_TILES);
+
+        stoneTilesPool.stairs(ModBlocks.STONE_TILE_STAIRS);
+        stoneTilesPool.slab(ModBlocks.STONE_TILE_SLAB);
+        stoneTilesPool.wall(ModBlocks.STONE_TILE_WALL);
+        crackedStoneTilesPool.stairs(ModBlocks.CRACKED_STONE_TILE_STAIRS);
+        crackedStoneTilesPool.slab(ModBlocks.CRACKED_STONE_TILE_SLAB);
+        crackedStoneTilesPool.wall(ModBlocks.CRACKED_STONE_TILE_WALL);
+        mossyStoneTilesPool.stairs(ModBlocks.MOSSY_STONE_TILE_STAIRS);
+        mossyStoneTilesPool.slab(ModBlocks.MOSSY_STONE_TILE_SLAB);
+        mossyStoneTilesPool.wall(ModBlocks.MOSSY_STONE_TILE_WALL);
+
         BlockModelHelpers.pillar(gen,ModBlocks.STONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/stone_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/stone_brick_pillar_side"));
 

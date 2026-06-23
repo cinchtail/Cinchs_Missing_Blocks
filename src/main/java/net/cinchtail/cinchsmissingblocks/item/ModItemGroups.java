@@ -211,6 +211,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
+                        entries.add(ModBlocks.STONE_TILES);
+                        entries.add(ModBlocks.STONE_TILE_STAIRS);
+                        entries.add(ModBlocks.STONE_TILE_SLAB);
+                        entries.add(ModBlocks.STONE_TILE_WALL);
+                        entries.add(ModBlocks.CRACKED_STONE_TILES);
+                        entries.add(ModBlocks.CRACKED_STONE_TILE_STAIRS);
+                        entries.add(ModBlocks.CRACKED_STONE_TILE_SLAB);
+                        entries.add(ModBlocks.CRACKED_STONE_TILE_WALL);
+                        entries.add(ModBlocks.MOSSY_STONE_TILES);
+                        entries.add(ModBlocks.MOSSY_STONE_TILE_STAIRS);
+                        entries.add(ModBlocks.MOSSY_STONE_TILE_SLAB);
+                        entries.add(ModBlocks.MOSSY_STONE_TILE_WALL);
                         entries.add(ModBlocks.STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.DEEPSLATE_STAIRS);
                         entries.add(ModBlocks.DEEPSLATE_SLAB);

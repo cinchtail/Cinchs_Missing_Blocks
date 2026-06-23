@@ -33,7 +33,7 @@ public class BuiltinDataPacks {
 
             if (FabricLoader.getInstance().isModLoaded("cinchslostmobgrinders")) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
-                        Identifier.of("cinchsmissingblocks", LOST_MOB_GRINDERS),
+                        Identifier.of("cinchslostmobgrinders", LOST_MOB_GRINDERS),
                         container,
                         Text.literal("Compat: Cinch's Lost Mob Grinders"),
                         ResourcePackActivationType.ALWAYS_ENABLED
@@ -59,7 +59,7 @@ public class BuiltinDataPacks {
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
-                LOGGER.info("Reworked deepslate recipes recipes disabled by config");
+                LOGGER.info("Reworked deepslate recipes disabled by config");
             }
         });
     }
