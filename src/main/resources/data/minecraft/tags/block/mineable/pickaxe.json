@@ -276,6 +276,14 @@
     "cinchsmissingblocks:mossy_stone_tiles",
     "cinchsmissingblocks:mossy_stone_tile_wall",
     "cinchsmissingblocks:mossy_stone_tile_slab",
-    "cinchsmissingblocks:mossy_stone_tile_stairs"
+    "cinchsmissingblocks:mossy_stone_tile_stairs",
+    "cinchsmissingblocks:blackstone_tiles",
+    "cinchsmissingblocks:blackstone_tile_wall",
+    "cinchsmissingblocks:blackstone_tile_slab",
+    "cinchsmissingblocks:blackstone_tile_stairs",
+    "cinchsmissingblocks:cracked_blackstone_tiles",
+    "cinchsmissingblocks:cracked_blackstone_tile_wall",
+    "cinchsmissingblocks:cracked_blackstone_tile_slab",
+    "cinchsmissingblocks:cracked_blackstone_tile_stairs"
   ]
 }

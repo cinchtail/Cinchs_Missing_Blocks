@@ -252,6 +252,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.BLACKSTONE_TILES);
+                        entries.add(ModBlocks.BLACKSTONE_TILE_STAIRS);
+                        entries.add(ModBlocks.BLACKSTONE_TILE_SLAB);
+                        entries.add(ModBlocks.BLACKSTONE_TILE_WALL);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILES);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILE_STAIRS);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILE_SLAB);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILE_WALL);
                         entries.add(ModBlocks.BLACKSTONE_BRICK_PILLAR);
                         entries.add(ModBlocks.NETHERRACK_STAIRS);
                         entries.add(ModBlocks.NETHERRACK_SLAB);

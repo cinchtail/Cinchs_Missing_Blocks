@@ -309,6 +309,16 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.slab(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
 
+        BlockStateModelGenerator.BlockTexturePool blacktoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.BLACKSTONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackedBlacktoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_BLACKSTONE_TILES);
+
+        blacktoneTilesPool.stairs(ModBlocks.BLACKSTONE_TILE_STAIRS);
+        blacktoneTilesPool.slab(ModBlocks.BLACKSTONE_TILE_SLAB);
+        blacktoneTilesPool.wall(ModBlocks.BLACKSTONE_TILE_WALL);
+        crackedBlacktoneTilesPool.stairs(ModBlocks.CRACKED_BLACKSTONE_TILE_STAIRS);
+        crackedBlacktoneTilesPool.slab(ModBlocks.CRACKED_BLACKSTONE_TILE_SLAB);
+        crackedBlacktoneTilesPool.wall(ModBlocks.CRACKED_BLACKSTONE_TILE_WALL);
+
         BlockModelHelpers.pillar(gen,ModBlocks.BLACKSTONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/blackstone_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/blackstone_brick_pillar_side"));
 

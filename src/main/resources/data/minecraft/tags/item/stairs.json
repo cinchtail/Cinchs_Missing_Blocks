@@ -64,6 +64,8 @@
     "cinchsmissingblocks:cracked_blue_nether_brick_stairs",
     "cinchsmissingblocks:stone_tile_stairs",
     "cinchsmissingblocks:cracked_stone_tile_stairs",
-    "cinchsmissingblocks:mossy_stone_tile_stairs"
+    "cinchsmissingblocks:mossy_stone_tile_stairs",
+    "cinchsmissingblocks:blackstone_tile_stairs",
+    "cinchsmissingblocks:cracked_blackstone_tile_stairs"
   ]
 }

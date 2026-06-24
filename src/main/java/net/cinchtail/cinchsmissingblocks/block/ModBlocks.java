@@ -836,6 +836,36 @@ public class ModBlocks {
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_polished_blackstone_brick_wall")))));
+    public static final Block BLACKSTONE_TILES = registerBlock("blackstone_tiles",
+            properties -> new Block(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_tiles")))));
+    public static final Block BLACKSTONE_TILE_STAIRS = registerBlock("blackstone_tile_stairs",
+            properties -> new StairsBlock(Blocks.POLISHED_BLACKSTONE.getDefaultState(),Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_tile_stairs")))));
+    public static final Block BLACKSTONE_TILE_SLAB = registerBlock("blackstone_tile_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_tile_slab")))));
+    public static final Block BLACKSTONE_TILE_WALL = registerBlock("blackstone_tile_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_tile_wall")))));
+    public static final Block CRACKED_BLACKSTONE_TILES = registerBlock("cracked_blackstone_tiles",
+            properties -> new Block(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_tiles")))));
+    public static final Block CRACKED_BLACKSTONE_TILE_STAIRS = registerBlock("cracked_blackstone_tile_stairs",
+            properties -> new StairsBlock(Blocks.POLISHED_BLACKSTONE.getDefaultState(),Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_tile_stairs")))));
+    public static final Block CRACKED_BLACKSTONE_TILE_SLAB = registerBlock("cracked_blackstone_tile_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F,6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_tile_slab")))));
+    public static final Block CRACKED_BLACKSTONE_TILE_WALL = registerBlock("cracked_blackstone_tile_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_tile_wall")))));
     public static final Block BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5f, 6.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_brick_pillar")))));
@@ -1171,13 +1201,11 @@ public class ModBlocks {
         registerBlockItem(name, toRegister);
         return Registry.register(Registries.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, name), toRegister);
     }
-
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(CinchsMissingBlocks.MOD_ID, name),
                 new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
                         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsMissingBlocks.MOD_ID, name)))));
     }
-
     public static void registerModBlocks() {
         CinchsMissingBlocks.LOGGER.info("Registering ModBlocks for " + CinchsMissingBlocks.MOD_ID);
     }
