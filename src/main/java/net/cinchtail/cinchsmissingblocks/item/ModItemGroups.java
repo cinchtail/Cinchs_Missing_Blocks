@@ -249,6 +249,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
+                        entries.add(ModBlocks.BLACKSTONE);
+                        entries.add(ModBlocks.BLACKSTONE_STAIRS);
+                        entries.add(ModBlocks.BLACKSTONE_SLAB);
+                        entries.add(ModBlocks.BLACKSTONE_WALL);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);

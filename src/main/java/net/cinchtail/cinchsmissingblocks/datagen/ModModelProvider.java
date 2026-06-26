@@ -305,6 +305,12 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.button(gen, ModBlocks.POLISHED_DEEPSLATE_BUTTON, TextureMap.getId(Blocks.POLISHED_DEEPSLATE));
         BlockModelHelpers.pressurePlate(gen, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, TextureMap.getId(Blocks.POLISHED_DEEPSLATE));
 
+        BlockStateModelGenerator.BlockTexturePool blacktonePool = gen.registerCubeAllModelTexturePool(ModBlocks.BLACKSTONE);
+
+        blacktonePool.stairs(ModBlocks.BLACKSTONE_STAIRS);
+        blacktonePool.slab(ModBlocks.BLACKSTONE_SLAB);
+        blacktonePool.wall(ModBlocks.BLACKSTONE_WALL);
+
         BlockModelHelpers.stairs(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
         BlockModelHelpers.slab(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));

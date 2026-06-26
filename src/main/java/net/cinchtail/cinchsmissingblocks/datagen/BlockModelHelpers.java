@@ -12,8 +12,8 @@ public class BlockModelHelpers {
         Identifier inventory = Models.BUTTON_INVENTORY.upload(button, TextureMap.texture(texture), gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createButtonBlockState(button, regular, pressed)
-        );
+                BlockStateModelGenerator.createButtonBlockState(button, regular, pressed));
+
         gen.registerParentedItemModel(button, inventory);
     }
 
@@ -22,8 +22,8 @@ public class BlockModelHelpers {
         Identifier down = Models.PRESSURE_PLATE_DOWN.upload(pressurePlate, TextureMap.texture(texture), gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, up, down)
-        );
+                BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, up, down));
+
         gen.registerParentedItemModel(pressurePlate, up);
     }
 
@@ -39,8 +39,7 @@ public class BlockModelHelpers {
         Identifier dbl = ModelIds.getBlockModelId(base);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSlabBlockState(slab, bottom, top, dbl)
-        );
+                BlockStateModelGenerator.createSlabBlockState(slab, bottom, top, dbl));
 
         gen.registerParentedItemModel(slab, bottom);
     }
@@ -56,8 +55,7 @@ public class BlockModelHelpers {
         Identifier outer = Models.OUTER_STAIRS.upload(stairs, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createStairsBlockState(stairs, inner, regular, outer)
-        );
+                BlockStateModelGenerator.createStairsBlockState(stairs, inner, regular, outer));
 
         gen.registerParentedItemModel(stairs, regular);
     }
@@ -72,8 +70,7 @@ public class BlockModelHelpers {
         Identifier inventory = Models.WALL_INVENTORY.upload(wall, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createWallBlockState(wall, post, low, tall)
-        );
+                BlockStateModelGenerator.createWallBlockState(wall, post, low, tall));
 
         gen.registerParentedItemModel(wall, inventory);
     }
@@ -86,8 +83,7 @@ public class BlockModelHelpers {
         Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSingletonBlockState(block, model)
-        );
+                BlockStateModelGenerator.createSingletonBlockState(block, model));
 
         gen.registerParentedItemModel(block, model);
     }
@@ -100,8 +96,7 @@ public class BlockModelHelpers {
         Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createAxisRotatedBlockState(block, model)
-        );
+                BlockStateModelGenerator.createAxisRotatedBlockState(block, model));
 
         gen.registerParentedItemModel(block, model);
     }
@@ -115,8 +110,7 @@ public class BlockModelHelpers {
         Identifier inventory = Models.FENCE_INVENTORY.upload(fence, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createFenceBlockState(fence, post, side)
-        );
+                BlockStateModelGenerator.createFenceBlockState(fence, post, side));
 
         gen.registerParentedItemModel(fence, inventory);
     }

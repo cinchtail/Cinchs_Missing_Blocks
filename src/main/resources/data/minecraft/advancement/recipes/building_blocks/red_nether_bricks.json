@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_nether_bricks": {
+    "has_red_nether_brick": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:red_nether_bricks"
+            "items": "cinchsmissingblocks:red_nether_brick"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_nether_bricks"
+      "has_red_nether_brick"
     ]
   ],
   "rewards": {

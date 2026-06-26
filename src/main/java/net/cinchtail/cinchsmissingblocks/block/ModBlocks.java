@@ -826,6 +826,21 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "polished_deepslate_button")))));
 
     //Blackstone Bricks
+    public static final Block BLACKSTONE = registerBlock("blackstone",
+            properties -> new Block(Block.Settings.copy(Blocks.BLACKSTONE).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone")))));
+    public static final Block BLACKSTONE_STAIRS = registerBlock("blackstone_stairs",
+            properties -> new StairsBlock(Blocks.BLACKSTONE.getDefaultState(),Block.Settings.copy(Blocks.BLACKSTONE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_stairs")))));
+    public static final Block BLACKSTONE_SLAB = registerBlock("blackstone_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_slab")))));
+    public static final Block BLACKSTONE_WALL = registerBlock("blackstone_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, "blackstone_wall")))));
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
             properties -> new StairsBlock(Blocks.POLISHED_BLACKSTONE.getDefaultState(),
                     Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)
