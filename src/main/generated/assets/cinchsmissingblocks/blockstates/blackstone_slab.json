@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/blackstone_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/blackstone"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/blackstone_slab_top"
+    }
+  }
+}
