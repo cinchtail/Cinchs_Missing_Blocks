@@ -19,6 +19,7 @@ public class BuiltinDataPacks {
     public static final String LOST_MOB_GRINDERS = "z_override_cinchslostmobgrinders";
     public static final String TUFF_PILLAR_RECIPES = "tuff_pillar_recipes";
     public static final String REWORKED_DEEPSLATE_RECIPES = "reworked_deepslate_recipes";
+    public static final String TERRACOTTA_VARIANTS_RECIPES = "terracotta_variants_recipes";
 
     public static void registerBuiltinPacks(String modId) {
 
@@ -62,6 +63,17 @@ public class BuiltinDataPacks {
                 );
             } else {
                 LOGGER.info("Reworked deepslate recipes disabled by config");
+            }
+
+            if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of(modId, TERRACOTTA_VARIANTS_RECIPES),
+                        container,
+                        Text.literal("Terracotta Variants Recipes"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            } else {
+                LOGGER.info("Terracotta variants disabled by config (Recipes)");
             }
         });
     }

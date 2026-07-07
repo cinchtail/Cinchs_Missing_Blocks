@@ -250,6 +250,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB, slabDrops(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB));
         addDrop(ModBlocks.MOSSY_DEEPSLATE_TILE_WALL);
         addDrop(ModBlocks.DEEPSLATE_BRICK_PILLAR);
+        addDropWithSilkTouch(ModBlocks.SCULK_INLAID_DEEPSLATE);
         addDrop(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
         addDrop(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
         
