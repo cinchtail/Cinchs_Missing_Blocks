@@ -1203,30 +1203,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Miscellaneous Blackstone Blocks
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS,4)
-                        .pattern("A  ")
-                        .pattern("AA ")
-                        .pattern("AAA")
-                        .input('A', Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
-                        .criterion(hasItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), conditionsFromItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "cracked_blackstone_brick_stairs_from_cracked_blackstone_bricks")));
+                offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB,6)
-                        .pattern("AAA")
-                        .input('A', Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
-                        .criterion(hasItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), conditionsFromItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "cracked_blackstone_brick_slab_from_cracked_blackstone_bricks")));
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS,2);
 
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL,6)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .input('A', Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
-                        .criterion(hasItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), conditionsFromItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "cracked_blackstone_brick_wall_from_cracked_blackstone_bricks")));
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 

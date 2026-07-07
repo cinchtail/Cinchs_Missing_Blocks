@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:cracked_blackstone_brick_stairs_from_cracked_blackstone_bricks"
+        "recipe": "cinchsmissingblocks:cracked_polished_blackstone_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:cracked_blackstone_brick_stairs_from_cracked_blackstone_bricks"
+      "cinchsmissingblocks:cracked_polished_blackstone_brick_stairs"
     ]
   }
 }
