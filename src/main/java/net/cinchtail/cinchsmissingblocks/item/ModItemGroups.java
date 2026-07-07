@@ -2,6 +2,7 @@ package net.cinchtail.cinchsmissingblocks.item;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -11,13 +12,14 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class ModItemGroups {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger("cinchsmissingblocks");
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static final ItemGroup CINCHS_MISSING_BLOCKS = Registry.register(net.minecraft.registry.Registries.ITEM_GROUP,
-            Identifier.of(CinchsMissingBlocks.MOD_ID, "cinchs_missing_blocks"),
+            Identifier.of(MOD_ID, "cinchs_missing_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsmissingblocks"))
                     .icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CALCITE_STAIRS);
@@ -249,10 +251,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SCULK_INLAID_DEEPSLATE);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
-                        entries.add(ModBlocks.BLACKSTONE);
-                        entries.add(ModBlocks.BLACKSTONE_STAIRS);
-                        entries.add(ModBlocks.BLACKSTONE_SLAB);
-                        entries.add(ModBlocks.BLACKSTONE_WALL);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
@@ -311,12 +309,67 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
                         entries.add(ModBlocks.SMOOTH_BASALT_WALL);
-                        entries.add(ModBlocks.CHISELED_PURPUR);
                         entries.add(ModBlocks.PURPUR_WALL);
+                        entries.add(ModBlocks.CHISELED_PURPUR);
                         entries.add(ModBlocks.TINTED_GLASS_PANE);
+                        if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
+                            entries.add(ModBlocks.TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.TERRACOTTA_WALL);
+                            entries.add(ModBlocks.WHITE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.WHITE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.WHITE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.GRAY_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.GRAY_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.GRAY_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.BLACK_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.BLACK_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.BLACK_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.BROWN_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.BROWN_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.BROWN_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.RED_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.RED_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.RED_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.ORANGE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.ORANGE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.YELLOW_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.YELLOW_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.YELLOW_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.LIME_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.LIME_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.LIME_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.GREEN_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.GREEN_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.GREEN_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.CYAN_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.CYAN_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.CYAN_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.BLUE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.BLUE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.BLUE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.PURPLE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.PURPLE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.MAGENTA_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.MAGENTA_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.PINK_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.PINK_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.PINK_TERRACOTTA_WALL);
+                        } else {
+                            LOGGER.info("Terracotta variants disabled by config (Creative Mode Tab)");
+                        }
                     }).build());
 
     public static void registerItemGroups() {
-        CinchsMissingBlocks.LOGGER.info("Registering Item Groups for " + CinchsMissingBlocks.MOD_ID);
+        CinchsMissingBlocks.LOGGER.info("Registering Item Groups for " + MOD_ID);
     }
 }

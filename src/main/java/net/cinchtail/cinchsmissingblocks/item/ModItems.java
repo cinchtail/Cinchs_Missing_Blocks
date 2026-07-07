@@ -10,6 +10,8 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class ModItems {
 
     public static final Item RED_NETHER_BRICK = registerItem("red_nether_brick", Item::new);
@@ -17,10 +19,10 @@ public class ModItems {
 
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
-        return Registry.register(Registries.ITEM, Identifier.of(CinchsMissingBlocks.MOD_ID, name),
-                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsMissingBlocks.MOD_ID, name)))));
+        return Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name),
+                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, name)))));
     }
     public static void registerModItems() {
-        CinchsMissingBlocks.LOGGER.info("Registering Mod Items for " + CinchsMissingBlocks.MOD_ID);
+        CinchsMissingBlocks.LOGGER.info("Registering Mod Items for " + MOD_ID);
     }
 }

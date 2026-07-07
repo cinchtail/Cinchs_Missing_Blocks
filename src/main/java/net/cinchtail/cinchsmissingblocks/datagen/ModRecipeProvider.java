@@ -24,6 +24,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
 
     private final RegistryEntryLookup<Item> items;
@@ -238,14 +240,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(Blocks.RESIN_BRICKS)
                         .input(Blocks.PALE_MOSS_BLOCK)
                         .criterion(hasItem(Blocks.PALE_MOSS_BLOCK), conditionsFromItem(Blocks.PALE_MOSS_BLOCK))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_resin_bricks_from_pale_moss_block")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "mossy_resin_bricks_from_pale_moss_block")));
 
                 createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS)
                         .group("mossy_resin_bricks")
                         .input(Blocks.RESIN_BRICKS)
                         .input(Blocks.PALE_HANGING_MOSS)
                         .criterion(hasItem(Blocks.PALE_HANGING_MOSS), conditionsFromItem(Blocks.PALE_HANGING_MOSS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_resin_bricks_from_pale_hanging_moss")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "mossy_resin_bricks_from_pale_hanging_moss")));
 
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS)
                         .group("mossy_resin_bricks")
@@ -255,14 +257,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('A', Blocks.RESIN_BRICKS)
                         .input('B', Blocks.PALE_MOSS_CARPET)
                         .criterion(hasItem(Blocks.PALE_MOSS_CARPET), conditionsFromItem(Blocks.PALE_MOSS_CARPET))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_resin_bricks_from_pale_moss_carpet")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "mossy_resin_bricks_from_pale_moss_carpet")));
 
                 createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_END_STONE_BRICKS)
                         .group("mossy_end_stone_bricks")
                         .input(Blocks.END_STONE_BRICKS)
                         .input(Items.CHORUS_FLOWER)
                         .criterion(hasItem(Blocks.CHORUS_FLOWER), conditionsFromItem(Blocks.CHORUS_FLOWER))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "mossy_end_stone_bricks_from_chorus_flower")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "mossy_end_stone_bricks_from_chorus_flower")));
 
 
                 //Chiseled Blocks
@@ -1207,7 +1209,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("AAA")
                         .input('A', Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
                         .criterion(hasItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), conditionsFromItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_brick_stairs_from_cracked_blackstone_bricks")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "cracked_blackstone_brick_stairs_from_cracked_blackstone_bricks")));
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
@@ -1215,7 +1217,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("AAA")
                         .input('A', Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
                         .criterion(hasItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), conditionsFromItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_brick_slab_from_cracked_blackstone_bricks")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "cracked_blackstone_brick_slab_from_cracked_blackstone_bricks")));
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS,2);
 
@@ -1224,7 +1226,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("AAA")
                         .input('A', Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
                         .criterion(hasItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS), conditionsFromItem(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, "cracked_blackstone_brick_wall_from_cracked_blackstone_bricks")));
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, "cracked_blackstone_brick_wall_from_cracked_blackstone_bricks")));
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
@@ -1637,15 +1639,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             }
             public void offerMossyFromMossBlockRecipe(RecipeCategory category, @Nullable String compactingGroup, ItemConvertible output, ItemConvertible input, String fileName) {
                 this.createShapeless(category, output, 1).group(compactingGroup).input(input).input(Blocks.MOSS_BLOCK).criterion("has_moss_block",
-                        this.conditionsFromItem(Blocks.MOSS_BLOCK)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, fileName)));
+                        this.conditionsFromItem(Blocks.MOSS_BLOCK)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, fileName)));
             }
             public void offerMossyFromVineRecipe(RecipeCategory category, @Nullable String compactingGroup, ItemConvertible output, ItemConvertible input, String fileName) {
                 this.createShapeless(category, output, 1).group(compactingGroup).input(input).input(Blocks.VINE).criterion("has_vine",
-                        this.conditionsFromItem(Blocks.VINE)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, fileName)));
+                        this.conditionsFromItem(Blocks.VINE)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, fileName)));
             }
             public void offerMossyFromMossCarpetRecipe(RecipeCategory category, @Nullable String compactingGroup, ItemConvertible output, ItemConvertible input, String fileName) {
                 this.createShaped(category, output, 1).group(compactingGroup).input('#', Blocks.MOSS_CARPET).input('B', input).pattern("#").pattern("B").pattern("#").criterion("has_moss_carpet",
-                        this.conditionsFromItem(Blocks.MOSS_CARPET)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(CinchsMissingBlocks.MOD_ID, fileName)));
+                        this.conditionsFromItem(Blocks.MOSS_CARPET)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, fileName)));
             }
         };
     }

@@ -9,9 +9,11 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class BuiltinDataPacks {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger("cinchsmissingblocks");
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static final String VILLAGER_STATUES = "z_override_cinchsvillagerstatues";
     public static final String LOST_MOB_GRINDERS = "z_override_cinchslostmobgrinders";
@@ -51,7 +53,7 @@ public class BuiltinDataPacks {
                 LOGGER.info("Tuff Pillar recipes disabled by config");
             }
 
-            if (ModConfigs.enableReworkedDeepslateRecipes) {
+            if (ModConfigs.enableReworkedDeepslateRecipes || ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.of(modId, REWORKED_DEEPSLATE_RECIPES),
                         container,

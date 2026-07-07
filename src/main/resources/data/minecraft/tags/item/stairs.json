@@ -66,6 +66,23 @@
     "cinchsmissingblocks:cracked_stone_tile_stairs",
     "cinchsmissingblocks:mossy_stone_tile_stairs",
     "cinchsmissingblocks:blackstone_tile_stairs",
-    "cinchsmissingblocks:cracked_blackstone_tile_stairs"
+    "cinchsmissingblocks:cracked_blackstone_tile_stairs",
+    "cinchsmissingblocks:terracotta_stairs",
+    "cinchsmissingblocks:white_terracotta_stairs",
+    "cinchsmissingblocks:light_gray_terracotta_stairs",
+    "cinchsmissingblocks:gray_terracotta_stairs",
+    "cinchsmissingblocks:black_terracotta_stairs",
+    "cinchsmissingblocks:brown_terracotta_stairs",
+    "cinchsmissingblocks:red_terracotta_stairs",
+    "cinchsmissingblocks:orange_terracotta_stairs",
+    "cinchsmissingblocks:yellow_terracotta_stairs",
+    "cinchsmissingblocks:lime_terracotta_stairs",
+    "cinchsmissingblocks:green_terracotta_stairs",
+    "cinchsmissingblocks:cyan_terracotta_stairs",
+    "cinchsmissingblocks:light_blue_terracotta_stairs",
+    "cinchsmissingblocks:blue_terracotta_stairs",
+    "cinchsmissingblocks:purple_terracotta_stairs",
+    "cinchsmissingblocks:magenta_terracotta_stairs",
+    "cinchsmissingblocks:pink_terracotta_stairs"
   ]
 }
