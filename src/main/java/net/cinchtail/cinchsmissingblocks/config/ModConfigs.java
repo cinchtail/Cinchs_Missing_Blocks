@@ -26,6 +26,7 @@ public class ModConfigs {
     public static boolean configMissing = false;
 
     public static boolean enableTerracottaVariants;
+    public static boolean enableConcreteVariants;
     public static boolean enableTuffBrickPillar;
     public static boolean enableReworkedDeepslateRecipes;
     public static boolean doubleSlabsPackDefaultEnabled;
@@ -46,6 +47,10 @@ public class ModConfigs {
 
             enableTerracottaVariants =
                     !json.has("enableTerracottaVariants") || json.get("enableTerracottaVariants").getAsBoolean();
+
+            enableConcreteVariants =
+                    !json.has("enableConcreteVariants") || json.get("enableConcreteVariants").getAsBoolean();
+
 
             enableTuffBrickPillar =
                     !json.has("enableTuffBrickPillar") || json.get("enableTuffBrickPillar").getAsBoolean();
@@ -70,6 +75,7 @@ public class ModConfigs {
             JsonObject json = new JsonObject();
 
             json.addProperty("enableTerracottaVariants", true);
+            json.addProperty("enableConcreteVariants", true);
             json.addProperty("enableTuffBrickPillar", false);
             json.addProperty("enableReworkedDeepslateRecipes", true);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
@@ -90,6 +96,7 @@ public class ModConfigs {
             JsonObject json = new JsonObject();
 
             json.addProperty("enableTerracottaVariants", enableTerracottaVariants);
+            json.addProperty("enableConcreteVariants", enableConcreteVariants);
             json.addProperty("enableTuffBrickPillar", enableTuffBrickPillar);
             json.addProperty("enableReworkedDeepslateRecipes", enableReworkedDeepslateRecipes);
             json.addProperty("doubleSlabsPackDefaultEnabled", doubleSlabsPackDefaultEnabled);

@@ -367,6 +367,58 @@ public class ModItemGroups {
                         } else {
                             LOGGER.info("Terracotta variants disabled by config (Creative Mode Tab)");
                         }
+                        if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
+                            entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.WHITE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.WHITE_CONCRETE_WALL);
+                            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+                            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+                            entries.add(ModBlocks.GRAY_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.GRAY_CONCRETE_SLAB);
+                            entries.add(ModBlocks.GRAY_CONCRETE_WALL);
+                            entries.add(ModBlocks.BLACK_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.BLACK_CONCRETE_SLAB);
+                            entries.add(ModBlocks.BLACK_CONCRETE_WALL);
+                            entries.add(ModBlocks.BROWN_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.BROWN_CONCRETE_SLAB);
+                            entries.add(ModBlocks.BROWN_CONCRETE_WALL);
+                            entries.add(ModBlocks.RED_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.RED_CONCRETE_SLAB);
+                            entries.add(ModBlocks.RED_CONCRETE_WALL);
+                            entries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.ORANGE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.ORANGE_CONCRETE_WALL);
+                            entries.add(ModBlocks.YELLOW_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.YELLOW_CONCRETE_SLAB);
+                            entries.add(ModBlocks.YELLOW_CONCRETE_WALL);
+                            entries.add(ModBlocks.LIME_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.LIME_CONCRETE_SLAB);
+                            entries.add(ModBlocks.LIME_CONCRETE_WALL);
+                            entries.add(ModBlocks.GREEN_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.GREEN_CONCRETE_SLAB);
+                            entries.add(ModBlocks.GREEN_CONCRETE_WALL);
+                            entries.add(ModBlocks.CYAN_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.CYAN_CONCRETE_SLAB);
+                            entries.add(ModBlocks.CYAN_CONCRETE_WALL);
+                            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+                            entries.add(ModBlocks.BLUE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.BLUE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.BLUE_CONCRETE_WALL);
+                            entries.add(ModBlocks.PURPLE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.PURPLE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.PURPLE_CONCRETE_WALL);
+                            entries.add(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.MAGENTA_CONCRETE_SLAB);
+                            entries.add(ModBlocks.MAGENTA_CONCRETE_WALL);
+                            entries.add(ModBlocks.PINK_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.PINK_CONCRETE_SLAB);
+                            entries.add(ModBlocks.PINK_CONCRETE_WALL);
+                        } else {
+                            LOGGER.info("Concrete variants disabled by config (Creative Mode Tab)");
+                        }
                     }).build());
 
     public static void registerItemGroups() {

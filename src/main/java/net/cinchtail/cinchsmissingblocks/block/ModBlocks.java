@@ -1406,6 +1406,200 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "pink_terracotta_wall")))));
 
 
+    //Concrete Variants
+    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
+            properties -> new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.WHITE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "white_concrete_stairs")))));
+    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.WHITE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "white_concrete_slab")))));
+    public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.WHITE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "white_concrete_wall")))));
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
+            properties -> new StairsBlock(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "light_gray_concrete_stairs")))));
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "light_gray_concrete_slab")))));
+    public static final Block LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "light_gray_concrete_wall")))));
+    public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
+            properties -> new StairsBlock(Blocks.GRAY_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.GRAY_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "gray_concrete_stairs")))));
+    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "gray_concrete_slab")))));
+    public static final Block GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "gray_concrete_wall")))));
+    public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
+            properties -> new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.BLACK_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "black_concrete_stairs")))));
+    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.BLACK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "black_concrete_slab")))));
+    public static final Block BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.BLACK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "black_concrete_wall")))));
+    public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
+            properties -> new StairsBlock(Blocks.BROWN_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.BROWN_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "brown_concrete_stairs")))));
+    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.BROWN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "brown_concrete_slab")))));
+    public static final Block BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.BROWN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "brown_concrete_wall")))));
+    public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
+            properties -> new StairsBlock(Blocks.RED_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.RED_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_concrete_stairs")))));
+    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.RED_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_concrete_slab")))));
+    public static final Block RED_CONCRETE_WALL = registerBlock("red_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.RED_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_concrete_wall")))));
+    public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
+            properties -> new StairsBlock(Blocks.ORANGE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.ORANGE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "orange_concrete_stairs")))));
+    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.ORANGE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "orange_concrete_slab")))));
+    public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.ORANGE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "orange_concrete_wall")))));
+    public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
+            properties -> new StairsBlock(Blocks.YELLOW_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.YELLOW_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "yellow_concrete_stairs")))));
+    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.YELLOW_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "yellow_concrete_slab")))));
+    public static final Block YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.YELLOW_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "yellow_concrete_wall")))));
+    public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
+            properties -> new StairsBlock(Blocks.LIME_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.LIME_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "lime_concrete_stairs")))));
+    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.LIME_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "lime_concrete_slab")))));
+    public static final Block LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.LIME_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "lime_concrete_wall")))));
+    public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
+            properties -> new StairsBlock(Blocks.GREEN_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.GREEN_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "green_concrete_stairs")))));
+    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.GREEN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "green_concrete_slab")))));
+    public static final Block GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.GREEN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "green_concrete_wall")))));
+    public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
+            properties -> new StairsBlock(Blocks.CYAN_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.CYAN_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cyan_concrete_stairs")))));
+    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.CYAN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cyan_concrete_slab")))));
+    public static final Block CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.CYAN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cyan_concrete_wall")))));
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
+            properties -> new StairsBlock(Blocks.LIGHT_BLUE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "light_blue_concrete_stairs")))));
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "light_blue_concrete_slab")))));
+    public static final Block LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "light_blue_concrete_wall")))));
+    public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
+            properties -> new StairsBlock(Blocks.BLUE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.BLUE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_concrete_stairs")))));
+    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_concrete_slab")))));
+    public static final Block BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_concrete_wall")))));
+    public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
+            properties -> new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.PURPLE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "purple_concrete_stairs")))));
+    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.PURPLE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "purple_concrete_slab")))));
+    public static final Block PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.PURPLE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "purple_concrete_wall")))));
+    public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
+            properties -> new StairsBlock(Blocks.MAGENTA_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.MAGENTA_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "magenta_concrete_stairs")))));
+    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.MAGENTA_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "magenta_concrete_slab")))));
+    public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.MAGENTA_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "magenta_concrete_wall")))));
+    public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
+            properties -> new StairsBlock(Blocks.PINK_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.PINK_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "pink_concrete_stairs")))));
+    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.PINK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "pink_concrete_slab")))));
+    public static final Block PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.PINK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "pink_concrete_wall")))));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, name))));
         registerBlockItem(name, toRegister);
