@@ -51,7 +51,6 @@ public class ModConfigs {
             enableConcreteVariants =
                     !json.has("enableConcreteVariants") || json.get("enableConcreteVariants").getAsBoolean();
 
-
             enableTuffBrickPillar =
                     !json.has("enableTuffBrickPillar") || json.get("enableTuffBrickPillar").getAsBoolean();
 
