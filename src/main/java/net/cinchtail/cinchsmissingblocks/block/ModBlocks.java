@@ -730,7 +730,7 @@ public class ModBlocks {
     //Deepslate Blocks
     public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
             properties -> new StairsBlock(Blocks.DEEPSLATE.getDefaultState(),
-                    Block.Settings.copy(Blocks.STONE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)
+                    Block.Settings.copy(Blocks.DEEPSLATE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)
                             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "deepslate_stairs")))));
     public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
             properties -> new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE)
@@ -821,7 +821,7 @@ public class ModBlocks {
                     .strength(3.5f, 6.0F).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "sculk_inlaid_deepslate")))));
     public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
             properties -> new PressurePlateBlock(ModBlockSetType.POLISHED_DEEPSLATE,
-                    Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
+                    Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE).sounds(BlockSoundGroup.POLISHED_DEEPSLATE).pistonBehavior(PistonBehavior.DESTROY)
                             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "polished_deepslate_pressure_plate")))));
     public static final Block POLISHED_DEEPSLATE_BUTTON = registerBlock("polished_deepslate_button",
             properties -> new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.create()
