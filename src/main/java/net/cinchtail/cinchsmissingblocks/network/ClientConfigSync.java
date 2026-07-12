@@ -1,9 +1,9 @@
 package net.cinchtail.cinchsmissingblocks.network;
 
+import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.text.Text;
+import org.w3c.dom.Text;
 
 public class ClientConfigSync {
 

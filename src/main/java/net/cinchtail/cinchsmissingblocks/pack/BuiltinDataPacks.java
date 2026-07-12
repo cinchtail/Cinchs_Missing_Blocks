@@ -4,9 +4,11 @@ import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.w3c.dom.Text;
 
 import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
@@ -29,7 +31,7 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath("cinchsvillagerstatues", VILLAGER_STATUES),
                         container,
-                        Text.literal("Compat: Cinch's Villager Statues"),
+                        Component.literal("Compat: Cinch's Villager Statues"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             }
@@ -38,7 +40,7 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath("cinchslostmobgrinders", LOST_MOB_GRINDERS),
                         container,
-                        Text.literal("Compat: Cinch's Lost Mob Grinders"),
+                        Component.literal("Compat: Cinch's Lost Mob Grinders"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             }
@@ -47,7 +49,7 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, TUFF_PILLAR_RECIPES),
                         container,
-                        Text.literal("Tuff Pillars Recipes"),
+                        Component.literal("Tuff Pillars Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
@@ -58,7 +60,7 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, REWORKED_DEEPSLATE_RECIPES),
                         container,
-                        Text.literal("Reworked Deepslate Recipes"),
+                        Component.literal("Reworked Deepslate Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
@@ -69,7 +71,7 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, TERRACOTTA_VARIANTS_RECIPES),
                         container,
-                        Text.literal("Terracotta Variants Recipes"),
+                        Component.literal("Terracotta Variants Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
@@ -80,7 +82,7 @@ public class BuiltinDataPacks {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, CONCRETE_VARIANTS_RECIPES),
                         container,
-                        Text.literal("Concrete Variants Recipes"),
+                        Component.literal("Concrete Variants Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {

@@ -1,5 +1,7 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
+import com.google.gson.JsonObject;
+import net.fabricmc.fabric.api.serialization.v1.value.FabricValueOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
@@ -7,11 +9,7 @@ import net.minecraft.client.data.models.model.ModelLocationUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.renderer.texture.TextureAtlas;
-import net.minecraft.client.resources.model.sprite.Material;
-import net.minecraft.client.resources.model.sprite.TextureSlots;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class BlockModelHelpers {
@@ -99,24 +97,28 @@ public class BlockModelHelpers {
         gen.registerSimpleItemModel(wall, inventory);
     }
 
-    public static void cubeColumn(BlockModelGenerators gen, Block block, Identifier textureSource) {
+    public static void cubeColumn(FabricValueOutput output, Block block,
+                                  Identifier endTexture, Identifier sideTexture) {
+
+        JsonObject root = new JsonObject();
+        root.addProperty("parent", "minecraft:block/cube_column");
+
+        JsonObject textures = new JsonObject();
+        textures.addProperty("end", endTexture.toString());
+        textures.addProperty("side", sideTexture.toString());
+        root.add("textures", textures);
+
+        Identifier modelId = ModelLocationUtils.getModelLocation(block);
+
+        writeModelJson(output, modelId, root);
+    }
+
+    public static void pillar(BlockModelGenerators gen, Block block, Identifier textureSource) {
         TextureMapping tex = new TextureMapping()
                 .put(TextureSlot.END, TextureMapping.getBlockTexture(textureSource))
                 .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(textureSource));
 
         Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
-
-        gen.blockStateOutput.accept(
-                MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(model))
-        );
-
-        gen.registerSimpleItemModel(block, model);
-    }
-
-    public static void pillar(BlockModelGenerators gen, Block block,
-                              TextureMapping mapping) {
-
-        Identifier model = ModelTemplates.CUBE_COLUMN.create(block, mapping, gen.modelOutput);
 
         gen.createRotatedVariantBlock(block);
         gen.registerSimpleItemModel(block, model);
