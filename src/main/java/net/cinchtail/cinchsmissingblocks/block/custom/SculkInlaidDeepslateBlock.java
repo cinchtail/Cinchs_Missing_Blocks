@@ -1,4 +1,4 @@
-package net.cinchtail.cinchsmissingblocks.block;
+package net.cinchtail.cinchsmissingblocks.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

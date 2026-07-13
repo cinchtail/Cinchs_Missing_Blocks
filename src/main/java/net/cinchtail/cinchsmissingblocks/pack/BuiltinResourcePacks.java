@@ -9,9 +9,11 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class BuiltinResourcePacks {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger("cinchsmissingblocks");
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static final String TUFF_PILLARS = "cinchs_tuff_pillars";
     public static final String DOUBLE_SLABS = "cinchs_double_slabs";

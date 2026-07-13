@@ -1,6 +1,8 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
+import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -8,8 +10,12 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class ModBlocks {
 
@@ -459,6 +465,17 @@ public class ModBlocks {
     public static final Block CRACKED_END_STONE_BRICK_WALL = registerBlock("cracked_end_stone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.END_STONE)
                     .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_END_STONE_BRICKS = registerBlock("mossy_end_stone_bricks",
+            new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_END_STONE_BRICK_STAIRS = registerBlock("mossy_end_stone_brick_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_END_STONE_BRICK_SLAB = registerBlock("mossy_end_stone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.END_STONE)
+                    .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_END_STONE_BRICK_WALL = registerBlock("mossy_end_stone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.END_STONE)
+                    .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             new Block(Block.Settings.copy(Blocks.END_STONE).strength(3.0F, 9.0F)
                     .sounds(BlockSoundGroup.STONE)));
@@ -486,13 +503,46 @@ public class ModBlocks {
     public static final Block CRACKED_STONE_BRICK_WALL = registerBlock("cracked_stone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block STONE_TILES = registerBlock("stone_tiles",
+            new Block(Block.Settings.copy(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block STONE_TILE_STAIRS = registerBlock("stone_tile_stairs",
+            new StairsBlock(Blocks.STONE_BRICKS.getDefaultState(),Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block STONE_TILE_SLAB = registerBlock("stone_tile_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block STONE_TILE_WALL = registerBlock("stone_tile_wall",
+            new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_STONE_TILES = registerBlock("cracked_stone_tiles",
+            new Block(Block.Settings.copy(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block CRACKED_STONE_TILE_STAIRS = registerBlock("cracked_stone_tile_stairs",
+            new StairsBlock(Blocks.STONE_BRICKS.getDefaultState(),Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block CRACKED_STONE_TILE_SLAB = registerBlock("cracked_stone_tile_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_STONE_TILE_WALL = registerBlock("cracked_stone_tile_wall",
+            new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_STONE_TILES = registerBlock("mossy_stone_tiles",
+            new Block(Block.Settings.copy(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block MOSSY_STONE_TILE_STAIRS = registerBlock("mossy_stone_tile_stairs",
+            new StairsBlock(Blocks.STONE_BRICKS.getDefaultState(),Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block MOSSY_STONE_TILE_SLAB = registerBlock("mossy_stone_tile_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_STONE_TILE_WALL = registerBlock("mossy_stone_tile_wall",
+            new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block STONE_BRICK_PILLAR = registerBlock("stone_brick_pillar",
             new PillarBlock(Block.Settings.copy(Blocks.STONE)));
 
     //Deepslate Blocks
     public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
             new StairsBlock(Blocks.DEEPSLATE.getDefaultState(),
-                    Block.Settings.copy(Blocks.STONE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
+                    Block.Settings.copy(Blocks.DEEPSLATE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
             new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE)
                     .strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE)));
@@ -575,6 +625,28 @@ public class ModBlocks {
             new SlabBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)));
     public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_WALL = registerBlock("cracked_polished_blackstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).strength(1.5F, 6.0F)));
+    public static final Block BLACKSTONE_TILES = registerBlock("blackstone_tiles",
+            new Block(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block BLACKSTONE_TILE_STAIRS = registerBlock("blackstone_tile_stairs",
+            new StairsBlock(Blocks.POLISHED_BLACKSTONE.getDefaultState(),Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block BLACKSTONE_TILE_SLAB = registerBlock("blackstone_tile_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLACKSTONE_TILE_WALL = registerBlock("blackstone_tile_wall",
+            new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_BLACKSTONE_TILES = registerBlock("cracked_blackstone_tiles",
+            new Block(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE).sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block CRACKED_BLACKSTONE_TILE_STAIRS = registerBlock("cracked_blackstone_tile_stairs",
+            new StairsBlock(Blocks.POLISHED_BLACKSTONE.getDefaultState(),Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.5F, 6.0F)));
+    public static final Block CRACKED_BLACKSTONE_TILE_SLAB = registerBlock("cracked_blackstone_tile_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F,6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_BLACKSTONE_TILE_WALL = registerBlock("cracked_blackstone_tile_wall",
+            new WallBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE)
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block BLACKSTONE_BRICK_PILLAR = registerBlock("blackstone_brick_pillar",
             new PillarBlock(Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_BRICKS).strength(1.5F, 6.0F)));
 
@@ -625,6 +697,41 @@ public class ModBlocks {
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
     public static final Block CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             new Block(Block.Settings.copy(Blocks.RED_NETHER_BRICKS).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+
+    //Blue Nether Bricks
+    public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
+            new Block(Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block BLUE_NETHER_BRICK_STAIRS = registerBlock("blue_nether_brick_stairs",
+            new StairsBlock(ModBlocks.BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block BLUE_NETHER_BRICK_SLAB = registerBlock("blue_nether_brick_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block BLUE_NETHER_BRICK_WALL = registerBlock("blue_nether_brick_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",
+            new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_BLUE_NETHER_BRICKS = registerBlock("cracked_blue_nether_bricks",
+            new Block(Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = registerBlock("cracked_blue_nether_brick_stairs",
+            new StairsBlock(ModBlocks.BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = registerBlock("cracked_blue_nether_brick_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = registerBlock("cracked_blue_nether_brick_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE = registerBlock("cracked_blue_nether_brick_fence",
+            new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
+            new Block(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)));
 
     //Prismarine Blocks
@@ -686,6 +793,42 @@ public class ModBlocks {
     public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.CUT_SANDSTONE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
+            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block SANDSTONE_BRICK_STAIRS = registerBlock("sandstone_brick_stairs",
+            new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SANDSTONE_BRICKS = registerBlock("cracked_sandstone_bricks",
+            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_sandstone_brick_stairs",
+            new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SANDSTONE_BRICK_SLAB = registerBlock("cracked_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SANDSTONE_BRICK_WALL = registerBlock("cracked_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_SANDSTONE_BRICKS = registerBlock("mossy_sandstone_bricks",
+            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_sandstone_brick_stairs",
+            new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_SANDSTONE_BRICK_SLAB = registerBlock("mossy_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_SANDSTONE_BRICK_WALL = registerBlock("mossy_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
     //Red Sandstone Blocks
     public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
@@ -696,6 +839,42 @@ public class ModBlocks {
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
+            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_SANDSTONE_BRICK_STAIRS = registerBlock("red_sandstone_brick_stairs",
+            new StairsBlock(Blocks.RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_SANDSTONE_BRICK_SLAB = registerBlock("red_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_SANDSTONE_BRICK_WALL = registerBlock("red_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_RED_SANDSTONE_BRICKS = registerBlock("cracked_red_sandstone_bricks",
+            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_RED_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_red_sandstone_brick_stairs",
+            new StairsBlock(Blocks.RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_RED_SANDSTONE_BRICK_SLAB = registerBlock("cracked_red_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_RED_SANDSTONE_BRICK_WALL = registerBlock("cracked_red_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_RED_SANDSTONE_BRICKS = registerBlock("mossy_red_sandstone_bricks",
+            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_RED_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_red_sandstone_brick_stairs",
+            new StairsBlock(Blocks.RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_RED_SANDSTONE_BRICK_SLAB = registerBlock("mossy_red_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOSSY_RED_SANDSTONE_BRICK_WALL = registerBlock("mossy_red_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
 
     //Purpur Blocks
@@ -715,6 +894,313 @@ public class ModBlocks {
             new SlabBlock(Block.Settings.copy(Blocks.SNOW_BLOCK).strength(0.2F).sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.SNOW_BLOCK).strength(0.2F).sounds(BlockSoundGroup.SNOW)));
+
+    //Tinted Glass Pane
+    public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane",
+            new TintedGlassPaneBlock(Block.Settings.copyShallow(Blocks.GLASS_PANE).strength(0.3F).sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
+
+    //Terracotta Variants
+    public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
+            new StairsBlock(Blocks.TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block TERRACOTTA_SLAB = registerBlock("terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block TERRACOTTA_WALL = registerBlock("terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
+            new StairsBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.WHITE_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block WHITE_TERRACOTTA_SLAB = registerBlock("white_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.WHITE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block WHITE_TERRACOTTA_WALL = registerBlock("white_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.WHITE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_GRAY_TERRACOTTA_STAIRS = registerBlock("light_gray_terracotta_stairs",
+            new StairsBlock(Blocks.LIGHT_GRAY_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.LIGHT_GRAY_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block LIGHT_GRAY_TERRACOTTA_SLAB = registerBlock("light_gray_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.LIGHT_GRAY_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_GRAY_TERRACOTTA_WALL = registerBlock("light_gray_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.LIGHT_GRAY_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GRAY_TERRACOTTA_STAIRS = registerBlock("gray_terracotta_stairs",
+            new StairsBlock(Blocks.GRAY_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.GRAY_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block GRAY_TERRACOTTA_SLAB = registerBlock("gray_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.GRAY_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GRAY_TERRACOTTA_WALL = registerBlock("gray_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.GRAY_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLACK_TERRACOTTA_STAIRS = registerBlock("black_terracotta_stairs",
+            new StairsBlock(Blocks.BLACK_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.BLACK_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block BLACK_TERRACOTTA_SLAB = registerBlock("black_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.BLACK_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLACK_TERRACOTTA_WALL = registerBlock("black_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.BLACK_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BROWN_TERRACOTTA_STAIRS = registerBlock("brown_terracotta_stairs",
+            new StairsBlock(Blocks.BROWN_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.BROWN_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block BROWN_TERRACOTTA_SLAB = registerBlock("brown_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.BROWN_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BROWN_TERRACOTTA_WALL = registerBlock("brown_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.BROWN_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_TERRACOTTA_STAIRS = registerBlock("red_terracotta_stairs",
+            new StairsBlock(Blocks.RED_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.RED_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block RED_TERRACOTTA_SLAB = registerBlock("red_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.RED_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_TERRACOTTA_WALL = registerBlock("red_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.RED_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block ORANGE_TERRACOTTA_STAIRS = registerBlock("orange_terracotta_stairs",
+            new StairsBlock(Blocks.ORANGE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.ORANGE_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block ORANGE_TERRACOTTA_SLAB = registerBlock("orange_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.ORANGE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block ORANGE_TERRACOTTA_WALL = registerBlock("orange_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.ORANGE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block YELLOW_TERRACOTTA_STAIRS = registerBlock("yellow_terracotta_stairs",
+            new StairsBlock(Blocks.YELLOW_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.YELLOW_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block YELLOW_TERRACOTTA_SLAB = registerBlock("yellow_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.YELLOW_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block YELLOW_TERRACOTTA_WALL = registerBlock("yellow_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.YELLOW_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIME_TERRACOTTA_STAIRS = registerBlock("lime_terracotta_stairs",
+            new StairsBlock(Blocks.LIME_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.LIME_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block LIME_TERRACOTTA_SLAB = registerBlock("lime_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.LIME_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIME_TERRACOTTA_WALL = registerBlock("lime_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.LIME_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GREEN_TERRACOTTA_STAIRS = registerBlock("green_terracotta_stairs",
+            new StairsBlock(Blocks.GREEN_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.GREEN_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block GREEN_TERRACOTTA_SLAB = registerBlock("green_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.GREEN_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GREEN_TERRACOTTA_WALL = registerBlock("green_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.GREEN_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CYAN_TERRACOTTA_STAIRS = registerBlock("cyan_terracotta_stairs",
+            new StairsBlock(Blocks.CYAN_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.CYAN_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block CYAN_TERRACOTTA_SLAB = registerBlock("cyan_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.CYAN_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CYAN_TERRACOTTA_WALL = registerBlock("cyan_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.CYAN_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_BLUE_TERRACOTTA_STAIRS = registerBlock("light_blue_terracotta_stairs",
+            new StairsBlock(Blocks.LIGHT_BLUE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.LIGHT_BLUE_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block LIGHT_BLUE_TERRACOTTA_SLAB = registerBlock("light_blue_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.LIGHT_BLUE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_BLUE_TERRACOTTA_WALL = registerBlock("light_blue_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.LIGHT_BLUE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLUE_TERRACOTTA_STAIRS = registerBlock("blue_terracotta_stairs",
+            new StairsBlock(Blocks.BLUE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.BLUE_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block BLUE_TERRACOTTA_SLAB = registerBlock("blue_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.BLUE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLUE_TERRACOTTA_WALL = registerBlock("blue_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.BLUE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PURPLE_TERRACOTTA_STAIRS = registerBlock("purple_terracotta_stairs",
+            new StairsBlock(Blocks.PURPLE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.PURPLE_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block PURPLE_TERRACOTTA_SLAB = registerBlock("purple_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.PURPLE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PURPLE_TERRACOTTA_WALL = registerBlock("purple_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.PURPLE_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MAGENTA_TERRACOTTA_STAIRS = registerBlock("magenta_terracotta_stairs",
+            new StairsBlock(Blocks.MAGENTA_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.MAGENTA_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block MAGENTA_TERRACOTTA_SLAB = registerBlock("magenta_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.MAGENTA_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MAGENTA_TERRACOTTA_WALL = registerBlock("magenta_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.MAGENTA_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PINK_TERRACOTTA_STAIRS = registerBlock("pink_terracotta_stairs",
+            new StairsBlock(Blocks.PINK_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.PINK_TERRACOTTA)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
+    public static final Block PINK_TERRACOTTA_SLAB = registerBlock("pink_terracotta_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.PINK_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PINK_TERRACOTTA_WALL = registerBlock("pink_terracotta_wall",
+            new WallBlock(Block.Settings.copy(Blocks.PINK_TERRACOTTA)
+                    .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
+
+
+    //Concrete Variants
+    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
+            new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.WHITE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.WHITE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.WHITE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
+            new StairsBlock(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
+            new StairsBlock(Blocks.GRAY_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.GRAY_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.GRAY_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
+            new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.BLACK_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.BLACK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.BLACK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
+            new StairsBlock(Blocks.BROWN_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.BROWN_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.BROWN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.BROWN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
+            new StairsBlock(Blocks.RED_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.RED_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.RED_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_CONCRETE_WALL = registerBlock("red_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.RED_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
+            new StairsBlock(Blocks.ORANGE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.ORANGE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.ORANGE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.ORANGE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
+            new StairsBlock(Blocks.YELLOW_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.YELLOW_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.YELLOW_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.YELLOW_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
+            new StairsBlock(Blocks.LIME_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.LIME_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.LIME_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.LIME_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
+            new StairsBlock(Blocks.GREEN_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.GREEN_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.GREEN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.GREEN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
+            new StairsBlock(Blocks.CYAN_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.CYAN_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.CYAN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.CYAN_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
+            new StairsBlock(Blocks.LIGHT_BLUE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
+            new StairsBlock(Blocks.BLUE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.BLUE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.BLUE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
+            new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.PURPLE_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.PURPLE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.PURPLE_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
+            new StairsBlock(Blocks.MAGENTA_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.MAGENTA_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.MAGENTA_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.MAGENTA_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
+            new StairsBlock(Blocks.PINK_CONCRETE.getDefaultState(),Block.Settings.copy(Blocks.PINK_CONCRETE)
+                    .sounds(BlockSoundGroup.STONE).strength(1.8F)));
+    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
+            new SlabBlock(Block.Settings.copy(Blocks.PINK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
+            new WallBlock(Block.Settings.copy(Blocks.PINK_CONCRETE)
+                    .strength(1.8F).sounds(BlockSoundGroup.STONE)));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
+  "group": "cracked_nether_brick_fence",
   "key": {
     "A": {
       "item": "minecraft:cracked_nether_bricks"

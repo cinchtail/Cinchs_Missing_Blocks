@@ -1,11 +1,13 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TextureMap;
 import net.minecraft.util.Identifier;
 
@@ -211,6 +213,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         BlockStateModelGenerator.BlockTexturePool polishedEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.POLISHED_END_STONE);
         BlockStateModelGenerator.BlockTexturePool crackedEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_END_STONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyEndStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_END_STONE_BRICKS);
 
         BlockModelHelpers.stairs(gen, ModBlocks.END_STONE_STAIRS, TextureMap.getId(Blocks.END_STONE));
         BlockModelHelpers.slab(gen, ModBlocks.END_STONE_SLAB, Blocks.END_STONE, TextureMap.getId(Blocks.END_STONE));
@@ -224,6 +227,10 @@ public class ModModelProvider extends FabricModelProvider {
         crackedEndStoneBricksPool.slab(ModBlocks.CRACKED_END_STONE_BRICK_SLAB);
         crackedEndStoneBricksPool.wall(ModBlocks.CRACKED_END_STONE_BRICK_WALL);
 
+        mossyEndStoneBricksPool.stairs(ModBlocks.MOSSY_END_STONE_BRICK_STAIRS);
+        mossyEndStoneBricksPool.slab(ModBlocks.MOSSY_END_STONE_BRICK_SLAB);
+        mossyEndStoneBricksPool.wall(ModBlocks.MOSSY_END_STONE_BRICK_WALL);
+
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_END_STONE_BRICKS);
 
         BlockModelHelpers.pillar(gen,ModBlocks.END_STONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/end_stone_brick_pillar_top"),
@@ -236,6 +243,20 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.stairs(gen, ModBlocks.CRACKED_STONE_BRICK_STAIRS, TextureMap.getId(Blocks.CRACKED_STONE_BRICKS));
         BlockModelHelpers.slab(gen, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS, TextureMap.getId(Blocks.CRACKED_STONE_BRICKS));
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_STONE_BRICK_WALL, TextureMap.getId(Blocks.CRACKED_STONE_BRICKS));
+
+        BlockStateModelGenerator.BlockTexturePool stoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackedStoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_STONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool mossyStoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_STONE_TILES);
+
+        stoneTilesPool.stairs(ModBlocks.STONE_TILE_STAIRS);
+        stoneTilesPool.slab(ModBlocks.STONE_TILE_SLAB);
+        stoneTilesPool.wall(ModBlocks.STONE_TILE_WALL);
+        crackedStoneTilesPool.stairs(ModBlocks.CRACKED_STONE_TILE_STAIRS);
+        crackedStoneTilesPool.slab(ModBlocks.CRACKED_STONE_TILE_SLAB);
+        crackedStoneTilesPool.wall(ModBlocks.CRACKED_STONE_TILE_WALL);
+        mossyStoneTilesPool.stairs(ModBlocks.MOSSY_STONE_TILE_STAIRS);
+        mossyStoneTilesPool.slab(ModBlocks.MOSSY_STONE_TILE_SLAB);
+        mossyStoneTilesPool.wall(ModBlocks.MOSSY_STONE_TILE_WALL);
 
         BlockModelHelpers.pillar(gen,ModBlocks.STONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/stone_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/stone_brick_pillar_side"));
@@ -280,6 +301,16 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.slab(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL, TextureMap.getId(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
 
+        BlockStateModelGenerator.BlockTexturePool blacktoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.BLACKSTONE_TILES);
+        BlockStateModelGenerator.BlockTexturePool crackedBlacktoneTilesPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_BLACKSTONE_TILES);
+
+        blacktoneTilesPool.stairs(ModBlocks.BLACKSTONE_TILE_STAIRS);
+        blacktoneTilesPool.slab(ModBlocks.BLACKSTONE_TILE_SLAB);
+        blacktoneTilesPool.wall(ModBlocks.BLACKSTONE_TILE_WALL);
+        crackedBlacktoneTilesPool.stairs(ModBlocks.CRACKED_BLACKSTONE_TILE_STAIRS);
+        crackedBlacktoneTilesPool.slab(ModBlocks.CRACKED_BLACKSTONE_TILE_SLAB);
+        crackedBlacktoneTilesPool.wall(ModBlocks.CRACKED_BLACKSTONE_TILE_WALL);
+
         BlockModelHelpers.pillar(gen,ModBlocks.BLACKSTONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/blackstone_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/blackstone_brick_pillar_side"));
 
@@ -302,6 +333,21 @@ public class ModModelProvider extends FabricModelProvider {
         crackedRedNetherBricksPool.fence(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool blueNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.BLUE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedBlueNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+
+        blueNetherBricksPool.stairs(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
+        blueNetherBricksPool.slab(ModBlocks.BLUE_NETHER_BRICK_SLAB);
+        blueNetherBricksPool.wall(ModBlocks.BLUE_NETHER_BRICK_WALL);
+        blueNetherBricksPool.fence(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+
+        crackedBlueNetherBricksPool.stairs(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+        crackedBlueNetherBricksPool.slab(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
+        crackedBlueNetherBricksPool.wall(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+        crackedBlueNetherBricksPool.fence(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+
+        gen.registerSimpleCubeAll(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
 
         BlockStateModelGenerator.BlockTexturePool crackedPrismarineBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_PRISMARINE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool mossyPrismarineBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_PRISMARINE_BRICKS);
@@ -337,18 +383,153 @@ public class ModModelProvider extends FabricModelProvider {
         gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_sandstone_stairs"));
         gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_sandstone_wall_inventory"));
 
+        BlockStateModelGenerator.BlockTexturePool sandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossySandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_SANDSTONE_BRICKS);
+
+        sandStoneBricksPool.stairs(ModBlocks.SANDSTONE_BRICK_STAIRS);
+        sandStoneBricksPool.slab(ModBlocks.SANDSTONE_BRICK_SLAB);
+        sandStoneBricksPool.wall(ModBlocks.SANDSTONE_BRICK_WALL);
+
+        crackedSandStoneBricksPool.stairs(ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
+        crackedSandStoneBricksPool.slab(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB);
+        crackedSandStoneBricksPool.wall(ModBlocks.CRACKED_SANDSTONE_BRICK_WALL);
+
+        mossySandStoneBricksPool.stairs(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
+        mossySandStoneBricksPool.slab(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
+        mossySandStoneBricksPool.wall(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+
         BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Identifier.of("minecraft:block/red_sandstone_top"));
 
         gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_stairs"));
         gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_wall_inventory"));
 
+        BlockStateModelGenerator.BlockTexturePool redSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.RED_SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool crackedRedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mossyRedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+
+        redSandStoneBricksPool.stairs(ModBlocks.RED_SANDSTONE_BRICK_STAIRS);
+        redSandStoneBricksPool.slab(ModBlocks.RED_SANDSTONE_BRICK_SLAB);
+        redSandStoneBricksPool.wall(ModBlocks.RED_SANDSTONE_BRICK_WALL);
+
+        crackedRedSandStoneBricksPool.stairs(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
+        crackedRedSandStoneBricksPool.slab(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB);
+        crackedRedSandStoneBricksPool.wall(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_WALL);
+
+        mossyRedSandStoneBricksPool.stairs(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
+        mossyRedSandStoneBricksPool.slab(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
+        mossyRedSandStoneBricksPool.wall(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+
         BlockModelHelpers.wall(gen, ModBlocks.PURPUR_WALL, TextureMap.getId(Blocks.PURPUR_BLOCK));
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_PURPUR);
-    }
 
+        gen.registerGlassPane(Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_PANE);
+
+        BlockModelHelpers.stairs(gen, ModBlocks.TERRACOTTA_STAIRS, TextureMap.getId(Blocks.TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA, TextureMap.getId(Blocks.TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.TERRACOTTA_WALL, TextureMap.getId(Blocks.TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.WHITE_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.WHITE_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.WHITE_TERRACOTTA_SLAB, Blocks.WHITE_TERRACOTTA, TextureMap.getId(Blocks.WHITE_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.WHITE_TERRACOTTA_WALL, TextureMap.getId(Blocks.WHITE_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.LIGHT_GRAY_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_TERRACOTTA, TextureMap.getId(Blocks.LIGHT_GRAY_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL, TextureMap.getId(Blocks.LIGHT_GRAY_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.GRAY_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.GRAY_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.GRAY_TERRACOTTA_SLAB, Blocks.GRAY_TERRACOTTA, TextureMap.getId(Blocks.GRAY_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.GRAY_TERRACOTTA_WALL, TextureMap.getId(Blocks.GRAY_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.BLACK_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.BLACK_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.BLACK_TERRACOTTA_SLAB, Blocks.BLACK_TERRACOTTA, TextureMap.getId(Blocks.BLACK_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.BLACK_TERRACOTTA_WALL, TextureMap.getId(Blocks.BLACK_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.BROWN_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.BROWN_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.BROWN_TERRACOTTA_SLAB, Blocks.BROWN_TERRACOTTA, TextureMap.getId(Blocks.BROWN_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.BROWN_TERRACOTTA_WALL, TextureMap.getId(Blocks.BROWN_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.RED_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.RED_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.RED_TERRACOTTA_SLAB, Blocks.RED_TERRACOTTA, TextureMap.getId(Blocks.RED_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.RED_TERRACOTTA_WALL, TextureMap.getId(Blocks.RED_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.ORANGE_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.ORANGE_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.ORANGE_TERRACOTTA_SLAB, Blocks.ORANGE_TERRACOTTA, TextureMap.getId(Blocks.ORANGE_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.ORANGE_TERRACOTTA_WALL, TextureMap.getId(Blocks.ORANGE_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.YELLOW_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.YELLOW_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.YELLOW_TERRACOTTA_SLAB, Blocks.YELLOW_TERRACOTTA, TextureMap.getId(Blocks.YELLOW_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.YELLOW_TERRACOTTA_WALL, TextureMap.getId(Blocks.YELLOW_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.LIME_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.LIME_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.LIME_TERRACOTTA_SLAB, Blocks.LIME_TERRACOTTA, TextureMap.getId(Blocks.LIME_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.LIME_TERRACOTTA_WALL, TextureMap.getId(Blocks.LIME_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.GREEN_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.GREEN_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.GREEN_TERRACOTTA_SLAB, Blocks.GREEN_TERRACOTTA, TextureMap.getId(Blocks.GREEN_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.GREEN_TERRACOTTA_WALL, TextureMap.getId(Blocks.GREEN_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.CYAN_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.CYAN_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.CYAN_TERRACOTTA_SLAB, Blocks.CYAN_TERRACOTTA, TextureMap.getId(Blocks.CYAN_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.CYAN_TERRACOTTA_WALL, TextureMap.getId(Blocks.CYAN_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.LIGHT_BLUE_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_TERRACOTTA, TextureMap.getId(Blocks.LIGHT_BLUE_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL, TextureMap.getId(Blocks.LIGHT_BLUE_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.BLUE_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.BLUE_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.BLUE_TERRACOTTA_SLAB, Blocks.BLUE_TERRACOTTA, TextureMap.getId(Blocks.BLUE_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.BLUE_TERRACOTTA_WALL, TextureMap.getId(Blocks.BLUE_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.PURPLE_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.PURPLE_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.PURPLE_TERRACOTTA_SLAB, Blocks.PURPLE_TERRACOTTA, TextureMap.getId(Blocks.PURPLE_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.PURPLE_TERRACOTTA_WALL, TextureMap.getId(Blocks.PURPLE_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.MAGENTA_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.MAGENTA_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.MAGENTA_TERRACOTTA_SLAB, Blocks.MAGENTA_TERRACOTTA, TextureMap.getId(Blocks.MAGENTA_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.MAGENTA_TERRACOTTA_WALL, TextureMap.getId(Blocks.MAGENTA_TERRACOTTA));
+        BlockModelHelpers.stairs(gen, ModBlocks.PINK_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.PINK_TERRACOTTA));
+        BlockModelHelpers.slab(gen, ModBlocks.PINK_TERRACOTTA_SLAB, Blocks.PINK_TERRACOTTA, TextureMap.getId(Blocks.PINK_TERRACOTTA));
+        BlockModelHelpers.wall(gen, ModBlocks.PINK_TERRACOTTA_WALL, TextureMap.getId(Blocks.PINK_TERRACOTTA));
+
+        BlockModelHelpers.stairs(gen, ModBlocks.WHITE_CONCRETE_STAIRS, TextureMap.getId(Blocks.WHITE_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE, TextureMap.getId(Blocks.WHITE_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.WHITE_CONCRETE_WALL, TextureMap.getId(Blocks.WHITE_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS, TextureMap.getId(Blocks.LIGHT_GRAY_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, Blocks.LIGHT_GRAY_CONCRETE, TextureMap.getId(Blocks.LIGHT_GRAY_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.LIGHT_GRAY_CONCRETE_WALL, TextureMap.getId(Blocks.LIGHT_GRAY_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.GRAY_CONCRETE_STAIRS, TextureMap.getId(Blocks.GRAY_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.GRAY_CONCRETE_SLAB, Blocks.GRAY_CONCRETE, TextureMap.getId(Blocks.GRAY_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.GRAY_CONCRETE_WALL, TextureMap.getId(Blocks.GRAY_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.BLACK_CONCRETE_STAIRS, TextureMap.getId(Blocks.BLACK_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.BLACK_CONCRETE_SLAB, Blocks.BLACK_CONCRETE, TextureMap.getId(Blocks.BLACK_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.BLACK_CONCRETE_WALL, TextureMap.getId(Blocks.BLACK_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.BROWN_CONCRETE_STAIRS, TextureMap.getId(Blocks.BROWN_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.BROWN_CONCRETE_SLAB, Blocks.BROWN_CONCRETE, TextureMap.getId(Blocks.BROWN_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.BROWN_CONCRETE_WALL, TextureMap.getId(Blocks.BROWN_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.RED_CONCRETE_STAIRS, TextureMap.getId(Blocks.RED_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.RED_CONCRETE_SLAB, Blocks.RED_CONCRETE, TextureMap.getId(Blocks.RED_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.RED_CONCRETE_WALL, TextureMap.getId(Blocks.RED_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.ORANGE_CONCRETE_STAIRS, TextureMap.getId(Blocks.ORANGE_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE, TextureMap.getId(Blocks.ORANGE_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.ORANGE_CONCRETE_WALL, TextureMap.getId(Blocks.ORANGE_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.YELLOW_CONCRETE_STAIRS, TextureMap.getId(Blocks.YELLOW_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.YELLOW_CONCRETE_SLAB, Blocks.YELLOW_CONCRETE, TextureMap.getId(Blocks.YELLOW_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.YELLOW_CONCRETE_WALL, TextureMap.getId(Blocks.YELLOW_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.LIME_CONCRETE_STAIRS, TextureMap.getId(Blocks.LIME_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.LIME_CONCRETE_SLAB, Blocks.LIME_CONCRETE, TextureMap.getId(Blocks.LIME_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.LIME_CONCRETE_WALL, TextureMap.getId(Blocks.LIME_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.GREEN_CONCRETE_STAIRS, TextureMap.getId(Blocks.GREEN_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.GREEN_CONCRETE_SLAB, Blocks.GREEN_CONCRETE, TextureMap.getId(Blocks.GREEN_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.GREEN_CONCRETE_WALL, TextureMap.getId(Blocks.GREEN_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.CYAN_CONCRETE_STAIRS, TextureMap.getId(Blocks.CYAN_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.CYAN_CONCRETE_SLAB, Blocks.CYAN_CONCRETE, TextureMap.getId(Blocks.CYAN_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.CYAN_CONCRETE_WALL, TextureMap.getId(Blocks.CYAN_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS, TextureMap.getId(Blocks.LIGHT_BLUE_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, Blocks.LIGHT_BLUE_CONCRETE, TextureMap.getId(Blocks.LIGHT_BLUE_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.LIGHT_BLUE_CONCRETE_WALL, TextureMap.getId(Blocks.LIGHT_BLUE_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.BLUE_CONCRETE_STAIRS, TextureMap.getId(Blocks.BLUE_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.BLUE_CONCRETE_SLAB, Blocks.BLUE_CONCRETE, TextureMap.getId(Blocks.BLUE_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.BLUE_CONCRETE_WALL, TextureMap.getId(Blocks.BLUE_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.PURPLE_CONCRETE_STAIRS, TextureMap.getId(Blocks.PURPLE_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.PURPLE_CONCRETE_SLAB, Blocks.PURPLE_CONCRETE, TextureMap.getId(Blocks.PURPLE_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.PURPLE_CONCRETE_WALL, TextureMap.getId(Blocks.PURPLE_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.MAGENTA_CONCRETE_STAIRS, TextureMap.getId(Blocks.MAGENTA_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.MAGENTA_CONCRETE_SLAB, Blocks.MAGENTA_CONCRETE, TextureMap.getId(Blocks.MAGENTA_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.MAGENTA_CONCRETE_WALL, TextureMap.getId(Blocks.MAGENTA_CONCRETE));
+        BlockModelHelpers.stairs(gen, ModBlocks.PINK_CONCRETE_STAIRS, TextureMap.getId(Blocks.PINK_CONCRETE));
+        BlockModelHelpers.slab(gen, ModBlocks.PINK_CONCRETE_SLAB, Blocks.PINK_CONCRETE, TextureMap.getId(Blocks.PINK_CONCRETE));
+        BlockModelHelpers.wall(gen, ModBlocks.PINK_CONCRETE_WALL, TextureMap.getId(Blocks.PINK_CONCRETE));
+    }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        //itemModelGenerator.register(ModItems.RED_NETHER_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_NETHER_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_NETHER_BRICK, Models.GENERATED);
     }
 }

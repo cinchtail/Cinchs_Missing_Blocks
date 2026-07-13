@@ -2,16 +2,24 @@ package net.cinchtail.cinchsmissingblocks.item;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class ModItemGroups {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
     public static final ItemGroup CINCHS_MISSING_BLOCKS = Registry.register(net.minecraft.registry.Registries.ITEM_GROUP,
-            Identifier.of(CinchsMissingBlocks.MOD_ID, "cinchs_missing_blocks"),
+            Identifier.of(MOD_ID, "cinchs_missing_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cinchsmissingblocks"))
                     .icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CALCITE_STAIRS);
@@ -144,6 +152,36 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOSSY_MUD_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_MUD_BRICKS);
                         entries.add(ModBlocks.MUD_BRICK_PILLAR);
+                        entries.add(ModBlocks.SMOOTH_SANDSTONE_WALL);
+                        entries.add(ModBlocks.CUT_SANDSTONE_STAIRS);
+                        entries.add(ModBlocks.CUT_SANDSTONE_WALL);
+                        entries.add(ModBlocks.SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.SANDSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.SANDSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.CRACKED_SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.CRACKED_SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.MOSSY_SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+                        entries.add(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
+                        entries.add(ModBlocks.CUT_RED_SANDSTONE_WALL);
+                        entries.add(ModBlocks.RED_SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.RED_SANDSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.RED_SANDSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.RED_SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+                        entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_SLAB);
                         entries.add(ModBlocks.END_STONE_WALL);
@@ -155,6 +193,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_END_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_END_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_END_STONE_BRICK_WALL);
+                        entries.add(ModBlocks.MOSSY_END_STONE_BRICKS);
+                        entries.add(ModBlocks.MOSSY_END_STONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.MOSSY_END_STONE_BRICK_SLAB);
+                        entries.add(ModBlocks.MOSSY_END_STONE_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_END_STONE_BRICKS);
                         entries.add(ModBlocks.END_STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.STONE_WALL);
@@ -163,6 +205,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_WALL);
+                        entries.add(ModBlocks.STONE_TILES);
+                        entries.add(ModBlocks.STONE_TILE_STAIRS);
+                        entries.add(ModBlocks.STONE_TILE_SLAB);
+                        entries.add(ModBlocks.STONE_TILE_WALL);
+                        entries.add(ModBlocks.CRACKED_STONE_TILES);
+                        entries.add(ModBlocks.CRACKED_STONE_TILE_STAIRS);
+                        entries.add(ModBlocks.CRACKED_STONE_TILE_SLAB);
+                        entries.add(ModBlocks.CRACKED_STONE_TILE_WALL);
+                        entries.add(ModBlocks.MOSSY_STONE_TILES);
+                        entries.add(ModBlocks.MOSSY_STONE_TILE_STAIRS);
+                        entries.add(ModBlocks.MOSSY_STONE_TILE_SLAB);
+                        entries.add(ModBlocks.MOSSY_STONE_TILE_WALL);
                         entries.add(ModBlocks.STONE_BRICK_PILLAR);
                         entries.add(ModBlocks.DEEPSLATE_STAIRS);
                         entries.add(ModBlocks.DEEPSLATE_SLAB);
@@ -192,6 +246,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.BLACKSTONE_TILES);
+                        entries.add(ModBlocks.BLACKSTONE_TILE_STAIRS);
+                        entries.add(ModBlocks.BLACKSTONE_TILE_SLAB);
+                        entries.add(ModBlocks.BLACKSTONE_TILE_WALL);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILES);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILE_STAIRS);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILE_SLAB);
+                        entries.add(ModBlocks.CRACKED_BLACKSTONE_TILE_WALL);
                         entries.add(ModBlocks.BLACKSTONE_BRICK_PILLAR);
                         entries.add(ModBlocks.NETHERRACK_STAIRS);
                         entries.add(ModBlocks.NETHERRACK_SLAB);
@@ -200,6 +262,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_NETHER_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_NETHER_BRICK_WALL);
                         entries.add(ModBlocks.CRACKED_NETHER_BRICK_FENCE);
+                        entries.add(ModItems.RED_NETHER_BRICK);
                         entries.add(ModBlocks.RED_NETHER_BRICK_FENCE);
                         entries.add(ModBlocks.CRACKED_RED_NETHER_BRICKS);
                         entries.add(ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
@@ -207,6 +270,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
                         entries.add(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
                         entries.add(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+                        entries.add(ModItems.BLUE_NETHER_BRICK);
+                        entries.add(ModBlocks.BLUE_NETHER_BRICKS);
+                        entries.add(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
+                        entries.add(ModBlocks.BLUE_NETHER_BRICK_SLAB);
+                        entries.add(ModBlocks.BLUE_NETHER_BRICK_WALL);
+                        entries.add(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+                        entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+                        entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+                        entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
+                        entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+                        entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+                        entries.add(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
                         entries.add(ModBlocks.PRISMARINE_BRICK_WALL);
                         entries.add(ModBlocks.DARK_PRISMARINE_WALL);
                         entries.add(ModBlocks.CRACKED_PRISMARINE_BRICKS);
@@ -226,17 +301,119 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
                         entries.add(ModBlocks.SMOOTH_BASALT_WALL);
-                        entries.add(ModBlocks.SMOOTH_SANDSTONE_WALL);
-                        entries.add(ModBlocks.CUT_SANDSTONE_STAIRS);
-                        entries.add(ModBlocks.CUT_SANDSTONE_WALL);
-                        entries.add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
-                        entries.add(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
-                        entries.add(ModBlocks.CUT_RED_SANDSTONE_WALL);
-                        entries.add(ModBlocks.CHISELED_PURPUR);
                         entries.add(ModBlocks.PURPUR_WALL);
+                        entries.add(ModBlocks.CHISELED_PURPUR);
+                        entries.add(ModBlocks.TINTED_GLASS_PANE);
+                        if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
+                            entries.add(ModBlocks.TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.TERRACOTTA_WALL);
+                            entries.add(ModBlocks.WHITE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.WHITE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.WHITE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.GRAY_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.GRAY_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.GRAY_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.BLACK_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.BLACK_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.BLACK_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.BROWN_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.BROWN_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.BROWN_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.RED_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.RED_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.RED_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.ORANGE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.ORANGE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.YELLOW_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.YELLOW_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.YELLOW_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.LIME_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.LIME_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.LIME_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.GREEN_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.GREEN_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.GREEN_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.CYAN_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.CYAN_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.CYAN_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.BLUE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.BLUE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.BLUE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.PURPLE_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.PURPLE_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.MAGENTA_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.MAGENTA_TERRACOTTA_WALL);
+                            entries.add(ModBlocks.PINK_TERRACOTTA_STAIRS);
+                            entries.add(ModBlocks.PINK_TERRACOTTA_SLAB);
+                            entries.add(ModBlocks.PINK_TERRACOTTA_WALL);
+                        } else {
+                            LOGGER.info("Terracotta variants disabled by config (Creative Mode Tab)");
+                        }
+                        if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
+                            entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.WHITE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.WHITE_CONCRETE_WALL);
+                            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+                            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+                            entries.add(ModBlocks.GRAY_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.GRAY_CONCRETE_SLAB);
+                            entries.add(ModBlocks.GRAY_CONCRETE_WALL);
+                            entries.add(ModBlocks.BLACK_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.BLACK_CONCRETE_SLAB);
+                            entries.add(ModBlocks.BLACK_CONCRETE_WALL);
+                            entries.add(ModBlocks.BROWN_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.BROWN_CONCRETE_SLAB);
+                            entries.add(ModBlocks.BROWN_CONCRETE_WALL);
+                            entries.add(ModBlocks.RED_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.RED_CONCRETE_SLAB);
+                            entries.add(ModBlocks.RED_CONCRETE_WALL);
+                            entries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.ORANGE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.ORANGE_CONCRETE_WALL);
+                            entries.add(ModBlocks.YELLOW_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.YELLOW_CONCRETE_SLAB);
+                            entries.add(ModBlocks.YELLOW_CONCRETE_WALL);
+                            entries.add(ModBlocks.LIME_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.LIME_CONCRETE_SLAB);
+                            entries.add(ModBlocks.LIME_CONCRETE_WALL);
+                            entries.add(ModBlocks.GREEN_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.GREEN_CONCRETE_SLAB);
+                            entries.add(ModBlocks.GREEN_CONCRETE_WALL);
+                            entries.add(ModBlocks.CYAN_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.CYAN_CONCRETE_SLAB);
+                            entries.add(ModBlocks.CYAN_CONCRETE_WALL);
+                            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+                            entries.add(ModBlocks.BLUE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.BLUE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.BLUE_CONCRETE_WALL);
+                            entries.add(ModBlocks.PURPLE_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.PURPLE_CONCRETE_SLAB);
+                            entries.add(ModBlocks.PURPLE_CONCRETE_WALL);
+                            entries.add(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.MAGENTA_CONCRETE_SLAB);
+                            entries.add(ModBlocks.MAGENTA_CONCRETE_WALL);
+                            entries.add(ModBlocks.PINK_CONCRETE_STAIRS);
+                            entries.add(ModBlocks.PINK_CONCRETE_SLAB);
+                            entries.add(ModBlocks.PINK_CONCRETE_WALL);
+                        } else {
+                            LOGGER.info("Concrete variants disabled by config (Creative Mode Tab)");
+                        }
                     }).build());
 
     public static void registerItemGroups() {
-        CinchsMissingBlocks.LOGGER.info("Registering Item Groups for " + CinchsMissingBlocks.MOD_ID);
+        CinchsMissingBlocks.LOGGER.info("Registering Item Groups for " + MOD_ID);
     }
 }

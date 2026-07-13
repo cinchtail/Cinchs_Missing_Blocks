@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
+  "group": "red_nether_brick_fence",
   "key": {
     "A": {
       "item": "minecraft:red_nether_bricks"
     },
     "T": {
-      "item": "minecraft:nether_brick"
+      "item": "cinchsmissingblocks:red_nether_brick"
     }
   },
   "pattern": [

@@ -16,7 +16,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
 
         addDrop(ModBlocks.CALCITE_STAIRS);
         addDrop(ModBlocks.CALCITE_WALL, slabDrops(ModBlocks.CALCITE_SLAB));
@@ -156,15 +155,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_MUD_BRICK_WALL);
         addDrop(ModBlocks.CHISELED_MUD_BRICKS);
         addDrop(ModBlocks.MUD_BRICK_PILLAR);
-
-        addDrop(ModBlocks.CRACKED_RESIN_BRICKS);
-        addDrop(ModBlocks.CRACKED_RESIN_BRICK_STAIRS);
-        addDrop(ModBlocks.CRACKED_RESIN_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_RESIN_BRICK_SLAB));
-        addDrop(ModBlocks.CRACKED_RESIN_BRICK_WALL);
-        addDrop(ModBlocks.MOSSY_RESIN_BRICKS);
-        addDrop(ModBlocks.MOSSY_RESIN_BRICK_STAIRS);
-        addDrop(ModBlocks.MOSSY_RESIN_BRICK_SLAB, slabDrops(ModBlocks.MOSSY_RESIN_BRICK_SLAB));
-        addDrop(ModBlocks.MOSSY_RESIN_BRICK_WALL);
 
         addDrop(ModBlocks.SMOOTH_SANDSTONE_WALL);
         addDrop(ModBlocks.CUT_SANDSTONE_STAIRS);

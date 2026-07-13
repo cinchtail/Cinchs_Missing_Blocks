@@ -11,6 +11,7 @@ public class DataGenerators implements DataGeneratorEntrypoint {
 
         pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(ModModelProvider::new);
+        pack.addProvider(ModLootTableProvider::new);
     }
     @Override
     public void buildRegistry(RegistryBuilder registryBuilder) {

@@ -9,41 +9,83 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class BuiltinDataPacks {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger("cinchsmissingblocks");
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static final String VILLAGER_STATUES = "z_override_cinchsvillagerstatues";
     public static final String LOST_MOB_GRINDERS = "z_override_cinchslostmobgrinders";
-    public static final String TUFF_PILLAR_RECIPES = "cinchs_tuff_pillar_recipes";
+    public static final String TUFF_PILLAR_RECIPES = "tuff_pillar_recipes";
+    public static final String REWORKED_DEEPSLATE_RECIPES = "reworked_deepslate_recipes";
+    public static final String TERRACOTTA_VARIANTS_RECIPES = "terracotta_variants_recipes";
+    public static final String CONCRETE_VARIANTS_RECIPES = "concrete_variants_recipes";
 
     public static void registerBuiltinPacks(String modId) {
 
         FabricLoader.getInstance().getModContainer(modId).ifPresent(container -> {
 
-            ResourceManagerHelper.registerBuiltinResourcePack(
-                    Identifier.of("cinchsvillagerstatues", VILLAGER_STATUES),
-                    container,
-                    Text.literal("Compat: Cinch's Villager Statues"),
-                    ResourcePackActivationType.ALWAYS_ENABLED
-            );
+            if (FabricLoader.getInstance().isModLoaded("cinchsvillagerstatues")) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of("cinchsvillagerstatues", VILLAGER_STATUES),
+                        container,
+                        Text.literal("Compat: Cinch's Villager Statues"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            }
 
-            ResourceManagerHelper.registerBuiltinResourcePack(
-                    Identifier.of("cinchslostmobgrinders", LOST_MOB_GRINDERS),
-                    container,
-                    Text.literal("Compat: Cinch's Lost Mob Grinders"),
-                    ResourcePackActivationType.ALWAYS_ENABLED
-            );
+            if (FabricLoader.getInstance().isModLoaded("cinchslostmobgrinders")) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of("cinchslostmobgrinders", LOST_MOB_GRINDERS),
+                        container,
+                        Text.literal("Compat: Cinch's Lost Mob Grinders"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            }
 
             if (ModConfigs.enableTuffBrickPillar) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.of(modId, TUFF_PILLAR_RECIPES),
                         container,
-                        Text.literal("Cinch's Tuff Pillars Recipes"),
+                        Text.literal("Tuff Pillars Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
                 LOGGER.info("Tuff Pillar recipes disabled by config");
+            }
+
+            if (ModConfigs.enableReworkedDeepslateRecipes || ModConfigs.configMissing) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of(modId, REWORKED_DEEPSLATE_RECIPES),
+                        container,
+                        Text.literal("Reworked Deepslate Recipes"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            } else {
+                LOGGER.info("Reworked deepslate recipes disabled by config");
+            }
+
+            if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of(modId, TERRACOTTA_VARIANTS_RECIPES),
+                        container,
+                        Text.literal("Terracotta Variants Recipes"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            } else {
+                LOGGER.info("Terracotta variants disabled by config (Recipes)");
+            }
+
+            if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.of(modId, CONCRETE_VARIANTS_RECIPES),
+                        container,
+                        Text.literal("Concrete Variants Recipes"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            } else {
+                LOGGER.info("Concrete variants disabled by config (Recipes)");
             }
         });
     }
