@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_nether_bricks": {
+    "has_cracked_red_nether_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:red_nether_bricks"
+            "items": "cinchsmissingblocks:red_nether_brick"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:red_nether_brick_fence"
+        "recipe": "cinchsmissingblocks:cracked_red_nether_brick_fence"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_nether_bricks"
+      "has_cracked_red_nether_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:red_nether_brick_fence"
+      "cinchsmissingblocks:cracked_red_nether_brick_fence"
     ]
   }
 }

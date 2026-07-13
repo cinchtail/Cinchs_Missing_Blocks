@@ -23,6 +23,6 @@ public class ModItems {
                 function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, name)))));
     }
     public static void registerModItems() {
-        CinchsMissingBlocks.LOGGER.info("Registering Mod Items for " + MOD_ID);
+        CinchsMissingBlocks.LOGGER.info("Registering ModItems for " + MOD_ID);
     }
 }
