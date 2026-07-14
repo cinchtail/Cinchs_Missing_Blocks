@@ -1,14 +1,10 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
-import com.google.gson.JsonObject;
-import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
-import net.fabricmc.fabric.api.serialization.v1.value.FabricValueOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.*;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 
 public class BlockModelHelpers {
@@ -96,20 +92,18 @@ public class BlockModelHelpers {
         gen.registerSimpleItemModel(wall, inventory);
     }
 
-    public static void cubeColumn(FabricValueOutput output, Block block,
-                                  Identifier endTexture, Identifier sideTexture) {
+    public static void cubeColumn(BlockModelGenerators gen, Block block, Identifier textureSource) {
+        TextureMapping tex = new TextureMapping()
+                .put(TextureSlot.END, TextureMapping.getBlockTexture(textureSource))
+                .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(textureSource));
 
-        JsonObject root = new JsonObject();
-        root.addProperty("parent", "minecraft:block/cube_column");
+        Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
 
-        JsonObject textures = new JsonObject();
-        textures.addProperty("end", endTexture.toString());
-        textures.addProperty("side", sideTexture.toString());
-        root.add("textures", textures);
+        gen.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(model))
+        );
 
-        Identifier modelId = ModelLocationUtils.getModelLocation(block);
-
-        writeModelJson(output, modelId, root);
+        gen.registerSimpleItemModel(block, model);
     }
 
     public static void pillar(BlockModelGenerators gen, Block block, Identifier textureSource) {
