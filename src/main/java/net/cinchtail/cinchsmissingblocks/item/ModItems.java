@@ -23,6 +23,6 @@ public class ModItems {
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name)))));
     }
     public static void registerModItems() {
-        CinchsMissingBlocks.LOGGER.info("Registering Mod Items for " + MOD_ID);
+        CinchsMissingBlocks.LOGGER.info("Registering ModItems for " + MOD_ID);
     }
 }
