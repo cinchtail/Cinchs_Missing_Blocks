@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "minecraft:resin_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_resin_bricks"
+  }
+}

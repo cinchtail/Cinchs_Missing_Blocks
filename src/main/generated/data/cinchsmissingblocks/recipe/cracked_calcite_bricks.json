@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:calcite_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_calcite_bricks"
+  }
+}

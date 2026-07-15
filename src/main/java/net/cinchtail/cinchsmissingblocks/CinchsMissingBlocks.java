@@ -25,9 +25,9 @@ public class CinchsMissingBlocks implements ModInitializer {
 		NetworkInit.register();
 		BuiltinDataPacks.registerBuiltinPacks(CinchsMissingBlocks.MOD_ID);
 
-		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-			sender.sendPacket(new ConfigSyncPayload(ModConfigs.enableTuffBrickPillar));
-		});
+		//ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+			//sender.sendPacket(new ConfigSyncPayload(ModConfigs.enableTuffBrickPillar));
+		//});
 
 		LOGGER.info("Cinch's Missing Blocks initialized.");
 	}

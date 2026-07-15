@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:blue_nether_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_blue_nether_bricks"
+  }
+}

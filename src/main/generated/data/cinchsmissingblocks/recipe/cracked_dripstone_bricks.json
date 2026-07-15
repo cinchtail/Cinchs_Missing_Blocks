@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:dripstone_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_dripstone_bricks"
+  }
+}

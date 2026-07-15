@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:granite_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_granite_bricks"
+  }
+}

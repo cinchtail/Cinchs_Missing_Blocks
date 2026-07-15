@@ -19,7 +19,7 @@ import java.util.function.Function;
 @Mixin(Blocks.class)
 public abstract class ChiseledTuffBricksMixin {
 
-    @Shadow
+    /*@Shadow
     private static Block register(String id, Function<FabricBlock.FabricProperties, Block> factory, FabricBlock.FabricProperties properties) {
         throw new IllegalStateException();
     }
@@ -29,5 +29,5 @@ public abstract class ChiseledTuffBricksMixin {
     @WrapOperation(method = "<clinit>", at = @At("MIXINEXTRAS:EXPRESSION"))
     private static Block makeChiseledTuffBricksPillarBlock(String id, FabricBlock.FabricProperties properties, Operation<Block> original) {
         return register(id, RotatedPillarBlock::new, properties);
-    }
+    }*/
 }

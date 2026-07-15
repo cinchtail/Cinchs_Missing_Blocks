@@ -7,12 +7,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.*;
-import net.minecraft.client.renderer.texture.TextureAtlas;
-import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Blocks;
-
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
@@ -46,17 +42,9 @@ public class ModModelProvider extends FabricModelProvider {
         mossyCalciteBricksFamily.slab(ModBlocks.MOSSY_CALCITE_BRICK_SLAB);
         mossyCalciteBricksFamily.wall(ModBlocks.MOSSY_CALCITE_BRICK_WALL);
 
-        TextureMapping calciteMapping = new TextureMapping()
-                .put(TextureSlot.END, Identifier.fromNamespaceAndPath(MOD_ID, "block/chiseled_calcite_bricks_top"))
-                .put(TextureSlot.SIDE, Identifier.fromNamespaceAndPath(MOD_ID, "block/chiseled_calcite_bricks_side"));
+        BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_CALCITE_BRICKS, ModBlocks.CHISELED_CALCITE_BRICKS);
 
-        BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_CALCITE_BRICKS, calciteMapping);
-
-        TextureMapping pillarMapping = new TextureMapping()
-                .put(TextureSlot.END, Identifier.fromNamespaceAndPath(MOD_ID, "block/calcite_brick_pillar_top"))
-                .put(TextureSlot.SIDE, Identifier.fromNamespaceAndPath(MOD_ID, "block/calcite_brick_pillar_side"));
-
-        BlockModelHelpers.pillar(gen, ModBlocks.CALCITE_BRICK_PILLAR, pillarMapping);
+        BlockModelHelpers.pillar(gen, ModBlocks.CALCITE_BRICK_PILLAR, ModBlocks.CALCITE_BRICK_PILLAR);
 
 
         var polishedDripstoneFamily = gen.family(ModBlocks.POLISHED_DRIPSTONE);
@@ -84,14 +72,9 @@ public class ModModelProvider extends FabricModelProvider {
         mossyDripstoneBricksFamily.slab(ModBlocks.MOSSY_DRIPSTONE_BRICK_SLAB);
         mossyDripstoneBricksFamily.wall(ModBlocks.MOSSY_DRIPSTONE_BRICK_WALL);
 
-        BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_DRIPSTONE_BRICKS, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/chiseled_dripstone_bricks_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/chiseled_dripstone_bricks_side"));
+        BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_DRIPSTONE_BRICKS, ModBlocks.CHISELED_DRIPSTONE_BRICKS);
 
-        BlockModelHelpers.pillar(gen, ModBlocks.DRIPSTONE_BRICK_PILLAR,
-                new Material(TextureAtlas.LOCATION_BLOCKS,
-                        Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/dripstone_brick_pillar_top")),
-                new Material(TextureAtlas.LOCATION_BLOCKS,
-                        Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/dripstone_brick_pillar_side")));
+        BlockModelHelpers.pillar(gen, ModBlocks.DRIPSTONE_BRICK_PILLAR, ModBlocks.DRIPSTONE_BRICK_PILLAR);
 
         var crackedTuffBricksFamily = gen.family(ModBlocks.CRACKED_TUFF_BRICKS);
         var mossyTuffBricksFamily = gen.family(ModBlocks.MOSSY_TUFF_BRICKS);
@@ -124,8 +107,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_ANDESITE_BRICKS);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.ANDESITE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/andesite_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/andesite_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.ANDESITE_BRICK_PILLAR, ModBlocks.ANDESITE_BRICK_PILLAR);
 
         var graniteBricksFamily = gen.family(ModBlocks.GRANITE_BRICKS);
         var crackedGraniteBricksFamily = gen.family(ModBlocks.CRACKED_GRANITE_BRICKS);
@@ -147,8 +129,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_GRANITE_BRICKS);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.GRANITE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/granite_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/granite_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.GRANITE_BRICK_PILLAR, ModBlocks.GRANITE_BRICK_PILLAR);
 
         var dioriteBricksFamily = gen.family(ModBlocks.DIORITE_BRICKS);
         var crackedDioriteBricksFamily = gen.family(ModBlocks.CRACKED_DIORITE_BRICKS);
@@ -170,14 +151,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_DIORITE_BRICKS);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.DIORITE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/diorite_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/diorite_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.DIORITE_BRICK_PILLAR, ModBlocks.DIORITE_BRICK_PILLAR);
 
         var crackedQuartzBricksFamily = gen.family(ModBlocks.CRACKED_QUARTZ_BRICKS);
         var mossyQuartzBricksFamily = gen.family(ModBlocks.MOSSY_QUARTZ_BRICKS);
 
-        BlockModelHelpers.wall(gen, ModBlocks.QUARTZ_WALL, Identifier.fromNamespaceAndPath("minecraft:block/quartz_block_side"));
-        BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_QUARTZ_WALL, Identifier.fromNamespaceAndPath("minecraft:block/quartz_block_bottom"));
+        BlockModelHelpers.wallCustomSide(gen, ModBlocks.QUARTZ_WALL, Blocks.QUARTZ_BLOCK);
+        BlockModelHelpers.wallCustomBottom(gen, ModBlocks.SMOOTH_QUARTZ_WALL, Blocks.QUARTZ_BLOCK);
 
         BlockModelHelpers.stairs(gen, ModBlocks.QUARTZ_BRICK_STAIRS, Blocks.QUARTZ_BRICKS);
         BlockModelHelpers.slab(gen, ModBlocks.QUARTZ_BRICK_SLAB, Blocks.QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
@@ -221,8 +201,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_MUD_BRICKS);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.MUD_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/mud_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/mud_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.MUD_BRICK_PILLAR, ModBlocks.MUD_BRICK_PILLAR);
 
         var crackedResinBricksFamily = gen.family(ModBlocks.CRACKED_RESIN_BRICKS);
         var mossyResinBricksFamily = gen.family(ModBlocks.MOSSY_RESIN_BRICKS);
@@ -257,15 +236,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_END_STONE_BRICKS);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.END_STONE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/end_stone_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/end_stone_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.END_STONE_BRICK_PILLAR, ModBlocks.END_STONE_BRICK_PILLAR);
 
         BlockModelHelpers.wall(gen, ModBlocks.STONE_WALL, Blocks.STONE);
         BlockModelHelpers.stairs(gen, ModBlocks.SMOOTH_STONE_STAIRS, Blocks.SMOOTH_STONE);
         BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_STONE_WALL, Blocks.SMOOTH_STONE);
 
         BlockModelHelpers.stairs(gen, ModBlocks.CRACKED_STONE_BRICK_STAIRS, Blocks.CRACKED_STONE_BRICKS);
-        BlockModelHelpers.slab(gen, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS));
+        BlockModelHelpers.slab(gen, ModBlocks.CRACKED_STONE_BRICK_SLAB, Blocks.CRACKED_STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS);
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_STONE_BRICK_WALL, Blocks.CRACKED_STONE_BRICKS);
 
         var stoneTilesFamily = gen.family(ModBlocks.STONE_TILES);
@@ -282,16 +260,18 @@ public class ModModelProvider extends FabricModelProvider {
         mossyStoneTilesFamily.slab(ModBlocks.MOSSY_STONE_TILE_SLAB);
         mossyStoneTilesFamily.wall(ModBlocks.MOSSY_STONE_TILE_WALL);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.STONE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/stone_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/stone_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.STONE_BRICK_PILLAR, ModBlocks.STONE_BRICK_PILLAR);
 
         var mossyCobbledDeepslateFamily = gen.family(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
         var mossyDeepslateBricksFamily = gen.family(ModBlocks.MOSSY_DEEPSLATE_BRICKS);
         var mossyDeepslatetilesFamily = gen.family(ModBlocks.MOSSY_DEEPSLATE_TILES);
 
-        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_STAIRS, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/deepslate_stairs"));
-        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_SLAB, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/deepslate_slab"));
-        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_WALL, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/deepslate_wall_inventory"));
+        gen.itemModelOutput.accept(ModBlocks.DEEPSLATE_STAIRS.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/deepslate_stairs")));
+        gen.itemModelOutput.accept(ModBlocks.DEEPSLATE_SLAB.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/deepslate_slab")));
+        gen.itemModelOutput.accept(ModBlocks.DEEPSLATE_WALL.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/deepslate_wall_inventory")));
 
         mossyCobbledDeepslateFamily.stairs(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
         mossyCobbledDeepslateFamily.slab(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
@@ -313,10 +293,10 @@ public class ModModelProvider extends FabricModelProvider {
         mossyDeepslatetilesFamily.slab(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB);
         mossyDeepslatetilesFamily.wall(ModBlocks.MOSSY_DEEPSLATE_TILE_WALL);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.DEEPSLATE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/deepslate_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/deepslate_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.DEEPSLATE_BRICK_PILLAR, ModBlocks.DEEPSLATE_BRICK_PILLAR);
 
-        gen.registerParentedItemModel(ModBlocks.SCULK_INLAID_DEEPSLATE, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/sculk_inlaid_deepslate"));
+        gen.itemModelOutput.accept(ModBlocks.SCULK_INLAID_DEEPSLATE.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/sculk_inlaid_deepslate")));
 
         BlockModelHelpers.button(gen, ModBlocks.POLISHED_DEEPSLATE_BUTTON, Blocks.POLISHED_DEEPSLATE);
         BlockModelHelpers.pressurePlate(gen, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Blocks.POLISHED_DEEPSLATE);
@@ -335,8 +315,7 @@ public class ModModelProvider extends FabricModelProvider {
         crackedBlacktoneTilesFamily.slab(ModBlocks.CRACKED_BLACKSTONE_TILE_SLAB);
         crackedBlacktoneTilesFamily.wall(ModBlocks.CRACKED_BLACKSTONE_TILE_WALL);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.BLACKSTONE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/blackstone_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/blackstone_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.BLACKSTONE_BRICK_PILLAR, ModBlocks.BLACKSTONE_BRICK_PILLAR);
 
         BlockModelHelpers.stairs(gen, ModBlocks.NETHERRACK_STAIRS, Blocks.NETHERRACK);
         BlockModelHelpers.slab(gen, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK, Blocks.NETHERRACK);
@@ -389,8 +368,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_PRISMARINE_BRICKS);
 
-        BlockModelHelpers.pillar(gen,ModBlocks.PRISMARINE_BRICK_PILLAR, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/prismarine_brick_pillar_top"),
-                Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/prismarine_brick_pillar_side"));
+        BlockModelHelpers.pillar(gen, ModBlocks.PRISMARINE_BRICK_PILLAR, ModBlocks.PRISMARINE_BRICK_PILLAR);
 
         var snowBricksFamily = gen.family(ModBlocks.SNOW_BRICKS);
 
@@ -402,10 +380,13 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.slab(gen, ModBlocks.SMOOTH_BASALT_SLAB, Blocks.SMOOTH_BASALT, Blocks.SMOOTH_BASALT);
         BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_BASALT_WALL, Blocks.SMOOTH_BASALT);
 
-        BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_SANDSTONE_WALL, Identifier.fromNamespaceAndPath("minecraft:block/sandstone_top"));
+        BlockModelHelpers.wallCustomTop(gen, ModBlocks.SMOOTH_SANDSTONE_WALL, Blocks.SANDSTONE);
 
-        gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_STAIRS, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/cut_sandstone_stairs"));
-        gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_WALL, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/cut_sandstone_wall_inventory"));
+        gen.itemModelOutput.accept(ModBlocks.CUT_SANDSTONE_STAIRS.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/cut_sandstone_stairs")));
+        gen.itemModelOutput.accept(ModBlocks.CUT_SANDSTONE_WALL.asItem(), ItemModelUtils.plainModel(
+                        Identifier.parse("cinchsmissingblocks:block/cut_sandstone_wall_inventory")));
+
 
         var sandStoneBricksFamily = gen.family(ModBlocks.SANDSTONE_BRICKS);
         var crackedSandStoneBricksFamily = gen.family(ModBlocks.CRACKED_SANDSTONE_BRICKS);
@@ -423,10 +404,12 @@ public class ModModelProvider extends FabricModelProvider {
         mossySandStoneBricksFamily.slab(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
         mossySandStoneBricksFamily.wall(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
 
-        BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Identifier.fromNamespaceAndPath(MOD_ID,"minecraft:block/red_sandstone_top"));
+        BlockModelHelpers.wallCustomTop(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Blocks.RED_SANDSTONE);
 
-        gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_STAIRS, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/cut_red_sandstone_stairs"));
-        gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_WALL, Identifier.fromNamespaceAndPath("cinchsmissingblocks:block/cut_red_sandstone_wall_inventory"));
+        gen.itemModelOutput.accept(ModBlocks.CUT_RED_SANDSTONE_STAIRS.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/cut_red_sandstone_stairs")));
+        gen.itemModelOutput.accept(ModBlocks.CUT_RED_SANDSTONE_WALL.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:block/cut_red_sandstone_wall_inventory")));
 
         var redSandStoneBricksFamily = gen.family(ModBlocks.RED_SANDSTONE_BRICKS);
         var crackedRedSandStoneBricksFamily = gen.family(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
@@ -448,7 +431,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.createTrivialCube(ModBlocks.CHISELED_PURPUR);
 
-        gen.registerGlassAndPane(Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_PANE);
+        gen.itemModelOutput.accept(ModBlocks.TINTED_GLASS_PANE.asItem(), ItemModelUtils.plainModel(
+                Identifier.parse("cinchsmissingblocks:item/tinted_glass_pane")));
 
         BlockModelHelpers.stairs(gen, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
         BlockModelHelpers.slab(gen, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA, Blocks.TERRACOTTA);
@@ -501,7 +485,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.stairs(gen, ModBlocks.DYED_TERRACOTTA_STAIRS.pink(), Blocks.DYED_TERRACOTTA.pink());
         BlockModelHelpers.slab(gen, ModBlocks.DYED_TERRACOTTA_SLAB.pink(), Blocks.DYED_TERRACOTTA.pink(), Blocks.DYED_TERRACOTTA.pink());
         BlockModelHelpers.wall(gen, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());
-        
+
         BlockModelHelpers.stairs(gen, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
         BlockModelHelpers.slab(gen, ModBlocks.CONCRETE_SLAB.white(), Blocks.CONCRETE.white(), Blocks.CONCRETE.white());
         BlockModelHelpers.wall(gen, ModBlocks.CONCRETE_WALL.white(), Blocks.CONCRETE.white());

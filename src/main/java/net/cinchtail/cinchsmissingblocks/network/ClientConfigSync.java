@@ -9,7 +9,7 @@ public class ClientConfigSync {
 
     public static void register() {
 
-        ClientPlayNetworking.registerGlobalReceiver(
+        /*ClientPlayNetworking.registerGlobalReceiver(
                 ConfigSyncPayload.ID,
                 (payload, context) -> {
 
@@ -32,7 +32,7 @@ public class ClientConfigSync {
                             }
                         });
                     }
-                }
-        );
+                }*/
+        //);
     }
 }

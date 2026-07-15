@@ -13,35 +13,6 @@ public class BlockModelHelpers {
         return BlockModelGenerators.plainVariant(model);
     }
 
-    public static void button(BlockModelGenerators gen, Block button, Block texture) {
-        TextureMapping tex = new TextureMapping()
-                .put(TextureSlot.TEXTURE, TextureMapping.getBlockTexture(button));
-
-        Identifier regular = ModelTemplates.BUTTON.create(button, tex, gen.modelOutput);
-        Identifier pressed = ModelTemplates.BUTTON_PRESSED.create(button, tex, gen.modelOutput);
-        Identifier inventory = ModelTemplates.BUTTON_INVENTORY.create(button, tex, gen.modelOutput);
-
-        gen.blockStateOutput.accept(
-                BlockModelGenerators.createButton(button, mv(regular), mv(pressed))
-        );
-
-        gen.registerSimpleItemModel(button, inventory);
-    }
-
-    public static void pressurePlate(BlockModelGenerators gen, Block pressurePlate, Block texture) {
-        TextureMapping tex = new TextureMapping()
-                .put(TextureSlot.TEXTURE, TextureMapping.getBlockTexture(pressurePlate));
-
-        Identifier up = ModelTemplates.PRESSURE_PLATE_UP.create(pressurePlate, tex, gen.modelOutput);
-        Identifier down = ModelTemplates.PRESSURE_PLATE_DOWN.create(pressurePlate, tex, gen.modelOutput);
-
-        gen.blockStateOutput.accept(
-                BlockModelGenerators.createPressurePlate(pressurePlate, mv(up), mv(down))
-        );
-
-        gen.registerSimpleItemModel(pressurePlate, up);
-    }
-
     public static void slab(BlockModelGenerators gen, Block slab, Block base, Block textureSource) {
         TextureMapping tex = new TextureMapping()
                 .put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(textureSource))
@@ -92,34 +63,57 @@ public class BlockModelHelpers {
         gen.registerSimpleItemModel(wall, inventory);
     }
 
-    public static void cubeColumn(BlockModelGenerators gen, Block block, Identifier textureSource) {
+    public static void wallCustomSide(BlockModelGenerators gen, Block wall, Block textureSource) {
         TextureMapping tex = new TextureMapping()
-                .put(TextureSlot.END, TextureMapping.getBlockTexture(textureSource))
-                .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(textureSource));
+                .put(TextureSlot.WALL, TextureMapping.getBlockTexture(textureSource, "_side"));
 
-        Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
+        Identifier post = ModelTemplates.WALL_POST.create(wall, tex, gen.modelOutput);
+        Identifier low = ModelTemplates.WALL_LOW_SIDE.create(wall, tex, gen.modelOutput);
+        Identifier tall = ModelTemplates.WALL_TALL_SIDE.create(wall, tex, gen.modelOutput);
+        Identifier inventory = ModelTemplates.WALL_INVENTORY.create(wall, tex, gen.modelOutput);
 
         gen.blockStateOutput.accept(
-                MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(model))
+                BlockModelGenerators.createWall(wall, mv(post), mv(low), mv(tall))
         );
 
-        gen.registerSimpleItemModel(block, model);
+        gen.registerSimpleItemModel(wall, inventory);
     }
 
-    public static void pillar(BlockModelGenerators gen, Block block, Identifier textureSource) {
+    public static void wallCustomTop(BlockModelGenerators gen, Block wall, Block textureSource) {
         TextureMapping tex = new TextureMapping()
-                .put(TextureSlot.END, TextureMapping.getBlockTexture(textureSource))
-                .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(textureSource));
+                .put(TextureSlot.WALL, TextureMapping.getBlockTexture(textureSource, "_top"));
 
-        Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
+        Identifier post = ModelTemplates.WALL_POST.create(wall, tex, gen.modelOutput);
+        Identifier low = ModelTemplates.WALL_LOW_SIDE.create(wall, tex, gen.modelOutput);
+        Identifier tall = ModelTemplates.WALL_TALL_SIDE.create(wall, tex, gen.modelOutput);
+        Identifier inventory = ModelTemplates.WALL_INVENTORY.create(wall, tex, gen.modelOutput);
 
-        gen.createRotatedVariantBlock(block);
-        gen.registerSimpleItemModel(block, model);
+        gen.blockStateOutput.accept(
+                BlockModelGenerators.createWall(wall, mv(post), mv(low), mv(tall))
+        );
+
+        gen.registerSimpleItemModel(wall, inventory);
     }
 
-    public static void fence(BlockModelGenerators gen, Block fence, Block texture) {
+    public static void wallCustomBottom(BlockModelGenerators gen, Block wall, Block textureSource) {
         TextureMapping tex = new TextureMapping()
-                .put(TextureSlot.TEXTURE, TextureMapping.getBlockTexture(fence));
+                .put(TextureSlot.WALL, TextureMapping.getBlockTexture(textureSource, "_bottom"));
+
+        Identifier post = ModelTemplates.WALL_POST.create(wall, tex, gen.modelOutput);
+        Identifier low = ModelTemplates.WALL_LOW_SIDE.create(wall, tex, gen.modelOutput);
+        Identifier tall = ModelTemplates.WALL_TALL_SIDE.create(wall, tex, gen.modelOutput);
+        Identifier inventory = ModelTemplates.WALL_INVENTORY.create(wall, tex, gen.modelOutput);
+
+        gen.blockStateOutput.accept(
+                BlockModelGenerators.createWall(wall, mv(post), mv(low), mv(tall))
+        );
+
+        gen.registerSimpleItemModel(wall, inventory);
+    }
+
+    public static void fence(BlockModelGenerators gen, Block fence, Block textureSource) {
+        TextureMapping tex = new TextureMapping()
+                .put(TextureSlot.TEXTURE, TextureMapping.getBlockTexture(textureSource));
 
         Identifier post = ModelTemplates.FENCE_POST.create(fence, tex, gen.modelOutput);
         Identifier side = ModelTemplates.FENCE_SIDE.create(fence, tex, gen.modelOutput);
@@ -130,5 +124,58 @@ public class BlockModelHelpers {
         );
 
         gen.registerSimpleItemModel(fence, inventory);
+    }
+
+    public static void cubeColumn(BlockModelGenerators gen, Block block, Block textureSource) {
+        TextureMapping tex = new TextureMapping()
+                .put(TextureSlot.END, TextureMapping.getBlockTexture(textureSource, "_top"))
+                .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(textureSource, "_side"));
+
+        Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
+
+        gen.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(model))
+        );
+
+        gen.registerSimpleItemModel(block, model);
+    }
+
+    public static void pillar(BlockModelGenerators gen, Block block, Block textureSource) {
+        TextureMapping tex = new TextureMapping()
+                .put(TextureSlot.END, TextureMapping.getBlockTexture(textureSource, "_top"))
+                .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(textureSource, "_side"));
+
+        Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
+
+        gen.registerSimpleItemModel(block, model);
+    }
+
+    public static void pressurePlate(BlockModelGenerators gen, Block pressurePlate, Block textureSource) {
+        TextureMapping tex = new TextureMapping()
+                .put(TextureSlot.TEXTURE, TextureMapping.getBlockTexture(textureSource));
+
+        Identifier up = ModelTemplates.PRESSURE_PLATE_UP.create(pressurePlate, tex, gen.modelOutput);
+        Identifier down = ModelTemplates.PRESSURE_PLATE_DOWN.create(pressurePlate, tex, gen.modelOutput);
+
+        gen.blockStateOutput.accept(
+                BlockModelGenerators.createPressurePlate(pressurePlate, mv(up), mv(down))
+        );
+
+        gen.registerSimpleItemModel(pressurePlate, up);
+    }
+
+    public static void button(BlockModelGenerators gen, Block button, Block textureSource) {
+        TextureMapping tex = new TextureMapping()
+                .put(TextureSlot.TEXTURE, TextureMapping.getBlockTexture(textureSource));
+
+        Identifier regular = ModelTemplates.BUTTON.create(button, tex, gen.modelOutput);
+        Identifier pressed = ModelTemplates.BUTTON_PRESSED.create(button, tex, gen.modelOutput);
+        Identifier inventory = ModelTemplates.BUTTON_INVENTORY.create(button, tex, gen.modelOutput);
+
+        gen.blockStateOutput.accept(
+                BlockModelGenerators.createButton(button, mv(regular), mv(pressed))
+        );
+
+        gen.registerSimpleItemModel(button, inventory);
     }
 }
