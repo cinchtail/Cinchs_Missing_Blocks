@@ -4,10 +4,11 @@ import com.llamalad7.mixinextras.expression.Definition;
 import com.llamalad7.mixinextras.expression.Expression;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import net.fabricmc.fabric.api.block.v1.FabricBlock;
+import net.minecraft.references.BlockItemId;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -20,14 +21,14 @@ import java.util.function.Function;
 public abstract class ChiseledTuffBricksMixin {
 
     /*@Shadow
-    private static Block register(String id, Function<FabricBlock.FabricProperties, Block> factory, FabricBlock.FabricProperties properties) {
+    private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties properties) {
         throw new IllegalStateException();
     }
 
     @Definition(id = "register", method = "Lnet/minecraft/block/Blocks;register(Ljava/lang/String;Lnet/minecraft/block/AbstractBlock$Settings;)Lnet/minecraft/block/Block;")
     @Expression("register('chiseled_tuff_bricks', ?)")
     @WrapOperation(method = "<clinit>", at = @At("MIXINEXTRAS:EXPRESSION"))
-    private static Block makeChiseledTuffBricksPillarBlock(String id, FabricBlock.FabricProperties properties, Operation<Block> original) {
+    private static Block makeChiseledTuffBricksPillarBlock(BlockItemId id, BlockBehaviour.Properties properties, Operation<Block> original) {
         return register(id, RotatedPillarBlock::new, properties);
     }*/
 }
