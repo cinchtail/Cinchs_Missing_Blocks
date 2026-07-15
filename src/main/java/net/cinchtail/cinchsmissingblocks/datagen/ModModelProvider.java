@@ -435,7 +435,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_PURPUR);
 
-        gen.registerGlassAndPane(Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_PANE);
+        gen.registerParentedItemModel(ModBlocks.TINTED_GLASS_PANE, Identifier.of("cinchsmissingblocks:item/tinted_glass_pane"));
 
         BlockModelHelpers.stairs(gen, ModBlocks.TERRACOTTA_STAIRS, TextureMap.getId(Blocks.TERRACOTTA));
         BlockModelHelpers.slab(gen, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA, TextureMap.getId(Blocks.TERRACOTTA));
