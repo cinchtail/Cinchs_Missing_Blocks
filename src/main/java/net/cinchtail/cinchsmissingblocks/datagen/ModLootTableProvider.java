@@ -167,6 +167,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
         addDrop(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB));
         addDrop(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+        addDrop(ModBlocks.SANDSTONE_BRICK_PILLAR);
 
         addDrop(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
         addDrop(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
@@ -179,6 +180,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB));
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+        addDrop(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
         addDrop(ModBlocks.END_STONE_STAIRS);
         addDrop(ModBlocks.END_STONE_WALL, slabDrops(ModBlocks.END_STONE_SLAB));

@@ -399,6 +399,9 @@ public class ModModelProvider extends FabricModelProvider {
         mossySandStoneBricksPool.slab(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
         mossySandStoneBricksPool.wall(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
 
+        BlockModelHelpers.pillar(gen,ModBlocks.SANDSTONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/sandstone_brick_pillar_top"),
+                Identifier.of("cinchsmissingblocks:block/sandstone_brick_pillar_side"));
+
         BlockModelHelpers.wall(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Identifier.of("minecraft:block/red_sandstone_top"));
 
         gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_stairs"));
@@ -419,6 +422,9 @@ public class ModModelProvider extends FabricModelProvider {
         mossyRedSandStoneBricksPool.stairs(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
         mossyRedSandStoneBricksPool.slab(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
         mossyRedSandStoneBricksPool.wall(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+
+        BlockModelHelpers.pillar(gen,ModBlocks.RED_SANDSTONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/red_sandstone_brick_pillar_top"),
+                Identifier.of("cinchsmissingblocks:block/red_sandstone_brick_pillar_side"));
 
         BlockModelHelpers.wall(gen, ModBlocks.PURPUR_WALL, TextureMap.getId(Blocks.PURPUR_BLOCK));
 

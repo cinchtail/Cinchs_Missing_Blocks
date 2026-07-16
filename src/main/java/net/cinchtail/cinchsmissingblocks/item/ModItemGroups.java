@@ -167,6 +167,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.SANDSTONE_BRICK_PILLAR);
                         entries.add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
                         entries.add(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
                         entries.add(ModBlocks.CUT_RED_SANDSTONE_WALL);
@@ -182,6 +183,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+                        entries.add(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_SLAB);
                         entries.add(ModBlocks.END_STONE_WALL);

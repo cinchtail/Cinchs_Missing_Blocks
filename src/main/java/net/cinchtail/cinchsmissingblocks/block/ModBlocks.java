@@ -786,96 +786,102 @@ public class ModBlocks {
     //Sandstone Blocks
     public static final Block SMOOTH_SANDSTONE_WALL = registerBlock("smooth_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.SMOOTH_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.CUT_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.CUT_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
-            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(2.0F, 6.0F)
+            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block SANDSTONE_BRICK_STAIRS = registerBlock("sandstone_brick_stairs",
             new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_SANDSTONE_BRICKS = registerBlock("cracked_sandstone_bricks",
-            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(2.0F, 6.0F)
+            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_sandstone_brick_stairs",
             new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_SANDSTONE_BRICK_SLAB = registerBlock("cracked_sandstone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_SANDSTONE_BRICK_WALL = registerBlock("cracked_sandstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_SANDSTONE_BRICKS = registerBlock("mossy_sandstone_bricks",
-            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(2.0F, 6.0F)
+            new Block(Block.Settings.copy(Blocks.SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_sandstone_brick_stairs",
             new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_SANDSTONE_BRICK_SLAB = registerBlock("mossy_sandstone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_SANDSTONE_BRICK_WALL = registerBlock("mossy_sandstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SANDSTONE_BRICK_PILLAR = registerBlock("sandstone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.SANDSTONE).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)));
 
     //Red Sandstone Blocks
     public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.SMOOTH_RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
             new StairsBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
-            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(2.0F, 6.0F)
+            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block RED_SANDSTONE_BRICK_STAIRS = registerBlock("red_sandstone_brick_stairs",
             new StairsBlock(Blocks.RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block RED_SANDSTONE_BRICK_SLAB = registerBlock("red_sandstone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block RED_SANDSTONE_BRICK_WALL = registerBlock("red_sandstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_RED_SANDSTONE_BRICKS = registerBlock("cracked_red_sandstone_bricks",
-            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(2.0F, 6.0F)
+            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_RED_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_red_sandstone_brick_stairs",
             new StairsBlock(Blocks.RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_RED_SANDSTONE_BRICK_SLAB = registerBlock("cracked_red_sandstone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block CRACKED_RED_SANDSTONE_BRICK_WALL = registerBlock("cracked_red_sandstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_RED_SANDSTONE_BRICKS = registerBlock("mossy_red_sandstone_bricks",
-            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(2.0F, 6.0F)
+            new Block(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_RED_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_red_sandstone_brick_stairs",
             new StairsBlock(Blocks.RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_RED_SANDSTONE_BRICK_SLAB = registerBlock("mossy_red_sandstone_brick_slab",
             new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
     public static final Block MOSSY_RED_SANDSTONE_BRICK_WALL = registerBlock("mossy_red_sandstone_brick_wall",
             new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)
-                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block RED_SANDSTONE_BRICK_PILLAR = registerBlock("red_sandstone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)));
 
     //Purpur Blocks
     public static final Block PURPUR_WALL = registerBlock("purpur_wall",

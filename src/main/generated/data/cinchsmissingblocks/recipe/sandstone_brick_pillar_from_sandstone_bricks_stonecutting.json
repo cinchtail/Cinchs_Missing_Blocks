@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinchsmissingblocks:sandstone_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:sandstone_brick_pillar"
+  }
+}

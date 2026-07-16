@@ -375,6 +375,8 @@
     "cinchsmissingblocks:magenta_concrete_wall",
     "cinchsmissingblocks:pink_concrete_stairs",
     "cinchsmissingblocks:pink_concrete_slab",
-    "cinchsmissingblocks:pink_concrete_wall"
+    "cinchsmissingblocks:pink_concrete_wall",
+    "cinchsmissingblocks:sandstone_brick_pillar",
+    "cinchsmissingblocks:red_sandstone_brick_pillar"
   ]
 }
