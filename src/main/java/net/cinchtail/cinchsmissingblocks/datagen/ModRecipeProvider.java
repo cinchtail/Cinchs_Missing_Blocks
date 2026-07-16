@@ -341,6 +341,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_PILLAR, ModBlocks.DIORITE_BRICKS);
 
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, ModBlocks.SANDSTONE_BRICK_SLAB);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, Blocks.SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, Blocks.CUT_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, ModBlocks.SANDSTONE_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICK_SLAB);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, Blocks.RED_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, Blocks.CUT_RED_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICKS);
+
 
                 //Miscellaneous Calcite Blocks
                 stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_STAIRS, Blocks.CALCITE);

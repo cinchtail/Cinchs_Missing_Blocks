@@ -5,6 +5,7 @@ import com.llamalad7.mixinextras.expression.Expression;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.references.BlockItemId;
+import net.minecraft.references.BlockItemIds;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
@@ -20,7 +21,7 @@ import java.util.function.Function;
 @Mixin(Blocks.class)
 public abstract class ChiseledTuffBricksMixin {
 
-    @Shadow
+    /*@Shadow
     private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties properties) {
         throw new IllegalStateException();
     }
@@ -30,5 +31,5 @@ public abstract class ChiseledTuffBricksMixin {
     @WrapOperation(method = "<clinit>", at = @At("MIXINEXTRAS:EXPRESSION"))
     private static Block makeChiseledTuffBricksPillarBlock(BlockItemId id, BlockBehaviour.Properties properties, Operation<Block> original) {
         return register(id, RotatedPillarBlock::new, properties);
-    }
+    }*/
 }

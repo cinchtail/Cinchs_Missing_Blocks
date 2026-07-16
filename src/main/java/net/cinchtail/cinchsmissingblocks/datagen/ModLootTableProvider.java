@@ -167,6 +167,10 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL);
         dropSelf(ModBlocks.CUT_SANDSTONE_STAIRS);
         dropSelf(ModBlocks.CUT_SANDSTONE_WALL);
+        dropSelf(ModBlocks.SANDSTONE_BRICKS);
+        dropSelf(ModBlocks.SANDSTONE_BRICK_STAIRS);
+        add(ModBlocks.SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.SANDSTONE_BRICK_SLAB));
+        dropSelf(ModBlocks.SANDSTONE_BRICK_WALL);
         dropSelf(ModBlocks.CRACKED_SANDSTONE_BRICKS);
         dropSelf(ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
         add(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB));
@@ -175,10 +179,15 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
         add(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB));
         dropSelf(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+        dropSelf(ModBlocks.SANDSTONE_BRICK_PILLAR);
 
         dropSelf(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
         dropSelf(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
         dropSelf(ModBlocks.CUT_RED_SANDSTONE_WALL);
+        dropSelf(ModBlocks.RED_SANDSTONE_BRICKS);
+        dropSelf(ModBlocks.RED_SANDSTONE_BRICK_STAIRS);
+        add(ModBlocks.RED_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.RED_SANDSTONE_BRICK_SLAB));
+        dropSelf(ModBlocks.RED_SANDSTONE_BRICK_WALL);
         dropSelf(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
         dropSelf(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
         add(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB));
@@ -187,6 +196,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
         add(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB));
         dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+        dropSelf(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
         dropSelf(ModBlocks.END_STONE_STAIRS);
         add(ModBlocks.END_STONE_WALL, createSlabItemTable(ModBlocks.END_STONE_SLAB));

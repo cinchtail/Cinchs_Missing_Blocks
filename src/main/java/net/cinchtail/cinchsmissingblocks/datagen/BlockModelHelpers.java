@@ -147,6 +147,10 @@ public class BlockModelHelpers {
 
         Identifier model = ModelTemplates.CUBE_COLUMN.create(block, tex, gen.modelOutput);
 
+        gen.blockStateOutput.accept(
+                BlockModelGenerators.createAxisAlignedPillarBlock(block, mv(model))
+                );
+
         gen.registerSimpleItemModel(block, model);
     }
 

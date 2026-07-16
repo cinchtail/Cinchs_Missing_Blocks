@@ -404,6 +404,8 @@ public class ModModelProvider extends FabricModelProvider {
         mossySandStoneBricksFamily.slab(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
         mossySandStoneBricksFamily.wall(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
 
+        BlockModelHelpers.pillar(gen, ModBlocks.SANDSTONE_BRICK_PILLAR, ModBlocks.SANDSTONE_BRICK_PILLAR);
+
         BlockModelHelpers.wallCustomTop(gen, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, Blocks.RED_SANDSTONE);
 
         gen.itemModelOutput.accept(ModBlocks.CUT_RED_SANDSTONE_STAIRS.asItem(), ItemModelUtils.plainModel(
@@ -426,6 +428,8 @@ public class ModModelProvider extends FabricModelProvider {
         mossyRedSandStoneBricksFamily.stairs(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
         mossyRedSandStoneBricksFamily.slab(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
         mossyRedSandStoneBricksFamily.wall(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+
+        BlockModelHelpers.pillar(gen, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
         BlockModelHelpers.wall(gen, ModBlocks.PURPUR_WALL, Blocks.PURPUR_BLOCK);
 

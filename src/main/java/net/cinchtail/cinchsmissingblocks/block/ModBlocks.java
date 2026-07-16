@@ -1054,126 +1054,132 @@ public class ModBlocks {
     //Sandstone Blocks
     public static final Block SMOOTH_SANDSTONE_WALL = registerBlock("smooth_sandstone_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             properties -> new StairBlock(Blocks.CUT_SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
-            properties -> new Block(properties.strength(2.0F, 6.0F)
+            properties -> new Block(properties.strength(0.8F)
                     .sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block SANDSTONE_BRICK_STAIRS = registerBlock("sandstone_brick_stairs",
             properties -> new StairBlock(Blocks.SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
             properties -> new SlabBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_SANDSTONE_BRICKS = registerBlock("cracked_sandstone_bricks",
-            properties -> new Block(properties.strength(2.0F, 6.0F)
+            properties -> new Block(properties.strength(0.8F)
                     .sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_sandstone_brick_stairs",
             properties -> new StairBlock(Blocks.SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_SANDSTONE_BRICK_SLAB = registerBlock("cracked_sandstone_brick_slab",
             properties -> new SlabBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_SANDSTONE_BRICK_WALL = registerBlock("cracked_sandstone_brick_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_SANDSTONE_BRICKS = registerBlock("mossy_sandstone_bricks",
-            properties -> new Block(properties.strength(2.0F, 6.0F)
+            properties -> new Block(properties.strength(0.8F)
                     .sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_sandstone_brick_stairs",
             properties -> new StairBlock(Blocks.SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_SANDSTONE_BRICK_SLAB = registerBlock("mossy_sandstone_brick_slab",
             properties -> new SlabBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_SANDSTONE_BRICK_WALL = registerBlock("mossy_sandstone_brick_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
+                    .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
+    public static final Block SANDSTONE_BRICK_PILLAR = registerBlock("sandstone_brick_pillar",
+            properties -> new RotatedPillarBlock(properties.strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
     //Red Sandstone Blocks
     public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
             properties -> new StairBlock(Blocks.CUT_RED_SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
-            properties -> new Block(properties.strength(2.0F, 6.0F)
+            properties -> new Block(properties.strength(0.8F)
                     .sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block RED_SANDSTONE_BRICK_STAIRS = registerBlock("red_sandstone_brick_stairs",
             properties -> new StairBlock(Blocks.RED_SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block RED_SANDSTONE_BRICK_SLAB = registerBlock("red_sandstone_brick_slab",
             properties -> new SlabBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block RED_SANDSTONE_BRICK_WALL = registerBlock("red_sandstone_brick_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_RED_SANDSTONE_BRICKS = registerBlock("cracked_red_sandstone_bricks",
-            properties -> new Block(properties.strength(2.0F, 6.0F)
+            properties -> new Block(properties.strength(0.8F)
                     .sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_RED_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_red_sandstone_brick_stairs",
             properties -> new StairBlock(Blocks.RED_SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_RED_SANDSTONE_BRICK_SLAB = registerBlock("cracked_red_sandstone_brick_slab",
             properties -> new SlabBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block CRACKED_RED_SANDSTONE_BRICK_WALL = registerBlock("cracked_red_sandstone_brick_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_RED_SANDSTONE_BRICKS = registerBlock("mossy_red_sandstone_bricks",
-            properties -> new Block(properties.strength(2.0F, 6.0F)
+            properties -> new Block(properties.strength(0.8F)
                     .sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_RED_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_red_sandstone_brick_stairs",
             properties -> new StairBlock(Blocks.RED_SANDSTONE.defaultBlockState(), properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_RED_SANDSTONE_BRICK_SLAB = registerBlock("mossy_red_sandstone_brick_slab",
             properties -> new SlabBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block MOSSY_RED_SANDSTONE_BRICK_WALL = registerBlock("mossy_red_sandstone_brick_wall",
             properties -> new WallBlock(properties
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
+    public static final Block RED_SANDSTONE_BRICK_PILLAR = registerBlock("red_sandstone_brick_pillar",
+            properties -> new RotatedPillarBlock(properties.strength(0.8F).sound(SoundType.STONE)
+                    .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
     //Purpur Blocks
     public static final Block PURPUR_WALL = registerBlock("purpur_wall",
