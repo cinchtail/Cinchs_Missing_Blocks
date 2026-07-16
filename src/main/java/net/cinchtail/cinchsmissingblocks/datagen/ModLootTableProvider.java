@@ -166,6 +166,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_SANDSTONE_WALL);
         addDrop(ModBlocks.CUT_SANDSTONE_STAIRS);
         addDrop(ModBlocks.CUT_SANDSTONE_WALL);
+        addDrop(ModBlocks.SANDSTONE_BRICKS);
+        addDrop(ModBlocks.SANDSTONE_BRICK_STAIRS);
+        addDrop(ModBlocks.SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.SANDSTONE_BRICK_SLAB));
+        addDrop(ModBlocks.SANDSTONE_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_SANDSTONE_BRICKS);
         addDrop(ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB));
@@ -174,10 +178,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
         addDrop(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB));
         addDrop(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+        addDrop(ModBlocks.SANDSTONE_BRICK_PILLAR);
 
         addDrop(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
         addDrop(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
         addDrop(ModBlocks.CUT_RED_SANDSTONE_WALL);
+        addDrop(ModBlocks.RED_SANDSTONE_BRICKS);
+        addDrop(ModBlocks.RED_SANDSTONE_BRICK_STAIRS);
+        addDrop(ModBlocks.RED_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.RED_SANDSTONE_BRICK_SLAB));
+        addDrop(ModBlocks.RED_SANDSTONE_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
         addDrop(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB));
@@ -186,6 +195,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB));
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+        addDrop(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
         addDrop(ModBlocks.END_STONE_STAIRS);
         addDrop(ModBlocks.END_STONE_WALL, slabDrops(ModBlocks.END_STONE_SLAB));
