@@ -1,6 +1,5 @@
 package net.cinchtail.cinchsmissingblocks.util;
 
-
 import it.unimi.dsi.fastutil.objects.ObjectArraySet;
 import net.minecraft.block.BlockSetType;
 import net.minecraft.sound.BlockSoundGroup;
