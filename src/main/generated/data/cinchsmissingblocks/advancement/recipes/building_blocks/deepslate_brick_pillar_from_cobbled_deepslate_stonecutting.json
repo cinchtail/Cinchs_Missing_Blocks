@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_cobbled_deepslate": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:deepslate"
+            "items": "minecraft:cobbled_deepslate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:deepslate_brick_pillar_from_deepslate_stonecutting"
+        "recipe": "cinchsmissingblocks:deepslate_brick_pillar_from_cobbled_deepslate_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate"
+      "has_cobbled_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cinchsmissingblocks:deepslate_brick_pillar_from_deepslate_stonecutting"
+      "cinchsmissingblocks:deepslate_brick_pillar_from_cobbled_deepslate_stonecutting"
     ]
   }
 }

@@ -321,7 +321,7 @@ public class ModBlocks {
     //Quartz Blocks
     public static final Block QUARTZ_WALL = registerBlock("quartz_wall",
             new WallBlock(Block.Settings.copy(Blocks.QUARTZ_BLOCK)
-                    .strength(2.0F, 6.0F)));
+                    .strength(0.8F)));
     public static final Block SMOOTH_QUARTZ_WALL = registerBlock("smooth_quartz_wall",
             new WallBlock(Block.Settings.copy(Blocks.SMOOTH_QUARTZ)
                     .strength(2.0F, 6.0F)));
@@ -786,7 +786,7 @@ public class ModBlocks {
     //Sandstone Blocks
     public static final Block SMOOTH_SANDSTONE_WALL = registerBlock("smooth_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.SMOOTH_SANDSTONE)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.CUT_SANDSTONE)
                     .strength(0.8F).sounds(BlockSoundGroup.STONE)));
@@ -836,7 +836,7 @@ public class ModBlocks {
     //Red Sandstone Blocks
     public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
             new WallBlock(Block.Settings.copy(Blocks.SMOOTH_RED_SANDSTONE)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
     public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
             new StairsBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
                     .strength(0.8F).sounds(BlockSoundGroup.STONE)));
