@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "X": "cinchsmissingblocks:red_nether_brick"
+    "N": "cinchsmissingblocks:red_nether_brick"
   },
   "pattern": [
-    "XX",
-    "XX"
+    "NN",
+    "NN"
   ],
   "result": {
     "count": 1,

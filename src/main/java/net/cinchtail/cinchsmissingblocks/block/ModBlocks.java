@@ -412,7 +412,7 @@ public class ModBlocks {
     //Quartz Blocks
     public static final Block QUARTZ_WALL = registerBlock("quartz_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.QUARTZ_BLOCK)
-                    .strength(2.0F, 6.0F)
+                    .strength(0.8F)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "quartz_wall")))));
     public static final Block SMOOTH_QUARTZ_WALL = registerBlock("smooth_quartz_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.SMOOTH_QUARTZ)
@@ -1048,7 +1048,7 @@ public class ModBlocks {
     //Sandstone Blocks
     public static final Block SMOOTH_SANDSTONE_WALL = registerBlock("smooth_sandstone_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.SMOOTH_SANDSTONE)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_sandstone_wall")))));
     public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
             properties -> new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.CUT_SANDSTONE)
@@ -1113,7 +1113,7 @@ public class ModBlocks {
     //Red Sandstone Blocks
     public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.SMOOTH_RED_SANDSTONE)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_red_sandstone_wall")))));
     public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
             properties -> new StairsBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)

@@ -16,7 +16,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
 
         addDrop(ModBlocks.CALCITE_STAIRS);
-        addDrop(ModBlocks.CALCITE_WALL, slabDrops(ModBlocks.CALCITE_SLAB));
+        addDrop(ModBlocks.CALCITE_SLAB, slabDrops(ModBlocks.CALCITE_SLAB));
         addDrop(ModBlocks.CALCITE_WALL);
         addDrop(ModBlocks.POLISHED_CALCITE);
         addDrop(ModBlocks.POLISHED_CALCITE_STAIRS);
@@ -38,7 +38,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CALCITE_BRICK_PILLAR);
 
         addDrop(ModBlocks.DRIPSTONE_STAIRS);
-        addDrop(ModBlocks.DRIPSTONE_WALL, slabDrops(ModBlocks.DRIPSTONE_SLAB));
+        addDrop(ModBlocks.DRIPSTONE_SLAB, slabDrops(ModBlocks.DRIPSTONE_SLAB));
         addDrop(ModBlocks.DRIPSTONE_WALL);
         addDrop(ModBlocks.POLISHED_DRIPSTONE);
         addDrop(ModBlocks.POLISHED_DRIPSTONE_STAIRS);
@@ -198,7 +198,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
         addDrop(ModBlocks.END_STONE_STAIRS);
-        addDrop(ModBlocks.END_STONE_WALL, slabDrops(ModBlocks.END_STONE_SLAB));
+        addDrop(ModBlocks.END_STONE_SLAB, slabDrops(ModBlocks.END_STONE_SLAB));
         addDrop(ModBlocks.END_STONE_WALL);
         addDrop(ModBlocks.POLISHED_END_STONE);
         addDrop(ModBlocks.POLISHED_END_STONE_STAIRS);

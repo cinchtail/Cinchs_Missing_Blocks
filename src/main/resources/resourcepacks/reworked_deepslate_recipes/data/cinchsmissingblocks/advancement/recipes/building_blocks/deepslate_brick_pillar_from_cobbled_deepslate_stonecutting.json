@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_nether_bricks": {
+    "has_deepslate": {
       "conditions": {
         "items": [
           {
-            "items": "cinchsmissingblocks:red_nether_brick"
+            "items": "minecraft:deepslate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:red_nether_bricks"
+        "recipe": "cinchsmissingblocks:deepslate_brick_pillar_from_cobbled_deepslate_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_nether_bricks"
+      "has_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:red_nether_bricks"
+      "cinchsmissingblocks:deepslate_brick_pillar_from_cobbled_deepslate_stonecutting"
     ]
   }
 }
