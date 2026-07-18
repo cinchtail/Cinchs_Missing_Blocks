@@ -1,38 +1,42 @@
 package net.cinchtail.cinchsmissingblocks.network;
 
-import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import org.w3c.dom.Text;
+import net.minecraft.network.chat.Component;
 
 public class ClientConfigSync {
 
     public static void register() {
 
-        /*ClientPlayNetworking.registerGlobalReceiver(
-                ConfigSyncPayload.ID,
-                (payload, context) -> {
+        ClientPlayNetworking.registerGlobalReceiver(
+                ConfigSyncPayload.TYPE,
+                (payload, ctx) -> {
 
-                    MinecraftClient client = MinecraftClient.getInstance();
-                    boolean serverWantsTuffPillars = payload.enableTuffBrickPillar();
+                    boolean serverValue = payload.enableTuffBrickPillar();
                     boolean clientValue = ModConfigs.enableTuffBrickPillar;
 
-                    if (serverWantsTuffPillars != clientValue) {
-                        client.execute(() -> {
-                            if (client.getNetworkHandler() != null) {
-                                client.getNetworkHandler().getConnection().disconnect(
-                                        Text.literal(
-                                                "Your Cinch's Missing Blocks config does not match the server.\n\n" +
-                                                        "Server requires: \"enableTuffBrickPillar\": " + serverWantsTuffPillars + "\n" +
-                                                        "Your config: \"enableTuffBrickPillar\": " + clientValue + "\n\n" +
-                                                        "Please update your config and reconnect.\n\n" +
-                                                        "Your config is located in .minecraft\\config\\cinchsmissingblocks.json."
-                                        )
-                                );
-                            }
+                    if (serverValue != clientValue) {
+
+                        ctx.client().execute(() -> {
+
+                            Component message = Component.literal(
+                                    "Your Cinch's Missing Blocks config does not match the server.\n\n" +
+                                            "Server requires: " + serverValue + "\n" +
+                                            "Your config: " + clientValue + "\n\n" +
+                                            "Update your config and reconnect.\n" +
+                                            ".minecraft/config/cinchsmissingblocks.json"
+                            );
+
+                            ctx.client().setScreenAndShow(
+                                    new net.minecraft.client.gui.screens.DisconnectedScreen(
+                                            null,
+                                            Component.literal("Disconnected"),
+                                            message
+                                    )
+                            );
                         });
                     }
-                }*/
-        //);
+                }
+        );
     }
 }
