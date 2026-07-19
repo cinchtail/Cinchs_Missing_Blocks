@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_end_stone_bricks",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone_bricks"
+    },
+    {
+      "item": "minecraft:chorus_flower"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_end_stone_bricks"
+  }
+}

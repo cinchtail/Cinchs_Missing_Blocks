@@ -17,7 +17,7 @@ displayName="${mod_name}"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 
 logoFile="icon.png"
-#credits="" #optional
+credits="${mod_credits}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 

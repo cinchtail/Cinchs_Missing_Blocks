@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_stone_tiles",
+  "key": {
+    "#": {
+      "item": "minecraft:moss_carpet"
+    },
+    "B": {
+      "item": "cinchsmissingblocks:stone_tiles"
+    }
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_stone_tiles"
+  }
+}

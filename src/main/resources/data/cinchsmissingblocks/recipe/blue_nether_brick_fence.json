@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blue_nether_brick_fence",
+  "key": {
+    "A": {
+      "item": "cinchsmissingblocks:blue_nether_bricks"
+    },
+    "T": {
+      "item": "cinchsmissingblocks:blue_nether_brick"
+    }
+  },
+  "pattern": [
+    "ATA",
+    "ATA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cinchsmissingblocks:blue_nether_brick_fence"
+  }
+}

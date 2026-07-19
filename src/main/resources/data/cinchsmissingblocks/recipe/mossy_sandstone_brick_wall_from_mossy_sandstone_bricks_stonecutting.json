@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinchsmissingblocks:mossy_sandstone_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_sandstone_brick_wall"
+  }
+}
