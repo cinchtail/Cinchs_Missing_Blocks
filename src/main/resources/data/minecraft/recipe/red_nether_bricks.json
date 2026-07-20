@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "N": "cinchsmissingblocks:red_nether_brick"
+  },
+  "pattern": [
+    "NN",
+    "NN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:red_nether_bricks"
+  }
+}

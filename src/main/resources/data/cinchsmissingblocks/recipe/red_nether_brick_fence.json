@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
+  "group": "red_nether_brick_fence",
   "key": {
     "A": "minecraft:red_nether_bricks",
-    "T": "minecraft:nether_brick"
+    "T": "cinchsmissingblocks:red_nether_brick"
   },
   "pattern": [
     "ATA",

@@ -1,9 +1,4 @@
-modLoader="javafml"
-loaderVersion="${loader_version_range}"
 license="${mod_license}"
-
-# A URL to refer people to when problems occur with this mod
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 
 [[mods]]
 modId="${mod_id}"
@@ -17,7 +12,7 @@ displayName="${mod_name}"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 
 logoFile="icon.png"
-#credits="" #optional
+credits="${mod_credits}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
