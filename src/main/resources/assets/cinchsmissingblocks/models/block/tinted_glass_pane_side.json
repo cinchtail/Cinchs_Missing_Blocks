@@ -3,5 +3,6 @@
   "textures": {
     "edge": "cinchsmissingblocks:block/tinted_glass_pane_top",
     "pane": "minecraft:block/tinted_glass"
-  }
+  },
+  "render_type": "minecraft:translucent"
 }

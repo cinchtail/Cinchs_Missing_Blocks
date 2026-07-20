@@ -37,7 +37,7 @@ public class CinchsMissingBlocks {
 
     @SubscribeEvent
     public void onClientSetup(FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.TINTED_GLASS_PANE.get(), RenderType.translucent());
+        //ItemBlockRenderTypes.setRenderLayer(ModBlocks.TINTED_GLASS_PANE.get(), RenderType.translucent());
     }
 
     @SubscribeEvent

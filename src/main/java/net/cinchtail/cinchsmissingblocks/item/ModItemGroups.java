@@ -1,6 +1,5 @@
 package net.cinchtail.cinchsmissingblocks.item;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.minecraft.core.registries.Registries;
