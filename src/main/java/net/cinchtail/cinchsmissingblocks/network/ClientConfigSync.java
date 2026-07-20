@@ -2,6 +2,8 @@ package net.cinchtail.cinchsmissingblocks.network;
 
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.minecraft.client.gui.screens.DisconnectedScreen;
+import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.chat.Component;
 
 public class ClientConfigSync {
@@ -27,9 +29,11 @@ public class ClientConfigSync {
                                             ".minecraft/config/cinchsmissingblocks.json"
                             );
 
+                            ctx.client().disconnect(new TitleScreen(), false);
+
                             ctx.client().setScreenAndShow(
-                                    new net.minecraft.client.gui.screens.DisconnectedScreen(
-                                            null,
+                                    new DisconnectedScreen(
+                                            new TitleScreen(),
                                             Component.literal("Disconnected"),
                                             message
                                     )
