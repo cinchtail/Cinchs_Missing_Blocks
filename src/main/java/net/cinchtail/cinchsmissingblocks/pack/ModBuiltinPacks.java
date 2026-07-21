@@ -10,9 +10,11 @@ import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class ModBuiltinPacks {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger("cinchsmissingblocks");
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static void register(AddPackFindersEvent event, String modId) {
 
@@ -39,6 +41,9 @@ public class ModBuiltinPacks {
                         Pack.Position.TOP
                 );
             }
+            else {
+                LOGGER.info("Tuff Pillar textures disabled by config");
+            }
         }
 
         if (event.getPackType() == PackType.SERVER_DATA) {
@@ -54,7 +59,58 @@ public class ModBuiltinPacks {
                         Pack.Position.TOP
                 );
             } else {
-                LOGGER.info("Cinch's Tuff Pillars datapack disabled by config");
+                LOGGER.info("Tuff Pillar recipes disabled by config");
+            }
+        }
+
+        if (event.getPackType() == PackType.SERVER_DATA) {
+
+            if (ModConfigs.enableReworkedDeepslateRecipes || ModConfigs.configMissing) {
+
+                event.addPackFinders(
+                        Identifier.fromNamespaceAndPath(modId, "resource_packs/reworked_deepslate_recipes"),
+                        PackType.SERVER_DATA,
+                        Component.literal("Reworked Deepslate Recipes"),
+                        PackSource.BUILT_IN,
+                        true,
+                        Pack.Position.TOP
+                );
+            } else {
+                LOGGER.info("Reworked deepslate recipes disabled by config");
+            }
+        }
+
+        if (event.getPackType() == PackType.SERVER_DATA) {
+
+            if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
+
+                event.addPackFinders(
+                        Identifier.fromNamespaceAndPath(modId, "resource_packs/terracotta_variants_recipes"),
+                        PackType.SERVER_DATA,
+                        Component.literal("Terracotta Variants Recipes"),
+                        PackSource.BUILT_IN,
+                        true,
+                        Pack.Position.TOP
+                );
+            } else {
+                LOGGER.info("Terracotta variants disabled by config (Recipes)");
+            }
+        }
+
+        if (event.getPackType() == PackType.SERVER_DATA) {
+
+            if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
+
+                event.addPackFinders(
+                        Identifier.fromNamespaceAndPath(modId, "resource_packs/concrete_variants_recipes"),
+                        PackType.SERVER_DATA,
+                        Component.literal("Concrete Variants Recipes"),
+                        PackSource.BUILT_IN,
+                        true,
+                        Pack.Position.TOP
+                );
+            } else {
+                LOGGER.info("Concrete variants disabled by config (Recipes)");
             }
         }
     }

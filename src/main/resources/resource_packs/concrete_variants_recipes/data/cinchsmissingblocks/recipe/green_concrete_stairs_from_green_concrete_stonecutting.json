@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:green_concrete",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:green_concrete_stairs"
+  }
+}
