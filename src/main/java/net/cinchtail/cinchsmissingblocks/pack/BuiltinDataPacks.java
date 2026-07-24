@@ -19,6 +19,7 @@ public class BuiltinDataPacks {
     public static final String LOST_MOB_GRINDERS = "z_override_cinchslostmobgrinders";
     public static final String TUFF_PILLAR_RECIPES = "tuff_pillar_recipes";
     public static final String REWORKED_DEEPSLATE_RECIPES = "reworked_deepslate_recipes";
+    public static final String CORRECTED_COBBLED_DROPS = "corrected_cobbled_drops";
     public static final String TERRACOTTA_VARIANTS_RECIPES = "terracotta_variants_recipes";
     public static final String CONCRETE_VARIANTS_RECIPES = "concrete_variants_recipes";
 
@@ -64,6 +65,17 @@ public class BuiltinDataPacks {
                 );
             } else {
                 LOGGER.info("Reworked deepslate recipes disabled by config");
+            }
+
+            if (ModConfigs.enableCorrectedCobbledDrops || ModConfigs.configMissing) {
+                ResourceManagerHelper.registerBuiltinResourcePack(
+                        Identifier.fromNamespaceAndPath(modId, CORRECTED_COBBLED_DROPS),
+                        container,
+                        Component.literal("Corrected Cobbled Drops"),
+                        ResourcePackActivationType.ALWAYS_ENABLED
+                );
+            } else {
+                LOGGER.info("Corrected Cobble Drops loot tables disabled by config");
             }
 
             if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
