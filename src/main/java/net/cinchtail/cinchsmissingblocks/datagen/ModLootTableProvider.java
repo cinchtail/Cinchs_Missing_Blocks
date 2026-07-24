@@ -3,7 +3,19 @@ package net.cinchtail.cinchsmissingblocks.datagen;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
+import net.minecraft.advancements.predicates.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.state.properties.SlabType;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 
 
 import java.util.concurrent.CompletableFuture;
@@ -278,6 +290,56 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.NETHERRACK_STAIRS);
         add(ModBlocks.NETHERRACK_SLAB, createSlabItemTable(ModBlocks.NETHERRACK_SLAB));
         dropSelf(ModBlocks.NETHERRACK_WALL);
+
+        this.add(ModBlocks.SNOW_BRICKS, block ->
+                createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.SNOWBALL)
+                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4)))
+                        .apply(ApplyExplosionDecay.explosionDecay())
+                )
+        );
+        this.add(ModBlocks.SNOW_BRICK_STAIRS, block ->
+                createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.SNOWBALL)
+                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4)))
+                        .apply(ApplyExplosionDecay.explosionDecay())
+                )
+        );
+        this.add(ModBlocks.SNOW_BRICK_SLAB, block ->
+                LootTable.lootTable().withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
+
+                        .add(LootItem.lootTableItem(block)
+                                .when(this.hasSilkTouch())
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                .hasProperty(SlabBlock.TYPE, SlabType.DOUBLE)))
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2)))
+
+                                .otherwise(LootItem.lootTableItem(block).when(this.hasSilkTouch())
+                                )
+
+                                .otherwise(LootItem.lootTableItem(Items.SNOWBALL)
+                                        .when(this.doesNotHaveSilkTouch())
+                                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                        .hasProperty(SlabBlock.TYPE, SlabType.DOUBLE)))
+                                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4)))
+                                        .apply(ApplyExplosionDecay.explosionDecay())
+                                )
+
+                                .otherwise(LootItem.lootTableItem(Items.SNOWBALL)
+                                        .when(this.doesNotHaveSilkTouch())
+                                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2)))
+                                        .apply(ApplyExplosionDecay.explosionDecay())
+                                )
+                        )
+                )
+        );
+        this.add(ModBlocks.SNOW_BRICK_WALL, block ->
+                createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.SNOWBALL)
+                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4)))
+                        .apply(ApplyExplosionDecay.explosionDecay())
+                )
+        );
 
         dropSelf(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
         add(ModBlocks.CRACKED_NETHER_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_NETHER_BRICK_SLAB));

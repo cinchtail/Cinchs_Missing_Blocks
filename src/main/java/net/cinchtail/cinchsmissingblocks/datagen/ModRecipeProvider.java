@@ -1505,7 +1505,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Terracotta Blocks
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
+                /*stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
 
@@ -1707,11 +1707,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());
 
-                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());*/
 
 
                 //Concrete Blocks
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
+                /*stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
 
@@ -1901,7 +1901,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.pink(), Blocks.CONCRETE.pink());
 
-                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.pink(), Blocks.CONCRETE.pink());
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.pink(), Blocks.CONCRETE.pink());*/
 
             }
 
