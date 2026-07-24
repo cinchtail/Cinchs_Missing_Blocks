@@ -29,41 +29,47 @@ public class ModConfigs {
     public static boolean enableConcreteVariants;
     public static boolean enableTuffBrickPillar;
     public static boolean enableReworkedDeepslateRecipes;
+    public static boolean enableCorrectedCobbledDrops;
     public static boolean doubleSlabsPackDefaultEnabled;
+
+    private static boolean getOrDefault(JsonObject json, String key, boolean defaultValue) {
+        return json.has(key) ? json.get(key).getAsBoolean() : defaultValue;
+    }
 
     public static void load() {
         try {
+            JsonObject json;
             if (!Files.exists(CONFIG_PATH)) {
                 configMissing = true;
                 generateDefault();
                 return;
             }
 
-            JsonObject json;
-
             try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
                 json = GSON.fromJson(reader, JsonObject.class);
             }
 
-            enableTerracottaVariants =
-                    !json.has("enableTerracottaVariants") || json.get("enableTerracottaVariants").getAsBoolean();
+            enableTerracottaVariants = getOrDefault(json, "enableTerracottaVariants", true);
+            enableConcreteVariants = getOrDefault(json, "enableConcreteVariants", true);
+            enableTuffBrickPillar = getOrDefault(json, "enableTuffBrickPillar", false);
+            enableReworkedDeepslateRecipes = getOrDefault(json, "enableReworkedDeepslateRecipes", true);
+            enableCorrectedCobbledDrops = getOrDefault(json, "enableCorrectedCobbledDrops", false);
+            doubleSlabsPackDefaultEnabled = getOrDefault(json, "doubleSlabsPackDefaultEnabled", false);
 
-            enableConcreteVariants =
-                    !json.has("enableConcreteVariants") || json.get("enableConcreteVariants").getAsBoolean();
+            boolean updated = false;
 
-            enableTuffBrickPillar =
-                    !json.has("enableTuffBrickPillar") || json.get("enableTuffBrickPillar").getAsBoolean();
+            updated |= patchMissing(json, "enableTerracottaVariants", enableTerracottaVariants);
+            updated |= patchMissing(json, "enableConcreteVariants", enableConcreteVariants);
+            updated |= patchMissing(json, "enableTuffBrickPillar", enableTuffBrickPillar);
+            updated |= patchMissing(json, "enableReworkedDeepslateRecipes", enableReworkedDeepslateRecipes);
+            updated |= patchMissing(json, "enableCorrectedCobbledDrops", enableCorrectedCobbledDrops);
+            updated |= patchMissing(json, "doubleSlabsPackDefaultEnabled", doubleSlabsPackDefaultEnabled);
 
-            enableReworkedDeepslateRecipes =
-                    !json.has("enableReworkedDeepslateRecipes") || json.get("enableReworkedDeepslateRecipes").getAsBoolean();
-
-            doubleSlabsPackDefaultEnabled =
-                    !json.has("doubleSlabsPackDefaultEnabled") || json.get("doubleSlabsPackDefaultEnabled").getAsBoolean();
-
-            rewriteConfig();
+            if (updated) {
+                rewriteConfig(json);
+            }
 
         } catch (Exception e) {
-            configMissing = true;
             LOGGER.error("Failed to read config, regenerating defaults", e);
             generateDefault();
         }
@@ -77,6 +83,7 @@ public class ModConfigs {
             json.addProperty("enableConcreteVariants", true);
             json.addProperty("enableTuffBrickPillar", false);
             json.addProperty("enableReworkedDeepslateRecipes", true);
+            json.addProperty("enableCorrectedCobbledDrops", false);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
 
             Files.createDirectories(CONFIG_PATH.getParent());
@@ -90,20 +97,17 @@ public class ModConfigs {
         }
     }
 
-    private static void rewriteConfig() {
-        try {
-            JsonObject json = new JsonObject();
+    private static boolean patchMissing(JsonObject json, String key, boolean value) {
+        if (!json.has(key)) {
+            json.addProperty(key, value);
+            return true;
+        }
+        return false;
+    }
 
-            json.addProperty("enableTerracottaVariants", enableTerracottaVariants);
-            json.addProperty("enableConcreteVariants", enableConcreteVariants);
-            json.addProperty("enableTuffBrickPillar", enableTuffBrickPillar);
-            json.addProperty("enableReworkedDeepslateRecipes", enableReworkedDeepslateRecipes);
-            json.addProperty("doubleSlabsPackDefaultEnabled", doubleSlabsPackDefaultEnabled);
-
-            try (Writer writer = Files.newBufferedWriter(CONFIG_PATH)) {
-                GSON.toJson(json, writer);
-            }
-
+    private static void rewriteConfig(JsonObject json) {
+        try (Writer writer = Files.newBufferedWriter(CONFIG_PATH)) {
+            GSON.toJson(json, writer);
         } catch (IOException e) {
             LOGGER.error("Failed to rewrite config", e);
         }

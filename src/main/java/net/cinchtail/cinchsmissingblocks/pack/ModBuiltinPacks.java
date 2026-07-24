@@ -82,6 +82,23 @@ public class ModBuiltinPacks {
 
         if (event.getPackType() == PackType.SERVER_DATA) {
 
+            if (ModConfigs.enableCorrectedCobbledDrops || ModConfigs.configMissing) {
+
+                event.addPackFinders(
+                        Identifier.fromNamespaceAndPath(modId, "resource_packs/corrected_cobbled_drops"),
+                        PackType.SERVER_DATA,
+                        Component.literal("Corrected Cobbled Drops"),
+                        PackSource.BUILT_IN,
+                        true,
+                        Pack.Position.TOP
+                );
+            } else {
+                LOGGER.info("Corrected Cobble Drops loot tables disabled by config");
+            }
+        }
+
+        if (event.getPackType() == PackType.SERVER_DATA) {
+
             if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
 
                 event.addPackFinders(
