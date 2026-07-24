@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "cinchsmissingblocks:snow_bricks"
+              "name": "cinchsmissingblocks:snow_brick_wall"
             },
             {
               "type": "minecraft:item",
@@ -47,6 +47,5 @@
       ],
       "rolls": 1.0
     }
-  ],
-  "random_sequence": "cinchsmissingblocks:blocks/snow_bricks"
+  ]
 }
