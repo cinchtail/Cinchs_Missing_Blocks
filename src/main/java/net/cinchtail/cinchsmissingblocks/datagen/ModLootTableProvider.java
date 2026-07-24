@@ -3,6 +3,17 @@ package net.cinchtail.cinchsmissingblocks.datagen;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.enums.SlabType;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.function.ExplosionDecayLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -277,6 +288,58 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHERRACK_STAIRS);
         addDrop(ModBlocks.NETHERRACK_SLAB, slabDrops(ModBlocks.NETHERRACK_SLAB));
         addDrop(ModBlocks.NETHERRACK_WALL);
+
+        this.addDrop(ModBlocks.SNOW_BRICKS,
+                this.dropsWithSilkTouch(ModBlocks.SNOW_BRICKS,
+                        ItemEntry.builder(Items.SNOWBALL)
+                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(4)))
+                                .apply(ExplosionDecayLootFunction.builder())
+                )
+        );
+        this.addDrop(ModBlocks.SNOW_BRICK_STAIRS,
+                this.dropsWithSilkTouch(ModBlocks.SNOW_BRICK_STAIRS,
+                        ItemEntry.builder(Items.SNOWBALL)
+                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(4)))
+                                .apply(ExplosionDecayLootFunction.builder())
+                )
+        );
+        this.addDrop(ModBlocks.SNOW_BRICK_SLAB,
+                LootTable.builder().pool(LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .with(ItemEntry.builder(ModBlocks.SNOW_BRICK_SLAB)
+                                                .conditionally(this.createSilkTouchCondition())
+                                                .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.SNOW_BRICK_SLAB)
+                                                                .properties(net.minecraft.predicate.StatePredicate.Builder.create()
+                                                                                .exactMatch(SlabBlock.TYPE, SlabType.DOUBLE)))
+                                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2)))
+
+                                                .alternatively(ItemEntry.builder(ModBlocks.SNOW_BRICK_SLAB)
+                                                                .conditionally(this.createSilkTouchCondition()))
+
+                                                .alternatively(ItemEntry.builder(Items.SNOWBALL)
+                                                                .conditionally(this.createWithoutSilkTouchCondition())
+                                                                .conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.SNOW_BRICK_SLAB)
+                                                                                .properties(net.minecraft.predicate.StatePredicate.Builder.create()
+                                                                                                .exactMatch(SlabBlock.TYPE, SlabType.DOUBLE)))
+                                                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(4)))
+                                                                .apply(ExplosionDecayLootFunction.builder())
+                                                )
+
+                                                .alternatively(ItemEntry.builder(Items.SNOWBALL)
+                                                                .conditionally(this.createWithoutSilkTouchCondition())
+                                                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2)))
+                                                                .apply(ExplosionDecayLootFunction.builder())
+                                                )
+                                )
+                )
+        );
+        this.addDrop(ModBlocks.SNOW_BRICK_WALL,
+                this.dropsWithSilkTouch(ModBlocks.SNOW_BRICK_WALL,
+                        ItemEntry.builder(Items.SNOWBALL)
+                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(4)))
+                                .apply(ExplosionDecayLootFunction.builder())
+                )
+        );
 
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_NETHER_BRICK_SLAB));

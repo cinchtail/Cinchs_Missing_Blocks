@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -18,23 +17,27 @@
                       "minecraft:enchantments": [
                         {
                           "enchantments": "minecraft:silk_touch",
-                          "levels": { "min": 1 }
+                          "levels": {
+                            "min": 1
+                          }
                         }
                       ]
                     }
                   }
                 },
                 {
-                  "condition": "minecraft:block_state_property",
                   "block": "cinchsmissingblocks:snow_brick_slab",
-                  "properties": { "type": "double" }
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "double"
+                  }
                 }
               ],
               "functions": [
                 {
-                  "function": "minecraft:set_count",
+                  "add": false,
                   "count": 2.0,
-                  "add": false
+                  "function": "minecraft:set_count"
                 }
               ],
               "name": "cinchsmissingblocks:snow_brick_slab"
@@ -49,7 +52,9 @@
                       "minecraft:enchantments": [
                         {
                           "enchantments": "minecraft:silk_touch",
-                          "levels": { "min": 1 }
+                          "levels": {
+                            "min": 1
+                          }
                         }
                       ]
                     }
@@ -62,16 +67,36 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:block_state_property",
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "minecraft:silk_touch",
+                            "levels": {
+                              "min": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
                   "block": "cinchsmissingblocks:snow_brick_slab",
-                  "properties": { "type": "double" }
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "double"
+                  }
                 }
               ],
               "functions": [
                 {
-                  "function": "minecraft:set_count",
+                  "add": false,
                   "count": 4.0,
-                  "add": false
+                  "function": "minecraft:set_count"
                 },
                 {
                   "function": "minecraft:explosion_decay"
@@ -81,11 +106,31 @@
             },
             {
               "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "minecraft:silk_touch",
+                            "levels": {
+                              "min": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              ],
               "functions": [
                 {
-                  "function": "minecraft:set_count",
+                  "add": false,
                   "count": 2.0,
-                  "add": false
+                  "function": "minecraft:set_count"
                 },
                 {
                   "function": "minecraft:explosion_decay"
@@ -95,8 +140,8 @@
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
-  ],
-  "random_sequence": "cinchsmissingblocks:blocks/snow_brick_slab"
+  ]
 }
