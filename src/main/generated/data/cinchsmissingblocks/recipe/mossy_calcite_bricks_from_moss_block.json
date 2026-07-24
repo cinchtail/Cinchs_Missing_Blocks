@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_calcite_bricks",
+  "ingredients": [
+    "cinchsmissingblocks:calcite_bricks",
+    "minecraft:moss_block"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_calcite_bricks"
+  }
+}

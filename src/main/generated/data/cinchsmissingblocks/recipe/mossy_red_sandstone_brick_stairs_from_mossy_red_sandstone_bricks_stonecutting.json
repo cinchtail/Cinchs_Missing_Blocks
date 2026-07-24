@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:mossy_red_sandstone_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:mossy_red_sandstone_brick_stairs"
+  }
+}

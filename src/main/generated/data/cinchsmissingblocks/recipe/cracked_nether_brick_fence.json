@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cracked_nether_brick_fence",
+  "key": {
+    "A": "minecraft:cracked_nether_bricks",
+    "T": "minecraft:nether_brick"
+  },
+  "pattern": [
+    "ATA",
+    "ATA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cinchsmissingblocks:cracked_nether_brick_fence"
+  }
+}

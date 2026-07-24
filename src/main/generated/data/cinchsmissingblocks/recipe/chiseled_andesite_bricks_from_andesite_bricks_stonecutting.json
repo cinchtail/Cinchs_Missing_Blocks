@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:andesite_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:chiseled_andesite_bricks"
+  }
+}

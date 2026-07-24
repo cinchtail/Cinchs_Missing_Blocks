@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:mossy_dripstone_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:mossy_dripstone_brick_wall"
+  }
+}

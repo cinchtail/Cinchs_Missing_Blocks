@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:cracked_tuff_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_tuff_brick_wall"
+  }
+}

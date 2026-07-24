@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cinchsmissingblocks:item/red_nether_brick"
+  }
+}

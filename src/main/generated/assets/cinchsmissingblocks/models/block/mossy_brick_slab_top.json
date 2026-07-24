@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/mossy_bricks",
+    "side": "cinchsmissingblocks:block/mossy_bricks",
+    "top": "cinchsmissingblocks:block/mossy_bricks"
+  }
+}
