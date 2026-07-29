@@ -1181,6 +1181,68 @@ public class ModBlocks {
             properties -> new RotatedPillarBlock(properties.strength(0.8F).sound(SoundType.STONE)
                     .mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
+    //Cinnabar Blocks
+    public static final Block CRACKED_CINNABAR_BRICKS = registerBlock("cracked_cinnabar_bricks",
+            properties -> new Block(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block CRACKED_CINNABAR_BRICK_STAIRS = registerBlock("cracked_cinnabar_brick_stairs",
+            properties -> new StairBlock(Blocks.CINNABAR.defaultBlockState(), properties
+                    .instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block CRACKED_CINNABAR_BRICK_SLAB = registerBlock("cracked_cinnabar_brick_slab",
+            properties -> new SlabBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block CRACKED_CINNABAR_BRICK_WALL = registerBlock("cracked_cinnabar_brick_wall",
+            properties -> new WallBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_CINNABAR_BRICKS = registerBlock("mossy_cinnabar_bricks",
+            properties -> new Block(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_CINNABAR_BRICK_STAIRS = registerBlock("mossy_cinnabar_brick_stairs",
+            properties -> new StairBlock(Blocks.CINNABAR.defaultBlockState(), properties
+                    .instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_CINNABAR_BRICK_SLAB = registerBlock("mossy_cinnabar_brick_slab",
+            properties -> new SlabBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_CINNABAR_BRICK_WALL = registerBlock("mossy_cinnabar_brick_wall",
+            properties -> new WallBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+    public static final Block CINNABAR_BRICK_PILLAR = registerBlock("cinnabar_brick_pillar",
+            properties -> new RotatedPillarBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_RED).sound(SoundType.CINNABAR).requiresCorrectToolForDrops()));
+
+    //Cinnabar Blocks
+    public static final Block CRACKED_SULFUR_BRICKS = registerBlock("cracked_sulfur_bricks",
+            properties -> new Block(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block CRACKED_SULFUR_BRICK_STAIRS = registerBlock("cracked_sulfur_brick_stairs",
+            properties -> new StairBlock(Blocks.SULFUR.defaultBlockState(), properties
+                    .instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block CRACKED_SULFUR_BRICK_SLAB = registerBlock("cracked_sulfur_brick_slab",
+            properties -> new SlabBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block CRACKED_SULFUR_BRICK_WALL = registerBlock("cracked_sulfur_brick_wall",
+            properties -> new WallBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_SULFUR_BRICKS = registerBlock("mossy_sulfur_bricks",
+            properties -> new Block(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_SULFUR_BRICK_STAIRS = registerBlock("mossy_sulfur_brick_stairs",
+            properties -> new StairBlock(Blocks.SULFUR.defaultBlockState(), properties
+                    .instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_SULFUR_BRICK_SLAB = registerBlock("mossy_sulfur_brick_slab",
+            properties -> new SlabBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block MOSSY_SULFUR_BRICK_WALL = registerBlock("mossy_sulfur_brick_wall",
+            properties -> new WallBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+    public static final Block SULFUR_BRICK_PILLAR = registerBlock("sulfur_brick_pillar",
+            properties -> new RotatedPillarBlock(properties.instrument(NoteBlockInstrument.BASEDRUM).strength(1.5F, 6.0F)
+                    .mapColor(MapColor.COLOR_YELLOW).sound(SoundType.SULFUR).requiresCorrectToolForDrops()));
+
     //Purpur Blocks
     public static final Block PURPUR_WALL = registerBlock("purpur_wall",
             properties -> new WallBlock(properties

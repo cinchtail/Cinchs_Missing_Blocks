@@ -210,6 +210,26 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
         dropSelf(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
+        dropSelf(ModBlocks.CRACKED_CINNABAR_BRICKS);
+        dropSelf(ModBlocks.CRACKED_CINNABAR_BRICK_STAIRS);
+        add(ModBlocks.CRACKED_CINNABAR_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_CINNABAR_BRICK_SLAB));
+        dropSelf(ModBlocks.CRACKED_CINNABAR_BRICK_WALL);
+        dropSelf(ModBlocks.MOSSY_CINNABAR_BRICKS);
+        dropSelf(ModBlocks.MOSSY_CINNABAR_BRICK_STAIRS);
+        add(ModBlocks.MOSSY_CINNABAR_BRICK_SLAB, createSlabItemTable(ModBlocks.MOSSY_CINNABAR_BRICK_SLAB));
+        dropSelf(ModBlocks.MOSSY_CINNABAR_BRICK_WALL);
+        dropSelf(ModBlocks.CINNABAR_BRICK_PILLAR);
+
+        dropSelf(ModBlocks.CRACKED_SULFUR_BRICKS);
+        dropSelf(ModBlocks.CRACKED_SULFUR_BRICK_STAIRS);
+        add(ModBlocks.CRACKED_SULFUR_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_SULFUR_BRICK_SLAB));
+        dropSelf(ModBlocks.CRACKED_SULFUR_BRICK_WALL);
+        dropSelf(ModBlocks.MOSSY_SULFUR_BRICKS);
+        dropSelf(ModBlocks.MOSSY_SULFUR_BRICK_STAIRS);
+        add(ModBlocks.MOSSY_SULFUR_BRICK_SLAB, createSlabItemTable(ModBlocks.MOSSY_SULFUR_BRICK_SLAB));
+        dropSelf(ModBlocks.MOSSY_SULFUR_BRICK_WALL);
+        dropSelf(ModBlocks.SULFUR_BRICK_PILLAR);
+
         dropSelf(ModBlocks.END_STONE_STAIRS);
         add(ModBlocks.END_STONE_SLAB, createSlabItemTable(ModBlocks.END_STONE_SLAB));
         dropSelf(ModBlocks.END_STONE_WALL);

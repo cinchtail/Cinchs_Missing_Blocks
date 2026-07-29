@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "cinchsmissingblocks:block/cracked_cinnabar_bricks"
+  }
+}

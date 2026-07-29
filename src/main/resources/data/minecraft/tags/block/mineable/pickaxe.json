@@ -385,6 +385,24 @@
     "cinchsmissingblocks:pink_concrete_slab",
     "cinchsmissingblocks:pink_concrete_wall",
     "cinchsmissingblocks:sandstone_brick_pillar",
-    "cinchsmissingblocks:red_sandstone_brick_pillar"
+    "cinchsmissingblocks:red_sandstone_brick_pillar",
+    "cinchsmissingblocks:cracked_cinnabar_bricks",
+    "cinchsmissingblocks:cracked_cinnabar_brick_stairs",
+    "cinchsmissingblocks:cracked_cinnabar_brick_slab",
+    "cinchsmissingblocks:cracked_cinnabar_brick_wall",
+    "cinchsmissingblocks:mossy_cinnabar_bricks",
+    "cinchsmissingblocks:mossy_cinnabar_brick_stairs",
+    "cinchsmissingblocks:mossy_cinnabar_brick_slab",
+    "cinchsmissingblocks:mossy_cinnabar_brick_wall",
+    "cinchsmissingblocks:cinnabar_brick_pillar",
+    "cinchsmissingblocks:cracked_sulfur_bricks",
+    "cinchsmissingblocks:cracked_sulfur_brick_stairs",
+    "cinchsmissingblocks:cracked_sulfur_brick_slab",
+    "cinchsmissingblocks:cracked_sulfur_brick_wall",
+    "cinchsmissingblocks:mossy_sulfur_bricks",
+    "cinchsmissingblocks:mossy_sulfur_brick_stairs",
+    "cinchsmissingblocks:mossy_sulfur_brick_slab",
+    "cinchsmissingblocks:mossy_sulfur_brick_wall",
+    "cinchsmissingblocks:sulfur_brick_pillar"
   ]
 }

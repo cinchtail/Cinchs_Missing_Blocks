@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_sulfur_bricks",
+  "ingredients": [
+    "minecraft:sulfur_bricks",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_sulfur_bricks"
+  }
+}

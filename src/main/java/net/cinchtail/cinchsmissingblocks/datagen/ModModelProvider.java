@@ -431,6 +431,32 @@ public class ModModelProvider extends FabricModelProvider {
 
         BlockModelHelpers.pillar(gen, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
+        var crackedCinnabarBricksFamily = gen.family(ModBlocks.CRACKED_CINNABAR_BRICKS);
+        var mossyCinnabarBricksFamily = gen.family(ModBlocks.MOSSY_CINNABAR_BRICKS);
+
+        crackedCinnabarBricksFamily.stairs(ModBlocks.CRACKED_CINNABAR_BRICK_STAIRS);
+        crackedCinnabarBricksFamily.slab(ModBlocks.CRACKED_CINNABAR_BRICK_SLAB);
+        crackedCinnabarBricksFamily.wall(ModBlocks.CRACKED_CINNABAR_BRICK_WALL);
+
+        mossyCinnabarBricksFamily.stairs(ModBlocks.MOSSY_CINNABAR_BRICK_STAIRS);
+        mossyCinnabarBricksFamily.slab(ModBlocks.MOSSY_CINNABAR_BRICK_SLAB);
+        mossyCinnabarBricksFamily.wall(ModBlocks.MOSSY_CINNABAR_BRICK_WALL);
+
+        BlockModelHelpers.pillar(gen, ModBlocks.CINNABAR_BRICK_PILLAR, ModBlocks.CINNABAR_BRICK_PILLAR);
+
+        var crackedSulfurBricksFamily = gen.family(ModBlocks.CRACKED_SULFUR_BRICKS);
+        var mossySulfurBricksFamily = gen.family(ModBlocks.MOSSY_SULFUR_BRICKS);
+
+        crackedSulfurBricksFamily.stairs(ModBlocks.CRACKED_SULFUR_BRICK_STAIRS);
+        crackedSulfurBricksFamily.slab(ModBlocks.CRACKED_SULFUR_BRICK_SLAB);
+        crackedSulfurBricksFamily.wall(ModBlocks.CRACKED_SULFUR_BRICK_WALL);
+
+        mossySulfurBricksFamily.stairs(ModBlocks.MOSSY_SULFUR_BRICK_STAIRS);
+        mossySulfurBricksFamily.slab(ModBlocks.MOSSY_SULFUR_BRICK_SLAB);
+        mossySulfurBricksFamily.wall(ModBlocks.MOSSY_SULFUR_BRICK_WALL);
+
+        BlockModelHelpers.pillar(gen, ModBlocks.SULFUR_BRICK_PILLAR, ModBlocks.SULFUR_BRICK_PILLAR);
+
         BlockModelHelpers.wall(gen, ModBlocks.PURPUR_WALL, Blocks.PURPUR_BLOCK);
 
         gen.createTrivialCube(ModBlocks.CHISELED_PURPUR);

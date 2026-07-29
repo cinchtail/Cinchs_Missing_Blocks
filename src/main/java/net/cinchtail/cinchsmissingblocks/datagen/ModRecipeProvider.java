@@ -69,6 +69,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 smeltingResultFromBase(ModBlocks.CRACKED_BLACKSTONE_TILES, ModBlocks.BLACKSTONE_TILES);
 
+                smeltingResultFromBase(ModBlocks.CRACKED_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+
+                smeltingResultFromBase(ModBlocks.CRACKED_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
+
 
                 //Mossy Blocks
                 offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
@@ -178,6 +182,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerMossyFromOtherMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_MOSS_CARPET);
 
                 offerGenericMossyRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_END_STONE_BRICKS, Blocks.END_STONE_BRICKS, Items.CHORUS_FLOWER);
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+
+                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+
+                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
+
+                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
+
+                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
 
 
                 //Chiseled Blocks
@@ -356,6 +372,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, Blocks.CUT_RED_SANDSTONE);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CINNABAR_BRICK_PILLAR, Blocks.CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CINNABAR_BRICK_PILLAR, Blocks.CINNABAR);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CINNABAR_BRICK_PILLAR, Blocks.POLISHED_CINNABAR);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CINNABAR_BRICK_PILLAR, Blocks.CINNABAR_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SULFUR_BRICK_PILLAR, Blocks.SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SULFUR_BRICK_PILLAR, Blocks.SULFUR);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SULFUR_BRICK_PILLAR, Blocks.POLISHED_SULFUR);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SULFUR_BRICK_PILLAR, Blocks.SULFUR_BRICKS);
 
 
                 //Miscellaneous Calcite Blocks
@@ -1261,7 +1293,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Blue Nether Brick Blocks
-                bricks(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICKS)
+                        .pattern("SS")
+                        .pattern("SS")
+                        .define('S', ModItems.BLUE_NETHER_BRICK)
+                        .unlockedBy(getHasName(ModItems.BLUE_NETHER_BRICK), has(ModItems.BLUE_NETHER_BRICK))
+                        .save(this.output);
 
                 stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_STAIRS, ModBlocks.BLUE_NETHER_BRICKS);
 
@@ -1492,6 +1529,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 wall(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+
+
+                //Miscellaneous Cinnabar Blocks
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_CINNABAR_BRICK_STAIRS, ModBlocks.CRACKED_CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_CINNABAR_BRICK_STAIRS, ModBlocks.CRACKED_CINNABAR_BRICKS);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_CINNABAR_BRICK_SLAB, ModBlocks.CRACKED_CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_CINNABAR_BRICK_SLAB, ModBlocks.CRACKED_CINNABAR_BRICKS,2);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_CINNABAR_BRICK_WALL, ModBlocks.CRACKED_CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_CINNABAR_BRICK_WALL, ModBlocks.CRACKED_CINNABAR_BRICKS);
+
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICK_STAIRS, ModBlocks.MOSSY_CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICK_STAIRS, ModBlocks.MOSSY_CINNABAR_BRICKS);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICK_SLAB, ModBlocks.MOSSY_CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICK_SLAB, ModBlocks.MOSSY_CINNABAR_BRICKS,2);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_CINNABAR_BRICK_WALL, ModBlocks.MOSSY_CINNABAR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_CINNABAR_BRICK_WALL, ModBlocks.MOSSY_CINNABAR_BRICKS);
+
+
+                //Miscellaneous Sulfur Blocks
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SULFUR_BRICK_STAIRS, ModBlocks.CRACKED_SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SULFUR_BRICK_STAIRS, ModBlocks.CRACKED_SULFUR_BRICKS);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SULFUR_BRICK_SLAB, ModBlocks.CRACKED_SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SULFUR_BRICK_SLAB, ModBlocks.CRACKED_SULFUR_BRICKS,2);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_SULFUR_BRICK_WALL, ModBlocks.CRACKED_SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_SULFUR_BRICK_WALL, ModBlocks.CRACKED_SULFUR_BRICKS);
+
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICK_STAIRS, ModBlocks.MOSSY_SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICK_STAIRS, ModBlocks.MOSSY_SULFUR_BRICKS);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICK_SLAB, ModBlocks.MOSSY_SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICK_SLAB, ModBlocks.MOSSY_SULFUR_BRICKS,2);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_SULFUR_BRICK_WALL, ModBlocks.MOSSY_SULFUR_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_SULFUR_BRICK_WALL, ModBlocks.MOSSY_SULFUR_BRICKS);
 
 
                 //Miscellaneous Purpur Blocks
