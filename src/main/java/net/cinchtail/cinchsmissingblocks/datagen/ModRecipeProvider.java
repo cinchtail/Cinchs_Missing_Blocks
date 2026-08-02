@@ -10,11 +10,11 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -1594,401 +1594,401 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Terracotta Blocks
-                /*stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
+                /*terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA);
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA);
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA,2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA);
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA);
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA);
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.white(), Blocks.DYED_TERRACOTTA.white());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.white(), Blocks.DYED_TERRACOTTA.white());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.white(), Blocks.DYED_TERRACOTTA.white());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.white(), Blocks.DYED_TERRACOTTA.white());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.white(), Blocks.DYED_TERRACOTTA.white());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.white(), Blocks.DYED_TERRACOTTA.white(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.white(), Blocks.DYED_TERRACOTTA.white());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.white(), Blocks.DYED_TERRACOTTA.white());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.white(), Blocks.DYED_TERRACOTTA.white());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lightGray(), Blocks.DYED_TERRACOTTA.lightGray(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lightGray(), Blocks.DYED_TERRACOTTA.lightGray());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.gray(), Blocks.DYED_TERRACOTTA.gray());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.gray(), Blocks.DYED_TERRACOTTA.gray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.gray(), Blocks.DYED_TERRACOTTA.gray());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.gray(), Blocks.DYED_TERRACOTTA.gray());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.gray(), Blocks.DYED_TERRACOTTA.gray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.gray(), Blocks.DYED_TERRACOTTA.gray(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.gray(), Blocks.DYED_TERRACOTTA.gray());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.gray(), Blocks.DYED_TERRACOTTA.gray());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.gray(), Blocks.DYED_TERRACOTTA.gray());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.black(), Blocks.DYED_TERRACOTTA.black());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.black(), Blocks.DYED_TERRACOTTA.black());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.black(), Blocks.DYED_TERRACOTTA.black());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.black(), Blocks.DYED_TERRACOTTA.black());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.black(), Blocks.DYED_TERRACOTTA.black());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.black(), Blocks.DYED_TERRACOTTA.black(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.black(), Blocks.DYED_TERRACOTTA.black());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.black(), Blocks.DYED_TERRACOTTA.black());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.black(), Blocks.DYED_TERRACOTTA.black());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.brown(), Blocks.DYED_TERRACOTTA.brown());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.brown(), Blocks.DYED_TERRACOTTA.brown());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.brown(), Blocks.DYED_TERRACOTTA.brown());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.brown(), Blocks.DYED_TERRACOTTA.brown());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.brown(), Blocks.DYED_TERRACOTTA.brown());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.brown(), Blocks.DYED_TERRACOTTA.brown(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.brown(), Blocks.DYED_TERRACOTTA.brown());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.brown(), Blocks.DYED_TERRACOTTA.brown());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.brown(), Blocks.DYED_TERRACOTTA.brown());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.red(), Blocks.DYED_TERRACOTTA.red());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.red(), Blocks.DYED_TERRACOTTA.red());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.red(), Blocks.DYED_TERRACOTTA.red());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.red(), Blocks.DYED_TERRACOTTA.red());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.red(), Blocks.DYED_TERRACOTTA.red());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.red(), Blocks.DYED_TERRACOTTA.red(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.red(), Blocks.DYED_TERRACOTTA.red());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.red(), Blocks.DYED_TERRACOTTA.red());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.red(), Blocks.DYED_TERRACOTTA.red());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.orange(), Blocks.DYED_TERRACOTTA.orange());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.orange(), Blocks.DYED_TERRACOTTA.orange());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.orange(), Blocks.DYED_TERRACOTTA.orange());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.orange(), Blocks.DYED_TERRACOTTA.orange());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.orange(), Blocks.DYED_TERRACOTTA.orange());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.orange(), Blocks.DYED_TERRACOTTA.orange(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.orange(), Blocks.DYED_TERRACOTTA.orange());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.orange(), Blocks.DYED_TERRACOTTA.orange());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.orange(), Blocks.DYED_TERRACOTTA.orange());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.yellow(), Blocks.DYED_TERRACOTTA.yellow());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.yellow(), Blocks.DYED_TERRACOTTA.yellow());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.yellow(), Blocks.DYED_TERRACOTTA.yellow());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.yellow(), Blocks.DYED_TERRACOTTA.yellow());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.yellow(), Blocks.DYED_TERRACOTTA.yellow());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.yellow(), Blocks.DYED_TERRACOTTA.yellow(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.yellow(), Blocks.DYED_TERRACOTTA.yellow());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.yellow(), Blocks.DYED_TERRACOTTA.yellow());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.yellow(), Blocks.DYED_TERRACOTTA.yellow());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lime(), Blocks.DYED_TERRACOTTA.lime());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lime(), Blocks.DYED_TERRACOTTA.lime());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lime(), Blocks.DYED_TERRACOTTA.lime());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lime(), Blocks.DYED_TERRACOTTA.lime());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lime(), Blocks.DYED_TERRACOTTA.lime());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lime(), Blocks.DYED_TERRACOTTA.lime(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lime(), Blocks.DYED_TERRACOTTA.lime());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lime(), Blocks.DYED_TERRACOTTA.lime());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lime(), Blocks.DYED_TERRACOTTA.lime());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.green(), Blocks.DYED_TERRACOTTA.green());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.green(), Blocks.DYED_TERRACOTTA.green());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.green(), Blocks.DYED_TERRACOTTA.green());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.green(), Blocks.DYED_TERRACOTTA.green());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.green(), Blocks.DYED_TERRACOTTA.green());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.green(), Blocks.DYED_TERRACOTTA.green(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.green(), Blocks.DYED_TERRACOTTA.green());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.green(), Blocks.DYED_TERRACOTTA.green());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.green(), Blocks.DYED_TERRACOTTA.green());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.cyan(), Blocks.DYED_TERRACOTTA.cyan());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.cyan(), Blocks.DYED_TERRACOTTA.cyan());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.cyan(), Blocks.DYED_TERRACOTTA.cyan());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.cyan(), Blocks.DYED_TERRACOTTA.cyan());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.cyan(), Blocks.DYED_TERRACOTTA.cyan());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.cyan(), Blocks.DYED_TERRACOTTA.cyan(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.cyan(), Blocks.DYED_TERRACOTTA.cyan());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.cyan(), Blocks.DYED_TERRACOTTA.cyan());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.cyan(), Blocks.DYED_TERRACOTTA.cyan());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.lightBlue(), Blocks.DYED_TERRACOTTA.lightBlue());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.blue(), Blocks.DYED_TERRACOTTA.blue());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.blue(), Blocks.DYED_TERRACOTTA.blue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.blue(), Blocks.DYED_TERRACOTTA.blue());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.blue(), Blocks.DYED_TERRACOTTA.blue());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.blue(), Blocks.DYED_TERRACOTTA.blue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.blue(), Blocks.DYED_TERRACOTTA.blue(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.blue(), Blocks.DYED_TERRACOTTA.blue());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.blue(), Blocks.DYED_TERRACOTTA.blue());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.blue(), Blocks.DYED_TERRACOTTA.blue());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.purple(), Blocks.DYED_TERRACOTTA.purple());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.purple(), Blocks.DYED_TERRACOTTA.purple());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.purple(), Blocks.DYED_TERRACOTTA.purple());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.purple(), Blocks.DYED_TERRACOTTA.purple());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.purple(), Blocks.DYED_TERRACOTTA.purple());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.purple(), Blocks.DYED_TERRACOTTA.purple(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.purple(), Blocks.DYED_TERRACOTTA.purple());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.purple(), Blocks.DYED_TERRACOTTA.purple());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.purple(), Blocks.DYED_TERRACOTTA.purple());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.magenta(), Blocks.DYED_TERRACOTTA.magenta());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.magenta(), Blocks.DYED_TERRACOTTA.magenta());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.magenta(), Blocks.DYED_TERRACOTTA.magenta());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.magenta(), Blocks.DYED_TERRACOTTA.magenta());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.magenta(), Blocks.DYED_TERRACOTTA.magenta());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.magenta(), Blocks.DYED_TERRACOTTA.magenta(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.magenta(), Blocks.DYED_TERRACOTTA.magenta());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.magenta(), Blocks.DYED_TERRACOTTA.magenta());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.magenta(), Blocks.DYED_TERRACOTTA.magenta());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.pink(), Blocks.DYED_TERRACOTTA.pink());
+                terracottaStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.pink(), Blocks.DYED_TERRACOTTA.pink());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_STAIRS.pink(), Blocks.DYED_TERRACOTTA.pink());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.pink(), Blocks.DYED_TERRACOTTA.pink());
+                terracottaSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.pink(), Blocks.DYED_TERRACOTTA.pink());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DYED_TERRACOTTA_SLAB.pink(), Blocks.DYED_TERRACOTTA.pink(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());
+                terracottaWall(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.DYED_TERRACOTTA_WALL.pink(), Blocks.DYED_TERRACOTTA.pink());*/
 
 
                 //Concrete Blocks
-                /*stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
+                /*concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.white(), Blocks.CONCRETE.white());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.white(), Blocks.CONCRETE.white());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.white(), Blocks.CONCRETE.white());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.white(), Blocks.CONCRETE.white(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.white(), Blocks.CONCRETE.white());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.white(), Blocks.CONCRETE.white());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.white(), Blocks.CONCRETE.white());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lightGray(), Blocks.CONCRETE.lightGray());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lightGray(), Blocks.CONCRETE.lightGray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lightGray(), Blocks.CONCRETE.lightGray());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lightGray(), Blocks.CONCRETE.lightGray());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lightGray(), Blocks.CONCRETE.lightGray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lightGray(), Blocks.CONCRETE.lightGray(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lightGray(), Blocks.CONCRETE.lightGray());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lightGray(), Blocks.CONCRETE.lightGray());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lightGray(), Blocks.CONCRETE.lightGray());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.gray(), Blocks.CONCRETE.gray());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.gray(), Blocks.CONCRETE.gray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.gray(), Blocks.CONCRETE.gray());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.gray(), Blocks.CONCRETE.gray());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.gray(), Blocks.CONCRETE.gray());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.gray(), Blocks.CONCRETE.gray(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.gray(), Blocks.CONCRETE.gray());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.gray(), Blocks.CONCRETE.gray());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.gray(), Blocks.CONCRETE.gray());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.black(), Blocks.CONCRETE.black());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.black(), Blocks.CONCRETE.black());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.black(), Blocks.CONCRETE.black());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.black(), Blocks.CONCRETE.black());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.black(), Blocks.CONCRETE.black());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.black(), Blocks.CONCRETE.black(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.black(), Blocks.CONCRETE.black());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.black(), Blocks.CONCRETE.black());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.black(), Blocks.CONCRETE.black());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.brown(), Blocks.CONCRETE.brown());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.brown(), Blocks.CONCRETE.brown());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.brown(), Blocks.CONCRETE.brown());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.brown(), Blocks.CONCRETE.brown());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.brown(), Blocks.CONCRETE.brown());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.brown(), Blocks.CONCRETE.brown(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.brown(), Blocks.CONCRETE.brown());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.brown(), Blocks.CONCRETE.brown());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.brown(), Blocks.CONCRETE.brown());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.red(), Blocks.CONCRETE.red());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.red(), Blocks.CONCRETE.red());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.red(), Blocks.CONCRETE.red());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.red(), Blocks.CONCRETE.red());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.red(), Blocks.CONCRETE.red());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.red(), Blocks.CONCRETE.red(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.red(), Blocks.CONCRETE.red());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.red(), Blocks.CONCRETE.red());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.red(), Blocks.CONCRETE.red());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.orange(), Blocks.CONCRETE.orange());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.orange(), Blocks.CONCRETE.orange());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.orange(), Blocks.CONCRETE.orange());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.orange(), Blocks.CONCRETE.orange());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.orange(), Blocks.CONCRETE.orange());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.orange(), Blocks.CONCRETE.orange(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.orange(), Blocks.CONCRETE.orange());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.orange(), Blocks.CONCRETE.orange());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.orange(), Blocks.CONCRETE.orange());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.yellow(), Blocks.CONCRETE.yellow());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.yellow(), Blocks.CONCRETE.yellow());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.yellow(), Blocks.CONCRETE.yellow());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.yellow(), Blocks.CONCRETE.yellow());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.yellow(), Blocks.CONCRETE.yellow());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.yellow(), Blocks.CONCRETE.yellow(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.yellow(), Blocks.CONCRETE.yellow());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.yellow(), Blocks.CONCRETE.yellow());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.yellow(), Blocks.CONCRETE.yellow());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lime(), Blocks.CONCRETE.lime());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lime(), Blocks.CONCRETE.lime());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lime(), Blocks.CONCRETE.lime());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lime(), Blocks.CONCRETE.lime());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lime(), Blocks.CONCRETE.lime());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lime(), Blocks.CONCRETE.lime(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lime(), Blocks.CONCRETE.lime());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lime(), Blocks.CONCRETE.lime());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lime(), Blocks.CONCRETE.lime());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.green(), Blocks.CONCRETE.green());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.green(), Blocks.CONCRETE.green());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.green(), Blocks.CONCRETE.green());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.green(), Blocks.CONCRETE.green());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.green(), Blocks.CONCRETE.green());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.green(), Blocks.CONCRETE.green(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.green(), Blocks.CONCRETE.green());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.green(), Blocks.CONCRETE.green());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.green(), Blocks.CONCRETE.green());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.cyan(), Blocks.CONCRETE.cyan());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.cyan(), Blocks.CONCRETE.cyan());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.cyan(), Blocks.CONCRETE.cyan());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.cyan(), Blocks.CONCRETE.cyan());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.cyan(), Blocks.CONCRETE.cyan());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.cyan(), Blocks.CONCRETE.cyan(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.cyan(), Blocks.CONCRETE.cyan());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.cyan(), Blocks.CONCRETE.cyan());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.cyan(), Blocks.CONCRETE.cyan());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lightBlue(), Blocks.CONCRETE.lightBlue());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lightBlue(), Blocks.CONCRETE.lightBlue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.lightBlue(), Blocks.CONCRETE.lightBlue());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lightBlue(), Blocks.CONCRETE.lightBlue());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lightBlue(), Blocks.CONCRETE.lightBlue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.lightBlue(), Blocks.CONCRETE.lightBlue(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lightBlue(), Blocks.CONCRETE.lightBlue());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lightBlue(), Blocks.CONCRETE.lightBlue());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.lightBlue(), Blocks.CONCRETE.lightBlue());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.blue(), Blocks.CONCRETE.blue());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.blue(), Blocks.CONCRETE.blue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.blue(), Blocks.CONCRETE.blue());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.blue(), Blocks.CONCRETE.blue());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.blue(), Blocks.CONCRETE.blue());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.blue(), Blocks.CONCRETE.blue(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.blue(), Blocks.CONCRETE.blue());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.blue(), Blocks.CONCRETE.blue());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.blue(), Blocks.CONCRETE.blue());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.purple(), Blocks.CONCRETE.purple());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.purple(), Blocks.CONCRETE.purple());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.purple(), Blocks.CONCRETE.purple());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.purple(), Blocks.CONCRETE.purple());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.purple(), Blocks.CONCRETE.purple());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.purple(), Blocks.CONCRETE.purple(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.purple(), Blocks.CONCRETE.purple());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.purple(), Blocks.CONCRETE.purple());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.purple(), Blocks.CONCRETE.purple());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.magenta(), Blocks.CONCRETE.magenta());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.magenta(), Blocks.CONCRETE.magenta());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.magenta(), Blocks.CONCRETE.magenta());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.magenta(), Blocks.CONCRETE.magenta());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.magenta(), Blocks.CONCRETE.magenta());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.magenta(), Blocks.CONCRETE.magenta(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.magenta(), Blocks.CONCRETE.magenta());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.magenta(), Blocks.CONCRETE.magenta());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.magenta(), Blocks.CONCRETE.magenta());
 
-                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.pink(), Blocks.CONCRETE.pink());
+                concreteStairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.pink(), Blocks.CONCRETE.pink());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_STAIRS.pink(), Blocks.CONCRETE.pink());
 
-                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.pink(), Blocks.CONCRETE.pink());
+                concreteSlab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.pink(), Blocks.CONCRETE.pink());
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CONCRETE_SLAB.pink(), Blocks.CONCRETE.pink(),2);
 
-                wall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.pink(), Blocks.CONCRETE.pink());
+                concreteWall(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.pink(), Blocks.CONCRETE.pink());
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CONCRETE_WALL.pink(), Blocks.CONCRETE.pink());*/
 
@@ -2042,13 +2042,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 this.shapeless(category, output, 1).group(outputPath).requires(input).requires(inputMoss).unlockedBy("has_" + mossPath, this.has(inputMoss))
                         .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(MOD_ID, outputPath + "_from_" + mossPath)));
             }
+            public void terracottaStairs(RecipeCategory category, ItemLike output, ItemLike input) {
+                String inputPath = idPath(input);
+                this.shaped(category, output, 4).group("terracotta_stairs").define('#', input).pattern("#  ").pattern("## ").pattern("###")
+                        .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
+            }
+            public void terracottaSlab(RecipeCategory category, ItemLike output, ItemLike input) {
+                String inputPath = idPath(input);
+                this.shaped(category, output, 6).group("terracotta_slab").define('#', input).pattern("###")
+                        .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
+            }
+            public void terracottaWall(RecipeCategory category, ItemLike output, ItemLike input) {
+                String inputPath = idPath(input);
+                this.shaped(category, output, 6).group("terracotta_wall").define('#', input).pattern("###").pattern("###")
+                        .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
+            }
+            public void concreteStairs(RecipeCategory category, ItemLike output, ItemLike input) {
+                String inputPath = idPath(input);
+                this.shaped(category, output, 4).group("concrete_stairs").define('#', input).pattern("#  ").pattern("## ").pattern("###")
+                        .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
+            }
+            public void concreteSlab(RecipeCategory category, ItemLike output, ItemLike input) {
+                String inputPath = idPath(input);
+                this.shaped(category, output, 6).group("concrete_slab").define('#', input).pattern("###")
+                        .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
+            }
+            public void concreteWall(RecipeCategory category, ItemLike output, ItemLike input) {
+                String inputPath = idPath(input);
+                this.shaped(category, output, 6).group("concrete_wall").define('#', input).pattern("###").pattern("###")
+                        .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
+            }
             private static String idPath(ItemLike item) {
                 return BuiltInRegistries.ITEM.getKey(item.asItem()).getPath();
             }
         };
     }
     @Override
-    public String getName() {
+    public @NonNull String getName() {
         return "Cinch's Missing Block Recipes";
     }
 }
