@@ -2,6 +2,7 @@ package net.cinchtail.cinchsmissingblocks.network;
 
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.DisconnectedScreen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.chat.Component;
@@ -21,6 +22,12 @@ public class ClientConfigSync {
 
                         ctx.client().execute(() -> {
 
+                            Minecraft mc = ctx.client();
+
+                            if (mc.player == null || mc.level == null) {
+                                return;
+                            }
+
                             Component message = Component.literal(
                                     "Your Cinch's Missing Blocks config does not match the server.\n\n" +
                                             "Server requires: " + serverValue + "\n" +
@@ -29,9 +36,9 @@ public class ClientConfigSync {
                                             ".minecraft/config/cinchsmissingblocks.json"
                             );
 
-                            ctx.client().disconnect(new TitleScreen(), false);
+                            mc.disconnect(new TitleScreen(), false);
 
-                            ctx.client().setScreenAndShow(
+                            mc.setScreenAndShow(
                                     new DisconnectedScreen(
                                             new TitleScreen(),
                                             Component.literal("Disconnected"),
