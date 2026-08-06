@@ -3,6 +3,7 @@ package net.cinchtail.cinchsmissingblocks.network;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.text.Text;
 
 public class ClientConfigSync {
@@ -18,9 +19,16 @@ public class ClientConfigSync {
                     boolean clientValue = ModConfigs.enableTuffBrickPillar;
 
                     if (serverWantsTuffPillars != clientValue) {
+
                         client.execute(() -> {
-                            if (client.getNetworkHandler() != null) {
-                                client.getNetworkHandler().getConnection().disconnect(
+
+                            if (client.player == null || client.world == null) {
+                                return;
+                            }
+
+                            ClientPlayNetworkHandler handler = client.getNetworkHandler();
+                            if (handler != null) {
+                                handler.getConnection().disconnect(
                                         Text.literal(
                                                 "Your Cinch's Missing Blocks config does not match the server.\n\n" +
                                                         "Server requires: \"enableTuffBrickPillar\": " + serverWantsTuffPillars + "\n" +
