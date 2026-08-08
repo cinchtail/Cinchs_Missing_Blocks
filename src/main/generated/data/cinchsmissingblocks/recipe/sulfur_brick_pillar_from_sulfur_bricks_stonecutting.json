@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:sulfur_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:sulfur_brick_pillar"
-  }
-}

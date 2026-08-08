@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "category": "blocks",
-  "experience": 0.1,
-  "ingredient": "minecraft:end_stone_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:cracked_end_stone_bricks"
-  }
-}

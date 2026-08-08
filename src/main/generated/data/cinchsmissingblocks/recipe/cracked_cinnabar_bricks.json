@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "category": "blocks",
-  "experience": 0.1,
-  "ingredient": "minecraft:cinnabar_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:cracked_cinnabar_bricks"
-  }
-}

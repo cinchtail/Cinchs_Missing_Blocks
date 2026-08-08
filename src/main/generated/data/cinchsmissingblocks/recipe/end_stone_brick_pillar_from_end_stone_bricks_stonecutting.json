@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:end_stone_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:end_stone_brick_pillar"
-  }
-}

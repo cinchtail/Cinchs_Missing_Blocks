@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:brown_terracotta",
-  "result": {
-    "id": "cinchsmissingblocks:brown_terracotta_wall"
-  }
-}

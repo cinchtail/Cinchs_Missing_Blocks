@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "category": "blocks",
-  "experience": 0.1,
-  "ingredient": "minecraft:red_nether_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:cracked_red_nether_bricks"
-  }
-}

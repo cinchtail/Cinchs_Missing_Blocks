@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:polished_end_stone",
-  "result": {
-    "id": "cinchsmissingblocks:polished_end_stone_stairs"
-  }
-}

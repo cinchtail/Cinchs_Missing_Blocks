@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "category": "blocks",
-  "experience": 0.1,
-  "ingredient": "minecraft:mud_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:cracked_mud_bricks"
-  }
-}

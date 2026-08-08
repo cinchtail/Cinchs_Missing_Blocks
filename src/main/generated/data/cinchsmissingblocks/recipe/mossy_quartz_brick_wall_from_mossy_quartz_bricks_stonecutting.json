@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:mossy_quartz_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:mossy_quartz_brick_wall"
-  }
-}

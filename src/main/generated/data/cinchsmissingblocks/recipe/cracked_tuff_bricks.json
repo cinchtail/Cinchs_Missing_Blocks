@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "category": "blocks",
-  "experience": 0.1,
-  "ingredient": "minecraft:tuff_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:cracked_tuff_bricks"
-  }
-}

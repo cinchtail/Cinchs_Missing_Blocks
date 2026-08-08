@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:dark_prismarine",
-  "result": {
-    "id": "cinchsmissingblocks:dark_prismarine_wall"
-  }
-}

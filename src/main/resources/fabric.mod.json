@@ -1,45 +1,37 @@
 {
 	"schemaVersion": 1,
-	"id": "cinchsmissingblocks",
+	"id": "template-mod",
 	"version": "${version}",
-	"name": "Cinch's Missing Blocks",
-	"description": "This mod adds all the blocks missing from minecraft.",
+	"name": "Template Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Cinchtail"
-	],
-	"contributors": [
-		"Texture Artists:",
-		"- Stallman",
-		"- Popopi",
-		"- Myheadmess\n",
-		"Translators:",
-		"- kierohere",
-		"- Piotrus983"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-missing-blocks",
-		"sources": "https://github.com/cinchtail/Cinchs_Missing_Blocks/tree/Fabric-26.2"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "ARR",
-	"icon": "icon.png",
+	"license": "CC0-1.0",
+	"icon": "assets/template-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks"
+			"com.example.TemplateMod"
 		],
 		"client": [
-			"net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksClient"
+			"com.example.client.TemplateModClient"
 		],
 		"fabric-datagen": [
-			"net.cinchtail.cinchsmissingblocks.datagen.DataGenerators"
+			"com.example.client.TemplateModDataGenerator"
 		]
 	},
 	"mixins": [
-		"cinchsmissingblocks.mixins.json"
+		"template-mod.mixins.json",
+		{
+			"config": "template-mod.client.mixins.json",
+			"environment": "client"
+		}
 	],
-	"custom": {
-		"fabric-networking-api-v1": true
-	},
 	"depends": {
 		"fabricloader": ">=0.19.3",
 		"minecraft": "~26.2",

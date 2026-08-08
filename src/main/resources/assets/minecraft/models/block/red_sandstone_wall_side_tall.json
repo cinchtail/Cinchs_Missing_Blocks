@@ -1,9 +1,0 @@
-{
-  "replace": true,
-  "parent": "cinchsmissingblocks:block/two_texture_template_wall_side_tall",
-  "textures": {
-    "top": "minecraft:block/red_sandstone_top",
-    "side": "minecraft:block/red_sandstone",
-    "particle": "minecraft:block/red_sandstone"
-  }
-}
