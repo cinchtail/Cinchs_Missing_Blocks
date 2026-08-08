@@ -1,0 +1,115 @@
+/**
+ * Compatibility test helpers for grouped Fabric artifacts.
+ *
+ * A grouped artifact is built normally against the oldest Minecraft version it
+ * supports. testCompatibility then starts isolated verification builds against
+ * every exact Minecraft/Fabric API pair in the group. This catches source/API
+ * breaks while keeping a single published jar per compatibility group.
+ */
+
+def cmbCompatibilityProject = project.findProperty('cmbCompatibilityProject')?.toString()
+def cmbIsCompatibilityTarget = cmbCompatibilityProject == project.path
+
+def cmbCompatibilityOverride = { String name, Object fallback ->
+    if (!cmbIsCompatibilityTarget) {
+        return fallback.toString()
+    }
+    def value = project.findProperty(name)
+    return value == null ? fallback.toString() : value.toString()
+}
+
+ext.cmbCompatibilityMinecraft = { Object fallback ->
+    cmbCompatibilityOverride('cmbCompatibilityMinecraft', fallback)
+}
+
+ext.cmbCompatibilityFabricApi = { Object fallback ->
+    cmbCompatibilityOverride('cmbCompatibilityFabricApi', fallback)
+}
+
+ext.cmbCompatibilityProfile = { Object fallback ->
+    cmbCompatibilityOverride('cmbCompatibilityProfile', fallback)
+}
+
+// Give each verification target its own output directory. This prevents a
+// 1.21.6 probe, for example, from reusing classes/resources produced by 1.21.4.
+if (cmbIsCompatibilityTarget) {
+    def targetVersion = project.findProperty('cmbCompatibilityMinecraft')?.toString()
+    if (targetVersion != null && !targetVersion.isBlank()) {
+        layout.buildDirectory.set(layout.projectDirectory.dir("build/compatibility/${targetVersion}"))
+    }
+}
+
+ext.cmbCompatibilityMatrix = { List<Map<String, Object>> targets ->
+    if (targets == null || targets.isEmpty()) {
+        throw new GradleException("Compatibility matrix cannot be empty for ${project.path}")
+    }
+
+    tasks.register('compatibilityProbe') {
+        group = 'verification'
+        description = 'Internal compatibility probe. Use testCompatibility instead.'
+        dependsOn tasks.named('remapJar')
+        doLast {
+            def mc = project.findProperty('cmbCompatibilityMinecraft') ?: 'default'
+            logger.lifecycle("Compatibility probe passed for ${project.path} on Minecraft ${mc}")
+        }
+    }
+
+    def aggregate = tasks.register('testCompatibility') {
+        group = 'verification'
+        description = "Compile, datagen and remap ${project.name} against every Minecraft version in its compatibility group"
+    }
+
+    def wrapper = rootProject.file(
+            System.getProperty('os.name').toLowerCase(java.util.Locale.ROOT).contains('windows')
+                    ? 'gradlew.bat'
+                    : 'gradlew'
+    )
+
+    def previous = null
+    targets.each { target ->
+        def minecraft = target.minecraft.toString()
+        def fabricApi = target.fabricApi.toString()
+        def profile = target.profile.toString()
+        def suffix = minecraft.replaceAll('[^0-9A-Za-z]+', '_')
+        def taskName = "testCompatibility_${suffix}"
+
+        def probe = tasks.register(taskName, Exec) {
+            group = 'verification'
+            description = "Verify ${project.name} against Minecraft ${minecraft}"
+            workingDir rootProject.projectDir
+
+            def nestedArgs = [
+                    "${project.path}:compatibilityProbe",
+                    '--no-parallel',
+                    '--rerun-tasks',
+                    "-PcmbCompatibilityProject=${project.path}",
+                    "-PcmbCompatibilityMinecraft=${minecraft}",
+                    "-PcmbCompatibilityFabricApi=${fabricApi}",
+                    "-PcmbCompatibilityProfile=${profile}"
+            ]
+
+            if (System.getProperty('os.name').toLowerCase(java.util.Locale.ROOT).contains('windows')) {
+                commandLine(['cmd', '/c', wrapper.absolutePath] + nestedArgs)
+            } else {
+                commandLine([wrapper.absolutePath] + nestedArgs)
+            }
+
+            doFirst {
+                logger.lifecycle("Testing ${project.name} on Minecraft ${minecraft} with Fabric API ${fabricApi}")
+            }
+        }
+
+        if (previous != null) {
+            def previousProbe = previous
+            probe.configure { mustRunAfter(previousProbe) }
+        }
+        previous = probe
+        aggregate.configure { dependsOn(probe) }
+    }
+
+    aggregate.configure {
+        doLast {
+            logger.lifecycle("Compatibility matrix passed for ${project.name}: ${targets.collect { it.minecraft }.join(', ')}")
+        }
+    }
+}

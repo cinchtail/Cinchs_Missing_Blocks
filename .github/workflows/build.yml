@@ -1,30 +1,97 @@
-# Automatically build the project and run any configured tests for every push
-# and submitted pull request. This can help catch issues that only occur on
-# certain platforms or Java versions, and provides a first line of defence
-# against bad commits.
+name: Build and compatibility test
 
-name: build
-on: [pull_request, push]
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  validate-wrapper:
+    name: Validate Gradle wrapper
     runs-on: ubuntu-24.04
+
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v6
-      - name: validate gradle wrapper
+
+      - name: Validate Gradle wrapper
         uses: gradle/actions/wrapper-validation@v6
-      - name: setup jdk
+
+  fabric:
+    name: ${{ matrix.module }} / Java ${{ matrix.java }}
+    needs: validate-wrapper
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - module: fabric-1.20-1.20.4
+            java: '17'
+
+          - module: fabric-1.20.5-1.20.6
+            java: '21'
+
+          - module: fabric-1.21-1.21.1
+            java: '21'
+
+          - module: fabric-1.21.2-1.21.3
+            java: '21'
+
+          - module: fabric-1.21.4-1.21.8
+            java: '21'
+
+          - module: fabric-1.21.9-1.21.10
+            java: '21'
+
+          - module: fabric-1.21.11
+            java: '21'
+
+          - module: fabric-26.1-26.1.2
+            java: '25'
+
+          - module: fabric-26.2
+            java: '25'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Java ${{ matrix.java }}
         uses: actions/setup-java@v5
         with:
-          java-version: '25'
-          distribution: 'microsoft'
-      - name: make gradle wrapper executable
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: gradle
+
+      - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
-      - name: build
-        run: ./gradlew build
-      - name: capture build artifacts
+
+      - name: Test Minecraft compatibility
+        run: ./gradlew ":platforms:${{ matrix.module }}:testCompatibility" --stacktrace
+
+      - name: Build JAR
+        run: ./gradlew ":platforms:${{ matrix.module }}:build" --stacktrace
+
+      - name: Upload JAR
         uses: actions/upload-artifact@v7
         with:
-          name: Artifacts
-          path: build/libs/
+          name: Cinchs-Missing-Blocks-${{ matrix.module }}
+          path: platforms/${{ matrix.module }}/build/libs/*.jar
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload reports on failure
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: reports-${{ matrix.module }}
+          path: |
+            build/reports/**
+            platforms/${{ matrix.module }}/build/reports/**
+            platforms/${{ matrix.module }}/build/compatibility/**/reports/**
+          if-no-files-found: ignore
+          retention-days: 7

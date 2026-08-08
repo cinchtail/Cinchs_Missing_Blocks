@@ -1,90 +1,35 @@
-plugins {
-	id 'net.fabricmc.fabric-loom' version "${loom_version}"
-	id 'maven-publish'
+allprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
 }
 
-version = project.mod_version
-group = project.maven_group
 
-repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+def cmbFabricCompatibilityProjects = [
+        ':platforms:fabric-1.20-1.20.4',
+        ':platforms:fabric-1.20.5-1.20.6',
+        ':platforms:fabric-1.21-1.21.1',
+        ':platforms:fabric-1.21.2-1.21.3',
+        ':platforms:fabric-1.21.4-1.21.8',
+        ':platforms:fabric-1.21.9-1.21.10',
+        ':platforms:fabric-1.21.11',
+        ':platforms:fabric-26.1-26.1.2',
+        ':platforms:fabric-26.2',
+]
+
+tasks.register('testCompatibility') {
+    group = 'verification'
+    description = 'Run compatibility verification for every grouped Fabric artifact'
+    dependsOn cmbFabricCompatibilityProjects.collect { "${it}:testCompatibility" }
 }
 
-loom {
-	splitEnvironmentSourceSets()
-
-	mods {
-		"template-mod" {
-			sourceSet sourceSets.main
-			sourceSet sourceSets.client
-		}
-	}
-}
-
-fabricApi {
-	configureDataGeneration {
-		client = true
-	}
-}
-
-dependencies {
-	// To change the versions see the gradle.properties file
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-}
-
-processResources {
-	def version = project.version
-	inputs.property "version", version
-
-	filesMatching("fabric.mod.json") {
-		expand "version": version
-	}
-}
-
-tasks.withType(JavaCompile).configureEach {
-	it.options.release = 25
-}
-
-java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
-	withSourcesJar()
-
-	sourceCompatibility = JavaVersion.VERSION_25
-	targetCompatibility = JavaVersion.VERSION_25
-}
-
-jar {
-	def projectName = project.name
-	inputs.property "projectName", projectName
-
-	from("LICENSE") {
-		rename { "${it}_$projectName"}
-	}
-}
-
-// configure the maven publication
-publishing {
-	publications {
-		create("mavenJava", MavenPublication) {
-			from components.java
-		}
-	}
-
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
-	}
+// The root matrix is intentionally serialized. Each group launches nested
+// Gradle verification builds and running all groups in parallel would waste a
+// large amount of memory while Loom is resolving several Minecraft versions.
+gradle.projectsEvaluated {
+    def ordered = cmbFabricCompatibilityProjects.collect { project(it).tasks.named('testCompatibility') }
+    for (int i = 1; i < ordered.size(); i++) {
+        def currentTask = ordered[i]
+        def previousTask = ordered[i - 1]
+        currentTask.configure { mustRunAfter(previousTask) }
+    }
 }

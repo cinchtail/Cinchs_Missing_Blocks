@@ -1,13 +1,21 @@
 pluginManagement {
-	repositories {
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-		mavenCentral()
-		gradlePluginPortal()
-	}
+    repositories {
+        maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
 
-// Should match your modid
-rootProject.name = 'template-mod'
+rootProject.name = 'cinchsmissingblocks'
+
+include 'common'
+include 'fabric-common'
+include 'platforms:fabric-1.20-1.20.4'
+include 'platforms:fabric-1.20.5-1.20.6'
+include 'platforms:fabric-1.21-1.21.1'
+include 'platforms:fabric-1.21.2-1.21.3'
+include 'platforms:fabric-1.21.4-1.21.8'
+include 'platforms:fabric-1.21.9-1.21.10'
+include 'platforms:fabric-1.21.11'
+include 'platforms:fabric-26.1-26.1.2'
+include 'platforms:fabric-26.2'

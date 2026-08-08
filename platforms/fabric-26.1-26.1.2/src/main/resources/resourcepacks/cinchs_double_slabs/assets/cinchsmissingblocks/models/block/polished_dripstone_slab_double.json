@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cinchsmissingblocks:block/polished_dripstone",
+    "side": "cinchsmissingblocks:block/polished_dripstone_slab_side"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:purple_concrete"
+  },
+  "result": {
+    "id": "cinchsmissingblocks:purple_concrete_stairs"
+  }
+}

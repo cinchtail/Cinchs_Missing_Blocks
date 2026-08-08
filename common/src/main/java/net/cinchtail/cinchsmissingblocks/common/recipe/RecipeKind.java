@@ -1,0 +1,25 @@
+package net.cinchtail.cinchsmissingblocks.common.recipe;
+
+public enum RecipeKind {
+    STAIRS,
+    SLAB,
+    WALL,
+    POLISHED,
+    BRICKS,
+    CHISELED,
+    PILLAR,
+    STONECUTTING,
+    SMELTING,
+    MOSSY_FROM_MOSS_BLOCK,
+    MOSSY_FROM_VINE,
+    MOSSY_FROM_MOSS_CARPET,
+    MOSSY_FROM_CUSTOM,
+    MOSSY_FROM_CUSTOM_CARPET,
+    NETHER_BRICK_FENCE,
+    PRESSURE_PLATE,
+    BUTTON,
+    CHECKER_2X2,
+    SQUARE_2X2,
+    VERTICAL_SANDWICH,
+    STAINED_GLASS_PANE
+}

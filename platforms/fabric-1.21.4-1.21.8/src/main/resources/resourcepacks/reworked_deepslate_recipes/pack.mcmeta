@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 61,
+    "description": "Reworks deepslate recipes",
+    "supported_formats": [
+      61,
+      81
+    ]
+  }
+}

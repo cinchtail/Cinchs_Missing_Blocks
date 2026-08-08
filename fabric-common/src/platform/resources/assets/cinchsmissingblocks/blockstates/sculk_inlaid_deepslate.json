@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "cinchsmissingblocks:block/sculk_inlaid_deepslate"
+      },
+      {
+        "model": "cinchsmissingblocks:block/sculk_inlaid_deepslate_mirrored"
+      },
+      {
+        "model": "cinchsmissingblocks:block/sculk_inlaid_deepslate",
+        "y": 180
+      },
+      {
+        "model": "cinchsmissingblocks:block/sculk_inlaid_deepslate_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}
