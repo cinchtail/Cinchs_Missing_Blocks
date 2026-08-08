@@ -29,8 +29,13 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - module: fabric-1.20-1.20.4
-            java: '17'
+          # Loom 1.17 requires a Java 21+ Gradle runtime.
+          # The module itself still compiles with options.release = 17.
+          - module: fabric-1.20-1.20.2
+            java: '21'
+
+          - module: fabric-1.20.3-1.20.4
+            java: '21'
 
           - module: fabric-1.20.5-1.20.6
             java: '21'

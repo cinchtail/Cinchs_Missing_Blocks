@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:lime_concrete"
+  },
+  "result": {
+    "item": "cinchsmissingblocks:lime_concrete_wall"
+  }
+}

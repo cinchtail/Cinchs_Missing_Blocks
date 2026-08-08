@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:yellow_concrete"
+  },
+  "result": {
+    "item": "cinchsmissingblocks:yellow_concrete_wall"
+  }
+}

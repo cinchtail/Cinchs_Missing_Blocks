@@ -25,9 +25,9 @@ sourceSets {
 
 cmbCompatLayers(['v1_20', 'v1_20_5'])
 
-def cmbMinecraftVersion = cmbCompatibilityMinecraft(rootProject.mc_1_20_5)
-def cmbFabricApiVersion = cmbCompatibilityFabricApi(rootProject.fabric_api_1_20_5)
-def cmbDatagenProfile = cmbCompatibilityProfile('MC_1_20_5')
+def cmbMinecraftVersion = cmbResolveMinecraftVersion(rootProject.mc_1_20_5)
+def cmbFabricApiVersion = cmbResolveFabricApiVersion(rootProject.fabric_api_1_20_5)
+def cmbDatagenProfile = cmbResolveDatagenProfile('MC_1_20_5')
 
 dependencies {
     minecraft "com.mojang:minecraft:${cmbMinecraftVersion}"

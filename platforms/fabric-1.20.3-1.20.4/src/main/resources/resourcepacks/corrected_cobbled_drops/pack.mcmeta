@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Corrects drops for stone and deepslate variants",
+    "supported_formats": [
+      15,
+      26
+    ]
+  }
+}

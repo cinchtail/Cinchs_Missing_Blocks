@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "cinchsmissingblocks",
+  "version": "${version}",
+  "name": "Cinch's Missing Blocks",
+  "description": "This mod adds all the blocks missing from minecraft.",
+  "authors": [
+    "Cinchtail"
+  ],
+  "contributors": [
+    "Texture Artists:",
+    "- Stallman",
+    "- Popopi",
+    "- Myheadmess\\n",
+    "Translators:",
+    "- kierohere",
+    "- Piotrus983"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-missing-blocks"
+  },
+  "license": "ARR",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks"
+    ],
+    "client": [
+      "net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": ">=1.20 <1.20.3",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

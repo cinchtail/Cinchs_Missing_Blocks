@@ -18,15 +18,15 @@ def cmbCompatibilityOverride = { String name, Object fallback ->
     return value == null ? fallback.toString() : value.toString()
 }
 
-ext.cmbCompatibilityMinecraft = { Object fallback ->
+ext.cmbResolveMinecraftVersion = { Object fallback ->
     cmbCompatibilityOverride('cmbCompatibilityMinecraft', fallback)
 }
 
-ext.cmbCompatibilityFabricApi = { Object fallback ->
+ext.cmbResolveFabricApiVersion = { Object fallback ->
     cmbCompatibilityOverride('cmbCompatibilityFabricApi', fallback)
 }
 
-ext.cmbCompatibilityProfile = { Object fallback ->
+ext.cmbResolveDatagenProfile = { Object fallback ->
     cmbCompatibilityOverride('cmbCompatibilityProfile', fallback)
 }
 
@@ -47,7 +47,9 @@ ext.cmbCompatibilityMatrix = { List<Map<String, Object>> targets ->
     tasks.register('compatibilityProbe') {
         group = 'verification'
         description = 'Internal compatibility probe. Use testCompatibility instead.'
-        dependsOn tasks.named('remapJar')
+        // Portable across `fabric-loom-remap` and the 26.x `fabric-loom`.
+        // `build` still runs compileJava, resources/datagen and the final JAR tasks.
+        dependsOn tasks.named('build')
         doLast {
             def mc = project.findProperty('cmbCompatibilityMinecraft') ?: 'default'
             logger.lifecycle("Compatibility probe passed for ${project.path} on Minecraft ${mc}")

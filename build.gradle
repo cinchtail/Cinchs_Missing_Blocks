@@ -5,7 +5,8 @@ allprojects {
 
 
 def cmbFabricCompatibilityProjects = [
-        ':platforms:fabric-1.20-1.20.4',
+        ':platforms:fabric-1.20-1.20.2',
+        ':platforms:fabric-1.20.3-1.20.4',
         ':platforms:fabric-1.20.5-1.20.6',
         ':platforms:fabric-1.21-1.21.1',
         ':platforms:fabric-1.21.2-1.21.3',

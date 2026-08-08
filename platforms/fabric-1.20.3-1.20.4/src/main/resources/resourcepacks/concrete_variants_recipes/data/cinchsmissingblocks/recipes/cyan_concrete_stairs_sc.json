@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cyan_concrete"
+  },
+  "result": {
+    "item": "cinchsmissingblocks:cyan_concrete_stairs"
+  }
+}

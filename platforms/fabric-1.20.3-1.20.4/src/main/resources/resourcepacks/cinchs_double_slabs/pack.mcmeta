@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Adds custom double slab textures",
+    "supported_formats": [
+      15,
+      22
+    ]
+  }
+}

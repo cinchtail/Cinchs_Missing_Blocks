@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Recipes for concrete variants config",
+    "supported_formats": [
+      15,
+      26
+    ]
+  }
+}
