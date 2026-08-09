@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:white_terracotta"
-  },
-  "result": {
-    "id": "cinchsmissingblocks:white_terracotta_stairs"
-  }
-}

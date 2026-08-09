@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "minecraft:cut_sandstone",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_sandstone_bricks"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:magenta_terracotta"
-  },
-  "result": {
-    "id": "cinchsmissingblocks:magenta_terracotta_wall"
-  }
-}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/diorite_bricks",
+    "side": "cinchsmissingblocks:block/diorite_bricks",
+    "top": "cinchsmissingblocks:block/diorite_bricks"
+  }
+}

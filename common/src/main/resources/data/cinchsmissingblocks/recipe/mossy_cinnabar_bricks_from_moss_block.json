@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_cinnabar_bricks",
+  "ingredients": [
+    "minecraft:cinnabar_bricks",
+    "minecraft:moss_block"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_cinnabar_bricks"
+  }
+}

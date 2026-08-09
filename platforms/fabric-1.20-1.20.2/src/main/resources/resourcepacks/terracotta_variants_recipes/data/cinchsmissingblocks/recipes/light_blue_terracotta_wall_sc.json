@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:light_blue_terracotta"
-  },
-  "result": {
-    "item": "cinchsmissingblocks:light_blue_terracotta_wall"
-  }
-}

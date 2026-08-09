@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:stone_tiles",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_stone_tiles"
+  }
+}

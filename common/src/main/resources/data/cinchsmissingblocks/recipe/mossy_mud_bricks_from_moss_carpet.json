@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_mud_bricks",
+  "key": {
+    "#": "minecraft:moss_carpet",
+    "B": "minecraft:mud_bricks"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_mud_bricks"
+  }
+}

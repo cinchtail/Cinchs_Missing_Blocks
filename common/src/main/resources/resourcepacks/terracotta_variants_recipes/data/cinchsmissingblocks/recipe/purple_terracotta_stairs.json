@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_stairs",
+  "key": {
+    "#": "minecraft:purple_terracotta"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cinchsmissingblocks:purple_terracotta_stairs"
+  }
+}

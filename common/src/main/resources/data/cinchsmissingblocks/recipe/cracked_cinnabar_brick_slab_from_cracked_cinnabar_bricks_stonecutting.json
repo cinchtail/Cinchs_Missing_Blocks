@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:cracked_cinnabar_bricks",
+  "result": {
+    "count": 2,
+    "id": "cinchsmissingblocks:cracked_cinnabar_brick_slab"
+  }
+}
