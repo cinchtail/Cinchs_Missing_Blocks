@@ -13,4 +13,4 @@ public class CinchsMissingBlocksClient implements ClientModInitializer {
         ClientConfigSync.register();
         BuiltinResourcePacks.registerBuiltinPacks(MOD_ID);
     }
-}
+} //test
