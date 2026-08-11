@@ -25,7 +25,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks"
+      "net.cinchtail.cinchsmissingblocks.FabricEntrypoint"
     ],
     "client": [
       "net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksClient"

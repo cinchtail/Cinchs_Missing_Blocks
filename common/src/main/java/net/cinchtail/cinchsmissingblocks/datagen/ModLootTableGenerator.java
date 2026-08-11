@@ -1,0 +1,460 @@
+package net.cinchtail.cinchsmissingblocks.datagen;
+
+import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
+import net.minecraft.world.level.block.Block;
+
+public final class ModLootTableGenerator {
+    private ModLootTableGenerator() {
+    }
+
+    public static void generate(Context context) {
+
+        context.dropSelf(ModBlocks.CALCITE_STAIRS);
+        context.dropSlab(ModBlocks.CALCITE_SLAB);
+        context.dropSelf(ModBlocks.CALCITE_WALL);
+        context.dropSelf(ModBlocks.POLISHED_CALCITE);
+        context.dropSelf(ModBlocks.POLISHED_CALCITE_STAIRS);
+        context.dropSlab(ModBlocks.POLISHED_CALCITE_SLAB);
+        context.dropSelf(ModBlocks.POLISHED_CALCITE_WALL);
+        context.dropSelf(ModBlocks.CALCITE_BRICKS);
+        context.dropSelf(ModBlocks.CALCITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CALCITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CALCITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_CALCITE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_CALCITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_CALCITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_CALCITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_CALCITE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_CALCITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_CALCITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_CALCITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_CALCITE_BRICKS);
+        context.dropSelf(ModBlocks.CALCITE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.DRIPSTONE_STAIRS);
+        context.dropSlab(ModBlocks.DRIPSTONE_SLAB);
+        context.dropSelf(ModBlocks.DRIPSTONE_WALL);
+        context.dropSelf(ModBlocks.POLISHED_DRIPSTONE);
+        context.dropSelf(ModBlocks.POLISHED_DRIPSTONE_STAIRS);
+        context.dropSlab(ModBlocks.POLISHED_DRIPSTONE_SLAB);
+        context.dropSelf(ModBlocks.POLISHED_DRIPSTONE_WALL);
+        context.dropSelf(ModBlocks.DRIPSTONE_BRICKS);
+        context.dropSelf(ModBlocks.DRIPSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.DRIPSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.DRIPSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_DRIPSTONE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_DRIPSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_DRIPSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_DRIPSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_DRIPSTONE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_DRIPSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_DRIPSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_DRIPSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_DRIPSTONE_BRICKS);
+        context.dropSelf(ModBlocks.DRIPSTONE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.CRACKED_TUFF_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_TUFF_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_TUFF_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_TUFF_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_TUFF_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_TUFF_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_TUFF_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_TUFF_BRICK_WALL);
+
+        context.dropSelf(ModBlocks.POLISHED_ANDESITE_WALL);
+        context.dropSelf(ModBlocks.ANDESITE_BRICKS);
+        context.dropSelf(ModBlocks.ANDESITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.ANDESITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.ANDESITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_ANDESITE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_ANDESITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_ANDESITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_ANDESITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_ANDESITE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_ANDESITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_ANDESITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_ANDESITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_ANDESITE_BRICKS);
+        context.dropSelf(ModBlocks.ANDESITE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.POLISHED_GRANITE_WALL);
+        context.dropSelf(ModBlocks.GRANITE_BRICKS);
+        context.dropSelf(ModBlocks.GRANITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.GRANITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.GRANITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_GRANITE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_GRANITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_GRANITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_GRANITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_GRANITE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_GRANITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_GRANITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_GRANITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_GRANITE_BRICKS);
+        context.dropSelf(ModBlocks.GRANITE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.POLISHED_DIORITE_WALL);
+        context.dropSelf(ModBlocks.DIORITE_BRICKS);
+        context.dropSelf(ModBlocks.DIORITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.DIORITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.DIORITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_DIORITE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_DIORITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_DIORITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_DIORITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_DIORITE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_DIORITE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_DIORITE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_DIORITE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_DIORITE_BRICKS);
+        context.dropSelf(ModBlocks.DIORITE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.QUARTZ_WALL);
+        context.dropSelf(ModBlocks.SMOOTH_QUARTZ_WALL);
+        context.dropSelf(ModBlocks.QUARTZ_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.QUARTZ_BRICK_SLAB);
+        context.dropSelf(ModBlocks.QUARTZ_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_QUARTZ_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_QUARTZ_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_QUARTZ_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_QUARTZ_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_QUARTZ_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_QUARTZ_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_QUARTZ_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_QUARTZ_BRICK_WALL);
+
+        context.dropSelf(ModBlocks.CRACKED_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_BRICKS);
+
+        context.dropSelf(ModBlocks.PACKED_MUD_STAIRS);
+        context.dropSlab(ModBlocks.PACKED_MUD_SLAB);
+        context.dropSelf(ModBlocks.PACKED_MUD_WALL);
+        context.dropSelf(ModBlocks.CRACKED_MUD_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_MUD_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_MUD_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_MUD_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_MUD_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_MUD_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_MUD_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_MUD_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_MUD_BRICKS);
+        context.dropSelf(ModBlocks.MUD_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.CRACKED_RESIN_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_RESIN_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_RESIN_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_RESIN_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_RESIN_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_RESIN_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_RESIN_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_RESIN_BRICK_WALL);
+
+        context.dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL);
+        context.dropSelf(ModBlocks.CUT_SANDSTONE_STAIRS);
+        context.dropSelf(ModBlocks.CUT_SANDSTONE_WALL);
+        context.dropSelf(ModBlocks.SANDSTONE_BRICKS);
+        context.dropSelf(ModBlocks.SANDSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.SANDSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.SANDSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_SANDSTONE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_SANDSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_SANDSTONE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_SANDSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.SANDSTONE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+        context.dropSelf(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
+        context.dropSelf(ModBlocks.CUT_RED_SANDSTONE_WALL);
+        context.dropSelf(ModBlocks.RED_SANDSTONE_BRICKS);
+        context.dropSelf(ModBlocks.RED_SANDSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.RED_SANDSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.RED_SANDSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_RED_SANDSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.CRACKED_CINNABAR_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_CINNABAR_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_CINNABAR_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_CINNABAR_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_CINNABAR_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_CINNABAR_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_CINNABAR_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_CINNABAR_BRICK_WALL);
+        context.dropSelf(ModBlocks.CINNABAR_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.CRACKED_SULFUR_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_SULFUR_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_SULFUR_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_SULFUR_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_SULFUR_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_SULFUR_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_SULFUR_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_SULFUR_BRICK_WALL);
+        context.dropSelf(ModBlocks.SULFUR_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.END_STONE_STAIRS);
+        context.dropSlab(ModBlocks.END_STONE_SLAB);
+        context.dropSelf(ModBlocks.END_STONE_WALL);
+        context.dropSelf(ModBlocks.POLISHED_END_STONE);
+        context.dropSelf(ModBlocks.POLISHED_END_STONE_STAIRS);
+        context.dropSlab(ModBlocks.POLISHED_END_STONE_SLAB);
+        context.dropSelf(ModBlocks.POLISHED_END_STONE_WALL);
+        context.dropSelf(ModBlocks.CRACKED_END_STONE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_END_STONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_END_STONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_END_STONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_END_STONE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_END_STONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_END_STONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_END_STONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_END_STONE_BRICKS);
+        context.dropSelf(ModBlocks.END_STONE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.STONE_WALL);
+        context.dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);
+        context.dropSelf(ModBlocks.SMOOTH_STONE_WALL);
+        context.dropSelf(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_STONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_STONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.STONE_TILES);
+        context.dropSelf(ModBlocks.STONE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.STONE_TILE_SLAB);
+        context.dropSelf(ModBlocks.STONE_TILE_WALL);
+        context.dropSelf(ModBlocks.CRACKED_STONE_TILES);
+        context.dropSelf(ModBlocks.CRACKED_STONE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_STONE_TILE_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_STONE_TILE_WALL);
+        context.dropSelf(ModBlocks.MOSSY_STONE_TILES);
+        context.dropSelf(ModBlocks.MOSSY_STONE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_STONE_TILE_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_STONE_TILE_WALL);
+        context.dropSelf(ModBlocks.STONE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.DEEPSLATE_STAIRS);
+        context.dropSlab(ModBlocks.DEEPSLATE_SLAB);
+        context.dropSelf(ModBlocks.DEEPSLATE_WALL);
+        context.dropSelf(ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+        context.dropSelf(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL);
+        context.dropSelf(ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_DEEPSLATE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_DEEPSLATE_TILE_WALL);
+        context.dropSelf(ModBlocks.MOSSY_DEEPSLATE_TILES);
+        context.dropSelf(ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_DEEPSLATE_TILE_WALL);
+        context.dropSelf(ModBlocks.DEEPSLATE_BRICK_PILLAR);
+        context.dropWhenSilkTouch(ModBlocks.SCULK_INLAID_DEEPSLATE);
+        context.dropSelf(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+        context.dropSelf(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
+
+        context.dropSelf(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL);
+        context.dropSelf(ModBlocks.BLACKSTONE_TILES);
+        context.dropSelf(ModBlocks.BLACKSTONE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.BLACKSTONE_TILE_SLAB);
+        context.dropSelf(ModBlocks.BLACKSTONE_TILE_WALL);
+        context.dropSelf(ModBlocks.CRACKED_BLACKSTONE_TILES);
+        context.dropSelf(ModBlocks.CRACKED_BLACKSTONE_TILE_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_BLACKSTONE_TILE_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_BLACKSTONE_TILE_WALL);
+        context.dropSelf(ModBlocks.BLACKSTONE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.NETHERRACK_STAIRS);
+        context.dropSlab(ModBlocks.NETHERRACK_SLAB);
+        context.dropSelf(ModBlocks.NETHERRACK_WALL);
+
+        context.dropSnow(ModBlocks.SNOW_BRICKS);
+        context.dropSnow(ModBlocks.SNOW_BRICK_STAIRS);
+        context.dropSnowSlab(ModBlocks.SNOW_BRICK_SLAB);
+        context.dropSnow(ModBlocks.SNOW_BRICK_WALL);
+
+        context.dropSelf(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_NETHER_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_NETHER_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_NETHER_BRICK_FENCE);
+
+        context.dropSelf(ModBlocks.RED_NETHER_BRICK_FENCE);
+        context.dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
+        context.dropSelf(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+
+        context.dropSelf(ModBlocks.BLUE_NETHER_BRICKS);
+        context.dropSelf(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.BLUE_NETHER_BRICK_SLAB);
+        context.dropSelf(ModBlocks.BLUE_NETHER_BRICK_WALL);
+        context.dropSelf(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+        context.dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
+        context.dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+        context.dropSelf(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+
+        context.dropSelf(ModBlocks.PRISMARINE_BRICK_WALL);
+        context.dropSelf(ModBlocks.DARK_PRISMARINE_WALL);
+        context.dropSelf(ModBlocks.CRACKED_PRISMARINE_BRICKS);
+        context.dropSelf(ModBlocks.CRACKED_PRISMARINE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.CRACKED_PRISMARINE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.CRACKED_PRISMARINE_BRICK_WALL);
+        context.dropSelf(ModBlocks.MOSSY_PRISMARINE_BRICKS);
+        context.dropSelf(ModBlocks.MOSSY_PRISMARINE_BRICK_STAIRS);
+        context.dropSlab(ModBlocks.MOSSY_PRISMARINE_BRICK_SLAB);
+        context.dropSelf(ModBlocks.MOSSY_PRISMARINE_BRICK_WALL);
+        context.dropSelf(ModBlocks.CHISELED_PRISMARINE_BRICKS);
+        context.dropSelf(ModBlocks.PRISMARINE_BRICK_PILLAR);
+
+        context.dropSelf(ModBlocks.SMOOTH_BASALT_STAIRS);
+        context.dropSlab(ModBlocks.SMOOTH_BASALT_SLAB);
+        context.dropSelf(ModBlocks.SMOOTH_BASALT_WALL);
+
+        context.dropSelf(ModBlocks.PURPUR_WALL);
+        context.dropSelf(ModBlocks.CHISELED_PURPUR);
+
+        context.dropWhenSilkTouch(ModBlocks.TINTED_GLASS_PANE);
+
+        context.dropSelf(ModBlocks.TERRACOTTA_STAIRS);
+        context.dropSlab(ModBlocks.TERRACOTTA_SLAB);
+        context.dropSelf(ModBlocks.TERRACOTTA_WALL);
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.white());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.white());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.white());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.lightGray());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.lightGray());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.lightGray());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.gray());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.gray());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.gray());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.black());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.black());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.black());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.brown());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.brown());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.brown());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.red());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.red());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.red());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.orange());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.orange());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.orange());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.yellow());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.yellow());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.yellow());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.lime());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.lime());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.lime());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.green());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.green());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.green());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.cyan());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.cyan());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.cyan());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.lightBlue());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.lightBlue());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.lightBlue());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.blue());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.blue());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.blue());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.purple());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.purple());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.purple());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.magenta());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.magenta());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.magenta());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_STAIRS.pink());
+        context.dropSlab(ModBlocks.DYED_TERRACOTTA_SLAB.pink());
+        context.dropSelf(ModBlocks.DYED_TERRACOTTA_WALL.pink());
+
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.white());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.white());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.white());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.lightGray());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.lightGray());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.lightGray());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.gray());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.gray());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.gray());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.black());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.black());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.black());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.brown());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.brown());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.brown());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.red());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.red());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.red());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.orange());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.orange());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.orange());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.yellow());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.yellow());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.yellow());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.lime());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.lime());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.lime());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.green());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.green());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.green());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.cyan());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.cyan());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.cyan());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.lightBlue());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.lightBlue());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.lightBlue());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.blue());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.blue());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.blue());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.purple());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.purple());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.purple());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.magenta());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.magenta());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.magenta());
+        context.dropSelf(ModBlocks.CONCRETE_STAIRS.pink());
+        context.dropSlab(ModBlocks.CONCRETE_SLAB.pink());
+        context.dropSelf(ModBlocks.CONCRETE_WALL.pink());
+    }
+
+    public interface Context {
+        void dropSelf(Block block);
+
+        void dropSlab(Block block);
+
+        void dropWhenSilkTouch(Block block);
+
+        void dropSnow(Block block);
+
+        void dropSnowSlab(Block block);
+    }
+}

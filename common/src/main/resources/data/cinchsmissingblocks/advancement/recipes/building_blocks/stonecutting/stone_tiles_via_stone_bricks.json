@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cinchsmissingblocks:stonecutting/stone_tiles_via_stone_bricks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cinchsmissingblocks:stonecutting/stone_tiles_via_stone_bricks"
+    ]
+  }
+}
