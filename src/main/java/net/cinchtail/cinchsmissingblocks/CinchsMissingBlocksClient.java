@@ -18,4 +18,4 @@ public class CinchsMissingBlocksClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TINTED_GLASS_PANE, RenderLayer.getTranslucent());
     }
-}
+}//test
