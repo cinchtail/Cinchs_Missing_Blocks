@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.cinchtail.cinchsmissingblocks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SlabBlockMixin"
+  ],
+  "client": [
+    "BlockRenderManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
