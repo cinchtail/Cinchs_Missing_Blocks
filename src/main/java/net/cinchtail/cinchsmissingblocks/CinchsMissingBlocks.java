@@ -22,4 +22,4 @@ public class CinchsMissingBlocks {
         MinecraftForge.EVENT_BUS.register(new ResourcePacksLoader());
         MinecraftForge.EVENT_BUS.register(this);
     }
-} // test
+}
