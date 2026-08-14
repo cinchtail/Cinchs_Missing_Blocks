@@ -7,7 +7,10 @@ import net.minecraft.client.data.models.model.*;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 
-public class BlockModelHelpers {
+public final class BlockModelHelpers {
+
+    private BlockModelHelpers() {
+    }
 
     private static MultiVariant mv(Identifier model) {
         return BlockModelGenerators.plainVariant(model);
