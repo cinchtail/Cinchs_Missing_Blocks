@@ -58,7 +58,7 @@ public final class ModConfigs {
             enableReworkedDeepslateRecipes = getOrDefault(json, "enableReworkedDeepslateRecipes", true);
             enableCorrectedCobbledDrops = getOrDefault(json, "enableCorrectedCobbledDrops", false);
             doubleSlabsPackDefaultEnabled = getOrDefault(json, "doubleSlabsPackDefaultEnabled", false);
-            enableVerticalSlabs = getOrDefault(json, "enableVerticalSlabs", true);
+            enableVerticalSlabs = getOrDefault(json, "enableVerticalSlabs", false);
 
             boolean updated = false;
 
@@ -90,16 +90,15 @@ public final class ModConfigs {
             json.addProperty("enableReworkedDeepslateRecipes", true);
             json.addProperty("enableCorrectedCobbledDrops", false);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
-            json.addProperty("enableVerticalSlabs", true);
+            json.addProperty("enableVerticalSlabs", false);
 
-            // Initialize runtime values immediately on first launch.
             enableTerracottaVariants = true;
             enableConcreteVariants = true;
             enableTuffBrickPillar = false;
             enableReworkedDeepslateRecipes = true;
             enableCorrectedCobbledDrops = false;
             doubleSlabsPackDefaultEnabled = false;
-            enableVerticalSlabs = true;
+            enableVerticalSlabs = false;
 
             Files.createDirectories(configPath.getParent());
 
