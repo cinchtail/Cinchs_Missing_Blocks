@@ -5,20 +5,22 @@ import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.cinchtail.cinchsmissingblocks.pack.ModBuiltinPacks;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Mod(CinchsMissingBlocks.MOD_ID)
-public final class NeoForgeEntrypoint {
-    public NeoForgeEntrypoint(IEventBus bus) {
-        CinchsMissingBlocks.initialize(FMLPaths.CONFIGDIR.get());
+public class CinchsMissingBlocks {
+    public static final String MOD_ID = "cinchsmissingblocks";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+    public CinchsMissingBlocks(IEventBus bus) {
         bus.addListener(this::onRegister);
         bus.addListener(this::addPackFinders);
-        CinchsMissingBlocks.LOGGER.info("Cinch's Missing Blocks initialized on NeoForge.");
+        LOGGER.info("Cinch's Missing Blocks initialized on NeoForge 26.2.");
     }
 
     private void onRegister(RegisterEvent event) {
@@ -28,19 +30,14 @@ public final class NeoForgeEntrypoint {
         }
         if (event.getRegistryKey().equals(Registries.ITEM)) {
             ModItems.registerItems();
-            ModBlocks.registerBlockItems();
             return;
         }
         if (event.getRegistryKey().equals(Registries.CREATIVE_MODE_TAB)) {
-            ModItemGroups.registerItemGroup(CreativeModeTab.builder()
-                    .icon(ModItemGroups::createIcon)
-                    .title(ModItemGroups.title())
-                    .displayItems((parameters, output) -> ModItemGroups.populate(output::accept))
-                    .build());
+            ModItemGroups.registerItemGroup();
         }
     }
 
     private void addPackFinders(AddPackFindersEvent event) {
-        ModBuiltinPacks.register(event, CinchsMissingBlocks.MOD_ID);
+        ModBuiltinPacks.register(event, MOD_ID);
     }
 }

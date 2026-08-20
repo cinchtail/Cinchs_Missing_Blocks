@@ -29,7 +29,6 @@ public final class ModConfigs {
     public static boolean enableReworkedDeepslateRecipes;
     public static boolean enableCorrectedCobbledDrops;
     public static boolean doubleSlabsPackDefaultEnabled;
-    public static boolean enableVerticalSlabs;
 
     private static boolean getOrDefault(JsonObject json, String key, boolean defaultValue) {
         return json.has(key) ? json.get(key).getAsBoolean() : defaultValue;
@@ -58,7 +57,6 @@ public final class ModConfigs {
             enableReworkedDeepslateRecipes = getOrDefault(json, "enableReworkedDeepslateRecipes", true);
             enableCorrectedCobbledDrops = getOrDefault(json, "enableCorrectedCobbledDrops", false);
             doubleSlabsPackDefaultEnabled = getOrDefault(json, "doubleSlabsPackDefaultEnabled", false);
-            enableVerticalSlabs = getOrDefault(json, "enableVerticalSlabs", false);
 
             boolean updated = false;
 
@@ -68,7 +66,6 @@ public final class ModConfigs {
             updated |= patchMissing(json, "enableReworkedDeepslateRecipes", enableReworkedDeepslateRecipes);
             updated |= patchMissing(json, "enableCorrectedCobbledDrops", enableCorrectedCobbledDrops);
             updated |= patchMissing(json, "doubleSlabsPackDefaultEnabled", doubleSlabsPackDefaultEnabled);
-            updated |= patchMissing(json, "enableVerticalSlabs", enableVerticalSlabs);
 
             if (updated) {
                 rewriteConfig(json);
@@ -98,7 +95,6 @@ public final class ModConfigs {
             enableReworkedDeepslateRecipes = true;
             enableCorrectedCobbledDrops = false;
             doubleSlabsPackDefaultEnabled = false;
-            enableVerticalSlabs = false;
 
             Files.createDirectories(configPath.getParent());
 
