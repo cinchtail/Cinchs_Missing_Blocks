@@ -1,7 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
-import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
