@@ -41,6 +41,6 @@ public final class NeoForgeEntrypoint {
     }
 
     private void addPackFinders(AddPackFindersEvent event) {
-        ModBuiltinPacks.register(event);
+        ModBuiltinPacks.register(event, CinchsMissingBlocks.MOD_ID);
     }
 }
