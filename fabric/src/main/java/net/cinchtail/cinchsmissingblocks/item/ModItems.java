@@ -9,25 +9,20 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 
 import java.util.function.Function;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
-public final class ModItems {
-    private static final Map<Identifier, Item> CINCHS_ITEMS = new LinkedHashMap<>();
+public class ModItems {
 
     public static final Item RED_NETHER_BRICK = registerItem("red_nether_brick", Item::new);
     public static final Item BLUE_NETHER_BRICK = registerItem("blue_nether_brick", Item::new);
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
-        Identifier id = Identifier.fromNamespaceAndPath(MOD_ID, name);
-        Item item = function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, id)));
-        CINCHS_ITEMS.put(id, item); return item;
+        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name),
+                function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name)))));
     }
-    public static void registerItems() {
-        CINCHS_ITEMS.forEach((id, value) -> Registry.register(BuiltInRegistries.ITEM, id, value));
-        CinchsMissingBlocks.LOGGER.info("Registered {} standalone items for {}", CINCHS_ITEMS.size(), MOD_ID);
+    public static void registerModItems() {
+        CinchsMissingBlocks.LOGGER.info("Registering ModItems for " + MOD_ID);
     }
 }

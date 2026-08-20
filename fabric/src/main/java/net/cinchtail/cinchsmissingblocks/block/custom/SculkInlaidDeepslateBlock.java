@@ -14,7 +14,6 @@ public class SculkInlaidDeepslateBlock extends Block {
         super(properties);
     }
 
-    @Override
     protected void spawnAfterBreak(final BlockState state, final ServerLevel level, final BlockPos pos, final ItemStack tool, final boolean dropExperience) {
         super.spawnAfterBreak(state, level, pos, tool, dropExperience);
         if (dropExperience) {
