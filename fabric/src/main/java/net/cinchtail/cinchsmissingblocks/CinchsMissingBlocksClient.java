@@ -4,7 +4,7 @@ import net.cinchtail.cinchsmissingblocks.network.ClientConfigSync;
 import net.cinchtail.cinchsmissingblocks.pack.BuiltinResourcePacks;
 import net.fabricmc.api.ClientModInitializer;
 
-import static net.cinchtail.cinchsmissingblocks.FabricCinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class CinchsMissingBlocksClient implements ClientModInitializer {
 
