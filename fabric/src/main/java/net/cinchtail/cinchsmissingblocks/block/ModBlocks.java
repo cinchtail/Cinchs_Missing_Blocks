@@ -1,7 +1,9 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
 import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
+import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

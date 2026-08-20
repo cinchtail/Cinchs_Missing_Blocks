@@ -1,5 +1,10 @@
 .\gradlew.bat :fabric:runClient
 .\gradlew.bat :neoforge:runClient
 
+.\gradlew.bat :fabric:runServer
+.\gradlew.bat :neoforge:runServer
+
+.\gradlew.bat :fabric:runDatagen
+
 .\gradlew.bat :fabric:build
 .\gradlew.bat :neoforge:build

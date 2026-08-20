@@ -20,13 +20,12 @@ public class CinchsMissingBlocks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModConfigs.load();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		NetworkInit.register();
 		ServerConfigSync.register();
-		BuiltinDataPacks.registerBuiltinPacks(CinchsMissingBlocks.MOD_ID);
+		BuiltinDataPacks.registerBuiltinPacks(MOD_ID);
 
 		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
 			ServerPlayNetworking.send(handler.player, new ConfigSyncPayload(ModConfigs.enableTuffBrickPillar));
