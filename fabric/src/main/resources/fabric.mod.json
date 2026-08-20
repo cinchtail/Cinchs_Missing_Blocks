@@ -35,7 +35,6 @@
     ]
   },
   "mixins": [
-    "cinchsmissingblocks.mixins.json",
     "cinchsmissingblocks.fabric.mixins.json"
   ],
   "custom": {

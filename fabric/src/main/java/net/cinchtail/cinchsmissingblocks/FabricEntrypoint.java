@@ -5,7 +5,7 @@ import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.cinchtail.cinchsmissingblocks.network.ConfigSyncPayload;
 import net.cinchtail.cinchsmissingblocks.network.NetworkInit;
 import net.cinchtail.cinchsmissingblocks.network.ServerConfigSync;
-import net.cinchtail.cinchsmissingblocks.pack.FabricBuiltinPacks;
+import net.cinchtail.cinchsmissingblocks.pack.BuiltinDataPacks;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
@@ -23,7 +23,7 @@ public final class FabricEntrypoint implements ModInitializer {
                 .build());
         NetworkInit.register();
         ServerConfigSync.register();
-        FabricBuiltinPacks.registerDataPacks();
+        BuiltinDataPacks.registerBuiltinPacks(CinchsMissingBlocks.MOD_ID);
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) ->
                 ServerPlayNetworking.send(handler.player,

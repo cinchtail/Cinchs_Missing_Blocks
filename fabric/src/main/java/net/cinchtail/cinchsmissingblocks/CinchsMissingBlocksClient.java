@@ -1,14 +1,16 @@
 package net.cinchtail.cinchsmissingblocks;
 
 import net.cinchtail.cinchsmissingblocks.network.ClientConfigSync;
-import net.cinchtail.cinchsmissingblocks.pack.FabricBuiltinPacks;
+import net.cinchtail.cinchsmissingblocks.pack.BuiltinResourcePacks;
 import net.fabricmc.api.ClientModInitializer;
+
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class CinchsMissingBlocksClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
         ClientConfigSync.register();
-        FabricBuiltinPacks.registerResourcePacks();
+        BuiltinResourcePacks.registerBuiltinPacks(MOD_ID);
     }
 }

@@ -3,14 +3,14 @@ package net.cinchtail.cinchsmissingblocks.datagen;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
-import net.minecraft.client.data.models.model.*;
+import net.minecraft.client.data.models.model.ModelLocationUtils;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 
-public final class BlockModelHelpers {
-
-    private BlockModelHelpers() {
-    }
+public class BlockModelHelpers {
 
     private static MultiVariant mv(Identifier model) {
         return BlockModelGenerators.plainVariant(model);
