@@ -1,6 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric;
 import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
 import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric.MOD_ID;
 
 public class ModBlocks {
 
@@ -1339,6 +1339,6 @@ public class ModBlocks {
         return Registry.register(BuiltInRegistries.BLOCK, identifier, block);
     }
     public static void registerModBlocks() {
-        CinchsMissingBlocks.LOGGER.info("Registering ModBlocks for " + MOD_ID);
+        CinchsMissingBlocksFabric.LOGGER.info("Registering ModBlocks for " + MOD_ID);
     }
 }

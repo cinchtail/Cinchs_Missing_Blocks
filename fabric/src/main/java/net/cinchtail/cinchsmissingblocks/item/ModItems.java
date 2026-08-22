@@ -1,6 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.item;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 
 import java.util.function.Function;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric.MOD_ID;
 
 public class ModItems {
 
@@ -23,6 +23,6 @@ public class ModItems {
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name)))));
     }
     public static void registerModItems() {
-        CinchsMissingBlocks.LOGGER.info("Registering ModItems for " + MOD_ID);
+        CinchsMissingBlocksFabric.LOGGER.info("Registering ModItems for " + MOD_ID);
     }
 }

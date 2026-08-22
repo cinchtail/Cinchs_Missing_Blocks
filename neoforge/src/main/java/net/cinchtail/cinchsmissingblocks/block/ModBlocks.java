@@ -1,6 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge;
 import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
 import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
 import net.cinchtail.cinchsmissingblocks.item.ModItems;
@@ -19,7 +19,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Function;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge.MOD_ID;
 
 
 public class ModBlocks {
@@ -1344,6 +1344,6 @@ public class ModBlocks {
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
-        CinchsMissingBlocks.LOGGER.info("Registering ModBlocks for NeoForge" + MOD_ID);
+        CinchsMissingBlocksNeoForge.LOGGER.info("Registering ModBlocks for NeoForge" + MOD_ID);
     }
 }

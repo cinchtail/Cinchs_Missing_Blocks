@@ -10,7 +10,7 @@ import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge.MOD_ID;
 
 public final class ModBuiltinPacks {
     private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);

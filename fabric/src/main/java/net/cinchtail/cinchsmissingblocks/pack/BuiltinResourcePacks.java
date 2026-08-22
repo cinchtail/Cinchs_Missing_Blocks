@@ -9,7 +9,7 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric.MOD_ID;
 
 public class BuiltinResourcePacks {
 

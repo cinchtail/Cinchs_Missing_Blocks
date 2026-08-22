@@ -1,6 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.item;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
@@ -13,7 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric.MOD_ID;
 
 public class ModItemGroups {
 
@@ -444,6 +444,6 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerItemGroups() {
-        CinchsMissingBlocks.LOGGER.info("Registering Item Groups for " + MOD_ID);
+        CinchsMissingBlocksFabric.LOGGER.info("Registering Item Groups for " + MOD_ID);
     }
 }

@@ -1,6 +1,6 @@
 package net.cinchtail.cinchsmissingblocks.item;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.minecraft.network.chat.Component;
@@ -10,7 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge.MOD_ID;
 
 public class ModItemGroups {
 
@@ -439,6 +439,6 @@ public class ModItemGroups {
             }).build();
 
     public static void register(IEventBus eventBus) {
-        CinchsMissingBlocks.LOGGER.info("Registered creative mode tab for NeoForge" + MOD_ID);
+        CinchsMissingBlocksNeoForge.LOGGER.info("Registered creative mode tab for NeoForge" + MOD_ID);
     }
 }

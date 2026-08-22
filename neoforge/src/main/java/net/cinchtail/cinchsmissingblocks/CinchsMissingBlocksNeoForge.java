@@ -11,12 +11,12 @@ import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Mod(CinchsMissingBlocks.MOD_ID)
-public class CinchsMissingBlocks {
+@Mod(CinchsMissingBlocksNeoForge.MOD_ID)
+public class CinchsMissingBlocksNeoForge {
     public static final String MOD_ID = "cinchsmissingblocks";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public CinchsMissingBlocks(IEventBus modEventBus, ModContainer modContainer) {
+    public CinchsMissingBlocksNeoForge(IEventBus modEventBus, ModContainer modContainer) {
         ModItemGroups.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
