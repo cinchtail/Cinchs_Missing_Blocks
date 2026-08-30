@@ -129,4 +129,26 @@ public class BlockModelHelpers {
 
         gen.registerItemModel(Item.fromBlock(fence), inventory);
     }
+
+    public static void fenceGate(BlockStateModelGenerator gen, Block gate, Identifier texture) {
+        TextureMap tex = new TextureMap().put(TextureKey.TEXTURE, texture);
+
+        Identifier open = Models.TEMPLATE_FENCE_GATE_OPEN.upload(gate, tex, gen.modelCollector);
+        Identifier closed = Models.TEMPLATE_FENCE_GATE.upload(gate, tex, gen.modelCollector);
+        Identifier openWall = Models.TEMPLATE_FENCE_GATE_WALL_OPEN.upload(gate, tex, gen.modelCollector);
+        Identifier closedWall = Models.TEMPLATE_FENCE_GATE_WALL.upload(gate, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createFenceGateBlockState(
+                        gate,
+                        wv(open),
+                        wv(closed),
+                        wv(openWall),
+                        wv(closedWall),
+                        true
+                )
+        );
+
+        gen.registerItemModel(Item.fromBlock(gate), closed);
+    }
 }
