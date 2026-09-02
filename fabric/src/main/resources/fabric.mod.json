@@ -14,7 +14,8 @@
     "- Myheadmess\n",
     "Translators:",
     "- kierohere",
-    "- Piotrus983"
+    "- Piotrus983",
+    "- Shandro"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-missing-blocks",
@@ -38,7 +39,17 @@
     "cinchsmissingblocks.fabric.mixins.json"
   ],
   "custom": {
-    "fabric-networking-api-v1": true
+    "fabric-networking-api-v1": true,
+
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/aBBz7E52Jy",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/cinchs-missing-blocks",
+        "modmenu.modrinth": "https://modrinth.com/mod/cinchs-missing-blocks",
+        "modmenu.kofi": "https://ko-fi.com/cinchtail",
+        "modmenu.youtube": "https://www.youtube.com/@CinchPlaysMC"
+      }
+    }
   },
   "depends": {
     "fabricloader": ">=0.19.3",
