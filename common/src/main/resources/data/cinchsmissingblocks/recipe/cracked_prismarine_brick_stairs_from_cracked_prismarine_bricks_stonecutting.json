@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:cracked_prismarine_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_prismarine_brick_stairs"
+  }
+}

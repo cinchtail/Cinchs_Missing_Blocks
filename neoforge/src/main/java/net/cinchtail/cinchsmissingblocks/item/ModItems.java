@@ -1,21 +1,33 @@
 package net.cinchtail.cinchsmissingblocks.item;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge;
+import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.Function;
 
 import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksNeoForge.MOD_ID;
 
 public class ModItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CinchsMissingBlocksNeoForge.MOD_ID);
+    private static final Map<Identifier, Item> ITEMS = new LinkedHashMap<>();
 
-    public static final DeferredItem<Item> RED_NETHER_BRICK = ITEMS.registerSimpleItem("red_nether_brick");
-    public static final DeferredItem<Item> BLUE_NETHER_BRICK = ITEMS.registerSimpleItem("blue_nether_brick");
+    public static final Item RED_NETHER_BRICK = registerItem("red_nether_brick", Item::new);
+    public static final Item BLUE_NETHER_BRICK = registerItem("blue_nether_brick", Item::new);
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-        CinchsMissingBlocksNeoForge.LOGGER.info("Registering ModItems for NeoForge" + MOD_ID);
+
+    private static Item registerItem(String name, Function<Item.Properties, Item> function) {
+        Identifier id = Identifier.fromNamespaceAndPath(MOD_ID, name);
+        Item item = function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, id)));
+        ITEMS.put(id, item); return item;
+    }
+    public static void registerItems() {
+        ITEMS.forEach((id, value) -> Registry.register(BuiltInRegistries.ITEM, id, value));
+        CinchsMissingBlocks.LOGGER.info("Registered {} standalone items for {}", ITEMS.size(), MOD_ID);
     }
 }
