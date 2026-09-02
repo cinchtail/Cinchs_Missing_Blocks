@@ -285,6 +285,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
                         entries.add(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCEGATE);
                         entries.add(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+                        entries.add(ModBlocks.RED_NETHER_BRICK_PILLAR);
                         entries.add(ModItems.BLUE_NETHER_BRICK);
                         entries.add(ModBlocks.BLUE_NETHER_BRICKS);
                         entries.add(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
@@ -299,6 +300,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
                         entries.add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCEGATE);
                         entries.add(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+                        entries.add(ModBlocks.BLUE_NETHER_BRICK_PILLAR);
                         entries.add(ModBlocks.PRISMARINE_BRICK_WALL);
                         entries.add(ModBlocks.DARK_PRISMARINE_WALL);
                         entries.add(ModBlocks.CRACKED_PRISMARINE_BRICKS);

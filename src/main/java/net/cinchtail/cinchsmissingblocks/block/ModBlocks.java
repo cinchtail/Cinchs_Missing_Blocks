@@ -958,6 +958,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(Blocks.RED_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "chiseled_red_nether_bricks")))));
+    public static final Block RED_NETHER_BRICK_PILLAR = registerBlock("red_nether_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_nether_brick_pillar")))));
 
     //Blue Nether Bricks
     public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
@@ -1012,6 +1015,9 @@ public class ModBlocks {
             properties -> new Block(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "chiseled_blue_nether_bricks")))));
+    public static final Block BLUE_NETHER_BRICK_PILLAR = registerBlock("blue_nether_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_nether_brick_pillar")))));
 
     //Prismarine Blocks
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",

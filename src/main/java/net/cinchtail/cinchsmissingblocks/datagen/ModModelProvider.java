@@ -353,6 +353,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_RED_NETHER_BRICKS);
 
+        BlockModelHelpers.pillar(gen,ModBlocks.RED_NETHER_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/red_nether_brick_pillar_top"),
+                Identifier.of("cinchsmissingblocks:block/red_nether_brick_pillar_side"));
+
         BlockStateModelGenerator.BlockTexturePool blueNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.BLUE_NETHER_BRICKS);
         BlockStateModelGenerator.BlockTexturePool crackedBlueNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
 
@@ -369,6 +372,9 @@ public class ModModelProvider extends FabricModelProvider {
         crackedBlueNetherBricksPool.fenceGate(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCEGATE);
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+
+        BlockModelHelpers.pillar(gen,ModBlocks.BLUE_NETHER_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/blue_nether_brick_pillar_top"),
+                Identifier.of("cinchsmissingblocks:block/blue_nether_brick_pillar_side"));
 
         BlockStateModelGenerator.BlockTexturePool crackedPrismarineBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_PRISMARINE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool mossyPrismarineBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_PRISMARINE_BRICKS);
