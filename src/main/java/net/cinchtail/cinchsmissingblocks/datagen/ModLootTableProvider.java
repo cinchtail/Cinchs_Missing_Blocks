@@ -341,30 +341,39 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 )
         );
 
+        addDrop(ModBlocks.NETHER_BRICK_FENCEGATE);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.CRACKED_NETHER_BRICK_FENCEGATE);
+        addDrop(ModBlocks.NETHER_BRICK_PILLAR);
 
         addDrop(ModBlocks.RED_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.RED_NETHER_BRICK_FENCEGATE);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICKS);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCEGATE);
         addDrop(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+        addDrop(ModBlocks.RED_NETHER_BRICK_PILLAR);
 
         addDrop(ModBlocks.BLUE_NETHER_BRICKS);
         addDrop(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.BLUE_NETHER_BRICK_SLAB, slabDrops(ModBlocks.BLUE_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.BLUE_NETHER_BRICK_WALL);
         addDrop(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.BLUE_NETHER_BRICK_FENCEGATE);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCEGATE);
         addDrop(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+        addDrop(ModBlocks.BLUE_NETHER_BRICK_PILLAR);
 
         addDrop(ModBlocks.PRISMARINE_BRICK_WALL);
         addDrop(ModBlocks.DARK_PRISMARINE_WALL);
