@@ -892,10 +892,10 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "netherrack_wall")))));
 
     //Nether Bricks
-    public static final Block NETHER_BRICK_FENCEGATE = registerBlock("nether_brick_fencegate",
+    public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .solid().strength(2.0F, 6.0F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "nether_brick_fencegate")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "nether_brick_fence_gate")))));
 
     public static final Block CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             properties -> new StairsBlock(Blocks.NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.NETHER_BRICKS)
@@ -913,10 +913,10 @@ public class ModBlocks {
             properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_nether_brick_fence")))));
-    public static final Block CRACKED_NETHER_BRICK_FENCEGATE = registerBlock("cracked_nether_brick_fencegate",
+    public static final Block CRACKED_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .solid().strength(2.0F, 6.0F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_nether_brick_fencegate")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_nether_brick_fence_gate")))));
     public static final Block NETHER_BRICK_PILLAR = registerBlock("nether_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "nether_brick_pillar")))));
@@ -926,10 +926,10 @@ public class ModBlocks {
             properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_nether_brick_fence")))));
-    public static final Block RED_NETHER_BRICK_FENCEGATE = registerBlock("red_nether_brick_fencegate",
+    public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .solid().strength(2.0F, 6.0F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_nether_brick_fencegate")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_nether_brick_fence_gate")))));
     public static final Block CRACKED_RED_NETHER_BRICKS = registerBlock("cracked_red_nether_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
@@ -950,10 +950,10 @@ public class ModBlocks {
             properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_red_nether_brick_fence")))));
-    public static final Block CRACKED_RED_NETHER_BRICK_FENCEGATE = registerBlock("cracked_red_nether_brick_fencegate",
+    public static final Block CRACKED_RED_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_red_nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .solid().strength(2.0F, 6.0F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_red_nether_brick_fencegate")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_red_nether_brick_fence_gate")))));
     public static final Block CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.RED_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
@@ -983,10 +983,10 @@ public class ModBlocks {
             properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_nether_brick_fence")))));
-    public static final Block BLUE_NETHER_BRICK_FENCEGATE = registerBlock("blue_nether_brick_fencegate",
+    public static final Block BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("blue_nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .solid().strength(2.0F, 6.0F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_nether_brick_fencegate")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "blue_nether_brick_fence_gate")))));
     public static final Block CRACKED_BLUE_NETHER_BRICKS = registerBlock("cracked_blue_nether_bricks",
             properties -> new Block(Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
@@ -1007,10 +1007,10 @@ public class ModBlocks {
             properties -> new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_blue_nether_brick_fence")))));
-    public static final Block CRACKED_BLUE_NETHER_BRICK_FENCEGATE = registerBlock("cracked_blue_nether_brick_fencegate",
+    public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_blue_nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .solid().strength(2.0F, 6.0F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_blue_nether_brick_fencegate")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_blue_nether_brick_fence_gate")))));
     public static final Block CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
             properties -> new Block(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)

@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "nether_brick_fences",
+  "category": "redstone",
+  "group": "nether_brick_fence_gates",
   "key": {
     "A": "cinchsmissingblocks:cracked_red_nether_bricks",
     "T": "cinchsmissingblocks:red_nether_brick"
   },
   "pattern": [
-    "ATA",
-    "ATA"
+    "TAT",
+    "TAT"
   ],
   "result": {
-    "count": 3,
-    "id": "cinchsmissingblocks:cracked_red_nether_brick_fence"
+    "count": 1,
+    "id": "cinchsmissingblocks:cracked_red_nether_brick_fence_gate"
   }
 }

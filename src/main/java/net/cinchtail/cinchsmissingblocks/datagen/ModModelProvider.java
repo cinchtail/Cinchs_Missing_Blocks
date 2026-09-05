@@ -329,13 +329,13 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.slab(gen, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK, TextureMap.getId(Blocks.NETHERRACK));
         BlockModelHelpers.wall(gen, ModBlocks.NETHERRACK_WALL, TextureMap.getId(Blocks.NETHERRACK));
 
-        BlockModelHelpers.fenceGate(gen, ModBlocks.NETHER_BRICK_FENCEGATE, TextureMap.getId(Blocks.NETHER_BRICKS));
+        BlockModelHelpers.fenceGate(gen, ModBlocks.NETHER_BRICK_FENCE_GATE, TextureMap.getId(Blocks.NETHER_BRICKS));
 
         BlockModelHelpers.stairs(gen, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, TextureMap.getId(Blocks.CRACKED_NETHER_BRICKS));
         BlockModelHelpers.slab(gen, ModBlocks.CRACKED_NETHER_BRICK_SLAB, Blocks.CRACKED_NETHER_BRICKS, TextureMap.getId(Blocks.CRACKED_NETHER_BRICKS));
         BlockModelHelpers.wall(gen, ModBlocks.CRACKED_NETHER_BRICK_WALL, TextureMap.getId(Blocks.CRACKED_NETHER_BRICKS));
         BlockModelHelpers.fence(gen, ModBlocks.CRACKED_NETHER_BRICK_FENCE, TextureMap.getId(Blocks.CRACKED_NETHER_BRICKS));
-        BlockModelHelpers.fenceGate(gen, ModBlocks.CRACKED_NETHER_BRICK_FENCEGATE, TextureMap.getId(Blocks.CRACKED_NETHER_BRICKS));
+        BlockModelHelpers.fenceGate(gen, ModBlocks.CRACKED_NETHER_BRICK_FENCE_GATE, TextureMap.getId(Blocks.CRACKED_NETHER_BRICKS));
 
         BlockModelHelpers.pillar(gen,ModBlocks.NETHER_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/nether_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/nether_brick_pillar_side"));
@@ -343,13 +343,13 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool crackedRedNetherBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_RED_NETHER_BRICKS);
 
         BlockModelHelpers.fence(gen, ModBlocks.RED_NETHER_BRICK_FENCE, TextureMap.getId(Blocks.RED_NETHER_BRICKS));
-        BlockModelHelpers.fenceGate(gen, ModBlocks.RED_NETHER_BRICK_FENCEGATE, TextureMap.getId(Blocks.RED_NETHER_BRICKS));
+        BlockModelHelpers.fenceGate(gen, ModBlocks.RED_NETHER_BRICK_FENCE_GATE, TextureMap.getId(Blocks.RED_NETHER_BRICKS));
 
         crackedRedNetherBricksPool.stairs(ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
         crackedRedNetherBricksPool.slab(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB);
         crackedRedNetherBricksPool.wall(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
         crackedRedNetherBricksPool.fence(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
-        crackedRedNetherBricksPool.fenceGate(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCEGATE);
+        crackedRedNetherBricksPool.fenceGate(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_RED_NETHER_BRICKS);
 
@@ -363,13 +363,13 @@ public class ModModelProvider extends FabricModelProvider {
         blueNetherBricksPool.slab(ModBlocks.BLUE_NETHER_BRICK_SLAB);
         blueNetherBricksPool.wall(ModBlocks.BLUE_NETHER_BRICK_WALL);
         blueNetherBricksPool.fence(ModBlocks.BLUE_NETHER_BRICK_FENCE);
-        blueNetherBricksPool.fenceGate(ModBlocks.BLUE_NETHER_BRICK_FENCEGATE);
+        blueNetherBricksPool.fenceGate(ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
 
         crackedBlueNetherBricksPool.stairs(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
         crackedBlueNetherBricksPool.slab(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
         crackedBlueNetherBricksPool.wall(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
         crackedBlueNetherBricksPool.fence(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
-        crackedBlueNetherBricksPool.fenceGate(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCEGATE);
+        crackedBlueNetherBricksPool.fenceGate(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
 
         gen.registerSimpleCubeAll(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
 

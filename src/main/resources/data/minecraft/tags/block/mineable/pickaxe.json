@@ -385,6 +385,15 @@
     "cinchsmissingblocks:pink_concrete_slab",
     "cinchsmissingblocks:pink_concrete_wall",
     "cinchsmissingblocks:sandstone_brick_pillar",
-    "cinchsmissingblocks:red_sandstone_brick_pillar"
+    "cinchsmissingblocks:red_sandstone_brick_pillar",
+    "cinchsmissingblocks:nether_brick_pillar",
+    "cinchsmissingblocks:red_nether_brick_pillar",
+    "cinchsmissingblocks:blue_nether_brick_pillar",
+    "cinchsmissingblocks:nether_brick_fence_gate",
+    "cinchsmissingblocks:cracked_nether_brick_fence_gate",
+    "cinchsmissingblocks:red_nether_brick_fence_gate",
+    "cinchsmissingblocks:cracked_red_nether_brick_fence_gate",
+    "cinchsmissingblocks:blue_nether_brick_fence_gate",
+    "cinchsmissingblocks:cracked_blue_nether_brick_fence_gate"
   ]
 }

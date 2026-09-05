@@ -365,6 +365,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICKS);
 
+                offerPillarBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_BRICK_PILLAR, Blocks.NETHER_BRICK_SLAB);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_BRICK_PILLAR, Blocks.NETHER_BRICKS);
+
+                offerPillarBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_PILLAR, Blocks.RED_NETHER_BRICK_SLAB);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_PILLAR, Blocks.RED_NETHER_BRICKS);
+
+                offerPillarBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_PILLAR, ModBlocks.BLUE_NETHER_BRICK_SLAB);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_PILLAR, ModBlocks.BLUE_NETHER_BRICKS);
+
 
 
                 //Miscellaneous Calcite Blocks
@@ -1236,6 +1248,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Miscellaneous Nether Brick Blocks
+                offerNetherBrickFenceGateRecipe(RecipeCategory.REDSTONE, ModBlocks.NETHER_BRICK_FENCE_GATE, Blocks.NETHER_BRICKS, Items.NETHER_BRICK);
+
                 offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
@@ -1250,9 +1264,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerNetherBrickFenceRecipe(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_NETHER_BRICK_FENCE, Blocks.CRACKED_NETHER_BRICKS, Items.NETHER_BRICK);
 
+                offerNetherBrickFenceGateRecipe(RecipeCategory.REDSTONE, ModBlocks.CRACKED_NETHER_BRICK_FENCE_GATE, Blocks.CRACKED_NETHER_BRICKS, Items.NETHER_BRICK);
+
 
                 //Miscellaneous Red Nether Brick Blocks
                 offerNetherBrickFenceRecipe(RecipeCategory.DECORATIONS, ModBlocks.RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
+
+                offerNetherBrickFenceGateRecipe(RecipeCategory.REDSTONE, ModBlocks.RED_NETHER_BRICK_FENCE_GATE, Blocks.RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
 
                 offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_RED_NETHER_BRICKS);
 
@@ -1267,6 +1285,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_RED_NETHER_BRICK_WALL, ModBlocks.CRACKED_RED_NETHER_BRICKS);
 
                 offerNetherBrickFenceRecipe(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE, ModBlocks.CRACKED_RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
+
+                offerNetherBrickFenceGateRecipe(RecipeCategory.REDSTONE, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE, ModBlocks.CRACKED_RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
 
 
                 //Blue Nether Brick Blocks
@@ -1291,6 +1311,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerNetherBrickFenceRecipe(RecipeCategory.DECORATIONS, ModBlocks.BLUE_NETHER_BRICK_FENCE, ModBlocks.BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
 
+                offerNetherBrickFenceGateRecipe(RecipeCategory.REDSTONE, ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE, ModBlocks.BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
+
                 offerStairsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
@@ -1304,6 +1326,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
 
                 offerNetherBrickFenceRecipe(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE, ModBlocks.CRACKED_BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
+
+                offerNetherBrickFenceGateRecipe(RecipeCategory.REDSTONE, ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, ModBlocks.CRACKED_BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
 
 
                 //Miscellaneous Prismarine Blocks
@@ -1933,9 +1957,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         this.conditionsFromItem(input)).offerTo(this.exporter);
             }
             public void offerNetherBrickFenceRecipe(RecipeCategory category, ItemConvertible output, ItemConvertible input, ItemConvertible brickInput) {
-                String outputPath = idPath(output);
                 String inputPath = idPath(input);
-                this.createShaped(category, output, 3).group(outputPath).input('A', input).input('T', brickInput).pattern("ATA").pattern("ATA").criterion("has_"+ inputPath,
+                this.createShaped(category, output, 3).group("nether_brick_fences").input('A', input).input('T', brickInput).pattern("ATA").pattern("ATA").criterion("has_"+ inputPath,
+                        conditionsFromItem(brickInput)).offerTo(this.exporter);
+            }
+            public void offerNetherBrickFenceGateRecipe(RecipeCategory category, ItemConvertible output, ItemConvertible input, ItemConvertible brickInput) {
+                String inputPath = idPath(input);
+                this.createShaped(category, output).group("nether_brick_fence_gates").input('A', input).input('T', brickInput).pattern("TAT").pattern("TAT").criterion("has_"+ inputPath,
                         conditionsFromItem(brickInput)).offerTo(this.exporter);
             }
             public void offerMossyFromMossBlockRecipe(RecipeCategory category, ItemConvertible output, ItemConvertible input) {
