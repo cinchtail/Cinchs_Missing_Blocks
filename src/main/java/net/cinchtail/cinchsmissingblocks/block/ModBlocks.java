@@ -1,12 +1,10 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
-import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
-import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
+import net.cinchtail.cinchsmissingblocks.block.custom.*;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.cinchtail.cinchsmissingblocks.util.ModWoodTypes;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -17,7 +15,6 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-import java.util.Properties;
 import java.util.function.Function;
 
 import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
@@ -1255,6 +1252,10 @@ public class ModBlocks {
             properties -> new WallBlock(Block.Settings.copy(Blocks.TERRACOTTA)
                     .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "terracotta_wall")))));
+    public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
+            properties -> new GlazedTerracottaBlock(Block.Settings.copy(Blocks.TERRACOTTA).pistonBehavior(PistonBehavior.PUSH_ONLY)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "glazed_terracotta")))));
     public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
             properties -> new StairsBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.WHITE_TERRACOTTA)
                     .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)

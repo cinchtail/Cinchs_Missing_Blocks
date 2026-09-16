@@ -5,10 +5,7 @@ import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
-import net.minecraft.client.data.TextureMap;
+import net.minecraft.client.data.*;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -462,6 +459,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelHelpers.stairs(gen, ModBlocks.TERRACOTTA_STAIRS, TextureMap.getId(Blocks.TERRACOTTA));
         BlockModelHelpers.slab(gen, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA, TextureMap.getId(Blocks.TERRACOTTA));
         BlockModelHelpers.wall(gen, ModBlocks.TERRACOTTA_WALL, TextureMap.getId(Blocks.TERRACOTTA));
+        gen.registerSouthDefaultHorizontalFacing(TexturedModel.TEMPLATE_GLAZED_TERRACOTTA, ModBlocks.GLAZED_TERRACOTTA);
         BlockModelHelpers.stairs(gen, ModBlocks.WHITE_TERRACOTTA_STAIRS, TextureMap.getId(Blocks.WHITE_TERRACOTTA));
         BlockModelHelpers.slab(gen, ModBlocks.WHITE_TERRACOTTA_SLAB, Blocks.WHITE_TERRACOTTA, TextureMap.getId(Blocks.WHITE_TERRACOTTA));
         BlockModelHelpers.wall(gen, ModBlocks.WHITE_TERRACOTTA_WALL, TextureMap.getId(Blocks.WHITE_TERRACOTTA));

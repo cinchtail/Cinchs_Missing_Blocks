@@ -11,7 +11,8 @@
 		"Texture Artists:",
 		"- Stallman",
 		"- Popopi",
-		"- Myheadmess\n",
+		"- Myheadmess",
+		"- Critbucket\n",
 		"Translators:",
 		"- kierohere",
 		"- Piotrus983",
@@ -48,7 +49,8 @@
 				"modmenu.modrinth": "https://modrinth.com/mod/cinchs-missing-blocks",
 				"modmenu.kofi": "https://ko-fi.com/cinchtail",
 				"modmenu.youtube": "https://www.youtube.com/@CinchPlaysMC"
-			}
+			},
+			"update_checker": true
 		}
 	},
 	"depends": {

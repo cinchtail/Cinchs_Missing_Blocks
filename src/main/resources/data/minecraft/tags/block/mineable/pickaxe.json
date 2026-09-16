@@ -394,6 +394,7 @@
     "cinchsmissingblocks:red_nether_brick_fence_gate",
     "cinchsmissingblocks:cracked_red_nether_brick_fence_gate",
     "cinchsmissingblocks:blue_nether_brick_fence_gate",
-    "cinchsmissingblocks:cracked_blue_nether_brick_fence_gate"
+    "cinchsmissingblocks:cracked_blue_nether_brick_fence_gate",
+    "cinchsmissingblocks:glazed_terracotta"
   ]
 }

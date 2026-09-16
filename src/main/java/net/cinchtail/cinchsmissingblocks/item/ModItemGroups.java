@@ -323,6 +323,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PURPUR_WALL);
                         entries.add(ModBlocks.CHISELED_PURPUR);
                         entries.add(ModBlocks.TINTED_GLASS_PANE);
+                        entries.add(ModBlocks.GLAZED_TERRACOTTA);
                         if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
                             entries.add(ModBlocks.TERRACOTTA_STAIRS);
                             entries.add(ModBlocks.TERRACOTTA_SLAB);

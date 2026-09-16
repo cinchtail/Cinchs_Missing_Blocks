@@ -5,6 +5,7 @@ import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
@@ -76,6 +77,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerCrackingRecipe(ModBlocks.CRACKED_STONE_TILES, ModBlocks.STONE_TILES);
 
                 offerCrackingRecipe(ModBlocks.CRACKED_BLACKSTONE_TILES, ModBlocks.BLACKSTONE_TILES);
+
+
+                //Glazed Smelting Recipes
+                offerGlazedTerracottaRecipe(ModBlocks.GLAZED_TERRACOTTA, Blocks.TERRACOTTA);
 
 
                 //Mossy Blocks
@@ -1992,6 +1997,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 String mossPath = idPath(inputMoss);
                 this.createShapeless(category, output, 1).group(outputPath).input(input).input(inputMoss).criterion("has_"+ mossPath,
                         conditionsFromItem(inputMoss)).offerTo(this.exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MOD_ID, outputPath + "_from_" + mossPath)));
+            }
+            public void offerGlazedTerracottaRecipe(ItemConvertible output, ItemConvertible input) {
+                CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItem(input), RecipeCategory.BUILDING_BLOCKS, output, 0.1F, 200).criterion(hasItem(input), this.conditionsFromItem(input)).offerTo(this.exporter);
             }
             public void offerTerracottaStairsRecipe(RecipeCategory category, ItemConvertible output, ItemConvertible input) {
                 String inputPath = idPath(input);
