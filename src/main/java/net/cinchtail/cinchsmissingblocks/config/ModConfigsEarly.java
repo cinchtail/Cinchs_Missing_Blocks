@@ -16,7 +16,7 @@ public class ModConfigsEarly {
     public static boolean loadEarlyFlag() {
         try {
             if (!Files.exists(EARLY_CONFIG_PATH)) {
-                return true;
+                return false;
             }
 
             try (Reader reader = Files.newBufferedReader(EARLY_CONFIG_PATH)) {
