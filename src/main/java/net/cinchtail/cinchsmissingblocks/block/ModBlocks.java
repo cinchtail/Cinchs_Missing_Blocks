@@ -5,6 +5,7 @@ import net.cinchtail.cinchsmissingblocks.block.custom.*;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
 import net.cinchtail.cinchsmissingblocks.util.ModWoodTypes;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -1209,6 +1210,112 @@ public class ModBlocks {
             properties -> new PillarBlock(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(0.8F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "red_sandstone_brick_pillar")))));
 
+    //Soul Sandstone Blocks
+    public static final Block SOUL_SANDSTONE = registerBlock("soul_sandstone",
+            properties -> new Block(Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone")))));
+    public static final Block SOUL_SANDSTONE_STAIRS = registerBlock("soul_sandstone_stairs",
+            properties -> new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_stairs")))));
+    public static final Block SOUL_SANDSTONE_SLAB = registerBlock("soul_sandstone_slab",
+            properties -> new SlabBlock(Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_slab")))));
+    public static final Block SOUL_SANDSTONE_WALL = registerBlock("soul_sandstone_wall",
+            properties -> new WallBlock(Block.Settings.copy(Blocks.CUT_RED_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_wall")))));
+    public static final Block SMOOTH_SOUL_SANDSTONE = registerBlock("smooth_soul_sandstone",
+            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresTool().strength(2.0F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_soul_sandstone")))));
+    public static final Block SMOOTH_SOUL_SANDSTONE_STAIRS = registerBlock("smooth_soul_sandstone_stairs",
+            properties -> new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_soul_sandstone_stairs")))));
+    public static final Block SMOOTH_SOUL_SANDSTONE_SLAB = registerBlock("smooth_soul_sandstone_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.SMOOTH_SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresTool().strength(2.0F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_soul_sandstone_slab")))));
+    public static final Block SMOOTH_SOUL_SANDSTONE_WALL = registerBlock("smooth_soul_sandstone_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.SMOOTH_SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresTool().strength(2.0F, 6.0F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_soul_sandstone_wall")))));
+    public static final Block CUT_SOUL_SANDSTONE = registerBlock("cut_soul_sandstone",
+            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cut_soul_sandstone")))));
+    public static final Block CUT_SOUL_SANDSTONE_STAIRS = registerBlock("cut_soul_sandstone_stairs",
+            properties -> new StairsBlock(ModBlocks.CUT_SOUL_SANDSTONE.getDefaultState(), Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cut_soul_sandstone_stairs")))));
+    public static final Block CUT_SOUL_SANDSTONE_SLAB = registerBlock("cut_soul_sandstone_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cut_soul_sandstone_slab")))));
+    public static final Block CUT_SOUL_SANDSTONE_WALL = registerBlock("cut_soul_sandstone_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cut_soul_sandstone_wall")))));
+
+    public static final Block SOUL_SANDSTONE_BRICKS = registerBlock("soul_sandstone_bricks",
+            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_bricks")))));
+    public static final Block SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("soul_sandstone_brick_stairs",
+            properties -> new StairsBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_brick_stairs")))));
+    public static final Block SOUL_SANDSTONE_BRICK_SLAB = registerBlock("soul_sandstone_brick_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_brick_slab")))));
+    public static final Block SOUL_SANDSTONE_BRICK_WALL = registerBlock("soul_sandstone_brick_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_brick_wall")))));
+    public static final Block CHISELED_SOUL_SANDSTONE = registerBlock("chiseled_soul_sandstone",
+            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "chiseled_soul_sandstone")))));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICKS = registerBlock("cracked_soul_sandstone_bricks",
+            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_soul_sandstone_bricks")))));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_soul_sandstone_brick_stairs",
+            properties -> new StairsBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_soul_sandstone_brick_stairs")))));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICK_SLAB = registerBlock("cracked_soul_sandstone_brick_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_soul_sandstone_brick_slab")))));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICK_WALL = registerBlock("cracked_soul_sandstone_brick_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_soul_sandstone_brick_wall")))));
+    public static final Block MOSSY_SOUL_SANDSTONE_BRICKS = registerBlock("mossy_soul_sandstone_bricks",
+            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_bricks")))));
+    public static final Block MOSSY_SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_soul_sandstone_brick_stairs",
+            properties -> new StairsBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_brick_stairs")))));
+    public static final Block MOSSY_SOUL_SANDSTONE_BRICK_SLAB = registerBlock("mossy_soul_sandstone_brick_slab",
+            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_brick_slab")))));
+    public static final Block MOSSY_SOUL_SANDSTONE_BRICK_WALL = registerBlock("mossy_soul_sandstone_brick_wall",
+            properties -> new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_brick_wall")))));
+    public static final Block SOUL_SANDSTONE_BRICK_PILLAR = registerBlock("soul_sandstone_brick_pillar",
+            properties -> new PillarBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_brick_pillar")))));
+
     //Purpur Blocks
     public static final Block PURPUR_WALL = registerBlock("purpur_wall",
             properties -> new WallBlock(Block.Settings.copy(Blocks.PURPUR_BLOCK)
@@ -1240,6 +1347,10 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "tinted_glass_pane")))));
 
     //Terracotta Variants
+    public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
+            properties -> new GlazedTerracottaBlock(Block.Settings.copy(Blocks.TERRACOTTA).pistonBehavior(PistonBehavior.PUSH_ONLY)
+                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "glazed_terracotta")))));
     public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
             properties -> new StairsBlock(Blocks.TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.TERRACOTTA)
                     .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)
@@ -1252,10 +1363,6 @@ public class ModBlocks {
             properties -> new WallBlock(Block.Settings.copy(Blocks.TERRACOTTA)
                     .strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "terracotta_wall")))));
-    public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
-            properties -> new GlazedTerracottaBlock(Block.Settings.copy(Blocks.TERRACOTTA).pistonBehavior(PistonBehavior.PUSH_ONLY)
-                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "glazed_terracotta")))));
     public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
             properties -> new StairsBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.WHITE_TERRACOTTA)
                     .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)

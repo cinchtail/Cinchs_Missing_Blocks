@@ -12,31 +12,32 @@ public class BlockModelHelpers {
         return BlockStateModelGenerator.createWeightedVariant(model);
     }
 
-    public static void button(BlockStateModelGenerator gen, Block button, Identifier texture) {
-        TextureMap tex = TextureMap.texture(texture);
+    public static void cubeColumn(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.END, end)
+                .put(TextureKey.SIDE, side);
 
-        Identifier regular = Models.BUTTON.upload(button, tex, gen.modelCollector);
-        Identifier pressed = Models.BUTTON_PRESSED.upload(button, tex, gen.modelCollector);
-        Identifier inventory = Models.BUTTON_INVENTORY.upload(button, tex, gen.modelCollector);
+        Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createButtonBlockState(button, wv(regular), wv(pressed))
+                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
         );
 
-        gen.registerItemModel(Item.fromBlock(button), inventory);
+        gen.registerItemModel(Item.fromBlock(block), model);
     }
 
-    public static void pressurePlate(BlockStateModelGenerator gen, Block pressurePlate, Identifier texture) {
-        TextureMap tex = TextureMap.texture(texture);
+    public static void pillar(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.END, end)
+                .put(TextureKey.SIDE, side);
 
-        Identifier up = Models.PRESSURE_PLATE_UP.upload(pressurePlate, tex, gen.modelCollector);
-        Identifier down = Models.PRESSURE_PLATE_DOWN.upload(pressurePlate, tex, gen.modelCollector);
+        Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, wv(up), wv(down))
+                BlockStateModelGenerator.createAxisRotatedBlockState(block, wv(model))
         );
 
-        gen.registerItemModel(Item.fromBlock(pressurePlate), up);
+        gen.registerItemModel(Item.fromBlock(block), model);
     }
 
     public static void slab(BlockStateModelGenerator gen, Block slab, Block base, Identifier texture) {
@@ -88,34 +89,6 @@ public class BlockModelHelpers {
         gen.registerItemModel(Item.fromBlock(wall), inventory);
     }
 
-    public static void cubeColumn(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
-        TextureMap tex = new TextureMap()
-                .put(TextureKey.END, end)
-                .put(TextureKey.SIDE, side);
-
-        Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
-
-        gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
-        );
-
-        gen.registerItemModel(Item.fromBlock(block), model);
-    }
-
-    public static void pillar(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
-        TextureMap tex = new TextureMap()
-                .put(TextureKey.END, end)
-                .put(TextureKey.SIDE, side);
-
-        Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
-
-        gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createAxisRotatedBlockState(block, wv(model))
-        );
-
-        gen.registerItemModel(Item.fromBlock(block), model);
-    }
-
     public static void fence(BlockStateModelGenerator gen, Block fence, Identifier texture) {
         TextureMap tex = new TextureMap().put(TextureKey.TEXTURE, texture);
 
@@ -150,5 +123,94 @@ public class BlockModelHelpers {
         );
 
         gen.registerItemModel(Item.fromBlock(gate), closed);
+    }
+
+    public static void button(BlockStateModelGenerator gen, Block button, Identifier texture) {
+        TextureMap tex = TextureMap.texture(texture);
+
+        Identifier regular = Models.BUTTON.upload(button, tex, gen.modelCollector);
+        Identifier pressed = Models.BUTTON_PRESSED.upload(button, tex, gen.modelCollector);
+        Identifier inventory = Models.BUTTON_INVENTORY.upload(button, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createButtonBlockState(button, wv(regular), wv(pressed))
+        );
+
+        gen.registerItemModel(Item.fromBlock(button), inventory);
+    }
+
+    public static void pressurePlate(BlockStateModelGenerator gen, Block pressurePlate, Identifier texture) {
+        TextureMap tex = TextureMap.texture(texture);
+
+        Identifier up = Models.PRESSURE_PLATE_UP.upload(pressurePlate, tex, gen.modelCollector);
+        Identifier down = Models.PRESSURE_PLATE_DOWN.upload(pressurePlate, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, wv(up), wv(down))
+        );
+
+        gen.registerItemModel(Item.fromBlock(pressurePlate), up);
+    }
+
+    public static void definableCubeAll(BlockStateModelGenerator gen, Block block, Identifier all) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.ALL, all);
+
+        Identifier model = Models.CUBE_ALL.upload(block, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
+        );
+
+        gen.registerItemModel(Item.fromBlock(block), model);
+    }
+
+    public static void definableBlock(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side, Identifier bottom) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.END, end)
+                .put(TextureKey.SIDE, side)
+                .put(TextureKey.BOTTOM, bottom);
+
+        Identifier model = Models.CUBE_BOTTOM_TOP.upload(block, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
+        );
+
+        gen.registerItemModel(Item.fromBlock(block), model);
+    }
+
+    public static void definableSlab(BlockStateModelGenerator gen, Block slab, Block base, Identifier bottom, Identifier top, Identifier side) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.BOTTOM, bottom)
+                .put(TextureKey.TOP, top)
+                .put(TextureKey.SIDE, side);
+
+        Identifier slabModel = Models.SLAB.upload(slab, tex, gen.modelCollector);
+        Identifier slabModelTop = Models.SLAB_TOP.upload(slab, tex, gen.modelCollector);
+        Identifier dbl = ModelIds.getBlockModelId(base);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSlabBlockState(slab, wv(slabModel), wv(slabModelTop), wv(dbl))
+        );
+
+        gen.registerItemModel(Item.fromBlock(slab), slabModel);
+    }
+
+    public static void definableStairs(BlockStateModelGenerator gen, Block stairs, Identifier bottom, Identifier top, Identifier side) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.BOTTOM, bottom)
+                .put(TextureKey.TOP, top)
+                .put(TextureKey.SIDE, side);
+
+        Identifier regular = Models.STAIRS.upload(stairs, tex, gen.modelCollector);
+        Identifier inner = Models.INNER_STAIRS.upload(stairs, tex, gen.modelCollector);
+        Identifier outer = Models.OUTER_STAIRS.upload(stairs, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createStairsBlockState(stairs, wv(inner), wv(regular), wv(outer))
+        );
+
+        gen.registerItemModel(Item.fromBlock(stairs), regular);
     }
 }
