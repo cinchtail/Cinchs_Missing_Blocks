@@ -1233,7 +1233,7 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_soul_sandstone")))));
     public static final Block SMOOTH_SOUL_SANDSTONE_STAIRS = registerBlock("smooth_soul_sandstone_stairs",
             properties -> new StairsBlock(Blocks.SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SANDSTONE)
-                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "smooth_soul_sandstone_stairs")))));
     public static final Block SMOOTH_SOUL_SANDSTONE_SLAB = registerBlock("smooth_soul_sandstone_slab",
             properties -> new SlabBlock(Block.Settings.copy(ModBlocks.SMOOTH_SOUL_SANDSTONE)

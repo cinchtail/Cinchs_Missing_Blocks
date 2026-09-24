@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:nether_brick_slab"
+    "#": "minecraft:nether_bricks"
   },
   "pattern": [
     "#",
