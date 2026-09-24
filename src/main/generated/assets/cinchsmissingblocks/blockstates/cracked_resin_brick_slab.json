@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/cracked_resin_brick_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/cracked_resin_bricks"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/cracked_resin_brick_slab_top"
+    }
+  }
+}

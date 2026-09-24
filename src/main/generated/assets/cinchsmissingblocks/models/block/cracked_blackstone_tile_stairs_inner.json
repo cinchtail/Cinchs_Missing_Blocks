@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/cracked_blackstone_tiles",
+    "side": "cinchsmissingblocks:block/cracked_blackstone_tiles",
+    "top": "cinchsmissingblocks:block/cracked_blackstone_tiles"
+  }
+}

@@ -278,7 +278,8 @@ public class ModModelProvider extends FabricModelProvider {
                 Identifier.of("minecraft:block/deepslate_top"), Identifier.of("minecraft:block/deepslate"));
         BlockModelHelpers.definableSlab(gen, ModBlocks.DEEPSLATE_SLAB, Blocks.DEEPSLATE, Identifier.of("minecraft:block/deepslate_top"),
                 Identifier.of("minecraft:block/deepslate_top"), Identifier.of("minecraft:block/deepslate"));
-        gen.registerParentedItemModel(ModBlocks.DEEPSLATE_WALL, Identifier.of("cinchsmissingblocks:block/deepslate_wall_inventory"));
+        BlockModelHelpers.definableWall(gen, ModBlocks.DEEPSLATE_WALL, Identifier.of("minecraft:block/deepslate_top"),
+                Identifier.of("minecraft:block/deepslate_top"), Identifier.of("minecraft:block/deepslate"));
 
         mossyCobbledDeepslatePool.stairs(ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
         mossyCobbledDeepslatePool.slab(ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
@@ -409,7 +410,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         BlockModelHelpers.definableStairs(gen, ModBlocks.CUT_SANDSTONE_STAIRS, Identifier.of("minecraft:block/sandstone_top"),
                 Identifier.of("minecraft:block/sandstone_top"), Identifier.of("minecraft:block/cut_sandstone"));
-        gen.registerParentedItemModel(ModBlocks.CUT_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_sandstone_wall_inventory"));
+        BlockModelHelpers.definableWall(gen, ModBlocks.CUT_SANDSTONE_WALL, Identifier.of("minecraft:block/sandstone_top"),
+                Identifier.of("minecraft:block/sandstone_top"), Identifier.of("minecraft:block/cut_sandstone"));
 
         BlockStateModelGenerator.BlockTexturePool sandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool crackedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_SANDSTONE_BRICKS);
@@ -434,7 +436,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         BlockModelHelpers.definableStairs(gen, ModBlocks.CUT_RED_SANDSTONE_STAIRS, Identifier.of("minecraft:block/red_sandstone_top"),
                 Identifier.of("minecraft:block/red_sandstone_top"), Identifier.of("minecraft:block/cut_red_sandstone"));
-        gen.registerParentedItemModel(ModBlocks.CUT_RED_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_red_sandstone_wall_inventory"));
+        BlockModelHelpers.definableWall(gen, ModBlocks.CUT_RED_SANDSTONE_WALL, Identifier.of("minecraft:block/red_sandstone_top"),
+                Identifier.of("minecraft:block/red_sandstone_top"), Identifier.of("minecraft:block/cut_red_sandstone"));
 
         BlockStateModelGenerator.BlockTexturePool redSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.RED_SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool crackedRedSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_RED_SANDSTONE_BRICKS);
@@ -461,7 +464,8 @@ public class ModModelProvider extends FabricModelProvider {
                 Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
         BlockModelHelpers.definableSlab(gen, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"),
                 Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
-        gen.registerParentedItemModel(ModBlocks.SOUL_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/soul_sandstone_wall_inventory"));
+        BlockModelHelpers.definableWall(gen, ModBlocks.SOUL_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"),
+                Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
 
         BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
                 Identifier.of("cinchsmissingblocks:block/chiseled_soul_sandstone"));
@@ -475,13 +479,13 @@ public class ModModelProvider extends FabricModelProvider {
                 Identifier.of("cinchsmissingblocks:block/cut_soul_sandstone"));
         BlockModelHelpers.definableStairs(gen, ModBlocks.CUT_SOUL_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
                 Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/cut_soul_sandstone"));
-        BlockModelHelpers.definableSlab(gen, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
+        BlockModelHelpers.definableSlab(gen, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
                 Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/cut_soul_sandstone"));
-        gen.registerParentedItemModel(ModBlocks.CUT_SOUL_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/cut_soul_sandstone_wall_inventory"));
+        BlockModelHelpers.definableWall(gen, ModBlocks.CUT_SOUL_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
+                Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/cut_soul_sandstone"));
 
         BlockStateModelGenerator.BlockTexturePool soulSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.SOUL_SANDSTONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool crackedSoulSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
-        //BlockStateModelGenerator.BlockTexturePool mossySoulSandStoneBricksPool = gen.registerCubeAllModelTexturePool(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICKS);
 
         soulSandStoneBricksPool.stairs(ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS);
         soulSandStoneBricksPool.slab(ModBlocks.SOUL_SANDSTONE_BRICK_SLAB);
@@ -490,10 +494,6 @@ public class ModModelProvider extends FabricModelProvider {
         crackedSoulSandStoneBricksPool.stairs(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS);
         crackedSoulSandStoneBricksPool.slab(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB);
         crackedSoulSandStoneBricksPool.wall(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL);
-
-        //mossySoulSandStoneBricksPool.stairs(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICK_STAIRS);
-        //mossySoulSandStoneBricksPool.slab(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICK_SLAB);
-        //mossySoulSandStoneBricksPool.wall(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICK_WALL);
 
         BlockModelHelpers.pillar(gen,ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR, Identifier.of("cinchsmissingblocks:block/soul_sandstone_brick_pillar_top"),
                 Identifier.of("cinchsmissingblocks:block/soul_sandstone_brick_pillar_side"));

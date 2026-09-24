@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cinchsmissingblocks:block/mossy_resin_bricks"
+  }
+}

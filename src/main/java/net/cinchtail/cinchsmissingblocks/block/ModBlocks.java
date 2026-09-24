@@ -1259,7 +1259,6 @@ public class ModBlocks {
             properties -> new WallBlock(Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
                     .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cut_soul_sandstone_wall")))));
-
     public static final Block SOUL_SANDSTONE_BRICKS = registerBlock("soul_sandstone_bricks",
             properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)
@@ -1296,22 +1295,6 @@ public class ModBlocks {
             properties -> new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
                     .strength(0.8F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "cracked_soul_sandstone_brick_wall")))));
-    public static final Block MOSSY_SOUL_SANDSTONE_BRICKS = registerBlock("mossy_soul_sandstone_bricks",
-            properties -> new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F)
-                    .sounds(BlockSoundGroup.STONE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_bricks")))));
-    public static final Block MOSSY_SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("mossy_soul_sandstone_brick_stairs",
-            properties -> new StairsBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_brick_stairs")))));
-    public static final Block MOSSY_SOUL_SANDSTONE_BRICK_SLAB = registerBlock("mossy_soul_sandstone_brick_slab",
-            properties -> new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_brick_slab")))));
-    public static final Block MOSSY_SOUL_SANDSTONE_BRICK_WALL = registerBlock("mossy_soul_sandstone_brick_wall",
-            properties -> new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
-                    .strength(0.8F).sounds(BlockSoundGroup.STONE)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "mossy_soul_sandstone_brick_wall")))));
     public static final Block SOUL_SANDSTONE_BRICK_PILLAR = registerBlock("soul_sandstone_brick_pillar",
             properties -> new PillarBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F).sounds(BlockSoundGroup.STONE)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "soul_sandstone_brick_pillar")))));

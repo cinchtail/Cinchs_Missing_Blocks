@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "cinchsmissingblocks:block/blue_nether_bricks"
+  }
+}

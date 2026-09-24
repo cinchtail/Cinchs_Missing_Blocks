@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/polished_end_stone",
+    "side": "cinchsmissingblocks:block/polished_end_stone",
+    "top": "cinchsmissingblocks:block/polished_end_stone"
+  }
+}

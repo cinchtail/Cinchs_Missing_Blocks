@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/blue_nether_bricks",
+    "side": "cinchsmissingblocks:block/blue_nether_bricks",
+    "top": "cinchsmissingblocks:block/blue_nether_bricks"
+  }
+}

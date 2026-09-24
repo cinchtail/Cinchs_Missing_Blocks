@@ -213,4 +213,23 @@ public class BlockModelHelpers {
 
         gen.registerItemModel(Item.fromBlock(stairs), regular);
     }
+
+    public static void definableWall(BlockStateModelGenerator gen, Block wall, Identifier bottom, Identifier top, Identifier side) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.BOTTOM, bottom)
+                .put(TextureKey.TOP, top)
+                .put(TextureKey.SIDE, side)
+                .put(TextureKey.PARTICLE, top);
+
+        Identifier post = ModModels.WALL_POST.upload(wall, tex, gen.modelCollector);
+        Identifier low = ModModels.WALL_SIDE.upload(wall, tex, gen.modelCollector);
+        Identifier tall = ModModels.WALL_SIDE_TALL.upload(wall, tex, gen.modelCollector);
+        Identifier inventory = ModModels.WALL_INVENTORY.upload(wall, tex, gen.modelCollector);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createWallBlockState(wall, wv(post), wv(low), wv(tall))
+        );
+
+        gen.registerItemModel(Item.fromBlock(wall), inventory);
+    }
 }

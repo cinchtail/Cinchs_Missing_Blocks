@@ -213,10 +213,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL);
-                        //entries.add(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICKS);
-                        //entries.add(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICK_STAIRS);
-                        //entries.add(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICK_SLAB);
-                        //entries.add(ModBlocks.MOSSY_SOUL_SANDSTONE_BRICK_WALL);
                         entries.add(ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR);
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_SLAB);

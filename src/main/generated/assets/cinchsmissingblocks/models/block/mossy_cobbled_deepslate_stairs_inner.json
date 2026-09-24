@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/mossy_cobbled_deepslate",
+    "side": "cinchsmissingblocks:block/mossy_cobbled_deepslate",
+    "top": "cinchsmissingblocks:block/mossy_cobbled_deepslate"
+  }
+}
