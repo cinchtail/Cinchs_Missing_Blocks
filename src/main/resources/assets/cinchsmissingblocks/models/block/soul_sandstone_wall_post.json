@@ -1,8 +1,0 @@
-{
-  "parent": "cinchsmissingblocks:block/two_texture_wall_post",
-  "textures": {
-    "top": "cinchsmissingblocks:block/soul_sandstone_top",
-    "side": "cinchsmissingblocks:block/soul_sandstone_side",
-    "particle": "cinchsmissingblocks:block/soul_sandstone"
-  }
-}

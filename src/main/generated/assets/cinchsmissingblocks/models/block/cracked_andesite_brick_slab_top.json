@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/cracked_andesite_bricks",
-    "side": "cinchsmissingblocks:block/cracked_andesite_bricks",
-    "top": "cinchsmissingblocks:block/cracked_andesite_bricks"
-  }
-}

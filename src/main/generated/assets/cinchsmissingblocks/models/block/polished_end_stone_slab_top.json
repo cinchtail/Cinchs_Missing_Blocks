@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/polished_end_stone",
-    "side": "cinchsmissingblocks:block/polished_end_stone",
-    "top": "cinchsmissingblocks:block/polished_end_stone"
-  }
-}

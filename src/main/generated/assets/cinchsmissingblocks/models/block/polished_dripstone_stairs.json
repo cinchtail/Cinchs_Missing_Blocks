@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/polished_dripstone",
-    "side": "cinchsmissingblocks:block/polished_dripstone",
-    "top": "cinchsmissingblocks:block/polished_dripstone"
-  }
-}

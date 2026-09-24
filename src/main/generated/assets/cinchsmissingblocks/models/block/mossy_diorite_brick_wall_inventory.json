@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "cinchsmissingblocks:block/mossy_diorite_bricks"
-  }
-}

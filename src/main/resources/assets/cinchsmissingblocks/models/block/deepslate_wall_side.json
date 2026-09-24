@@ -1,8 +1,0 @@
-{
-  "parent": "cinchsmissingblocks:block/two_texture_template_wall_side",
-  "textures": {
-    "top": "minecraft:block/deepslate_top",
-    "side": "minecraft:block/deepslate",
-    "particle": "minecraft:block/deepslate"
-  }
-}
