@@ -1332,7 +1332,7 @@ public class ModBlocks {
     //Terracotta Variants
     public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
             properties -> new GlazedTerracottaBlock(Block.Settings.copy(Blocks.TERRACOTTA).pistonBehavior(PistonBehavior.PUSH_ONLY)
-                    .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)
+                    .sounds(BlockSoundGroup.STONE).strength(1.4F)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MOD_ID, "glazed_terracotta")))));
     public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
             properties -> new StairsBlock(Blocks.TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.TERRACOTTA)
