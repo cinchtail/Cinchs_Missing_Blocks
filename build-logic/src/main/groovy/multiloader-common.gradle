@@ -45,11 +45,13 @@ processResources {
             'mod_name'                     : mod_name,
             'mod_author'                   : mod_author,
             'mod_id'                       : mod_id,
-            'license'                      : license,
-            'description'                  : project.description,
+            'mod_license'                  : mod_license,
+            'mod_description'              : project.mod_description,
+            'mod_homepage'                 : mod_homepage,
+            'mod_issues'                   : mod_issues,
             'neoforge_version'             : neoforge_version,
             'neoforge_loader_version_range': neoforge_loader_version_range,
-            'credits'                      : credits,
+            'mod_credits'                  : mod_credits,
             'java_version'                 : java_version
     ]
 

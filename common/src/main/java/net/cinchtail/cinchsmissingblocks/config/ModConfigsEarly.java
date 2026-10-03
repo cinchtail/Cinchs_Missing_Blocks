@@ -19,18 +19,15 @@ public final class ModConfigsEarly {
     public static boolean loadEarlyFlag() {
         try {
             if (!Files.exists(EARLY_CONFIG_PATH)) {
-                return true;
+                return false;
             }
-
             try (Reader reader = Files.newBufferedReader(EARLY_CONFIG_PATH)) {
                 JsonObject json = GSON.fromJson(reader, JsonObject.class);
-
-                return !json.has("enableTuffBrickPillar")
-                        || json.get("enableTuffBrickPillar").getAsBoolean();
+                return json.has("enableTuffBrickPillar")
+                        && json.get("enableTuffBrickPillar").getAsBoolean();
             }
-
         } catch (Exception e) {
-            return true;
+            return false;
         }
     }
 }
