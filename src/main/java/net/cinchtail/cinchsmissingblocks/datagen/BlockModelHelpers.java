@@ -173,10 +173,10 @@ public class BlockModelHelpers {
         gen.registerItemModel(Item.fromBlock(block), model);
     }
 
-    public static void definableStairs(BlockStateModelGenerator gen, Block stairs, Identifier bottom, Identifier top, Identifier side) {
+    public static void definableStairs(BlockStateModelGenerator gen, Block stairs, Identifier top, Identifier bottom, Identifier side) {
         TextureMap tex = new TextureMap()
-                .put(TextureKey.BOTTOM, bottom)
                 .put(TextureKey.TOP, top)
+                .put(TextureKey.BOTTOM, bottom)
                 .put(TextureKey.SIDE, side);
 
         Identifier regular = Models.STAIRS.upload(stairs, tex, gen.modelCollector);
@@ -190,10 +190,10 @@ public class BlockModelHelpers {
         gen.registerItemModel(Item.fromBlock(stairs), regular);
     }
 
-    public static void definableSlab(BlockStateModelGenerator gen, Block slab, Block base, Identifier bottom, Identifier top, Identifier side) {
+    public static void definableSlab(BlockStateModelGenerator gen, Block slab, Block base, Identifier top, Identifier bottom, Identifier side) {
         TextureMap tex = new TextureMap()
-                .put(TextureKey.BOTTOM, bottom)
                 .put(TextureKey.TOP, top)
+                .put(TextureKey.BOTTOM, bottom)
                 .put(TextureKey.SIDE, side);
 
         Identifier slabModel = Models.SLAB.upload(slab, tex, gen.modelCollector);
@@ -207,10 +207,10 @@ public class BlockModelHelpers {
         gen.registerItemModel(Item.fromBlock(slab), slabModel);
     }
 
-    public static void definableWall(BlockStateModelGenerator gen, Block wall, Identifier bottom, Identifier top, Identifier side) {
+    public static void definableWall(BlockStateModelGenerator gen, Block wall, Identifier top, Identifier bottom, Identifier side) {
         TextureMap tex = new TextureMap()
-                .put(TextureKey.BOTTOM, bottom)
                 .put(TextureKey.TOP, top)
+                .put(TextureKey.BOTTOM, bottom)
                 .put(TextureKey.SIDE, side)
                 .put(TextureKey.PARTICLE, top);
 

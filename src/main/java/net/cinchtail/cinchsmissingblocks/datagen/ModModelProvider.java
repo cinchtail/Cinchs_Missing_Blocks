@@ -459,12 +459,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         BlockModelHelpers.definableBlock(gen,ModBlocks.SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
                 Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"));
-        BlockModelHelpers.definableStairs(gen, ModBlocks.SOUL_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"),
-                Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
-        BlockModelHelpers.definableSlab(gen, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"),
-                Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
-        BlockModelHelpers.definableWall(gen, ModBlocks.SOUL_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"),
-                Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
+        BlockModelHelpers.definableStairs(gen, ModBlocks.SOUL_SANDSTONE_STAIRS, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
+                Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
+        BlockModelHelpers.definableSlab(gen, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
+                Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
+        BlockModelHelpers.definableWall(gen, ModBlocks.SOUL_SANDSTONE_WALL, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
+                Identifier.of("cinchsmissingblocks:block/soul_sandstone_bottom"), Identifier.of("cinchsmissingblocks:block/soul_sandstone_side"));
 
         BlockModelHelpers.cubeColumn(gen, ModBlocks.CHISELED_SOUL_SANDSTONE, Identifier.of("cinchsmissingblocks:block/soul_sandstone_top"),
                 Identifier.of("cinchsmissingblocks:block/chiseled_soul_sandstone"));
