@@ -75,127 +75,137 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 smeltingResultFromBase(ModBlocks.CRACKED_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
 
+                smeltingResultFromBase(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+
+                //Glazed Block Smelting Recipes
+                smeltingResultFromBase(ModBlocks.GLAZED_TERRACOTTA, Blocks.TERRACOTTA);
+
+
+                //Smooth Block Smelting Recipes
+                smeltingResultFromBase(ModBlocks.SMOOTH_SOUL_SANDSTONE, ModBlocks.SOUL_SANDSTONE);
+
 
                 //Mossy Blocks
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_ANDESITE_BRICKS, ModBlocks.ANDESITE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_GRANITE_BRICKS, ModBlocks.GRANITE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DIORITE_BRICKS, ModBlocks.DIORITE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_TUFF_BRICKS, Blocks.TUFF_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DRIPSTONE_BRICKS, ModBlocks.DRIPSTONE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_MUD_BRICKS, Blocks.MUD_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS, Blocks.BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS, Blocks.BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS, Blocks.BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS, Blocks.BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS, Blocks.BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_BRICKS, Blocks.BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE, Blocks.COBBLESTONE);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE, Blocks.COBBLESTONE);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS, Blocks.STONE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS, Blocks.STONE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SANDSTONE_BRICKS, ModBlocks.SANDSTONE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SANDSTONE_BRICKS, ModBlocks.SANDSTONE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SANDSTONE_BRICKS, ModBlocks.SANDSTONE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SANDSTONE_BRICKS, ModBlocks.SANDSTONE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SANDSTONE_BRICKS, ModBlocks.SANDSTONE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SANDSTONE_BRICKS, ModBlocks.SANDSTONE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS, ModBlocks.RED_SANDSTONE_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS, ModBlocks.RED_SANDSTONE_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS, ModBlocks.RED_SANDSTONE_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS, ModBlocks.RED_SANDSTONE_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS, ModBlocks.RED_SANDSTONE_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS, ModBlocks.RED_SANDSTONE_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_STONE_TILES, ModBlocks.STONE_TILES);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_STONE_TILES, ModBlocks.STONE_TILES);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_STONE_TILES, ModBlocks.STONE_TILES);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_STONE_TILES, ModBlocks.STONE_TILES);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_STONE_TILES, ModBlocks.STONE_TILES);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_STONE_TILES, ModBlocks.STONE_TILES);
 
-                offerGenericMossyRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_MOSS_BLOCK);
+                genericMossy(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_MOSS_BLOCK);
 
-                offerGenericMossyRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_HANGING_MOSS);
+                genericMossy(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_HANGING_MOSS);
 
-                offerMossyFromOtherMossCarpetRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_MOSS_CARPET);
+                mossyFromOtherMossCarpet(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_RESIN_BRICKS, Blocks.RESIN_BRICKS, Items.PALE_MOSS_CARPET);
 
-                offerGenericMossyRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_END_STONE_BRICKS, Blocks.END_STONE_BRICKS, Items.CHORUS_FLOWER);
+                genericMossy(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_END_STONE_BRICKS, Blocks.END_STONE_BRICKS, Items.CHORUS_FLOWER);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CINNABAR_BRICKS, Blocks.CINNABAR_BRICKS);
 
-                offerMossyFromMossBlockRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
+                mossyFromMossBlock(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
 
-                offerMossyFromVineRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
+                mossyFromVine(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
 
-                offerMossyFromMossCarpetsRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
+                mossyFromMossCarpets(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_SULFUR_BRICKS, Blocks.SULFUR_BRICKS);
 
 
                 //Chiseled Blocks
@@ -279,6 +289,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_BLUE_NETHER_BRICKS, ModBlocks.BLUE_NETHER_BRICKS);
 
+                chiseled(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_SOUL_SANDSTONE, ModBlocks.SOUL_SANDSTONE_SLAB);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_SOUL_SANDSTONE, ModBlocks.SOUL_SANDSTONE);
+
 
                 //Pillar Blocks
                 pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_BRICK_PILLAR, Blocks.END_STONE_BRICKS);
@@ -359,7 +373,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIORITE_BRICK_PILLAR, ModBlocks.DIORITE_BRICKS);
 
-                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, ModBlocks.SANDSTONE_BRICK_SLAB);
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, ModBlocks.SANDSTONE_BRICKS);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, Blocks.SANDSTONE);
 
@@ -367,7 +381,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDSTONE_BRICK_PILLAR, ModBlocks.SANDSTONE_BRICKS);
 
-                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICK_SLAB);
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, ModBlocks.RED_SANDSTONE_BRICKS);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_SANDSTONE_BRICK_PILLAR, Blocks.RED_SANDSTONE);
 
@@ -390,6 +404,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SULFUR_BRICK_PILLAR, Blocks.POLISHED_SULFUR);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SULFUR_BRICK_PILLAR, Blocks.SULFUR_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_BRICK_PILLAR, Blocks.NETHER_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_BRICK_PILLAR, Blocks.NETHER_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_PILLAR, Blocks.RED_NETHER_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_PILLAR, Blocks.RED_NETHER_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_PILLAR, ModBlocks.BLUE_NETHER_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_NETHER_BRICK_PILLAR, ModBlocks.BLUE_NETHER_BRICKS);
+
+                pillar(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR, ModBlocks.SOUL_SANDSTONE_BRICKS);
 
 
                 //Miscellaneous Calcite Blocks
@@ -1261,6 +1295,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Miscellaneous Nether Brick Blocks
+                netherBrickFenceGate(RecipeCategory.REDSTONE, ModBlocks.NETHER_BRICK_FENCE_GATE, Blocks.NETHER_BRICKS, Items.NETHER_BRICK);
+
                 stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS, Blocks.CRACKED_NETHER_BRICKS);
@@ -1275,9 +1311,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 netherBrickFence(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_NETHER_BRICK_FENCE, Blocks.CRACKED_NETHER_BRICKS, Items.NETHER_BRICK);
 
+                netherBrickFenceGate(RecipeCategory.REDSTONE, ModBlocks.CRACKED_NETHER_BRICK_FENCE_GATE, Blocks.CRACKED_NETHER_BRICKS, Items.NETHER_BRICK);
+
 
                 //Miscellaneous Red Nether Brick Blocks
                 netherBrickFence(RecipeCategory.DECORATIONS, ModBlocks.RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
+
+                netherBrickFenceGate(RecipeCategory.REDSTONE, ModBlocks.RED_NETHER_BRICK_FENCE_GATE, Blocks.RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
 
                 stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_RED_NETHER_BRICKS);
 
@@ -1292,6 +1332,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_RED_NETHER_BRICK_WALL, ModBlocks.CRACKED_RED_NETHER_BRICKS);
 
                 netherBrickFence(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE, ModBlocks.CRACKED_RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
+
+                netherBrickFenceGate(RecipeCategory.REDSTONE, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE, ModBlocks.CRACKED_RED_NETHER_BRICKS, ModItems.RED_NETHER_BRICK);
 
 
                 //Blue Nether Brick Blocks
@@ -1316,6 +1358,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 netherBrickFence(RecipeCategory.DECORATIONS, ModBlocks.BLUE_NETHER_BRICK_FENCE, ModBlocks.BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
 
+                netherBrickFenceGate(RecipeCategory.REDSTONE, ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE, ModBlocks.BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
+
                 stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
 
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
@@ -1329,6 +1373,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
 
                 netherBrickFence(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE, ModBlocks.CRACKED_BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
+
+                netherBrickFenceGate(RecipeCategory.REDSTONE, ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, ModBlocks.CRACKED_BLUE_NETHER_BRICKS, ModItems.BLUE_NETHER_BRICK);
 
 
                 //Miscellaneous Prismarine Blocks
@@ -1531,6 +1577,97 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 wall(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
 
                 stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL, ModBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+
+                //Miscellaneous Soul Sandstone Blocks
+                bricks(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE, Blocks.SOUL_SAND);
+
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_STAIRS, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_STAIRS, ModBlocks.SOUL_SANDSTONE);
+
+                slab(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_WALL, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_WALL, ModBlocks.SOUL_SANDSTONE);
+
+                bricks(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SOUL_SANDSTONE, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE, ModBlocks.SOUL_SANDSTONE);
+
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SOUL_SANDSTONE_STAIRS, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SOUL_SANDSTONE_STAIRS, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SOUL_SANDSTONE_STAIRS, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                slab(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_WALL, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_WALL, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_WALL, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stairs(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_STAIRS, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_STAIRS, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+
+                slab(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_WALL, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_WALL, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+
+                bricks(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICKS, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICKS, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICKS, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_SLAB, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_SLAB, ModBlocks.SOUL_SANDSTONE,2);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_SLAB, ModBlocks.CUT_SOUL_SANDSTONE,2);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SANDSTONE_BRICK_SLAB, ModBlocks.SOUL_SANDSTONE_BRICKS,2);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_BRICK_WALL, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_BRICK_WALL, ModBlocks.SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_BRICK_WALL, ModBlocks.CUT_SOUL_SANDSTONE);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_BRICK_WALL, ModBlocks.SOUL_SANDSTONE_BRICKS);
+
+                stairs(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS,2);
+
+                wall(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+
+                stonecutterResultFromBase(RecipeCategory.DECORATIONS, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL, ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
 
 
                 //Miscellaneous Cinnabar Blocks
@@ -2015,30 +2152,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 this.shaped(category, output, 3).group(outputPath).define('A', input).define('T', brickInput)
                         .pattern("ATA").pattern("ATA").unlockedBy("has_" + inputPath, this.has(brickInput)).save(this.output);
             }
-            public void offerMossyFromMossBlockRecipe(RecipeCategory category, ItemLike output, ItemLike input) {
+            public void netherBrickFenceGate(RecipeCategory category, ItemLike output, ItemLike input, ItemLike brickInput) {
+                String inputPath = idPath(input);
+                this.shaped(category, output).group("nether_brick_fence_gates").define('A', input).define('T', brickInput)
+                        .pattern("TAT").pattern("TAT").unlockedBy("has_"+ inputPath,
+                        this.has(brickInput)).save(this.output);
+            }
+            public void mossyFromMossBlock(RecipeCategory category, ItemLike output, ItemLike input) {
                 String outputPath = idPath(output);
                 this.shapeless(category, output, 1).group(outputPath).requires(input).requires(Blocks.MOSS_BLOCK).unlockedBy("has_moss_block", this.has(Blocks.MOSS_BLOCK))
                         .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(MOD_ID, outputPath + "_from_moss_block")));
             }
-            public void offerMossyFromVineRecipe(RecipeCategory category, ItemLike output, ItemLike input) {
+            public void mossyFromVine(RecipeCategory category, ItemLike output, ItemLike input) {
                 String outputPath = idPath(output);
                 this.shapeless(category, output, 1).group(outputPath).requires(input).requires(Blocks.VINE).unlockedBy("has_vine", this.has(Blocks.VINE))
                         .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(MOD_ID, outputPath + "_from_vine")));
             }
-            public void offerMossyFromMossCarpetsRecipe(RecipeCategory category, ItemLike output, ItemLike input) {
+            public void mossyFromMossCarpets(RecipeCategory category, ItemLike output, ItemLike input) {
                 String outputPath = idPath(output);
                 this.shaped(category, output, 1).group(outputPath).define('#', Blocks.MOSS_CARPET).define('B', input)
                         .pattern("#").pattern("B").pattern("#").unlockedBy("has_moss_carpet", this.has(Blocks.MOSS_CARPET))
                         .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(MOD_ID, outputPath + "_from_moss_carpet")));
             }
-            public void offerMossyFromOtherMossCarpetRecipe(RecipeCategory category, ItemLike output, ItemLike input, ItemLike input_moss) {
+            public void mossyFromOtherMossCarpet(RecipeCategory category, ItemLike output, ItemLike input, ItemLike input_moss) {
                 String outputPath = idPath(output);
                 String mossPath = idPath(input_moss);
                 this.shaped(category, output, 1).group(outputPath).define('#', input_moss).define('B', input).pattern("#").pattern("B").pattern("#")
                         .unlockedBy("has_" + mossPath, this.has(input_moss)).save(this.output, ResourceKey.create(Registries.RECIPE,
                                 Identifier.fromNamespaceAndPath(MOD_ID, outputPath + "_from_" + mossPath)));
             }
-            public void offerGenericMossyRecipe(RecipeCategory category, ItemLike output, ItemLike input, ItemLike inputMoss) {
+            public void genericMossy(RecipeCategory category, ItemLike output, ItemLike input, ItemLike inputMoss) {
                 String outputPath = idPath(output);
                 String mossPath = idPath(inputMoss);
                 this.shapeless(category, output, 1).group(outputPath).requires(input).requires(inputMoss).unlockedBy("has_" + mossPath, this.has(inputMoss))

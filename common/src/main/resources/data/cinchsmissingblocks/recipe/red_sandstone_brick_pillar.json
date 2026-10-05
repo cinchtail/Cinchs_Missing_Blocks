@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "cinchsmissingblocks:red_sandstone_brick_slab"
+    "#": "cinchsmissingblocks:red_sandstone_bricks"
   },
   "pattern": [
     "#",

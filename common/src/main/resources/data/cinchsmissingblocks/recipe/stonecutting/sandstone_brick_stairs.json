@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:sandstone_bricks",
-  "result": {
-    "id": "cinchsmissingblocks:sandstone_brick_stairs"
-  }
-}

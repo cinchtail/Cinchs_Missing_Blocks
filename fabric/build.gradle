@@ -35,6 +35,35 @@ fabricApi {
     }
 }
 
+/*tasks.named('runDatagen') {
+    doLast {
+        def generatedDir = new File(project.projectDir, 'src/main/generated')
+        def targetDir = new File(rootProject.projectDir, 'common/src/main/generated')
+
+        println "Checking generatedDir: ${generatedDir.absolutePath}"
+
+        if (generatedDir.exists()) {
+            targetDir.mkdirs()
+
+            // Copy files to the common module.
+            ant.copy(todir: targetDir) {
+                fileset(dir: generatedDir)
+            }
+
+            println "Copied generated data to: ${targetDir}"
+
+            // Delete the original generated directory.
+            if (generatedDir.deleteDir()) {
+                println "Deleted original generated directory: ${generatedDir}"
+            } else {
+                println "Failed to delete: ${generatedDir} — possibly contains files still in use"
+            }
+        } else {
+            println "No generated data found at: ${generatedDir}"
+        }
+    }
+}*/
+
 // Implement mcgradleconventions loader attribute
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
 ['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements', 'includeInternal', 'modCompileClasspath'].each { variant ->

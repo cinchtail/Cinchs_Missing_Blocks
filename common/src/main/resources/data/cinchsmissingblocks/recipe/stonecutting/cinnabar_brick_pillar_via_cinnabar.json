@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:cinnabar",
-  "result": {
-    "id": "cinchsmissingblocks:cinnabar_brick_pillar"
-  }
-}

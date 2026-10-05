@@ -103,6 +103,11 @@
     "cinchsmissingblocks:cracked_cinnabar_brick_stairs",
     "cinchsmissingblocks:mossy_cinnabar_brick_stairs",
     "cinchsmissingblocks:cracked_sulfur_brick_stairs",
-    "cinchsmissingblocks:mossy_sulfur_brick_stairs"
+    "cinchsmissingblocks:mossy_sulfur_brick_stairs",
+    "cinchsmissingblocks:soul_sandstone_stairs",
+    "cinchsmissingblocks:cut_soul_sandstone_stairs",
+    "cinchsmissingblocks:smooth_soul_sandstone_stairs",
+    "cinchsmissingblocks:soul_sandstone_brick_stairs",
+    "cinchsmissingblocks:cracked_soul_sandstone_brick_stairs"
   ]
 }

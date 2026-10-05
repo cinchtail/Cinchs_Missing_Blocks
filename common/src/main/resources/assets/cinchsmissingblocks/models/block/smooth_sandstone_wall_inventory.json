@@ -1,6 +1,9 @@
 {
-  "parent": "minecraft:block/wall_inventory",
+  "parent": "cinchsmissingblocks:block/multi_texture_wall_inventory",
   "textures": {
-    "wall": "minecraft:block/sandstone_top"
+    "bottom": "minecraft:block/sandstone_top",
+    "particle": "minecraft:block/sandstone_top",
+    "side": "minecraft:block/sandstone_top",
+    "top": "minecraft:block/sandstone_top"
   }
 }

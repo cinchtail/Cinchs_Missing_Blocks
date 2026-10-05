@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:soul_sandstone",
+  "result": {
+    "id": "cinchsmissingblocks:smooth_soul_sandstone"
+  }
+}

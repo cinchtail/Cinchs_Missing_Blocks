@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:mossy_cobbled_deepslate",
-  "result": {
-    "id": "cinchsmissingblocks:mossy_cobbled_deepslate_wall"
-  }
-}

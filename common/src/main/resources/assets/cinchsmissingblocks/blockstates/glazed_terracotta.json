@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cinchsmissingblocks:block/glazed_terracotta",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cinchsmissingblocks:block/glazed_terracotta"
+    },
+    "facing=south": {
+      "model": "cinchsmissingblocks:block/glazed_terracotta",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cinchsmissingblocks:block/glazed_terracotta",
+      "y": 270
+    }
+  }
+}

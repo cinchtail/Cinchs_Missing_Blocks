@@ -100,6 +100,11 @@
     "cinchsmissingblocks:cracked_cinnabar_brick_slab",
     "cinchsmissingblocks:mossy_cinnabar_brick_slab",
     "cinchsmissingblocks:cracked_sulfur_brick_slab",
-    "cinchsmissingblocks:mossy_sulfur_brick_slab"
+    "cinchsmissingblocks:mossy_sulfur_brick_slab",
+    "cinchsmissingblocks:soul_sandstone_slab",
+    "cinchsmissingblocks:cut_soul_sandstone_slab",
+    "cinchsmissingblocks:smooth_soul_sandstone_slab",
+    "cinchsmissingblocks:soul_sandstone_brick_slab",
+    "cinchsmissingblocks:cracked_soul_sandstone_brick_slab"
   ]
 }

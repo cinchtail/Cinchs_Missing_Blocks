@@ -1,8 +1,9 @@
 {
   "replace": true,
-  "parent": "cinchsmissingblocks:block/two_texture_wall_inventory",
+  "parent": "cinchsmissingblocks:block/multi_texture_wall_inventory",
   "textures": {
     "top": "minecraft:block/red_sandstone_top",
+    "bottom": "minecraft:block/red_sandstone_bottom",
     "side": "minecraft:block/red_sandstone",
     "particle": "minecraft:block/red_sandstone"
   }

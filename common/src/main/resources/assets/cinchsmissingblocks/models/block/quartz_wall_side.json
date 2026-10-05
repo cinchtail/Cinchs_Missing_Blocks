@@ -1,6 +1,9 @@
 {
-  "parent": "minecraft:block/template_wall_side",
+  "parent": "cinchsmissingblocks:block/multi_texture_template_wall_side",
   "textures": {
-    "wall": "minecraft:block/quartz_block_side"
+    "bottom": "minecraft:block/quartz_block_bottom",
+    "particle": "minecraft:block/quartz_block_top",
+    "side": "minecraft:block/quartz_block_side",
+    "top": "minecraft:block/quartz_block_top"
   }
 }

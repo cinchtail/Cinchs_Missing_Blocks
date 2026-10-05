@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "cinchsmissingblocks:soul_sandstone_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_soul_sandstone_bricks"
+  }
+}
