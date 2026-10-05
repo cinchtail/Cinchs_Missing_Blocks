@@ -1,7 +1,5 @@
 license="${mod_license}"
-
-# A URL to refer people to when problems occur with this mod
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="${mod_issues}"
 
 [[mods]]
 modId="${mod_id}"
@@ -11,9 +9,7 @@ displayName="${mod_name}"
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 
-# A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
-
+displayURL="${mod_homepage}"
 logoFile="icon.png"
 credits="${mod_credits}"
 authors="${mod_authors}"

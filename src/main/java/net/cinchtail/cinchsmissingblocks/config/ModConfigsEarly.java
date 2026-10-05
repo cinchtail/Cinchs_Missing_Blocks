@@ -7,27 +7,27 @@ import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class ModConfigsEarly {
+public final class ModConfigsEarly {
 
     private static final Gson GSON = new Gson();
     private static final Path EARLY_CONFIG_PATH =
             Path.of("config/cinchsmissingblocks.json");
 
+    private ModConfigsEarly() {
+    }
+
     public static boolean loadEarlyFlag() {
         try {
             if (!Files.exists(EARLY_CONFIG_PATH)) {
-                return true;
+                return false;
             }
-
             try (Reader reader = Files.newBufferedReader(EARLY_CONFIG_PATH)) {
                 JsonObject json = GSON.fromJson(reader, JsonObject.class);
-
-                return !json.has("enableTuffBrickPillar")
-                        || json.get("enableTuffBrickPillar").getAsBoolean();
+                return json.has("enableTuffBrickPillar")
+                        && json.get("enableTuffBrickPillar").getAsBoolean();
             }
-
         } catch (Exception e) {
-            return true;
+            return false;
         }
     }
 }

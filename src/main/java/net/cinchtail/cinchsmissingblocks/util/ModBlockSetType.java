@@ -20,6 +20,11 @@ public record ModBlockSetType(String name, boolean canOpenByHand, boolean canOpe
             SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON, SoundEvents.STONE_BUTTON_CLICK_OFF,
             SoundEvents.STONE_BUTTON_CLICK_ON));
 
+    public static final BlockSetType NETHER_BRICKS = register(new BlockSetType("nether_bricks", true,true,
+            false, BlockSetType.PressurePlateSensitivity.MOBS, SoundType.NETHER_BRICKS, SoundEvents.NETHER_WOOD_DOOR_CLOSE, SoundEvents.NETHER_WOOD_DOOR_OPEN,
+            SoundEvents.NETHER_WOOD_TRAPDOOR_CLOSE, SoundEvents.NETHER_WOOD_TRAPDOOR_OPEN, SoundEvents.NETHER_WOOD_PRESSURE_PLATE_CLICK_OFF,
+            SoundEvents.NETHER_WOOD_PRESSURE_PLATE_CLICK_ON, SoundEvents.NETHER_WOOD_BUTTON_CLICK_OFF, SoundEvents.NETHER_WOOD_BUTTON_CLICK_ON));
+
     public static BlockSetType register(BlockSetType blockSetType) {
         VALUES.add(blockSetType);
         return blockSetType;
