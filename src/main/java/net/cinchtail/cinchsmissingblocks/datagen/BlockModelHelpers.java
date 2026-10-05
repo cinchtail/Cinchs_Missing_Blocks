@@ -40,23 +40,6 @@ public class BlockModelHelpers {
         gen.registerItemModel(Item.fromBlock(block), model);
     }
 
-    public static void slab(BlockStateModelGenerator gen, Block slab, Block base, Identifier texture) {
-        TextureMap tex = new TextureMap()
-                .put(TextureKey.BOTTOM, texture)
-                .put(TextureKey.TOP, texture)
-                .put(TextureKey.SIDE, texture);
-
-        Identifier bottom = Models.SLAB.upload(slab, tex, gen.modelCollector);
-        Identifier top = Models.SLAB_TOP.upload(slab, tex, gen.modelCollector);
-        Identifier dbl = ModelIds.getBlockModelId(base);
-
-        gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSlabBlockState(slab, wv(bottom), wv(top), wv(dbl))
-        );
-
-        gen.registerItemModel(Item.fromBlock(slab), bottom);
-    }
-
     public static void stairs(BlockStateModelGenerator gen, Block stairs, Identifier texture) {
         TextureMap tex = new TextureMap()
                 .put(TextureKey.BOTTOM, texture)
@@ -72,6 +55,23 @@ public class BlockModelHelpers {
         );
 
         gen.registerItemModel(Item.fromBlock(stairs), regular);
+    }
+
+    public static void slab(BlockStateModelGenerator gen, Block slab, Block base, Identifier texture) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.BOTTOM, texture)
+                .put(TextureKey.TOP, texture)
+                .put(TextureKey.SIDE, texture);
+
+        Identifier bottom = Models.SLAB.upload(slab, tex, gen.modelCollector);
+        Identifier top = Models.SLAB_TOP.upload(slab, tex, gen.modelCollector);
+        Identifier dbl = ModelIds.getBlockModelId(base);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSlabBlockState(slab, wv(bottom), wv(top), wv(dbl))
+        );
+
+        gen.registerItemModel(Item.fromBlock(slab), bottom);
     }
 
     public static void wall(BlockStateModelGenerator gen, Block wall, Identifier texture) {
@@ -113,14 +113,7 @@ public class BlockModelHelpers {
 
         gen.blockStateCollector.accept(
                 BlockStateModelGenerator.createFenceGateBlockState(
-                        gate,
-                        wv(open),
-                        wv(closed),
-                        wv(openWall),
-                        wv(closedWall),
-                        true
-                )
-        );
+                        gate, wv(open), wv(closed), wv(openWall), wv(closedWall), true));
 
         gen.registerItemModel(Item.fromBlock(gate), closed);
     }
@@ -180,23 +173,6 @@ public class BlockModelHelpers {
         gen.registerItemModel(Item.fromBlock(block), model);
     }
 
-    public static void definableSlab(BlockStateModelGenerator gen, Block slab, Block base, Identifier bottom, Identifier top, Identifier side) {
-        TextureMap tex = new TextureMap()
-                .put(TextureKey.BOTTOM, bottom)
-                .put(TextureKey.TOP, top)
-                .put(TextureKey.SIDE, side);
-
-        Identifier slabModel = Models.SLAB.upload(slab, tex, gen.modelCollector);
-        Identifier slabModelTop = Models.SLAB_TOP.upload(slab, tex, gen.modelCollector);
-        Identifier dbl = ModelIds.getBlockModelId(base);
-
-        gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSlabBlockState(slab, wv(slabModel), wv(slabModelTop), wv(dbl))
-        );
-
-        gen.registerItemModel(Item.fromBlock(slab), slabModel);
-    }
-
     public static void definableStairs(BlockStateModelGenerator gen, Block stairs, Identifier bottom, Identifier top, Identifier side) {
         TextureMap tex = new TextureMap()
                 .put(TextureKey.BOTTOM, bottom)
@@ -212,6 +188,23 @@ public class BlockModelHelpers {
         );
 
         gen.registerItemModel(Item.fromBlock(stairs), regular);
+    }
+
+    public static void definableSlab(BlockStateModelGenerator gen, Block slab, Block base, Identifier bottom, Identifier top, Identifier side) {
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.BOTTOM, bottom)
+                .put(TextureKey.TOP, top)
+                .put(TextureKey.SIDE, side);
+
+        Identifier slabModel = Models.SLAB.upload(slab, tex, gen.modelCollector);
+        Identifier slabModelTop = Models.SLAB_TOP.upload(slab, tex, gen.modelCollector);
+        Identifier dbl = ModelIds.getBlockModelId(base);
+
+        gen.blockStateCollector.accept(
+                BlockStateModelGenerator.createSlabBlockState(slab, wv(slabModel), wv(slabModelTop), wv(dbl))
+        );
+
+        gen.registerItemModel(Item.fromBlock(slab), slabModel);
     }
 
     public static void definableWall(BlockStateModelGenerator gen, Block wall, Identifier bottom, Identifier top, Identifier side) {

@@ -1,6 +1,5 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
 import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
