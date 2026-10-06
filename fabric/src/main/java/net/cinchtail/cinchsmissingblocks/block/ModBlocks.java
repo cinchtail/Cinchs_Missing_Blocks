@@ -1,6 +1,5 @@
 package net.cinchtail.cinchsmissingblocks.block;
 
-import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric;
 import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
 import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
@@ -122,7 +121,6 @@ public class ModBlocks {
             properties -> new RotatedPillarBlock(properties
                     .strength(1F, 1.0F).sound(SoundType.CALCITE)
                     .mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
-
 
     //Dripstone Blocks
     public static final Block DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
@@ -899,6 +897,7 @@ public class ModBlocks {
             properties -> new WallBlock(properties
                     .strength(0.4F).sound(SoundType.NETHERRACK)
                     .mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
+
     //Nether Bricks
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             properties -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, properties.forceSolidOn()

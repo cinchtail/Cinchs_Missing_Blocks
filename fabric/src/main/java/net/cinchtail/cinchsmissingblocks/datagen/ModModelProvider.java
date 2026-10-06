@@ -344,7 +344,7 @@ public class ModModelProvider extends FabricModelProvider {
         crackedRedNetherBricksFamily.slab(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB);
         crackedRedNetherBricksFamily.wall(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
         crackedRedNetherBricksFamily.fence(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
-        BlockModelHelpers.fenceGate(gen, ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE, ModBlocks.CRACKED_RED_NETHER_BRICKS);
+        crackedRedNetherBricksFamily.fenceGate(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
 
         BlockModelHelpers.pillar(gen,ModBlocks.RED_NETHER_BRICK_PILLAR, ModBlocks.RED_NETHER_BRICK_PILLAR);
 
@@ -357,13 +357,13 @@ public class ModModelProvider extends FabricModelProvider {
         blueNetherBricksFamily.slab(ModBlocks.BLUE_NETHER_BRICK_SLAB);
         blueNetherBricksFamily.wall(ModBlocks.BLUE_NETHER_BRICK_WALL);
         blueNetherBricksFamily.fence(ModBlocks.BLUE_NETHER_BRICK_FENCE);
-        BlockModelHelpers.fenceGate(gen, ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE, ModBlocks.BLUE_NETHER_BRICKS);
+        blueNetherBricksFamily.fenceGate(ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
 
         crackedBlueNetherBricksFamily.stairs(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
         crackedBlueNetherBricksFamily.slab(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB);
         crackedBlueNetherBricksFamily.wall(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
         crackedBlueNetherBricksFamily.fence(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
-        BlockModelHelpers.fenceGate(gen, ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
+        blueNetherBricksFamily.fenceGate(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
 
         BlockModelHelpers.pillar(gen,ModBlocks.BLUE_NETHER_BRICK_PILLAR, ModBlocks.BLUE_NETHER_BRICK_PILLAR);
 
