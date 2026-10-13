@@ -5,6 +5,7 @@ import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
 import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
 import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
+import net.cinchtail.cinchsmissingblocks.util.ModWoodTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
@@ -12,7 +13,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -975,6 +978,10 @@ public class ModBlocks {
                             Identifier.fromNamespaceAndPath(MOD_ID, "netherrack_wall")))));
 
     //Nether Bricks
+    public static final DeferredBlock<Block> NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
+            () -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+                    .forceSolidOn().strength(2.0F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "nether_brick_fence_gate")))));
     public static final DeferredBlock<Block> CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             () -> new StairBlock(Blocks.NETHER_BRICKS.defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS).requiresCorrectToolForDrops()
@@ -995,6 +1002,13 @@ public class ModBlocks {
                     .strength(2.0F, 6.0F).requiresCorrectToolForDrops()
                     .sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "cracked_nether_brick_fence")))));
+    public static final DeferredBlock<Block> CRACKED_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_nether_brick_fence_gate",
+            () -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+                    .forceSolidOn().strength(2.0F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_nether_brick_fence_gate")))));
+    public static final DeferredBlock<Block> NETHER_BRICK_PILLAR = registerBlock("nether_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                    Identifier.fromNamespaceAndPath(MOD_ID, "nether_brick_pillar")))));
 
     //Red Nether Bricks
     public static final DeferredBlock<Block> RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
@@ -1002,6 +1016,10 @@ public class ModBlocks {
                     .strength(2.0F, 6.0F).requiresCorrectToolForDrops()
                     .sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "red_nether_brick_fence")))));
+    public static final DeferredBlock<Block> RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
+            () -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+                    .forceSolidOn().strength(2.0F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "red_nether_brick_fence_gate")))));
     public static final DeferredBlock<Block> CRACKED_RED_NETHER_BRICKS = registerBlock("cracked_red_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
@@ -1026,10 +1044,17 @@ public class ModBlocks {
                     .strength(2.0F, 6.0F).requiresCorrectToolForDrops()
                     .sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "cracked_red_nether_brick_fence")))));
+    public static final DeferredBlock<Block> CRACKED_RED_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_red_nether_brick_fence_gate",
+            () -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+                    .forceSolidOn().strength(2.0F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_red_nether_brick_fence_gate")))));
     public static final DeferredBlock<Block> CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "chiseled_red_nether_bricks")))));
+    public static final DeferredBlock<Block> RED_NETHER_BRICK_PILLAR = registerBlock("red_nether_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
+                    Identifier.fromNamespaceAndPath(MOD_ID, "red_nether_brick_pillar")))));
 
     //Blue Nether Bricks
     public static final DeferredBlock<Block> BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
@@ -1052,6 +1077,10 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "blue_nether_brick_fence")))));
+    public static final DeferredBlock<Block> BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("blue_nether_brick_fence_gate",
+            () -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+                    .forceSolidOn().strength(2.0F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "blue_nether_brick_fence_gate")))));
     public static final DeferredBlock<Block> CRACKED_BLUE_NETHER_BRICKS = registerBlock("cracked_blue_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
                     .strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
@@ -1072,10 +1101,17 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "cracked_blue_nether_brick_fence")))));
+    public static final DeferredBlock<Block> CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_blue_nether_brick_fence_gate",
+            () -> new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+                    .forceSolidOn().strength(2.0F, 6.0F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_blue_nether_brick_fence_gate")))));
     public static final DeferredBlock<Block> CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLUE_NETHER_BRICKS.get()).strength(2.0F, 6.0F)
                     .sound(SoundType.NETHER_BRICKS).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "chiseled_blue_nether_bricks")))));
+    public static final DeferredBlock<Block> BLUE_NETHER_BRICK_PILLAR = registerBlock("blue_nether_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLUE_NETHER_BRICKS.get()).setId(ResourceKey.create(Registries.BLOCK,
+                    Identifier.fromNamespaceAndPath(MOD_ID, "blue_nether_brick_pillar")))));
 
     //Prismarine Blocks
     public static final DeferredBlock<Block> PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
@@ -1278,6 +1314,117 @@ public class ModBlocks {
                     .sound(SoundType.STONE).setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath(MOD_ID, "red_sandstone_brick_pillar")))));
 
+    //Soul Sandstone Blocks
+    public static final DeferredBlock<Block> SOUL_SANDSTONE = registerBlock("soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_STAIRS = registerBlock("soul_sandstone_stairs",
+            () -> new StairBlock(ModBlocks.SOUL_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE.get())
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_stairs")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_SLAB = registerBlock("soul_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE.get())
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_slab")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_WALL = registerBlock("soul_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE.get())
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_wall")))));
+    public static final DeferredBlock<Block> SMOOTH_SOUL_SANDSTONE = registerBlock("smooth_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE.get())
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresCorrectToolForDrops().strength(2.0F, 6.0F)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "smooth_soul_sandstone")))));
+    public static final DeferredBlock<Block> SMOOTH_SOUL_SANDSTONE_STAIRS = registerBlock("smooth_soul_sandstone_stairs",
+            () -> new StairBlock(Blocks.SMOOTH_SANDSTONE.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(2.0F, 6.0F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "smooth_soul_sandstone_stairs")))));
+    public static final DeferredBlock<Block> SMOOTH_SOUL_SANDSTONE_SLAB = registerBlock("smooth_soul_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SMOOTH_SOUL_SANDSTONE.get())
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresCorrectToolForDrops().strength(2.0F, 6.0F)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "smooth_soul_sandstone_slab")))));
+    public static final DeferredBlock<Block> SMOOTH_SOUL_SANDSTONE_WALL = registerBlock("smooth_soul_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SMOOTH_SOUL_SANDSTONE.get())
+                    .mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresCorrectToolForDrops().strength(2.0F, 6.0F)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "smooth_soul_sandstone_wall")))));
+    public static final DeferredBlock<Block> CUT_SOUL_SANDSTONE = registerBlock("cut_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE.get())
+                    .strength(0.8F).sound(SoundType.STONE).mapColor(MapColor.COLOR_BROWN)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cut_soul_sandstone")))));
+    public static final DeferredBlock<Block> CUT_SOUL_SANDSTONE_STAIRS = registerBlock("cut_soul_sandstone_stairs",
+            () -> new StairBlock(ModBlocks.CUT_SOUL_SANDSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(ModBlocks.CUT_SOUL_SANDSTONE.get()).strength(0.8F).sound(SoundType.STONE).mapColor(MapColor.COLOR_BROWN)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cut_soul_sandstone_stairs")))));
+    public static final DeferredBlock<Block> CUT_SOUL_SANDSTONE_SLAB = registerBlock("cut_soul_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.CUT_SOUL_SANDSTONE.get())
+                    .strength(0.8F).sound(SoundType.STONE).mapColor(MapColor.COLOR_BROWN)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cut_soul_sandstone_slab")))));
+    public static final DeferredBlock<Block> CUT_SOUL_SANDSTONE_WALL = registerBlock("cut_soul_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.CUT_SOUL_SANDSTONE.get())
+                    .strength(0.8F).sound(SoundType.STONE).mapColor(MapColor.COLOR_BROWN)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cut_soul_sandstone_wall")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_BRICKS = registerBlock("soul_sandstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE.get()).strength(0.8F)
+                    .sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_bricks")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("soul_sandstone_brick_stairs",
+            () -> new StairBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get()).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_brick_stairs")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_BRICK_SLAB = registerBlock("soul_sandstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get())
+                    .strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_brick_slab")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_BRICK_WALL = registerBlock("soul_sandstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get())
+                    .strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_brick_wall")))));
+    public static final DeferredBlock<Block> CHISELED_SOUL_SANDSTONE = registerBlock("chiseled_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get())
+                    .strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "chiseled_soul_sandstone")))));
+    public static final DeferredBlock<Block> CRACKED_SOUL_SANDSTONE_BRICKS = registerBlock("cracked_soul_sandstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get()).strength(0.8F)
+                    .sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_soul_sandstone_bricks")))));
+    public static final DeferredBlock<Block> CRACKED_SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_soul_sandstone_brick_stairs",
+            () -> new StairBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get()).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_soul_sandstone_brick_stairs")))));
+    public static final DeferredBlock<Block> CRACKED_SOUL_SANDSTONE_BRICK_SLAB = registerBlock("cracked_soul_sandstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get())
+                    .strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_soul_sandstone_brick_slab")))));
+    public static final DeferredBlock<Block> CRACKED_SOUL_SANDSTONE_BRICK_WALL = registerBlock("cracked_soul_sandstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get())
+                    .strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "cracked_soul_sandstone_brick_wall")))));
+    public static final DeferredBlock<Block> SOUL_SANDSTONE_BRICK_PILLAR = registerBlock("soul_sandstone_brick_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SOUL_SANDSTONE_BRICKS.get()).strength(0.8F).sound(SoundType.STONE)
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "soul_sandstone_brick_pillar")))));
+
     //Purpur Blocks
     public static final DeferredBlock<Block> PURPUR_WALL = registerBlock("purpur_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPUR_BLOCK)
@@ -1310,6 +1457,10 @@ public class ModBlocks {
                             Identifier.fromNamespaceAndPath(MOD_ID, "tinted_glass_pane")))));
 
     //Terracotta Variants
+    public static final DeferredBlock<Block> GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
+            () -> new GlazedTerracottaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TERRACOTTA).pushReaction(PushReaction.PUSH_ONLY)
+                    .sound(SoundType.STONE).strength(1.4F).setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath(MOD_ID, "glazed_terracotta")))));
     public static final DeferredBlock<Block> TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
             () -> new StairBlock(Blocks.TERRACOTTA.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.TERRACOTTA)
                     .sound(SoundType.STONE).strength(1.25F, 4.2F).setId(ResourceKey.create(Registries.BLOCK,

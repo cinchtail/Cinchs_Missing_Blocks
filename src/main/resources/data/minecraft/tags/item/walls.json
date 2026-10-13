@@ -110,6 +110,11 @@
     "cinchsmissingblocks:blue_concrete_wall",
     "cinchsmissingblocks:purple_concrete_wall",
     "cinchsmissingblocks:magenta_concrete_wall",
-    "cinchsmissingblocks:pink_concrete_wall"
+    "cinchsmissingblocks:pink_concrete_wall",
+    "cinchsmissingblocks:soul_sandstone_wall",
+    "cinchsmissingblocks:cut_soul_sandstone_wall",
+    "cinchsmissingblocks:smooth_soul_sandstone_wall",
+    "cinchsmissingblocks:soul_sandstone_brick_wall",
+    "cinchsmissingblocks:cracked_soul_sandstone_brick_wall"
   ]
 }

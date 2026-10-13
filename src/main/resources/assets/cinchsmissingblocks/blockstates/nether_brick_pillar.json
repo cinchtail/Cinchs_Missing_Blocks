@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "cinchsmissingblocks:block/nether_brick_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "cinchsmissingblocks:block/nether_brick_pillar"
+    },
+    "axis=z": {
+      "model": "cinchsmissingblocks:block/nether_brick_pillar",
+      "x": 90
+    }
+  }
+}

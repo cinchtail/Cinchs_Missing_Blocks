@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class TintedGlassPaneBlock extends IronBarsBlock {
 
-
     public TintedGlassPaneBlock(Properties properties) {
         super(properties);
     }
