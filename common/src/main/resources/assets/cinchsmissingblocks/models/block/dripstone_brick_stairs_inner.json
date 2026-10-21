@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/dripstone_bricks",
-    "side": "cinchsmissingblocks:block/dripstone_bricks",
-    "top": "cinchsmissingblocks:block/dripstone_bricks"
-  }
-}

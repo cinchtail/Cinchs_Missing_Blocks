@@ -18,7 +18,6 @@ public class CinchsMissingBlocks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModConfigs.load();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();

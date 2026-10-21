@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cinchsmissingblocks:block/chiseled_calcite_bricks_top",
-    "side": "cinchsmissingblocks:block/chiseled_calcite_bricks_side"
-  }
-}

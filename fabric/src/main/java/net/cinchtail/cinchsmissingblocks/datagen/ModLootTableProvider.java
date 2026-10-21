@@ -198,6 +198,29 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
         addDrop(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
+        addDrop(ModBlocks.SOUL_SANDSTONE);
+        addDrop(ModBlocks.SOUL_SANDSTONE_STAIRS);
+        addDrop(ModBlocks.SOUL_SANDSTONE_SLAB, slabDrops(ModBlocks.SOUL_SANDSTONE_SLAB));
+        addDrop(ModBlocks.SOUL_SANDSTONE_WALL);
+        addDrop(ModBlocks.CHISELED_SOUL_SANDSTONE);
+        addDrop(ModBlocks.SMOOTH_SOUL_SANDSTONE);
+        addDrop(ModBlocks.SMOOTH_SOUL_SANDSTONE_STAIRS);
+        addDrop(ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, slabDrops(ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB));
+        addDrop(ModBlocks.SMOOTH_SOUL_SANDSTONE_WALL);
+        addDrop(ModBlocks.CUT_SOUL_SANDSTONE);
+        addDrop(ModBlocks.CUT_SOUL_SANDSTONE_STAIRS);
+        addDrop(ModBlocks.CUT_SOUL_SANDSTONE_SLAB, slabDrops(ModBlocks.CUT_SOUL_SANDSTONE_SLAB));
+        addDrop(ModBlocks.CUT_SOUL_SANDSTONE_WALL);
+        addDrop(ModBlocks.SOUL_SANDSTONE_BRICKS);
+        addDrop(ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS);
+        addDrop(ModBlocks.SOUL_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.SOUL_SANDSTONE_BRICK_SLAB));
+        addDrop(ModBlocks.SOUL_SANDSTONE_BRICK_WALL);
+        addDrop(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+        addDrop(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS);
+        addDrop(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB));
+        addDrop(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL);
+        addDrop(ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR);
+
         addDrop(ModBlocks.END_STONE_STAIRS);
         addDrop(ModBlocks.END_STONE_SLAB, slabDrops(ModBlocks.END_STONE_SLAB));
         addDrop(ModBlocks.END_STONE_WALL);
@@ -331,30 +354,39 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 )
         );
 
+        addDrop(ModBlocks.NETHER_BRICK_FENCE_GATE);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.CRACKED_NETHER_BRICK_FENCE_GATE);
+        addDrop(ModBlocks.NETHER_BRICK_PILLAR);
 
         addDrop(ModBlocks.RED_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICKS);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
         addDrop(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+        addDrop(ModBlocks.RED_NETHER_BRICK_PILLAR);
 
         addDrop(ModBlocks.BLUE_NETHER_BRICKS);
         addDrop(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.BLUE_NETHER_BRICK_SLAB, slabDrops(ModBlocks.BLUE_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.BLUE_NETHER_BRICK_WALL);
         addDrop(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, slabDrops(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB));
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
         addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+        addDrop(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
         addDrop(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+        addDrop(ModBlocks.BLUE_NETHER_BRICK_PILLAR);
 
         addDrop(ModBlocks.PRISMARINE_BRICK_WALL);
         addDrop(ModBlocks.DARK_PRISMARINE_WALL);
@@ -378,6 +410,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDropWithSilkTouch(ModBlocks.TINTED_GLASS_PANE);
 
+        addDrop(ModBlocks.GLAZED_TERRACOTTA);
         addDrop(ModBlocks.TERRACOTTA_STAIRS);
         addDrop(ModBlocks.TERRACOTTA_SLAB, slabDrops(ModBlocks.TERRACOTTA_SLAB));
         addDrop(ModBlocks.TERRACOTTA_WALL);

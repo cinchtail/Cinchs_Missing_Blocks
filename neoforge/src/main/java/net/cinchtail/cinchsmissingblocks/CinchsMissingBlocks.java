@@ -1,7 +1,6 @@
 package net.cinchtail.cinchsmissingblocks;
 
 import net.cinchtail.cinchsmissingblocks.block.ModBlocks;
-import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.cinchtail.cinchsmissingblocks.item.ModItemGroups;
 import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.cinchtail.cinchsmissingblocks.network.ClientConfigSender;
@@ -25,7 +24,6 @@ public class CinchsMissingBlocks {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public CinchsMissingBlocks(IEventBus bus) {
-        ModConfigs.load();
         // Do not eagerly initialize blocks/items here. NeoForge registries are frozen
         // outside their RegisterEvent window, and Item/Block constructors create
         // intrusive holders immediately in 1.21.1.

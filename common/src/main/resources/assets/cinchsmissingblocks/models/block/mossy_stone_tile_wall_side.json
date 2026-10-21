@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_wall_side",
-  "textures": {
-    "wall": "cinchsmissingblocks:block/mossy_stone_tiles"
-  }
-}
