@@ -1,16 +1,10 @@
 package net.cinchtail.cinchsmissingblocks.datagen;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.data.*;
-import net.minecraft.client.render.model.json.WeightedVariant;
-import net.minecraft.item.Item;
+import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
 public class BlockModelHelpers {
-
-    private static WeightedVariant wv(Identifier model) {
-        return BlockStateModelGenerator.createWeightedVariant(model);
-    }
 
     public static void cubeColumn(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
         TextureMap tex = new TextureMap()
@@ -20,10 +14,10 @@ public class BlockModelHelpers {
         Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
+                BlockStateModelGenerator.createSingletonBlockState(block, model)
         );
 
-        gen.registerItemModel(Item.fromBlock(block), model);
+        gen.registerParentedItemModel(block, model);
     }
 
     public static void pillar(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side) {
@@ -34,10 +28,10 @@ public class BlockModelHelpers {
         Identifier model = Models.CUBE_COLUMN.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createAxisRotatedBlockState(block, wv(model))
+                BlockStateModelGenerator.createAxisRotatedBlockState(block, model)
         );
 
-        gen.registerItemModel(Item.fromBlock(block), model);
+        gen.registerParentedItemModel(block, model);
     }
 
     public static void stairs(BlockStateModelGenerator gen, Block stairs, Identifier texture) {
@@ -51,10 +45,10 @@ public class BlockModelHelpers {
         Identifier outer = Models.OUTER_STAIRS.upload(stairs, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createStairsBlockState(stairs, wv(inner), wv(regular), wv(outer))
+                BlockStateModelGenerator.createStairsBlockState(stairs, inner, regular, outer)
         );
 
-        gen.registerItemModel(Item.fromBlock(stairs), regular);
+        gen.registerParentedItemModel(stairs, regular);
     }
 
     public static void slab(BlockStateModelGenerator gen, Block slab, Block base, Identifier texture) {
@@ -65,17 +59,19 @@ public class BlockModelHelpers {
 
         Identifier bottom = Models.SLAB.upload(slab, tex, gen.modelCollector);
         Identifier top = Models.SLAB_TOP.upload(slab, tex, gen.modelCollector);
+
         Identifier dbl = ModelIds.getBlockModelId(base);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSlabBlockState(slab, wv(bottom), wv(top), wv(dbl))
+                BlockStateModelGenerator.createSlabBlockState(slab, bottom, top, dbl)
         );
 
-        gen.registerItemModel(Item.fromBlock(slab), bottom);
+        gen.registerParentedItemModel(slab, bottom);
     }
 
     public static void wall(BlockStateModelGenerator gen, Block wall, Identifier texture) {
-        TextureMap tex = new TextureMap().put(TextureKey.WALL, texture);
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.WALL, texture);
 
         Identifier post = Models.TEMPLATE_WALL_POST.upload(wall, tex, gen.modelCollector);
         Identifier low = Models.TEMPLATE_WALL_SIDE.upload(wall, tex, gen.modelCollector);
@@ -83,24 +79,25 @@ public class BlockModelHelpers {
         Identifier inventory = Models.WALL_INVENTORY.upload(wall, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createWallBlockState(wall, wv(post), wv(low), wv(tall))
+                BlockStateModelGenerator.createWallBlockState(wall, post, low, tall)
         );
 
-        gen.registerItemModel(Item.fromBlock(wall), inventory);
+        gen.registerParentedItemModel(wall, inventory);
     }
 
     public static void fence(BlockStateModelGenerator gen, Block fence, Identifier texture) {
-        TextureMap tex = new TextureMap().put(TextureKey.TEXTURE, texture);
+        TextureMap tex = new TextureMap()
+                .put(TextureKey.TEXTURE, texture);
 
         Identifier post = Models.FENCE_POST.upload(fence, tex, gen.modelCollector);
         Identifier side = Models.FENCE_SIDE.upload(fence, tex, gen.modelCollector);
         Identifier inventory = Models.FENCE_INVENTORY.upload(fence, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createFenceBlockState(fence, wv(post), wv(side))
+                BlockStateModelGenerator.createFenceBlockState(fence, post, side)
         );
 
-        gen.registerItemModel(Item.fromBlock(fence), inventory);
+        gen.registerParentedItemModel(fence, inventory);
     }
 
     public static void fenceGate(BlockStateModelGenerator gen, Block gate, Identifier texture) {
@@ -113,36 +110,30 @@ public class BlockModelHelpers {
 
         gen.blockStateCollector.accept(
                 BlockStateModelGenerator.createFenceGateBlockState(
-                        gate, wv(open), wv(closed), wv(openWall), wv(closedWall), true));
+                        gate, (open), (closed), (openWall), (closedWall), true));
 
-        gen.registerItemModel(Item.fromBlock(gate), closed);
+        gen.registerParentedItemModel(gate, closed);
     }
 
     public static void button(BlockStateModelGenerator gen, Block button, Identifier texture) {
-        TextureMap tex = TextureMap.texture(texture);
-
-        Identifier regular = Models.BUTTON.upload(button, tex, gen.modelCollector);
-        Identifier pressed = Models.BUTTON_PRESSED.upload(button, tex, gen.modelCollector);
-        Identifier inventory = Models.BUTTON_INVENTORY.upload(button, tex, gen.modelCollector);
+        Identifier regular = Models.BUTTON.upload(button, TextureMap.texture(texture), gen.modelCollector);
+        Identifier pressed = Models.BUTTON_PRESSED.upload(button, TextureMap.texture(texture), gen.modelCollector);
+        Identifier inventory = Models.BUTTON_INVENTORY.upload(button, TextureMap.texture(texture), gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createButtonBlockState(button, wv(regular), wv(pressed))
+                BlockStateModelGenerator.createButtonBlockState(button, regular, pressed)
         );
-
-        gen.registerItemModel(Item.fromBlock(button), inventory);
+        gen.registerParentedItemModel(button, inventory);
     }
 
     public static void pressurePlate(BlockStateModelGenerator gen, Block pressurePlate, Identifier texture) {
-        TextureMap tex = TextureMap.texture(texture);
-
-        Identifier up = Models.PRESSURE_PLATE_UP.upload(pressurePlate, tex, gen.modelCollector);
-        Identifier down = Models.PRESSURE_PLATE_DOWN.upload(pressurePlate, tex, gen.modelCollector);
+        Identifier up = Models.PRESSURE_PLATE_UP.upload(pressurePlate, TextureMap.texture(texture), gen.modelCollector);
+        Identifier down = Models.PRESSURE_PLATE_DOWN.upload(pressurePlate, TextureMap.texture(texture), gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, wv(up), wv(down))
+                BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, up, down)
         );
-
-        gen.registerItemModel(Item.fromBlock(pressurePlate), up);
+        gen.registerParentedItemModel(pressurePlate, up);
     }
 
     public static void definableCubeAll(BlockStateModelGenerator gen, Block block, Identifier all) {
@@ -152,10 +143,10 @@ public class BlockModelHelpers {
         Identifier model = Models.CUBE_ALL.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
+                BlockStateModelGenerator.createSingletonBlockState(block, (model))
         );
 
-        gen.registerItemModel(Item.fromBlock(block), model);
+        gen.registerParentedItemModel(block, model);
     }
 
     public static void definableBlock(BlockStateModelGenerator gen, Block block, Identifier end, Identifier side, Identifier bottom) {
@@ -167,10 +158,10 @@ public class BlockModelHelpers {
         Identifier model = Models.CUBE_BOTTOM_TOP.upload(block, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSingletonBlockState(block, wv(model))
+                BlockStateModelGenerator.createSingletonBlockState(block, (model))
         );
 
-        gen.registerItemModel(Item.fromBlock(block), model);
+        gen.registerParentedItemModel(block, model);
     }
 
     public static void definableStairs(BlockStateModelGenerator gen, Block stairs, Identifier top, Identifier bottom, Identifier side) {
@@ -184,10 +175,10 @@ public class BlockModelHelpers {
         Identifier outer = Models.OUTER_STAIRS.upload(stairs, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createStairsBlockState(stairs, wv(inner), wv(regular), wv(outer))
+                BlockStateModelGenerator.createStairsBlockState(stairs, (inner), (regular), (outer))
         );
 
-        gen.registerItemModel(Item.fromBlock(stairs), regular);
+        gen.registerParentedItemModel(stairs, regular);
     }
 
     public static void definableSlab(BlockStateModelGenerator gen, Block slab, Block base, Identifier top, Identifier bottom, Identifier side) {
@@ -201,10 +192,10 @@ public class BlockModelHelpers {
         Identifier dbl = ModelIds.getBlockModelId(base);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createSlabBlockState(slab, wv(slabModel), wv(slabModelTop), wv(dbl))
+                BlockStateModelGenerator.createSlabBlockState(slab, (slabModel), (slabModelTop), (dbl))
         );
 
-        gen.registerItemModel(Item.fromBlock(slab), slabModel);
+        gen.registerParentedItemModel(slab, slabModel);
     }
 
     public static void definableWall(BlockStateModelGenerator gen, Block wall, Identifier top, Identifier bottom, Identifier side) {
@@ -220,9 +211,9 @@ public class BlockModelHelpers {
         Identifier inventory = ModModels.WALL_INVENTORY.upload(wall, tex, gen.modelCollector);
 
         gen.blockStateCollector.accept(
-                BlockStateModelGenerator.createWallBlockState(wall, wv(post), wv(low), wv(tall))
+                BlockStateModelGenerator.createWallBlockState(wall, (post), (low), (tall))
         );
 
-        gen.registerItemModel(Item.fromBlock(wall), inventory);
+        gen.registerParentedItemModel(wall, inventory);
     }
 }

@@ -13,6 +13,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
+
 public class ModBlocks {
 
     //Calcite Blocks
@@ -1207,13 +1209,13 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(CinchsMissingBlocks.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, name), block);
     }
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, Identifier.of(CinchsMissingBlocks.MOD_ID, name),
+        return Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
     public static void registerModBlocks() {
-        CinchsMissingBlocks.LOGGER.info("Registering ModBlocks for " + CinchsMissingBlocks.MOD_ID);
+        CinchsMissingBlocks.LOGGER.info("Registering ModBlocks for " + MOD_ID);
     }
 }
