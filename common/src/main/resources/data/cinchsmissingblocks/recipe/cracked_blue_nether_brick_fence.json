@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "cracked_blue_nether_brick_fence",
+  "group": "nether_brick_fences",
   "key": {
     "A": "cinchsmissingblocks:cracked_blue_nether_bricks",
     "T": "cinchsmissingblocks:blue_nether_brick"

@@ -2147,9 +2147,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy("has_" + inputPath, this.has(input)).save(this.output);
             }
             public void netherBrickFence(RecipeCategory category, ItemLike output, ItemLike input, ItemLike brickInput) {
-                String outputPath = idPath(output);
                 String inputPath = idPath(input);
-                this.shaped(category, output, 3).group(outputPath).define('A', input).define('T', brickInput)
+                this.shaped(category, output, 3).group("nether_brick_fences").define('A', input).define('T', brickInput)
                         .pattern("ATA").pattern("ATA").unlockedBy("has_" + inputPath, this.has(brickInput)).save(this.output);
             }
             public void netherBrickFenceGate(RecipeCategory category, ItemLike output, ItemLike input, ItemLike brickInput) {
