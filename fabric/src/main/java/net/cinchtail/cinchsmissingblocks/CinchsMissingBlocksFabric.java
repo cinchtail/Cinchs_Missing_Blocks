@@ -11,6 +11,7 @@ import net.cinchtail.cinchsmissingblocks.pack.BuiltinDataPacks;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +21,7 @@ public class CinchsMissingBlocksFabric implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		CinchsMissingBlocks.initialize(FabricLoader.getInstance().getConfigDir());
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();

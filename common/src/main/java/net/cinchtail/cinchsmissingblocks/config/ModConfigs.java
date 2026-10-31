@@ -87,7 +87,6 @@ public final class ModConfigs {
             json.addProperty("enableReworkedDeepslateRecipes", true);
             json.addProperty("enableCorrectedCobbledDrops", false);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
-            json.addProperty("enableVerticalSlabs", false);
 
             enableTerracottaVariants = true;
             enableConcreteVariants = true;

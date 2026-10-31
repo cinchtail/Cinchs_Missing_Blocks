@@ -4,6 +4,8 @@ Cinch's Missing Blocks aims to add all the block variants that Mojang skipped. F
 
 ## Features
 
+### 439 Total Blocks
+
 **Calcite Blocks:** Polished, bricks, cracked bricks, and mossy bricks variants as well as chiseled calcite bricks and calcite brick pillars. Normal calcite now has slabs, stairs, and walls too.
 
 **Dripstone Blocks:** Polished, bricks, cracked bricks, and mossy bricks variants as well as chiseled dripstone bricks and dripstone brick pillars. Normal dripstone now has slabs, stairs, and walls too.

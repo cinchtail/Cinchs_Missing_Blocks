@@ -7,6 +7,7 @@ import net.cinchtail.cinchsmissingblocks.pack.ModBuiltinPacks;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class CinchsMissingBlocksNeoForge {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public CinchsMissingBlocksNeoForge(IEventBus modEventBus) {
+        CinchsMissingBlocks.initialize(FMLPaths.CONFIGDIR.get());
         modEventBus.addListener(this::onRegister);
         modEventBus.addListener(this::addPackFinders);
         LOGGER.info("Cinch's Missing Blocks initialized on NeoForge 26.2");
