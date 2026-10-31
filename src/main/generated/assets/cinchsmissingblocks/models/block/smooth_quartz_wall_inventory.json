@@ -1,6 +1,9 @@
 {
-  "parent": "minecraft:block/wall_inventory",
+  "parent": "cinchsmissingblocks:block/multi_texture_wall_inventory",
   "textures": {
-    "wall": "minecraft:block/quartz_block_bottom"
+    "bottom": "minecraft:block/quartz_block_bottom",
+    "particle": "minecraft:block/quartz_block_bottom",
+    "side": "minecraft:block/quartz_block_bottom",
+    "top": "minecraft:block/quartz_block_bottom"
   }
 }

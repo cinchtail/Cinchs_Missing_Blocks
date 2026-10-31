@@ -22,7 +22,7 @@ public class BuiltinResourcePacks {
 
         FabricLoader.getInstance().getModContainer(modId).ifPresent(container -> {
 
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar || !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, TUFF_PILLARS),
                         container,
@@ -37,7 +37,7 @@ public class BuiltinResourcePacks {
                     Identifier.fromNamespaceAndPath(modId, DOUBLE_SLABS),
                     container,
                     Component.literal("Cinch's Double Slabs"),
-                    ModConfigs.doubleSlabsPackDefaultEnabled
+                    ModConfigs.doubleSlabsPackDefaultEnabled || !ModConfigs.configMissing
                             ? ResourcePackActivationType.DEFAULT_ENABLED
                             : ResourcePackActivationType.NORMAL
             );

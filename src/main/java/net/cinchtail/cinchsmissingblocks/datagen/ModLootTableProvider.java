@@ -208,6 +208,29 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
         dropSelf(ModBlocks.RED_SANDSTONE_BRICK_PILLAR);
 
+        dropSelf(ModBlocks.SOUL_SANDSTONE);
+        dropSelf(ModBlocks.SOUL_SANDSTONE_STAIRS);
+        add(ModBlocks.SOUL_SANDSTONE_SLAB, createSlabItemTable(ModBlocks.SOUL_SANDSTONE_SLAB));
+        dropSelf(ModBlocks.SOUL_SANDSTONE_WALL);
+        dropSelf(ModBlocks.CHISELED_SOUL_SANDSTONE);
+        dropSelf(ModBlocks.SMOOTH_SOUL_SANDSTONE);
+        dropSelf(ModBlocks.SMOOTH_SOUL_SANDSTONE_STAIRS);
+        add(ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, createSlabItemTable(ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB));
+        dropSelf(ModBlocks.SMOOTH_SOUL_SANDSTONE_WALL);
+        dropSelf(ModBlocks.CUT_SOUL_SANDSTONE);
+        dropSelf(ModBlocks.CUT_SOUL_SANDSTONE_STAIRS);
+        add(ModBlocks.CUT_SOUL_SANDSTONE_SLAB, createSlabItemTable(ModBlocks.CUT_SOUL_SANDSTONE_SLAB));
+        dropSelf(ModBlocks.CUT_SOUL_SANDSTONE_WALL);
+        dropSelf(ModBlocks.SOUL_SANDSTONE_BRICKS);
+        dropSelf(ModBlocks.SOUL_SANDSTONE_BRICK_STAIRS);
+        add(ModBlocks.SOUL_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.SOUL_SANDSTONE_BRICK_SLAB));
+        dropSelf(ModBlocks.SOUL_SANDSTONE_BRICK_WALL);
+        dropSelf(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+        dropSelf(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS);
+        add(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB));
+        dropSelf(ModBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL);
+        dropSelf(ModBlocks.SOUL_SANDSTONE_BRICK_PILLAR);
+
         dropSelf(ModBlocks.END_STONE_STAIRS);
         add(ModBlocks.END_STONE_SLAB, createSlabItemTable(ModBlocks.END_STONE_SLAB));
         dropSelf(ModBlocks.END_STONE_WALL);
@@ -339,30 +362,39 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
                 )
         );
 
+        dropSelf(ModBlocks.NETHER_BRICK_FENCE_GATE);
         dropSelf(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
         add(ModBlocks.CRACKED_NETHER_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_NETHER_BRICK_SLAB));
         dropSelf(ModBlocks.CRACKED_NETHER_BRICK_WALL);
         dropSelf(ModBlocks.CRACKED_NETHER_BRICK_FENCE);
+        dropSelf(ModBlocks.CRACKED_NETHER_BRICK_FENCE_GATE);
+        dropSelf(ModBlocks.NETHER_BRICK_PILLAR);
 
         dropSelf(ModBlocks.RED_NETHER_BRICK_FENCE);
+        dropSelf(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
         dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICKS);
         dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS);
         add(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB));
         dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_WALL);
         dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE);
+        dropSelf(ModBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE);
         dropSelf(ModBlocks.CHISELED_RED_NETHER_BRICKS);
+        dropSelf(ModBlocks.RED_NETHER_BRICK_PILLAR);
 
         dropSelf(ModBlocks.BLUE_NETHER_BRICKS);
         dropSelf(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
         add(ModBlocks.BLUE_NETHER_BRICK_SLAB, createSlabItemTable(ModBlocks.BLUE_NETHER_BRICK_SLAB));
         dropSelf(ModBlocks.BLUE_NETHER_BRICK_WALL);
         dropSelf(ModBlocks.BLUE_NETHER_BRICK_FENCE);
+        dropSelf(ModBlocks.BLUE_NETHER_BRICK_FENCE_GATE);
         dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICKS);
         dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS);
         add(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, createSlabItemTable(ModBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB));
         dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_WALL);
         dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE);
+        dropSelf(ModBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE);
         dropSelf(ModBlocks.CHISELED_BLUE_NETHER_BRICKS);
+        dropSelf(ModBlocks.BLUE_NETHER_BRICK_PILLAR);
 
         dropSelf(ModBlocks.PRISMARINE_BRICK_WALL);
         dropSelf(ModBlocks.DARK_PRISMARINE_WALL);
@@ -386,6 +418,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
 
         dropWhenSilkTouch(ModBlocks.TINTED_GLASS_PANE);
 
+        dropSelf(ModBlocks.GLAZED_TERRACOTTA);
         dropSelf(ModBlocks.TERRACOTTA_STAIRS);
         add(ModBlocks.TERRACOTTA_SLAB, createSlabItemTable(ModBlocks.TERRACOTTA_SLAB));
         dropSelf(ModBlocks.TERRACOTTA_WALL);

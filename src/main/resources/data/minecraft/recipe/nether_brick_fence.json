@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "nether_brick_fences",
   "key": {
     "#": "minecraft:nether_brick",
     "W": "minecraft:nether_bricks"
