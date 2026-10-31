@@ -4,8 +4,8 @@ import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,11 +22,11 @@ public class BuiltinResourcePacks {
 
         FabricLoader.getInstance().getModContainer(modId).ifPresent(container -> {
 
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar || !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
-                        Identifier.of(modId, TUFF_PILLARS),
+                        Identifier.fromNamespaceAndPath(modId, TUFF_PILLARS),
                         container,
-                        Text.literal("Cinch's Tuff Pillars"),
+                        Component.literal("Cinch's Tuff Pillars"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
@@ -34,10 +34,10 @@ public class BuiltinResourcePacks {
             }
 
             ResourceManagerHelper.registerBuiltinResourcePack(
-                    Identifier.of(modId, DOUBLE_SLABS),
+                    Identifier.fromNamespaceAndPath(modId, DOUBLE_SLABS),
                     container,
-                    Text.literal("Cinch's Double Slabs"),
-                    ModConfigs.doubleSlabsPackDefaultEnabled
+                    Component.literal("Cinch's Double Slabs"),
+                    ModConfigs.doubleSlabsPackDefaultEnabled || !ModConfigs.configMissing
                             ? ResourcePackActivationType.DEFAULT_ENABLED
                             : ResourcePackActivationType.NORMAL
             );
