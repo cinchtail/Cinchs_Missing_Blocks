@@ -80,6 +80,9 @@
     "cinchsmissingblocks:cinnabar_brick_pillar",
     "cinchsmissingblocks:cracked_sulfur_bricks",
     "cinchsmissingblocks:mossy_sulfur_bricks",
-    "cinchsmissingblocks:sulfur_brick_pillar"
+    "cinchsmissingblocks:sulfur_brick_pillar",
+    "cinchsmissingblocks:nether_brick_pillar",
+    "cinchsmissingblocks:red_nether_brick_pillar",
+    "cinchsmissingblocks:blue_nether_brick_pillar"
   ]
 }
