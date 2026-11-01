@@ -12,8 +12,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
@@ -1303,7 +1301,6 @@ public class ModBlocks {
     public static final Block PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
             new WallBlock(Block.Settings.copy(Blocks.PINK_CONCRETE)
                     .strength(1.8F).sounds(BlockSoundGroup.STONE)));
-
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
