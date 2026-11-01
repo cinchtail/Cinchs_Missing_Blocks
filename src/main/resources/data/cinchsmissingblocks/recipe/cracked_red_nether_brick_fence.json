@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "cracked_red_nether_brick_fence",
+  "group": "nether_brick_fences",
   "key": {
     "A": {
       "item": "cinchsmissingblocks:cracked_red_nether_bricks"

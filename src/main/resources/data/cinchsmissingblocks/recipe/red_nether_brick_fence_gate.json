@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "nether_brick_fence_gates",
+  "key": {
+    "A": {
+      "item": "minecraft:red_nether_bricks"
+    },
+    "T": {
+      "item": "cinchsmissingblocks:red_nether_brick"
+    }
+  },
+  "pattern": [
+    "TAT",
+    "TAT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:red_nether_brick_fence_gate"
+  }
+}

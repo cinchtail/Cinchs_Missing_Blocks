@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/cut_soul_sandstone_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/cut_soul_sandstone_slab_double"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/cut_soul_sandstone_slab_top"
+    }
+  }
+}

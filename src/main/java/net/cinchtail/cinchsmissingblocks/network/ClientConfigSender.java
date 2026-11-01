@@ -1,20 +1,17 @@
 package net.cinchtail.cinchsmissingblocks.network;
 
 import net.cinchtail.cinchsmissingblocks.config.ModConfigs;
+import net.minecraft.network.protocol.common.ServerboundCustomPayloadPacket;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent;
 
-public class ClientConfigSender {
+public final class ClientConfigSender {
+    private ClientConfigSender() {}
 
     @SubscribeEvent
     public static void onClientJoin(ClientPlayerNetworkEvent.LoggingIn event) {
-
-        boolean clientValue = ModConfigs.enableTuffBrickPillar;
-
-        event.getConnection().send(
-                new net.minecraft.network.protocol.common.ServerboundCustomPayloadPacket(
-                        new ConfigSyncPayload(clientValue)
-                )
-        );
+        event.getConnection().send(new ServerboundCustomPayloadPacket(
+                new ConfigSyncPayload(ModConfigs.enableTuffBrickPillar)
+        ));
     }
 }

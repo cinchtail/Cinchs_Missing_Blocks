@@ -1,8 +1,9 @@
 {
-  "parent": "cinchsmissingblocks:block/two_texture_template_wall_post",
+  "parent": "cinchsmissingblocks:block/multi_texture_template_wall_post",
   "textures": {
-    "top": "minecraft:block/sandstone_top",
+    "bottom": "minecraft:block/sandstone_top",
+    "particle": "minecraft:block/sandstone_top",
     "side": "minecraft:block/cut_sandstone",
-    "particle": "minecraft:block/cut_sandstone"
+    "top": "minecraft:block/sandstone_top"
   }
 }

@@ -86,6 +86,13 @@ public class ModConfigs {
             json.addProperty("enableCorrectedCobbledDrops", false);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
 
+            enableTerracottaVariants = true;
+            enableConcreteVariants = true;
+            enableTuffBrickPillar = false;
+            enableReworkedDeepslateRecipes = true;
+            enableCorrectedCobbledDrops = false;
+            doubleSlabsPackDefaultEnabled = false;
+
             Files.createDirectories(CONFIG_PATH.getParent());
 
             try (Writer writer = Files.newBufferedWriter(CONFIG_PATH)) {
