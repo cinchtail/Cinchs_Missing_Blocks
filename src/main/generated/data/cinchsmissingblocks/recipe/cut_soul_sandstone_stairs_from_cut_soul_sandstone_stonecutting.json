@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinchsmissingblocks:cut_soul_sandstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:cut_soul_sandstone_stairs"
+  }
+}

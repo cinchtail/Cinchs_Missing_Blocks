@@ -4,12 +4,16 @@ import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.cinchtail.cinchsmissingblocks.block.custom.SculkInlaidDeepslateBlock;
 import net.cinchtail.cinchsmissingblocks.block.custom.TintedGlassPaneBlock;
 import net.cinchtail.cinchsmissingblocks.util.ModBlockSetType;
+import net.cinchtail.cinchsmissingblocks.util.ModWoodTypes;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
@@ -661,6 +665,9 @@ public class ModBlocks {
                     .strength(0.4F).sounds(BlockSoundGroup.NETHERRACK)));
 
     //Nether Bricks
+    public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
+            new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .solid().strength(2.0F, 6.0F)));
     public static final Block CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             new StairsBlock(Blocks.NETHER_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
@@ -673,11 +680,19 @@ public class ModBlocks {
     public static final Block CRACKED_NETHER_BRICK_FENCE = registerBlock("cracked_nether_brick_fence",
             new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_nether_brick_fence_gate",
+            new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .solid().strength(2.0F, 6.0F)));
+    public static final Block NETHER_BRICK_PILLAR = registerBlock("nether_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.NETHER_BRICKS)));
 
     //Red Nether Bricks
     public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
             new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
+            new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .solid().strength(2.0F, 6.0F)));
     public static final Block CRACKED_RED_NETHER_BRICKS = registerBlock("cracked_red_nether_bricks",
             new Block(Block.Settings.copy(Blocks.RED_NETHER_BRICKS)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
@@ -693,9 +708,14 @@ public class ModBlocks {
     public static final Block CRACKED_RED_NETHER_BRICK_FENCE = registerBlock("cracked_red_nether_brick_fence",
             new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_RED_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_red_nether_brick_fence_gate",
+            new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .solid().strength(2.0F, 6.0F)));
     public static final Block CHISELED_RED_NETHER_BRICKS = registerBlock("chiseled_red_nether_bricks",
             new Block(Block.Settings.copy(Blocks.RED_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block RED_NETHER_BRICK_PILLAR = registerBlock("red_nether_brick_pillar",
+            new PillarBlock(Block.Settings.copy(Blocks.RED_NETHER_BRICKS)));
 
     //Blue Nether Bricks
     public static final Block BLUE_NETHER_BRICKS = registerBlock("blue_nether_bricks",
@@ -713,6 +733,9 @@ public class ModBlocks {
     public static final Block BLUE_NETHER_BRICK_FENCE = registerBlock("blue_nether_brick_fence",
             new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("blue_nether_brick_fence_gate",
+            new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .solid().strength(2.0F, 6.0F)));
     public static final Block CRACKED_BLUE_NETHER_BRICKS = registerBlock("cracked_blue_nether_bricks",
             new Block(Block.Settings.copy(Blocks.NETHER_BRICKS)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
@@ -728,9 +751,14 @@ public class ModBlocks {
     public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE = registerBlock("cracked_blue_nether_brick_fence",
             new FenceBlock(Block.Settings.copy(Blocks.NETHER_BRICK_FENCE)
                     .strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = registerBlock("cracked_blue_nether_brick_fence_gate",
+            new FenceGateBlock(ModWoodTypes.NETHER_BRICKS, Block.Settings.copy(Blocks.NETHER_BRICKS)
+                    .solid().strength(2.0F, 6.0F)));
     public static final Block CHISELED_BLUE_NETHER_BRICKS = registerBlock("chiseled_blue_nether_bricks",
             new Block(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS).strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block BLUE_NETHER_BRICK_PILLAR = registerBlock("blue_nether_brick_pillar",
+            new PillarBlock(Block.Settings.copy(ModBlocks.BLUE_NETHER_BRICKS)));
 
     //Prismarine Blocks
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
@@ -881,6 +909,73 @@ public class ModBlocks {
             new PillarBlock(Block.Settings.copy(Blocks.RED_SANDSTONE).strength(0.8F)
                     .sounds(BlockSoundGroup.STONE)));
 
+    //Soul Sandstone Blocks
+    public static final Block SOUL_SANDSTONE = registerBlock("soul_sandstone",
+            new Block(Block.Settings.copy(Blocks.SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_STAIRS = registerBlock("soul_sandstone_stairs",
+            new StairsBlock(ModBlocks.SOUL_SANDSTONE.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_SLAB = registerBlock("soul_sandstone_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_WALL = registerBlock("soul_sandstone_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SMOOTH_SOUL_SANDSTONE = registerBlock("smooth_soul_sandstone",
+            new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresTool().strength(2.0F, 6.0F)));
+    public static final Block SMOOTH_SOUL_SANDSTONE_STAIRS = registerBlock("smooth_soul_sandstone_stairs",
+            new StairsBlock(Blocks.SMOOTH_SANDSTONE.getDefaultState(), Block.Settings.copy(Blocks.SMOOTH_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).strength(2.0F, 6.0F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SMOOTH_SOUL_SANDSTONE_SLAB = registerBlock("smooth_soul_sandstone_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.SMOOTH_SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresTool().strength(2.0F, 6.0F)));
+    public static final Block SMOOTH_SOUL_SANDSTONE_WALL = registerBlock("smooth_soul_sandstone_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.SMOOTH_SOUL_SANDSTONE)
+                    .mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.COW_BELL).requiresTool().strength(2.0F, 6.0F)));
+    public static final Block CUT_SOUL_SANDSTONE = registerBlock("cut_soul_sandstone",
+            new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)));
+    public static final Block CUT_SOUL_SANDSTONE_STAIRS = registerBlock("cut_soul_sandstone_stairs",
+            new StairsBlock(ModBlocks.CUT_SOUL_SANDSTONE.getDefaultState(), Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)));
+    public static final Block CUT_SOUL_SANDSTONE_SLAB = registerBlock("cut_soul_sandstone_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)));
+    public static final Block CUT_SOUL_SANDSTONE_WALL = registerBlock("cut_soul_sandstone_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.CUT_SOUL_SANDSTONE)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BROWN)));
+    public static final Block SOUL_SANDSTONE_BRICKS = registerBlock("soul_sandstone_bricks",
+            new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("soul_sandstone_brick_stairs",
+            new StairsBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_BRICK_SLAB = registerBlock("soul_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_BRICK_WALL = registerBlock("soul_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CHISELED_SOUL_SANDSTONE = registerBlock("chiseled_soul_sandstone",
+            new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICKS = registerBlock("cracked_soul_sandstone_bricks",
+            new Block(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("cracked_soul_sandstone_brick_stairs",
+            new StairsBlock(ModBlocks.SOUL_SANDSTONE_BRICKS.getDefaultState(), Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICK_SLAB = registerBlock("cracked_soul_sandstone_brick_slab",
+            new SlabBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_SOUL_SANDSTONE_BRICK_WALL = registerBlock("cracked_soul_sandstone_brick_wall",
+            new WallBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS)
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+    public static final Block SOUL_SANDSTONE_BRICK_PILLAR = registerBlock("soul_sandstone_brick_pillar",
+            new PillarBlock(Block.Settings.copy(ModBlocks.SOUL_SANDSTONE_BRICKS).strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     //Purpur Blocks
     public static final Block PURPUR_WALL = registerBlock("purpur_wall",
             new WallBlock(Block.Settings.copy(Blocks.PURPUR_BLOCK)
@@ -905,6 +1000,9 @@ public class ModBlocks {
                     .nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
 
     //Terracotta Variants
+    public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
+            new GlazedTerracottaBlock(Block.Settings.copy(Blocks.TERRACOTTA).pistonBehavior(PistonBehavior.PUSH_ONLY)
+                    .sounds(BlockSoundGroup.STONE).strength(1.4F)));
     public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
             new StairsBlock(Blocks.TERRACOTTA.getDefaultState(),Block.Settings.copy(Blocks.TERRACOTTA)
                     .sounds(BlockSoundGroup.STONE).strength(1.25F, 4.2F)));
