@@ -15,18 +15,18 @@ public class BuiltinResourcePacks {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static final String TUFF_PILLARS = "cinchs_tuff_pillars";
+    public static final String TUFF_PILLARS = "tuff_pillar_textures";
     public static final String DOUBLE_SLABS = "cinchs_double_slabs";
 
     public static void registerBuiltinPacks(String modId) {
 
         FabricLoader.getInstance().getModContainer(modId).ifPresent(container -> {
 
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.of(modId, TUFF_PILLARS),
                         container,
-                        Text.literal("Cinch's Tuff Pillars"),
+                        Text.literal("Tuff Pillar Textures"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
@@ -37,7 +37,7 @@ public class BuiltinResourcePacks {
                     Identifier.of(modId, DOUBLE_SLABS),
                     container,
                     Text.literal("Cinch's Double Slabs"),
-                    ModConfigs.doubleSlabsPackDefaultEnabled
+                    ModConfigs.doubleSlabsPackDefaultEnabled && !ModConfigs.configMissing
                             ? ResourcePackActivationType.DEFAULT_ENABLED
                             : ResourcePackActivationType.NORMAL
             );

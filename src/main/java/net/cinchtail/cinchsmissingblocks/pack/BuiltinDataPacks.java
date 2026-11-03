@@ -45,11 +45,11 @@ public class BuiltinDataPacks {
                 );
             }
 
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.of(modId, TUFF_PILLAR_RECIPES),
                         container,
-                        Text.literal("Tuff Pillars Recipes"),
+                        Text.literal("Tuff Pillar Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
@@ -67,7 +67,7 @@ public class BuiltinDataPacks {
                 LOGGER.info("Reworked deepslate recipes disabled by config");
             }
 
-            if (ModConfigs.enableCorrectedCobbledDrops || ModConfigs.configMissing) {
+            if (ModConfigs.enableCorrectedCobbledDrops && !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.of(modId, CORRECTED_COBBLED_DROPS),
                         container,
