@@ -24,18 +24,18 @@ public class ModBuiltinPacks {
                     ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_double_slabs"),
                     PackType.CLIENT_RESOURCES,
                     Component.literal("Cinch's Double Slabs"),
-                    ModConfigs.doubleSlabsPackDefaultEnabled
+                    ModConfigs.doubleSlabsPackDefaultEnabled && !ModConfigs.configMissing
                             ? PackSource.DEFAULT
                             : PackSource.BUILT_IN,
                     false,
                     Pack.Position.TOP
             );
 
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
                 event.addPackFinders(
-                        ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_tuff_pillars"),
+                        ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/tuff_pillar_textures"),
                         PackType.CLIENT_RESOURCES,
-                        Component.literal("Cinch's Tuff Pillars"),
+                        Component.literal("Tuff Pillar Textures"),
                         PackSource.BUILT_IN,
                         true,
                         Pack.Position.TOP
@@ -48,12 +48,12 @@ public class ModBuiltinPacks {
 
         if (event.getPackType() == PackType.SERVER_DATA) {
 
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
 
                 event.addPackFinders(
-                        ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/cinchs_tuff_pillar_recipes"),
+                        ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/tuff_pillar_recipes"),
                         PackType.SERVER_DATA,
-                        Component.literal("Cinch's Tuff Pillars Recipes"),
+                        Component.literal("Tuff Pillar Recipes"),
                         PackSource.BUILT_IN,
                         true,
                         Pack.Position.TOP
@@ -82,7 +82,7 @@ public class ModBuiltinPacks {
 
         if (event.getPackType() == PackType.SERVER_DATA) {
 
-            if (ModConfigs.enableCorrectedCobbledDrops || ModConfigs.configMissing) {
+            if (ModConfigs.enableCorrectedCobbledDrops && !ModConfigs.configMissing) {
 
                 event.addPackFinders(
                         ResourceLocation.fromNamespaceAndPath(modId, "resource_packs/corrected_cobbled_drops"),
