@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:granite",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:granite_brick_pillar"
+  }
+}

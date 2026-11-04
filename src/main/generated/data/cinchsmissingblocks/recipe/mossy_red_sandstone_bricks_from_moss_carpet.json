@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_red_sandstone_bricks",
+  "key": {
+    "#": "minecraft:moss_carpet",
+    "B": "cinchsmissingblocks:red_sandstone_bricks"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_red_sandstone_bricks"
+  }
+}

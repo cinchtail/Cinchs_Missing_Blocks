@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:blackstone_tiles",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:blackstone_tile_wall"
+  }
+}

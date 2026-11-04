@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/cracked_diorite_brick_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/cracked_diorite_bricks"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/cracked_diorite_brick_slab_top"
+    }
+  }
+}

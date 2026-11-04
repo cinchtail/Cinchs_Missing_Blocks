@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:mossy_cobbled_deepslate",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:mossy_cobbled_deepslate_stairs"
+  }
+}

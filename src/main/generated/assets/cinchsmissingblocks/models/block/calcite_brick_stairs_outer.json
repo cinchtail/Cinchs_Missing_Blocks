@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cinchsmissingblocks:block/calcite_bricks",
+    "side": "cinchsmissingblocks:block/calcite_bricks",
+    "top": "cinchsmissingblocks:block/calcite_bricks"
+  }
+}

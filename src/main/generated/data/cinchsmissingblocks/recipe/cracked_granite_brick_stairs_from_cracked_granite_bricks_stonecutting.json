@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:cracked_granite_bricks",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:cracked_granite_brick_stairs"
+  }
+}

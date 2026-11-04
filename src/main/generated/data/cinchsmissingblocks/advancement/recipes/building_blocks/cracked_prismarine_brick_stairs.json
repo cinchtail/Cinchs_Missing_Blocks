@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cracked_prismarine_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cinchsmissingblocks:cracked_prismarine_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cinchsmissingblocks:cracked_prismarine_brick_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cracked_prismarine_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cinchsmissingblocks:cracked_prismarine_brick_stairs"
+    ]
+  }
+}

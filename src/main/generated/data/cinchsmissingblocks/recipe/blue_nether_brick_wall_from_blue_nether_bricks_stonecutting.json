@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:blue_nether_bricks",
+  "result": {
+    "count": 1,
+    "id": "cinchsmissingblocks:blue_nether_brick_wall"
+  }
+}

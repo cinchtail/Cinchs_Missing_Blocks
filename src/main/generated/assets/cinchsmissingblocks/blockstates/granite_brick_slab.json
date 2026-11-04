@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/granite_brick_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/granite_bricks"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/granite_brick_slab_top"
+    }
+  }
+}
