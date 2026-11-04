@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/mossy_tuff_bricks",
-    "side": "cinchsmissingblocks:block/mossy_tuff_bricks",
-    "top": "cinchsmissingblocks:block/mossy_tuff_bricks"
-  }
-}

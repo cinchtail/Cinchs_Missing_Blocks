@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "cinchsmissingblocks:block/cracked_blue_nether_bricks",
-    "side": "cinchsmissingblocks:block/cracked_blue_nether_bricks",
-    "top": "cinchsmissingblocks:block/cracked_blue_nether_bricks"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "cinchsmissingblocks:granite_bricks",
-  "result": {
-    "count": 2,
-    "id": "cinchsmissingblocks:granite_brick_slab"
-  }
-}

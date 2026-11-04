@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:smooth_basalt",
-  "result": {
-    "count": 2,
-    "id": "cinchsmissingblocks:smooth_basalt_slab"
-  }
-}
