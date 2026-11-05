@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cinchsmissingblocks:block/granite_brick_pillar_top",
+    "side": "cinchsmissingblocks:block/granite_brick_pillar_side"
+  }
+}

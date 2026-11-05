@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cinchsmissingblocks:block/mossy_stone_tile_slab"
+    },
+    "type=double": {
+      "model": "cinchsmissingblocks:block/mossy_stone_tiles"
+    },
+    "type=top": {
+      "model": "cinchsmissingblocks:block/mossy_stone_tile_slab_top"
+    }
+  }
+}

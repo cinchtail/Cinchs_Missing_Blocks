@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "parent": "cinchsmissingblocks:block/multi_texture_template_wall_side",
+  "textures": {
+    "top": "minecraft:block/sandstone_top",
+    "bottom": "minecraft:block/sandstone_bottom",
+    "side": "minecraft:block/sandstone",
+    "particle": "minecraft:block/sandstone"
+  }
+}

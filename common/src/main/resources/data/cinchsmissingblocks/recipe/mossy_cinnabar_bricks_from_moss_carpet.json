@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_cinnabar_bricks",
+  "key": {
+    "#": "minecraft:moss_carpet",
+    "B": "minecraft:cinnabar_bricks"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_cinnabar_bricks"
+  }
+}

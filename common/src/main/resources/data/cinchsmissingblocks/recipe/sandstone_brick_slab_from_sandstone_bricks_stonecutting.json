@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:sandstone_bricks",
+  "result": {
+    "count": 2,
+    "id": "cinchsmissingblocks:sandstone_brick_slab"
+  }
+}

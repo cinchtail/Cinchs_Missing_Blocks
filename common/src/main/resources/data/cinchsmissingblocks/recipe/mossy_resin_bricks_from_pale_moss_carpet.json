@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_resin_bricks",
+  "key": {
+    "#": "minecraft:pale_moss_carpet",
+    "B": "minecraft:resin_bricks"
+  },
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_resin_bricks"
+  }
+}

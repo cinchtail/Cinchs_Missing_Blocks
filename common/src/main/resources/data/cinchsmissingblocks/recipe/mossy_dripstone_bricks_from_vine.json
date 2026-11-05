@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_dripstone_bricks",
+  "ingredients": [
+    "cinchsmissingblocks:dripstone_bricks",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:mossy_dripstone_bricks"
+  }
+}

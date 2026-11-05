@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:stone_tiles",
+  "result": {
+    "id": "cinchsmissingblocks:stone_tile_stairs"
+  }
+}

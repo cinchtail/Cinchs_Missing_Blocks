@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:polished_dripstone",
+  "result": {
+    "id": "cinchsmissingblocks:dripstone_brick_wall"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": "cinchsmissingblocks:blue_nether_brick"
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "id": "cinchsmissingblocks:blue_nether_bricks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:deepslate_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:deepslate_brick_pillar"
+  }
+}

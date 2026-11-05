@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "net.cinchtail.cinchsmissingblocks.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "ChiseledTuffBricksMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "plugin": "net.cinchtail.cinchsmissingblocks.mixin.MixinPluginConfig",
+  "mixinextras": {
+    "minVersion": "0.5.0"
+  },
+  "minVersion": "0.8"
+}

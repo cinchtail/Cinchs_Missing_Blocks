@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:blue_nether_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:chiseled_blue_nether_bricks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinchsmissingblocks:cracked_calcite_bricks",
+  "result": {
+    "id": "cinchsmissingblocks:cracked_calcite_brick_stairs"
+  }
+}
