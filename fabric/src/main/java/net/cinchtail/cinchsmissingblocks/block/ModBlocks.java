@@ -964,7 +964,7 @@ public class ModBlocks {
             properties -> new Block(properties.strength(2.0F, 6.0F)
                     .sound(SoundType.NETHER_BRICKS).mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block RED_NETHER_BRICK_PILLAR = registerBlock("red_nether_brick_pillar",
-            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F)
+            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS)
                     .mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
     //Blue Nether Bricks
@@ -1020,7 +1020,7 @@ public class ModBlocks {
                     .sound(SoundType.NETHER_BRICKS).mapColor(MapColor.COLOR_LIGHT_BLUE)
                     .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block BLUE_NETHER_BRICK_PILLAR = registerBlock("blue_nether_brick_pillar",
-            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F)
+            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS)
                     .mapColor(MapColor.COLOR_LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
     //Prismarine Blocks
