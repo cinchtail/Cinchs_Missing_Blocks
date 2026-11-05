@@ -1511,7 +1511,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE,2);
 
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_WALL, ModBlocks.SOUL_SANDSTONE);
 
@@ -1529,9 +1529,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE,2);
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE,2);
 
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_WALL, ModBlocks.CUT_SOUL_SANDSTONE);
 
@@ -1545,7 +1545,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSlabRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE);
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE,2);
 
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_WALL, ModBlocks.SMOOTH_SOUL_SANDSTONE);
 
