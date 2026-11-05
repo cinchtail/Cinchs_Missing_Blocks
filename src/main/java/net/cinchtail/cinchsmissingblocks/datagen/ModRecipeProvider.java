@@ -5,7 +5,6 @@ import net.cinchtail.cinchsmissingblocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
@@ -1564,7 +1563,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerSlabRecipe(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
 
-                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE,2);
 
                 offerWallRecipe(RecipeCategory.DECORATIONS, ModBlocks.SOUL_SANDSTONE_WALL, ModBlocks.SOUL_SANDSTONE);
 
@@ -1582,9 +1581,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerSlabRecipe(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE);
 
-                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE);
+                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.SOUL_SANDSTONE,2);
 
-                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE);
+                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_SLAB, ModBlocks.CUT_SOUL_SANDSTONE,2);
 
                 offerWallRecipe(RecipeCategory.DECORATIONS, ModBlocks.CUT_SOUL_SANDSTONE_WALL, ModBlocks.CUT_SOUL_SANDSTONE);
 
@@ -1598,7 +1597,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerSlabRecipe(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE);
 
-                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE);
+                offerStonecuttingRecipe(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, ModBlocks.SMOOTH_SOUL_SANDSTONE,2);
 
                 offerWallRecipe(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_SOUL_SANDSTONE_WALL, ModBlocks.SMOOTH_SOUL_SANDSTONE);
 
