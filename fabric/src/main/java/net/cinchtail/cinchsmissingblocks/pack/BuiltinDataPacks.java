@@ -9,7 +9,7 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocksFabric.MOD_ID;
+import static net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks.MOD_ID;
 
 public class BuiltinDataPacks {
 
@@ -45,7 +45,7 @@ public class BuiltinDataPacks {
                 );
             }
 
-            if (ModConfigs.enableTuffBrickPillar || !ModConfigs.configMissing) {
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, TUFF_PILLAR_RECIPES),
                         container,
@@ -67,7 +67,7 @@ public class BuiltinDataPacks {
                 LOGGER.info("Reworked deepslate recipes disabled by config");
             }
 
-            if (ModConfigs.enableCorrectedCobbledDrops || !ModConfigs.configMissing) {
+            if (ModConfigs.enableCorrectedCobbledDrops && !ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, CORRECTED_COBBLED_DROPS),
                         container,
@@ -78,7 +78,7 @@ public class BuiltinDataPacks {
                 LOGGER.info("Corrected Cobble Drops loot tables disabled by config");
             }
 
-            if (ModConfigs.enableTerracottaVariants || !ModConfigs.configMissing) {
+            if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, TERRACOTTA_VARIANTS_RECIPES),
                         container,
@@ -89,7 +89,7 @@ public class BuiltinDataPacks {
                 LOGGER.info("Terracotta variants disabled by config (Recipes)");
             }
 
-            if (ModConfigs.enableConcreteVariants || !ModConfigs.configMissing) {
+            if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
                         Identifier.fromNamespaceAndPath(modId, CONCRETE_VARIANTS_RECIPES),
                         container,

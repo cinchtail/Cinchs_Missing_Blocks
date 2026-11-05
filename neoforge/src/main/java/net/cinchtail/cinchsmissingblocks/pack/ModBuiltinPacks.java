@@ -19,39 +19,55 @@ public final class ModBuiltinPacks {
 
     public static void register(AddPackFindersEvent event, String modId) {
         if (event.getPackType() == PackType.CLIENT_RESOURCES) {
-            if (ModConfigs.enableTuffBrickPillar) {
-                addPack(event, modId, "cinchs_tuff_pillars", PackType.CLIENT_RESOURCES,
-                        "Cinch's Tuff Pillars", PackSource.BUILT_IN, true);
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
+                addPack(event, modId, "tuff_pillar_textures", PackType.CLIENT_RESOURCES,
+                        "Tuff Pillar Textures", PackSource.BUILT_IN, true);
             } else {
                 LOGGER.info("Tuff Pillar textures disabled by config");
             }
 
             addPack(event, modId, "cinchs_double_slabs", PackType.CLIENT_RESOURCES,
                     "Cinch's Double Slabs",
-                    ModConfigs.doubleSlabsPackDefaultEnabled ? PackSource.DEFAULT : PackSource.BUILT_IN,
+                    ModConfigs.doubleSlabsPackDefaultEnabled && !ModConfigs.configMissing
+                            ? PackSource.DEFAULT
+                            : PackSource.BUILT_IN,
                     ModConfigs.doubleSlabsPackDefaultEnabled);
         }
 
         if (event.getPackType() == PackType.SERVER_DATA) {
-            if (ModConfigs.enableTuffBrickPillar) {
+            if (ModConfigs.enableTuffBrickPillar && !ModConfigs.configMissing) {
                 addPack(event, modId, "tuff_pillar_recipes", PackType.SERVER_DATA,
-                        "Tuff Pillars Recipes", PackSource.BUILT_IN, true);
+                        "Tuff Pillar Recipes", PackSource.BUILT_IN, true);
+            } else {
+                LOGGER.info("Tuff Pillar recipes disabled by config");
             }
+
             if (ModConfigs.enableReworkedDeepslateRecipes || ModConfigs.configMissing) {
                 addPack(event, modId, "reworked_deepslate_recipes", PackType.SERVER_DATA,
                         "Reworked Deepslate Recipes", PackSource.BUILT_IN, true);
+            } else {
+                LOGGER.info("Reworked deepslate recipes disabled by config");
             }
-            if (ModConfigs.enableCorrectedCobbledDrops || ModConfigs.configMissing) {
+
+            if (ModConfigs.enableCorrectedCobbledDrops && !ModConfigs.configMissing) {
                 addPack(event, modId, "corrected_cobbled_drops", PackType.SERVER_DATA,
                         "Corrected Cobbled Drops", PackSource.BUILT_IN, true);
+            } else {
+                LOGGER.info("Corrected Cobble Drops loot tables disabled by config");
             }
+
             if (ModConfigs.enableTerracottaVariants || ModConfigs.configMissing) {
                 addPack(event, modId, "terracotta_variants_recipes", PackType.SERVER_DATA,
                         "Terracotta Variants Recipes", PackSource.BUILT_IN, true);
+            } else {
+                LOGGER.info("Terracotta variants disabled by config (Recipes)");
             }
+
             if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
                 addPack(event, modId, "concrete_variants_recipes", PackType.SERVER_DATA,
                         "Concrete Variants Recipes", PackSource.BUILT_IN, true);
+            } else {
+                LOGGER.info("Concrete variants disabled by config (Recipes)");
             }
         }
     }
