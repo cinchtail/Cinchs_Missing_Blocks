@@ -46,11 +46,11 @@ Cinch's Missing Blocks aims to add all the block variants that Mojang skipped. F
 
 **Netherrack Blocks:** Netherack now has slabs, stairs, and walls.
 
-**Nether Bricks Blocks:** Nether brick fence gate and pillars.
+**Nether Brick Blocks:** Nether brick fence gate and pillars.
 
-**Red Nether Bricks Blocks:** Red nether bricks now have a cracked variant and a chiseled variant. The missing red nether brick fence is also added.
+**Red Nether Brick Blocks:** Red nether bricks now have a cracked variant and a chiseled variant. The missing red nether brick fence is also added.
 
-**Blue Nether Bricks Blocks:** Blue nether bricks with cracked, chiseled variants, and pillar variants.
+**Blue Nether Brick Blocks:** Blue nether bricks with cracked, chiseled variants, and pillar variants.
 
 **Nether Brick Items:** Red and blue nether brick items.
 
@@ -87,17 +87,17 @@ Cinch's Missing Blocks aims to add all the block variants that Mojang skipped. F
 
 All configs accept two possible values: (True/False)
 
-**enableTerracottaVariants** - Can be used to enable/disable all terracotta stairs, slabs, and walls.
+**enableTerracottaVariants:** Can be used to enable/disable all terracotta stairs, slabs, and walls.
 
-**enableConcreteVariants** - Can be used to enable/disable all concrete stairs, slabs, and walls. Only the walls are added in 26.3 and higher since Mojang added the stairs and slabs.
+**enableConcreteVariants:** Can be used to enable/disable all concrete stairs, slabs, and walls. Only the walls are added in 26.3 and higher since Mojang added the stairs and slabs.
 
-**enableTuffBrickPillar** - When set to true, Chiseled Tuff Bricks is renamed to Tuff Brick Pillar and is remade into a pillar block. Chiseled Tuff is renamed to Chiseled Tuff Bricks and the recipes for both blocks are changed.
+**enableTuffBrickPillar:** When set to true, Chiseled Tuff Bricks is renamed to Tuff Brick Pillar and is remade into a pillar block. Chiseled Tuff is renamed to Chiseled Tuff Bricks and the recipes for both blocks are changed.
 
-**enableReworkedDeepslateRecipes** - When enabled, most deepslate recipes require normal deepslate rather than cobbled deepslate to better match stone recipes.
+**enableReworkedDeepslateRecipes:** When enabled, most deepslate recipes require normal deepslate rather than cobbled deepslate to better match stone recipes.
 
-**enableCorrectedCobbledDrops** - When enabled, stone stairs, slabs, walls, and deepslate stairs, slabs, and walls drop their cobbled counterparts when mined without silk touch.
+**enableCorrectedCobbledDrops:** When enabled, stone stairs, slabs, walls, and deepslate stairs, slabs, and walls drop their cobbled counterparts when mined without silk touch.
 
-**doubleSlabsPackDefaultEnabled** - When set to true, the Cinch's Double Slabs pack is enabled by default. This setting is just for modpack makers.
+**doubleSlabsPackDefaultEnabled:** When set to true, the Cinch's Double Slabs pack is enabled by default. This setting is just for modpack makers.
 
 Many more configs are planned.
 
