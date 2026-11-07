@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:lime_terracotta_wall"
+        "recipes": "cinchsmissingblocks:lime_terracotta_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

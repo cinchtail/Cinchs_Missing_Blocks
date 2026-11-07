@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:magenta_terracotta_stairs"
+        "recipes": "cinchsmissingblocks:magenta_terracotta_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

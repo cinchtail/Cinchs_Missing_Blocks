@@ -1,5 +1,4 @@
 {
-  "replace": true,
   "processors": [
     {
       "processor_type": "minecraft:rule",
@@ -13,9 +12,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "cinchsmissingblocks:andesite_bricks"
-          }
+          "output_state": "cinchsmissingblocks:andesite_bricks"
         },
         {
           "input_predicate": {
@@ -26,9 +23,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "cinchsmissingblocks:andesite_brick_slab"
-          }
+          "output_state": "cinchsmissingblocks:andesite_brick_slab"
         }
       ]
     }

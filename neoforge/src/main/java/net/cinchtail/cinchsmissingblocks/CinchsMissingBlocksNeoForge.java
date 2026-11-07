@@ -22,9 +22,8 @@ public class CinchsMissingBlocksNeoForge {
         CinchsMissingBlocks.initialize(FMLPaths.CONFIGDIR.get());
         modEventBus.addListener(this::onRegister);
         modEventBus.addListener(this::addPackFinders);
-        LOGGER.info("Cinch's Missing Blocks initialized on NeoForge 26.2");
+        LOGGER.info("Cinch's Missing Blocks initialized on NeoForge 26.3");
     }
-
     private void onRegister(RegisterEvent event) {
         if (event.getRegistryKey().equals(Registries.BLOCK)) {
             ModBlocks.registerBlocks();
@@ -39,7 +38,6 @@ public class CinchsMissingBlocksNeoForge {
             ModItemGroups.registerItemGroup();
         }
     }
-
     private void addPackFinders(AddPackFindersEvent event) {
         ModBuiltinPacks.register(event, MOD_ID);
     }

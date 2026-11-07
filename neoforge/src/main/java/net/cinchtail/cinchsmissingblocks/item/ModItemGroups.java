@@ -418,54 +418,22 @@ public class ModItemGroups {
                 } else {
                     LOGGER.info("Terracotta variants disabled by config (Creative Mode Tab)");
                 }
-                if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
-                    output.accept(ModBlocks.CONCRETE_STAIRS.white());
-                    output.accept(ModBlocks.CONCRETE_SLAB.white());
+                if (ModConfigs.enableConcreteWalls || ModConfigs.configMissing) {
                     output.accept(ModBlocks.CONCRETE_WALL.white());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.lightGray());
-                    output.accept(ModBlocks.CONCRETE_SLAB.lightGray());
                     output.accept(ModBlocks.CONCRETE_WALL.lightGray());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.gray());
-                    output.accept(ModBlocks.CONCRETE_SLAB.gray());
                     output.accept(ModBlocks.CONCRETE_WALL.gray());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.black());
-                    output.accept(ModBlocks.CONCRETE_SLAB.black());
                     output.accept(ModBlocks.CONCRETE_WALL.black());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.brown());
-                    output.accept(ModBlocks.CONCRETE_SLAB.brown());
                     output.accept(ModBlocks.CONCRETE_WALL.brown());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.red());
-                    output.accept(ModBlocks.CONCRETE_SLAB.red());
                     output.accept(ModBlocks.CONCRETE_WALL.red());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.orange());
-                    output.accept(ModBlocks.CONCRETE_SLAB.orange());
                     output.accept(ModBlocks.CONCRETE_WALL.orange());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.yellow());
-                    output.accept(ModBlocks.CONCRETE_SLAB.yellow());
                     output.accept(ModBlocks.CONCRETE_WALL.yellow());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.lime());
-                    output.accept(ModBlocks.CONCRETE_SLAB.lime());
                     output.accept(ModBlocks.CONCRETE_WALL.lime());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.green());
-                    output.accept(ModBlocks.CONCRETE_SLAB.green());
                     output.accept(ModBlocks.CONCRETE_WALL.green());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.cyan());
-                    output.accept(ModBlocks.CONCRETE_SLAB.cyan());
                     output.accept(ModBlocks.CONCRETE_WALL.cyan());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.lightBlue());
-                    output.accept(ModBlocks.CONCRETE_SLAB.lightBlue());
                     output.accept(ModBlocks.CONCRETE_WALL.lightBlue());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.blue());
-                    output.accept(ModBlocks.CONCRETE_SLAB.blue());
                     output.accept(ModBlocks.CONCRETE_WALL.blue());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.purple());
-                    output.accept(ModBlocks.CONCRETE_SLAB.purple());
                     output.accept(ModBlocks.CONCRETE_WALL.purple());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.magenta());
-                    output.accept(ModBlocks.CONCRETE_SLAB.magenta());
                     output.accept(ModBlocks.CONCRETE_WALL.magenta());
-                    output.accept(ModBlocks.CONCRETE_STAIRS.pink());
-                    output.accept(ModBlocks.CONCRETE_SLAB.pink());
                     output.accept(ModBlocks.CONCRETE_WALL.pink());
                 } else {
                     LOGGER.info("Concrete variants disabled by config (Creative Mode Tab)");

@@ -21,7 +21,7 @@ public class BuiltinDataPacks {
     public static final String REWORKED_DEEPSLATE_RECIPES = "reworked_deepslate_recipes";
     public static final String CORRECTED_COBBLED_DROPS = "corrected_cobbled_drops";
     public static final String TERRACOTTA_VARIANTS_RECIPES = "terracotta_variants_recipes";
-    public static final String CONCRETE_VARIANTS_RECIPES = "concrete_variants_recipes";
+    public static final String CONCRETE_WALLS_RECIPES = "concrete_walls_recipes";
 
     public static void registerBuiltinPacks(String modId) {
 
@@ -89,15 +89,15 @@ public class BuiltinDataPacks {
                 LOGGER.info("Terracotta variants disabled by config (Recipes)");
             }
 
-            if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
+            if (ModConfigs.enableConcreteWalls || ModConfigs.configMissing) {
                 ResourceManagerHelper.registerBuiltinResourcePack(
-                        Identifier.fromNamespaceAndPath(modId, CONCRETE_VARIANTS_RECIPES),
+                        Identifier.fromNamespaceAndPath(modId, CONCRETE_WALLS_RECIPES),
                         container,
-                        Component.literal("Concrete Variants Recipes"),
+                        Component.literal("Concrete Walls Recipes"),
                         ResourcePackActivationType.ALWAYS_ENABLED
                 );
             } else {
-                LOGGER.info("Concrete variants disabled by config (Recipes)");
+                LOGGER.info("Concrete walls disabled by config (Recipes)");
             }
         });
     }

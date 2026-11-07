@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:pink_terracotta_slab"
+        "recipes": "cinchsmissingblocks:pink_terracotta_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

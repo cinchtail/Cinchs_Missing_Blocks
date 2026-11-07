@@ -63,11 +63,11 @@ public final class ModBuiltinPacks {
                 LOGGER.info("Terracotta variants disabled by config (Recipes)");
             }
 
-            if (ModConfigs.enableConcreteVariants || ModConfigs.configMissing) {
-                addPack(event, modId, "concrete_variants_recipes", PackType.SERVER_DATA,
-                        "Concrete Variants Recipes", PackSource.BUILT_IN, true);
+            if (ModConfigs.enableConcreteWalls || ModConfigs.configMissing) {
+                addPack(event, modId, "concrete_walls_recipes", PackType.SERVER_DATA,
+                        "Concrete Walls Recipes", PackSource.BUILT_IN, true);
             } else {
-                LOGGER.info("Concrete variants disabled by config (Recipes)");
+                LOGGER.info("Concrete walls disabled by config (Recipes)");
             }
         }
     }

@@ -36,10 +36,6 @@ public class ModBlocks {
             ColorCollection.prefixWithColor(ColorCollection.create("terracotta_slab"));
     public static final ColorCollection<String> DYED_TERRACOTTA_WALL_IDS =
             ColorCollection.prefixWithColor(ColorCollection.create("terracotta_wall"));
-    public static final ColorCollection<String> CONCRETE_STAIRS_IDS =
-            ColorCollection.prefixWithColor(ColorCollection.create("concrete_stairs"));
-    public static final ColorCollection<String> CONCRETE_SLAB_IDS =
-            ColorCollection.prefixWithColor(ColorCollection.create("concrete_slab"));
     public static final ColorCollection<String> CONCRETE_WALL_IDS =
             ColorCollection.prefixWithColor(ColorCollection.create("concrete_wall"));
 
@@ -971,7 +967,7 @@ public class ModBlocks {
             properties -> new Block(properties.strength(2.0F, 6.0F)
                     .sound(SoundType.NETHER_BRICKS).mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block RED_NETHER_BRICK_PILLAR = registerBlock("red_nether_brick_pillar",
-            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F)
+            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS)
                     .mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
     //Blue Nether Bricks
@@ -1027,7 +1023,7 @@ public class ModBlocks {
                     .sound(SoundType.NETHER_BRICKS).mapColor(MapColor.COLOR_LIGHT_BLUE)
                     .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
     public static final Block BLUE_NETHER_BRICK_PILLAR = registerBlock("blue_nether_brick_pillar",
-            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F)
+            properties -> new RotatedPillarBlock(properties.strength(2.0F, 6.0F).sound(SoundType.NETHER_BRICKS)
                     .mapColor(MapColor.COLOR_LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()));
 
     //Prismarine Blocks
@@ -1382,7 +1378,7 @@ public class ModBlocks {
             properties -> new TintedGlassPaneBlock(properties.strength(0.3F).sound(SoundType.GLASS)
                     .isValidSpawn(Blocks::never).noOcclusion().mapColor(MapColor.COLOR_GRAY)));
 
-    //Terracotta Variants
+    //Terracotta Blocks
     public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
             properties -> new GlazedTerracottaBlock(properties.requiresCorrectToolForDrops().mapColor(MapColor.COLOR_ORANGE)
                     .instrument(NoteBlockInstrument.BASEDRUM).pushReaction(PushReaction.PUSH)
@@ -1414,18 +1410,7 @@ public class ModBlocks {
             (color) -> BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.25F, 4.2F)
                     .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().mapColor(color.getTerracottaColor()));
 
-    //Concrete Variants
-    public static final ColorCollection<Block> CONCRETE_STAIRS = ColorCollection.registerBlocks(CONCRETE_STAIRS_IDS,
-            ModBlocks::registerDyedBlock, (color, props) -> new StairBlock(Blocks.TERRACOTTA.defaultBlockState(), props
-                    .sound(SoundType.STONE).strength(1.8F).instrument(NoteBlockInstrument.BASEDRUM)
-                    .requiresCorrectToolForDrops().mapColor(color.getTerracottaColor())),
-            (color) -> BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.8F)
-                    .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().mapColor(color.getTerracottaColor()));
-    public static final ColorCollection<Block> CONCRETE_SLAB = ColorCollection.registerBlocks(CONCRETE_SLAB_IDS,
-            ModBlocks::registerDyedBlock, (color, props) -> new SlabBlock(props.sound(SoundType.STONE).strength(1.8F)
-                    .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().mapColor(color.getTerracottaColor())),
-            (color) -> BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.8F)
-                    .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().mapColor(color.getTerracottaColor()));
+    //Concrete Blocks
     public static final ColorCollection<Block> CONCRETE_WALL = ColorCollection.registerBlocks(CONCRETE_WALL_IDS,
             ModBlocks::registerDyedBlock, (color, props) -> new WallBlock(props.sound(SoundType.STONE).strength(1.8F)
                     .instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().mapColor(color.getTerracottaColor())),

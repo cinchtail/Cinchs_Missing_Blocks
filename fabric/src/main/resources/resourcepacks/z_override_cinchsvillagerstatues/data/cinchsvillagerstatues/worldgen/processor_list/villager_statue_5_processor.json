@@ -12,9 +12,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "cinchsmissingblocks:red_sandstone_bricks"
-          }
+          "output_state": "cinchsmissingblocks:red_sandstone_bricks"
         },
         {
           "input_predicate": {
@@ -25,9 +23,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "cinchsmissingblocks:cracked_red_sandstone_bricks"
-          }
+          "output_state": "cinchsmissingblocks:cracked_red_sandstone_bricks"
         },
         {
           "input_predicate": {
@@ -38,9 +34,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "minecraft:cut_red_sandstone"
-          }
+          "output_state": "minecraft:cut_red_sandstone"
         },
         {
           "input_predicate": {
@@ -51,9 +45,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "minecraft:cut_red_sandstone_slab"
-          }
+          "output_state": "minecraft:cut_red_sandstone_slab"
         },
         {
           "input_predicate": {
@@ -64,9 +56,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "minecraft:cut_red_sandstone_slab"
-          }
+          "output_state": "minecraft:cut_red_sandstone_slab"
         }
       ]
     }

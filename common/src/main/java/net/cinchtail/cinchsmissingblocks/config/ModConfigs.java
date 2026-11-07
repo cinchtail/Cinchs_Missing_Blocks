@@ -24,7 +24,7 @@ public final class ModConfigs {
     public static boolean configMissing = false;
 
     public static boolean enableTerracottaVariants;
-    public static boolean enableConcreteVariants;
+    public static boolean enableConcreteWalls;
     public static boolean enableTuffBrickPillar;
     public static boolean enableReworkedDeepslateRecipes;
     public static boolean enableCorrectedCobbledDrops;
@@ -52,7 +52,7 @@ public final class ModConfigs {
             }
 
             enableTerracottaVariants = getOrDefault(json, "enableTerracottaVariants", true);
-            enableConcreteVariants = getOrDefault(json, "enableConcreteVariants", true);
+            enableConcreteWalls = getOrDefault(json, "enableConcreteWalls", true);
             enableTuffBrickPillar = getOrDefault(json, "enableTuffBrickPillar", false);
             enableReworkedDeepslateRecipes = getOrDefault(json, "enableReworkedDeepslateRecipes", true);
             enableCorrectedCobbledDrops = getOrDefault(json, "enableCorrectedCobbledDrops", false);
@@ -61,7 +61,7 @@ public final class ModConfigs {
             boolean updated = false;
 
             updated |= patchMissing(json, "enableTerracottaVariants", enableTerracottaVariants);
-            updated |= patchMissing(json, "enableConcreteVariants", enableConcreteVariants);
+            updated |= patchMissing(json, "enableConcreteWalls", enableConcreteWalls);
             updated |= patchMissing(json, "enableTuffBrickPillar", enableTuffBrickPillar);
             updated |= patchMissing(json, "enableReworkedDeepslateRecipes", enableReworkedDeepslateRecipes);
             updated |= patchMissing(json, "enableCorrectedCobbledDrops", enableCorrectedCobbledDrops);
@@ -82,14 +82,14 @@ public final class ModConfigs {
             JsonObject json = new JsonObject();
 
             json.addProperty("enableTerracottaVariants", true);
-            json.addProperty("enableConcreteVariants", true);
+            json.addProperty("enableConcreteWalls", true);
             json.addProperty("enableTuffBrickPillar", false);
             json.addProperty("enableReworkedDeepslateRecipes", true);
             json.addProperty("enableCorrectedCobbledDrops", false);
             json.addProperty("doubleSlabsPackDefaultEnabled", false);
 
             enableTerracottaVariants = true;
-            enableConcreteVariants = true;
+            enableConcreteWalls = true;
             enableTuffBrickPillar = false;
             enableReworkedDeepslateRecipes = true;
             enableCorrectedCobbledDrops = false;

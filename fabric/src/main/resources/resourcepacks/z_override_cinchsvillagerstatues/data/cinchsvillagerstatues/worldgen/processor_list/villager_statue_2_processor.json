@@ -12,9 +12,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "cinchsmissingblocks:sandstone_bricks"
-          }
+          "output_state": "cinchsmissingblocks:sandstone_bricks"
         },
         {
           "input_predicate": {
@@ -25,9 +23,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "cinchsmissingblocks:cracked_sandstone_bricks"
-          }
+          "output_state": "cinchsmissingblocks:cracked_sandstone_bricks"
         },
         {
           "input_predicate": {
@@ -38,9 +34,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "minecraft:cut_sandstone"
-          }
+          "output_state": "minecraft:cut_sandstone"
         },
         {
           "input_predicate": {
@@ -51,9 +45,7 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "output_state": {
-            "Name": "minecraft:cut_sandstone_slab"
-          }
+          "output_state": "minecraft:cut_sandstone_slab"
         }
       ]
     },
@@ -73,11 +65,9 @@
             "location_predicate": {
               "predicate_type": "minecraft:always_true"
             },
-            "output_state": {
-              "Name": "minecraft:suspicious_sand",
+            "output_state": "minecraft:suspicious_sand",
               "Properties": {
                 "dusted": "0"
-              }
             }
           }
         ]
@@ -101,10 +91,8 @@
             "location_predicate": {
               "predicate_type": "minecraft:always_true"
             },
-            "output_state": {
-              "Name": "minecraft:decorated_pot",
+            "output_state": "minecraft:decorated_pot",
               "Properties": {
-              }
             }
           }
         ]

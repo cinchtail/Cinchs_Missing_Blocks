@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cinchsmissingblocks:white_terracotta_wall"
+        "recipes": "cinchsmissingblocks:white_terracotta_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
