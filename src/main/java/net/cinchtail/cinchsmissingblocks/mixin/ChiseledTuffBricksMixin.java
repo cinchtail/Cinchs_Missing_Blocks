@@ -24,7 +24,6 @@ public abstract class ChiseledTuffBricksMixin {
         throw new IllegalStateException();
     }
 
-
     @Definition(id = "register", method = "Lnet/minecraft/world/level/block/Blocks;register(Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)Lnet/minecraft/world/level/block/Block;")
     @Expression("register('chiseled_tuff_bricks', ?)")
     @WrapOperation(method = "<clinit>", at = @At("MIXINEXTRAS:EXPRESSION"))
